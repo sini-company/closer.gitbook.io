@@ -2,7 +2,6 @@
 
 * [개요](README.md)
 * [Builder](builder.md)
-  * [화면 구성](builder/d654-ba74-ad6c-c131.md)
   * [새로운 봇 만들기](builder/c0c8-b85c-c6b4-bd07-b9cc-b4e4-ae30.md)
     * [1분만에 봇 만들기\(Template\)](builder/d15c-d50c-b9bf-be4c-b354.md)
     * [자유롭게 봇 설계하기\(Flow editor\)](builder/c790-c720-b86d-ac8c-bd07-c124-acc4-d558-ae3028-flow-editor.md)
