@@ -4,5 +4,5 @@ CLOSER는 쉽고 빠르게 챗봇을 만들어 고객응대를 자동화하고, 
 
 
 
-
+![](https://closer.ai/assets/main-concept.gif)
 
