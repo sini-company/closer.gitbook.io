@@ -1,9 +1,9 @@
 # Summary
 
-## 개요
+## CLOSER
 
-* [CLOSER](README.md)
-* [Tutorial](tutorial.md)
+* [개요](README.md)
+* [튜토리얼](tutorial.md)
 
 ## Builder
 
