@@ -2,7 +2,7 @@
 
 * [개요](README.md)
   * [Builder](bot-builder.md)
-  * Chat
+  * [Chat](chat.md)
 * [1분만에 봇 만들기](chapter1.md)
   * [템플릿 빌더](chapter1/d15c-d50c-b9bf-be4c-b354.md)
 * [메신저 연동](ba54-c2e0-c800-c5f0-b3d9-d558-ae30.md)

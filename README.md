@@ -1,3 +1,8 @@
-# My Awesome Book
+# CLOSER - the most feasible & tangible chatbot solution
 
-This file file serves as your book's preface, a great place to describe your book's content and ideas.
+CLOSER는 쉽고 빠르게 챗봇을 만들어 고객응대를 자동화하고, 상담원이 보완해 완성도를 높일 수 있는 편리하고 효율적인 채팅상담 솔루션 입니다.
+
+
+
+
+
