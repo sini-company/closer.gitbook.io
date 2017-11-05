@@ -1,8 +1,6 @@
 # Summary
 
 * [개요](README.md)
-  * [Builder](bot-builder.md)
-  * [Chat](chat.md)
 * [Builder](builder.md)
   * [화면 구성](builder/d654-ba74-ad6c-c131.md)
   * [새로운 봇 만들기](builder/c0c8-b85c-c6b4-bd07-b9cc-b4e4-ae30.md)
