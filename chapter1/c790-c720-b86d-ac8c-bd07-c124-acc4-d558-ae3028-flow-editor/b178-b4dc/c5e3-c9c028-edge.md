@@ -6,7 +6,7 @@
 
 노드 오른쪽의 joint를 드래그 해 다른 노드와 연결할 수 있습니다.
 
-![](/assets/import.png)gif
+![](/assets/import.png)
 
 ---
 

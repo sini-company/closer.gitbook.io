@@ -10,9 +10,16 @@
       * [플로우\(Flow\)](chapter1/c790-c720-b86d-ac8c-bd07-c124-acc4-d558-ae3028-flow-editor/b178-b4dc/d50c-b85c-c6b0.md)
     * [봇 불러오기](builder/bd07-bd88-b7ec-c624-ae30.md)
   * [메신저 연동하기](ba54-c2e0-c800-c5f0-b3d9-d558-ae30.md)
+    * [카카오톡 자동응답API](ba54-c2e0-c800-c5f0-b3d9-d558-ae30/ce74-ce74-c624-d1a1-c790-b3d9-c751-b2f5-api.md)
+    * [카카오 상담톡](ba54-c2e0-c800-c5f0-b3d9-d558-ae30/ce74-ce74-c624-c0c1-b2f4-d1a1.md)
+    * [페이스북 메신저](ba54-c2e0-c800-c5f0-b3d9-d558-ae30/d398-c774-c2a4-bd81-ba54-c2e0-c800.md)
+    * [네이버 톡톡](ba54-c2e0-c800-c5f0-b3d9-d558-ae30/b124-c774-bc84-d1a1-d1a1.md)
+    * 라인
+    * [위챗](ba54-c2e0-c800-c5f0-b3d9-d558-ae30/c704-cc57.md)
+    * [웹사이트](ba54-c2e0-c800-c5f0-b3d9-d558-ae30/c6f9-c0ac-c774-d2b8.md)
   * [대화 모니터링](chapter1/b300-d654-baa8-b2c8-d130-b9c1.md)
   * [대시보드](chapter1/b300-c2dc-bcf4-b4dc.md)
-  * 설정
+  * [설정](builder/c124-c815.md)
 * [Chat](chat-c0c1-b2f4-c6d0-c6a9-cc44-d305-d074-b77c-c774-c5b8-d2b8.md)
   * [\(상담원\) 시작하기](chat-c0c1-b2f4-c6d0-c6a9-cc44-d305-d074-b77c-c774-c5b8-d2b8/d300-c73c-b85c-d569-b958.md)
   * [\(상담원\) 상담하기](chat-c0c1-b2f4-c6d0-c6a9-cc44-d305-d074-b77c-c774-c5b8-d2b8/c0c1-b2f4-d558-ae30.md)
