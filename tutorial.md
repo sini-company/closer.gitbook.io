@@ -16,7 +16,7 @@ PRO Plan Trial기간을 제공하기 때문에 마음껏 사용하실 수 있습
 
 새로만들기 버튼을 누른 뒤 템플릿 봇 만들기 항목을 선택합니다![](/assets/builder_create_template_bot.png)
 
-기본 상담 템플릿을 선택하고 기본정보를 입력하면 봇이 완성 됩니다.![](/assets/builder_template_basic_cs.png)![](/assets/builder_creating_tutorial_Bot.png)
+기본 상담 템플릿을 선택하고 간단한 정보를 입력하면 봇이 완성 됩니다.![](/assets/builder_template_basic_cs.png)![](/assets/builder_creating_tutorial_Bot.png)
 
 ---
 
@@ -34,7 +34,7 @@ Builder의 플로우 편집 메뉴를 클릭하면 템플릿으로 생성한 챗
 
 좌측의 메신저 연동 메뉴를 선택한 뒤, 웹챗 항목의 정보 등록 버튼을 누릅니다.![](/assets/builder_tutorial_integration.png)
 
-아래쪽의 주소를 복사한 뒤 다음을 눌러 웹챗 연동을 활성화 합니다. ![](/assets/builder_tutorial_webchat_integration.png)
+아래의 주소를 복사한 뒤 다음을 눌러 웹챗 연동을 활성화 합니다. ![](/assets/builder_tutorial_webchat_integration.png)
 
 방금 복사한 주소를 브라우저에 입력해 정상 동작하는 것을 확인합니다.
 
