@@ -16,5 +16,14 @@
   * 설정
 * [Chat](chat-c0c1-b2f4-c6d0-c6a9-cc44-d305-d074-b77c-c774-c5b8-d2b8.md)
   * [팀 설정](chat-c0c1-b2f4-c6d0-c6a9-cc44-d305-d074-b77c-c774-c5b8-d2b8/d300-b9cc-b4e4-ae30.md)
+  * [채팅 프로필 설정](chat-c0c1-b2f4-c6d0-c6a9-cc44-d305-d074-b77c-c774-c5b8-d2b8/d504-b85c-d544-c124-c815.md)
+    * [답변 추천 설정](chat-c0c1-b2f4-c6d0-c6a9-cc44-d305-d074-b77c-c774-c5b8-d2b8/d504-b85c-d544-c124-c815/b2f5-bcc0-cd94-cc9c-c124-c815.md)
+    * [커스텀 패널 설정](chat-c0c1-b2f4-c6d0-c6a9-cc44-d305-d074-b77c-c774-c5b8-d2b8/d504-b85c-d544-c124-c815/cee4-c2a4-d140-d328-b110-c124-c815.md)
   * [상담하기](chat-c0c1-b2f4-c6d0-c6a9-cc44-d305-d074-b77c-c774-c5b8-d2b8/c0c1-b2f4-d558-ae30.md)
+    * [대화창](chat-c0c1-b2f4-c6d0-c6a9-cc44-d305-d074-b77c-c774-c5b8-d2b8/c0c1-b2f4-d558-ae30/b300-d654-cc3d.md)
+    * [패널](chat-c0c1-b2f4-c6d0-c6a9-cc44-d305-d074-b77c-c774-c5b8-d2b8/c0c1-b2f4-d558-ae30/d328-b110.md)
+* [결제](acb0-c81c.md)
+  * [챗봇 플랜](chat-c0c1-b2f4-c6d0-c6a9-cc44-d305-d074-b77c-c774-c5b8-d2b8/cc57-bd07-d50c-b79c.md)
+  * [상담 좌석 구매](chat-c0c1-b2f4-c6d0-c6a9-cc44-d305-d074-b77c-c774-c5b8-d2b8/c0c1-b2f4-c88c-c11d-ad6c-b9e4.md)
+  * [종량제 서비스 요금](chat-c0c1-b2f4-c6d0-c6a9-cc44-d305-d074-b77c-c774-c5b8-d2b8/c885-b7c9-c81c-c11c-be44-c2a4-c694-ae08.md)
 
