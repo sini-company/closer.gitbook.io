@@ -14,7 +14,7 @@
     * [노드\(Node\)](chapter1/c790-c720-b86d-ac8c-bd07-c124-acc4-d558-ae3028-flow-editor/b178-b4dc/b178-b4dc.md)
     * [엣지\(Edge\)](chapter1/c790-c720-b86d-ac8c-bd07-c124-acc4-d558-ae3028-flow-editor/b178-b4dc/c5e3-c9c028-edge.md)
     * [플로우\(Flow\)](chapter1/c790-c720-b86d-ac8c-bd07-c124-acc4-d558-ae3028-flow-editor/b178-b4dc/d50c-b85c-c6b0.md)
-    * 파라미터\(Parameter\)
+    * [파라미터\(Parameter\)](chapter1/c790-c720-b86d-ac8c-bd07-c124-acc4-d558-ae3028-flow-editor/b178-b4dc/d30c-b77c-bbf8-d13028-parameter.md)
   * [봇 불러오기](builder/bd07-bd88-b7ec-c624-ae30.md)
 * [메신저 연동하기](ba54-c2e0-c800-c5f0-b3d9-d558-ae30.md)
   * [카카오톡 자동응답API](ba54-c2e0-c800-c5f0-b3d9-d558-ae30/ce74-ce74-c624-d1a1-c790-b3d9-c751-b2f5-api.md)
