@@ -9,8 +9,8 @@
 
 * [시작하기](builder.md)
 * [새로운 봇 만들기](builder/c0c8-b85c-c6b4-bd07-b9cc-b4e4-ae30.md)
-  * [Template](builder/d15c-d50c-b9bf-be4c-b354.md)
-  * [Flow editor](builder/c790-c720-b86d-ac8c-bd07-c124-acc4-d558-ae3028-flow-editor.md)
+  * [템플릿\(Template\)](builder/d15c-d50c-b9bf-be4c-b354.md)
+  * [플로우 에디터\(Flow editor\)](builder/c790-c720-b86d-ac8c-bd07-c124-acc4-d558-ae3028-flow-editor.md)
     * [노드\(Node\)](chapter1/c790-c720-b86d-ac8c-bd07-c124-acc4-d558-ae3028-flow-editor/b178-b4dc/b178-b4dc.md)
     * [엣지\(Edge\)](chapter1/c790-c720-b86d-ac8c-bd07-c124-acc4-d558-ae3028-flow-editor/b178-b4dc/c5e3-c9c028-edge.md)
     * [플로우\(Flow\)](chapter1/c790-c720-b86d-ac8c-bd07-c124-acc4-d558-ae3028-flow-editor/b178-b4dc/d50c-b85c-c6b0.md)
