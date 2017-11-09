@@ -35,12 +35,12 @@ undefined가 입력되었습니다.
 
 이 경우 작성된 Node가 제대로 동작하지 않을 수 있기 때문에, 템플릿 엔진 사용시에는 각별한 주의가 필요합니다.
 
-템플릿 엔진은 사용자 정의 파라미터 외에도 [예약 파라미터](/chapter1/c790-c720-b86d-ac8c-bd07-c124-acc4-d558-ae3028-flow-editor/b178-b4dc/d30c-b77c-bbf8-d13028-parameter.md#reserved-parameters)를 사용할 수 있으며, 더 다양한 로직을 작성할 수 있는 [템플릿 함수](#template-functions)를 제공합니다.
+템플릿 엔진은 사용자 정의 파라미터 외에도 [예약 파라미터](/chapter1/c790-c720-b86d-ac8c-bd07-c124-acc4-d558-ae3028-flow-editor/b178-b4dc/d30c-b77c-bbf8-d13028-parameter.md#reserved-parameters)를 사용할 수 있으며, 나아가 더 다양하고 복잡한 로직을 작성할 수 있는 [템플릿 함수](#template-functions)를 제공합니다.
 
 
 ## 템플릿 함수 (Template Functions) {#template-functions}
 
-| 파라미터 명 | 설명 |
+| 함수 | 설명 |
 | :--- | :--- |
 | `DATE()` | 현재 시각 |
 | `DATE(time)` | 입력된 ISO String / UNIX Timestamp 시각 |
@@ -57,6 +57,6 @@ undefined가 입력되었습니다.
 ```
 - ##### 결과
 ```js
-10 // 11, 12, 13, 14 또는 15
+10, 11, 12, 13, 14 또는 15
 ```
 {% endraw %}
