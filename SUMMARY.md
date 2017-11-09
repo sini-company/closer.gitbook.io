@@ -16,6 +16,7 @@
   * [엣지\(Edge\)](chapter1/c790-c720-b86d-ac8c-bd07-c124-acc4-d558-ae3028-flow-editor/b178-b4dc/c5e3-c9c028-edge.md)
   * [플로우\(Flow\)](chapter1/c790-c720-b86d-ac8c-bd07-c124-acc4-d558-ae3028-flow-editor/b178-b4dc/d50c-b85c-c6b0.md)
   * [파라미터\(Parameter\)](chapter1/c790-c720-b86d-ac8c-bd07-c124-acc4-d558-ae3028-flow-editor/b178-b4dc/d30c-b77c-bbf8-d13028-parameter.md)
+  * [템플릿 문법\(Template Syntax\)](chapter1/c790-c720-b86d-ac8c-bd07-c124-acc4-d558-ae3028-flow-editor/b178-b4dc/d15c-d50c-b9bf-bb38-bc95-template-syntax.md)
 * [메신저 연동하기](ba54-c2e0-c800-c5f0-b3d9-d558-ae30.md)
 
 ## Chat
