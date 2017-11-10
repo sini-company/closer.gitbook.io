@@ -12,3 +12,5 @@
 | `platform` | 사용자가 유입된 메신저 플랫폼을 나타내는 키<br>`web`, `kakao`, `kakaobiz`, `facebook`, `line`, `navertalk`, `wechat` |
 | `userKey` | 각 메신저 플랫폼에서 설정된 사용자 식별 키 |
 | `message` | 사용자가 마지막으로 입력한 텍스트 메시지 |
+| `bot.title` | 현재 사용중인 봇의 이름 |
+| `bot.description` | 현재 사용중인 봇의 설명 |
