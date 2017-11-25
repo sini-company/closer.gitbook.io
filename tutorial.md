@@ -24,3 +24,9 @@ CLOSER를 활용해 상담봇을 만들고 상담기능을 체험해 봅니다.
 
 PRO Plan Trial기간을 제공하기 때문에 모든 기능을 제한 없이 사용하실 수 있습니다.
 
+
+
+---
+
+다음으로 : [상담 템플릿 봇\(LITE\) 만들기](/tutorial/c0c1-b2f4-d15c-d50c-b9bf-bd0728-lite-b9cc-b4e4-ae30.md)
+

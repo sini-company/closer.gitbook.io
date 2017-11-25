@@ -14,17 +14,9 @@
 
 ---
 
-* [회원가입](/tutorial.md)
+튜토리얼을 모두 마치셨습니다.
 
-* [상담 템플릿 봇\(LITE\) 만들기](/tutorial/c0c1-b2f4-d15c-d50c-b9bf-bd0728-lite-b9cc-b4e4-ae30.md)
-
-* [편집하기](/tutorial/d3b8-c9d1-d558-ae30.md)
-
-* [카카오 상담톡 연동](/tutorial/ce74-ce74-c624-c0c1-b2f4-d1a1-c5f0-b3d9.md)
-
-* [웹챗 연동](/tutorial/c6f9-cc57-c5f0-b3d9.md)
-
-* [CLOSER Chat 연동하고 상담하기](/tutorial/closer-chat-c5f0-b3d9.md)
+더 자세한 사항은 다음 도큐먼트를 확인하시고, 사용중 궁금하신 사항은 언제든 support@closer.ai 로 문의해 주세요.
 
 
 
