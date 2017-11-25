@@ -1,3 +1,9 @@
+## 튜토리얼 \(6/6\)
+
+CLOSER를 활용해 상담봇을 만들고 상담기능을 체험해 봅니다.
+
+---
+
 ## CLOSER Chat 연동
 
 좌측의 CLOSER Chat 설정 메뉴를 선택하고 활성화 시킵니다.![](/assets/builder_chat_integration.png)
@@ -17,6 +23,4 @@
 튜토리얼을 모두 마치셨습니다.
 
 더 자세한 사항은 다음 도큐먼트를 확인하시고, 사용중 궁금하신 사항은 언제든 support@closer.ai 로 문의해 주세요.
-
-
 
