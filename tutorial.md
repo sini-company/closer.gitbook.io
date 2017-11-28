@@ -10,11 +10,11 @@ CLOSER를 활용해 상담봇을 만들고 상담기능을 체험해 봅니다.
 
 * [편집하기](/tutorial/d3b8-c9d1-d558-ae30.md)
 
-* [카카오 상담톡 연동](/tutorial/ce74-ce74-c624-c0c1-b2f4-d1a1-c5f0-b3d9.md)
-
 * [웹챗 연동](/tutorial/c6f9-cc57-c5f0-b3d9.md)
 
 * [CLOSER Chat 연동하고 상담하기](/tutorial/closer-chat-c5f0-b3d9.md)
+
+* [+@ 카카오 상담톡 연동하기](/tutorial/ce74-ce74-c624-c0c1-b2f4-d1a1-c5f0-b3d9.md)
 
 ---
 
