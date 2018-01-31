@@ -35,7 +35,9 @@
 * [\(상담원\) 상담하기](chat-c0c1-b2f4-c6d0-c6a9-cc44-d305-d074-b77c-c774-c5b8-d2b8/c0c1-b2f4-d558-ae30.md)
   * [기본 화면](chat-c0c1-b2f4-c6d0-c6a9-cc44-d305-d074-b77c-c774-c5b8-d2b8/c0c1-b2f4-d558-ae30/ae30-bcf8-d654-ba74.md)
   * [대화창](chat-c0c1-b2f4-c6d0-c6a9-cc44-d305-d074-b77c-c774-c5b8-d2b8/c0c1-b2f4-d558-ae30/b300-d654-cc3d.md)
+  * [고객 정보 탭](chat-c0c1-b2f4-c6d0-c6a9-cc44-d305-d074-b77c-c774-c5b8-d2b8/c0c1-b2f4-d558-ae30/ace0-ac1d-c815-bcf4-d0ed.md)
   * [메시지 전송](chat-c0c1-b2f4-c6d0-c6a9-cc44-d305-d074-b77c-c774-c5b8-d2b8/c0c1-b2f4-d558-ae30/ba54-c2dc-c9c0-c804-c1a1.md)
+  * [플로우](chat-c0c1-b2f4-c6d0-c6a9-cc44-d305-d074-b77c-c774-c5b8-d2b8/c0c1-b2f4-d558-ae30/d50c-b85c-c6b0.md)
   * [패널](chat-c0c1-b2f4-c6d0-c6a9-cc44-d305-d074-b77c-c774-c5b8-d2b8/c0c1-b2f4-d558-ae30/d328-b110.md)
 
 ## Platform
