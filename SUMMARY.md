@@ -47,3 +47,7 @@
   * [Chat 상담 좌석 구매](chat-c0c1-b2f4-c6d0-c6a9-cc44-d305-d074-b77c-c774-c5b8-d2b8/c0c1-b2f4-c88c-c11d-ad6c-b9e4.md)
   * [종량제 서비스 요금](chat-c0c1-b2f4-c6d0-c6a9-cc44-d305-d074-b77c-c774-c5b8-d2b8/c885-b7c9-c81c-c11c-be44-c2a4-c694-ae08.md)
 
+## Developer
+
+* [CLOSER Webhook 연동 가이드](developer/closer-webhook-c5f0-b3d9-ac00-c774-b4dc.md)
+
