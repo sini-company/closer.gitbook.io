@@ -14,5 +14,5 @@ CLOSER는 쉽고 빠르게 챗봇을 만들어 고객응대를 자동화하고, 
 
 챗봇과 고객의 대화를 모니터링 하다가 언제든 참여해 답변의 완성도를 높일 수 있습니다.
 
-![](/assets/chat_overview.png)
+![](/assets/chat_main_v2.png)
 
