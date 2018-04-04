@@ -42,6 +42,7 @@
 
 ## Platform
 
+* [언어 설정](c5b8-c5b4-c124-c815.md)
 * [결제](acb0-c81c.md)
   * [Builder 플랜](chat-c0c1-b2f4-c6d0-c6a9-cc44-d305-d074-b77c-c774-c5b8-d2b8/cc57-bd07-d50c-b79c.md)
   * [Chat 상담 좌석 구매](chat-c0c1-b2f4-c6d0-c6a9-cc44-d305-d074-b77c-c774-c5b8-d2b8/c0c1-b2f4-c88c-c11d-ad6c-b9e4.md)
