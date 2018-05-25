@@ -51,4 +51,5 @@
 ## Developer
 
 * [CLOSER Webhook 연동 가이드](developer/closer-webhook-c5f0-b3d9-ac00-c774-b4dc.md)
+* [CLOSER Webchat SDK 연동 가이드](developer/closer-webchat-sdk-c5f0-b3d9-ac00-c774-b4dc.md)
 
