@@ -1,3 +1,7 @@
+## 개요 {#CLOSERWebChatSDK연동가이드v0.1-WebChatSDK버전}
+
+WebChat SDK를 활용하여, CLOSER의 챗봇과 연결되는 WebChat의 UI를 개발할 수 있습니다.
+
 ## WebChat SDK 버전 {#CLOSERWebChatSDK연동가이드v0.1-WebChatSDK버전}
 
 * 0.22.8
@@ -33,13 +37,13 @@ var onOpen = function() {};
 var onClose = function() {};
 var onError = function(error) {};
 var onMessage = function(data) {};
- 
+
 // Add Listener
 wsClient.addListener('message', onMessage);
 wsClient.addListener('open', onOpen);
 wsClient.addListener('error', onError);
 wsClient.addListener('close', onClose);
- 
+
 // Remove Listener
 wsClient.removeListener('message', onMessage);
 wsClient.removeListener('open', onOpen);
@@ -55,7 +59,7 @@ wsClient.sendMessage({
   type: 'text',
   text: 'message'
 });
- 
+
 // Media type message
 wsClient.sendMessage({
   type: 'media',
@@ -76,7 +80,7 @@ wsClient.send({
     timestamp: new Date()
   }
 });
- 
+
 // Media type message
 wsClient.send({
   message: {
