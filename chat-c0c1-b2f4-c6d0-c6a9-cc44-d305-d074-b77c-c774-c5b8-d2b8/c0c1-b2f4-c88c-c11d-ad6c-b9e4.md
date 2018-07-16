@@ -14,11 +14,7 @@
 
 ## 가격체계
 
-계정 당 1만원\(VAT별도\)/월 입니다.
-
-아래는 결제 예시 화면 입니다.
-
-![](/assets/agent_seats_purchase.png)
+TBD
 
 ---
 
