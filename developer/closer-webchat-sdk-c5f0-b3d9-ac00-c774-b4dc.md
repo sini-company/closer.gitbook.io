@@ -1,3 +1,5 @@
+# CLOSER Webchat SDK 연동 가이드
+
 ## 개요 {#CLOSERWebChatSDK연동가이드v0.1-WebChatSDK버전}
 
 WebChat SDK를 활용하여, CLOSER의 챗봇과 연결되는 WebChat의 UI를 개발할 수 있습니다.
@@ -10,7 +12,7 @@ WebChat SDK를 활용하여, CLOSER의 챗봇과 연결되는 WebChat의 UI를 �
 
 * apiKey : 필수, CLOSER에서 제공하는 API 접근 키
 
-```
+```text
 var webchatSDK = new CloserSDK.WebChat({
   apiKey: '{closer-api-token}'
 });
@@ -22,7 +24,7 @@ var webchatSDK = new CloserSDK.WebChat({
 * botId : 필수, CLOSER에서 생성한 Bot의 ID
 * params : 선택, 초기 파라미터 주입
 
-```
+```text
 var wsClient = webchatSDK.open({
   userKey: '{closer-enduser-key}',
   botId: '{botId}',
@@ -32,7 +34,7 @@ var wsClient = webchatSDK.open({
 
 ## Open / Close / Message Listener 추가 / 제거 {#CLOSERWebChatSDK연동가이드v0.1-Open/Close/MessageListener추가/제거}
 
-```
+```text
 var onOpen = function() {};
 var onClose = function() {};
 var onError = function(error) {};
@@ -53,7 +55,7 @@ wsClient.removeListener('close', onClose);
 
 ## 메시지 전송 \(high-level\) {#CLOSERWebChatSDK연동가이드v0.1-메시지전송(high-level)}
 
-```
+```text
 // Text type message
 wsClient.sendMessage({
   type: 'text',
@@ -69,7 +71,7 @@ wsClient.sendMessage({
 
 ## 메시지 전송 \(low-level\) {#CLOSERWebChatSDK연동가이드v0.1-메시지전송(low-level)}
 
-```
+```text
 // Text type message
 wsClient.send({
   message: {
@@ -236,6 +238,4 @@ CLOSER에서 대화를 진행하는데 필요한 정보입니다. SDK의 WebChat
 | :--- | :--- | :--- | :--- |
 | displayName | STRING | N | 상담원의 DisplayName |
 | picture | URL | N | 상담원의 프로필 이미지 URL |
-
-
 
