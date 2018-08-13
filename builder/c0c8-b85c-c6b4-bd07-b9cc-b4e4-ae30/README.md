@@ -2,9 +2,11 @@
 
 새로 만들기 버튼을 눌러 봇을 만들 수 있습니다. 세가지 방법을 제공합니다
 
-![](../../.gitbook/assets/create_new_bot.png)
+![](../../.gitbook/assets/builder_%20%281%29.png)
 
 ## 템플릿 봇 만들기
+
+![](../../.gitbook/assets/closer_builder_-_.png)
 
 기본적으로 제공하는 템플릿에 간단한 정보를 채워 넣으면 봇이 완성됩니다.
 
@@ -12,9 +14,13 @@
 
 ## 비어있는 봇 생성
 
+![](../../.gitbook/assets/builder_%20%284%29.png)
+
 비어있는 봇을 생성한 뒤 플로우 에디터를 이용해 원하는대로 설계할 때 사용합니다.
 
 ## 봇 불러오기
 
 기존에 내보내기 한 봇을 불러올 때 사용합니다.
+
+![](../../.gitbook/assets/builder_.png)
 

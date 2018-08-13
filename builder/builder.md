@@ -6,5 +6,5 @@ Builder에 처음 로그인 한 화면입니다.
 
 하단의 봇 리스트에서 원하는 봇을 선택하면 메인 화면으로 이동합니다.
 
-![](../.gitbook/assets/builder_main.png)
+![](../.gitbook/assets/closer_builder_home.png)
 

@@ -4,7 +4,7 @@
 
 왼쪽 메뉴에서 플로우 편집 버튼을 누르면 진입할 수 있습니다.
 
-![](../../.gitbook/assets/builder_overview.png)
+![](../../.gitbook/assets/builder_flow_editor.png)
 
 ## 화면 구성
 
@@ -15,13 +15,13 @@
 * 우측 상단 대화 테스트 버튼을 누르면 현재 설계한 봇을 바로 테스트해 볼 수 있습니다.
 * 가장 우측의 드롭다운 메뉴\(![](../../.gitbook/assets/dropdown.png)\)에서는 플로우와 봇에 대한 여러 기능들을 제공합니다.
 
-![](../../.gitbook/assets/builder_flow_editor_toolbar.png)
+![](../../.gitbook/assets/2018-08-13-7.59.48.png)
 
 ### 플로우에디터 화면 좌측 노드 팔레트
 
 * 사용할 수 있는 기능별 노드목록을 보여줍니다. 원하는 노드를 캔버스에 끌어다 놓아 대화를 설계할 수 있습니다.
 
-![](../../.gitbook/assets/builder_flow_editor_nodes.png)
+![](../../.gitbook/assets/flow_node.png)
 
 ### 플로우에디터 화면 우측 캔버스
 
@@ -29,5 +29,5 @@
 * 빈 봇을 만들거나 새로운 플로우를 생성하면 엔트리 노드만 존재합니다.
 * 봇의 대화는 Entry Flow의 Entry Node에서부터 시작합니다.
 
-![](../../.gitbook/assets/builder_flow_editor_canvas.png)
+![](../../.gitbook/assets/builder_%20%282%29.png)
 
