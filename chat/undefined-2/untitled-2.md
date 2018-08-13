@@ -47,7 +47,7 @@
 
 ### 봇 대화
 
-![](../../.gitbook/assets/openbeta_chat_%20%2813%29.png)
+![](../../.gitbook/assets/openbeta_chat_%20%2814%29.png)
 
 * 봇 대화를 '메시지 예시' 이미지 처럼 숨길 수 있습니다.
 
