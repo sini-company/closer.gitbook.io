@@ -14,7 +14,12 @@
 
 ## Builder
 
+* [Builder 개요](builder/builder-1.md)
 * [시작하기](builder/builder.md)
+* [통계 \(Dashboard\)](builder/dashboard.md)
+* [봇 에디터\(플로우 편집\)](builder/undefined.md)
+* [메신저 연동](builder/undefined-1.md)
+* [봇 설정](builder/undefined-2.md)
 * [새로운 봇 만들기](builder/c0c8-b85c-c6b4-bd07-b9cc-b4e4-ae30/README.md)
   * [템플릿 봇 만들기](builder/c0c8-b85c-c6b4-bd07-b9cc-b4e4-ae30/d15c-d50c-b9bf-be4c-b354.md)
   * [봇 불러오기](builder/c0c8-b85c-c6b4-bd07-b9cc-b4e4-ae30/bd07-bd88-b7ec-c624-ae30.md)
@@ -42,6 +47,10 @@
 
 ## Platform
 
+* [Platform 개요](platform/platform.md)
+* [프로필 설정](platform/undefined.md)
+* [봇 환경 설정](platform/undefined-1.md)
+* [플랜 관리\(결제\)](platform/undefined-2.md)
 * [언어 설정](platform/c5b8-c5b4-c124-c815.md)
 * [결제](platform/acb0-c81c/README.md)
   * [Builder 플랜](platform/acb0-c81c/cc57-bd07-d50c-b79c.md)
