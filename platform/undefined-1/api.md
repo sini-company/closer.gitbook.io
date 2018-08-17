@@ -4,3 +4,5 @@ CLOSER에서는 자체 자연어 처리 엔진을 지원하지 않지만, IBM Wa
 
 여기서 IBM Watson과 DialogFlow의 연동 정보를 등록하고, Builder의 자연어 처리 노드에서 연동하여 사용할 수 있습니다.
 
+![](../../.gitbook/assets/platform_-api.png)
+
