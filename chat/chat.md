@@ -1,6 +1,6 @@
 # Chat 개요
 
-**CLOSER Chat 바로가기**
+\*\*\*\*[**CLOSER Chat 바로가기**](https://chat.closer.ai)\*\*\*\*
 
 CLOSER Bot Builder에서 만든 챗봇에서 메신저를 연동하고 CLOSER Chat을 활성화하면 챗봇을 활용하여 상담을 진행하실 수 있습니다.  
 CLOSER Bot Builder에서 만든 챗봇의 소유자가 CLOSER Chat에서 **‘**[**팀**](chat.md#undefined)**’**을 생성하여 **‘**[**마스터**](chat.md#undefined-1)**’**가 되고, 소유한 챗봇들에서 함께 상담을 진행할 수 있는 **‘**[**상담원**](chat.md#undefined-2)**’**을 초대할 수 있습니다.
