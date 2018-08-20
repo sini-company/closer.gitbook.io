@@ -19,7 +19,7 @@ CLOSER Bot Builder에서 만든 챗봇을 활성화하면 CLOSER Chat에 생성�
 
 ### 팀 만들기
 
-![&#xD300; &#xB9CC;&#xB4E4;&#xAE30; &#xD654;&#xBA74; &#xC608;&#xC2DC;](../.gitbook/assets/undefined%20%2816%29.png)
+![&#xD300; &#xB9CC;&#xB4E4;&#xAE30; &#xD654;&#xBA74; &#xC608;&#xC2DC;](../.gitbook/assets/undefined%20%2817%29.png)
 
 * 팀은 한명의 사용자가 한개만 만들 수 있습니다.
 * 소속된 팀이 없다면, CLOSER Chat에 처음 접속하여 팀을 만들 수 있습니다.

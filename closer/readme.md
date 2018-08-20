@@ -18,7 +18,7 @@ CLOSER는 쉽고 빠르게 챗봇을 만들어 고객응대를 자동화하고, 
 
 CLOSER를 사용하는데 필요한 공통 설정을 할 수 있습니다.
 
-![Platform &#xD654;&#xBA74; &#xC608;&#xC2DC;](../.gitbook/assets/undefined%20%2820%29.png)
+![Platform &#xD654;&#xBA74; &#xC608;&#xC2DC;](../.gitbook/assets/undefined%20%2822%29.png)
 
 ## 고객지원
 
