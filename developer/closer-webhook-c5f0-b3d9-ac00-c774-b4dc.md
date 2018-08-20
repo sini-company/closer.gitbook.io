@@ -1,5 +1,9 @@
 # CLOSER Webhook 연동 가이드
 
+{% hint style="info" %}
+**Webhook 연동이 필요하시다면, support@closer.ai로 문의해주세요.**
+{% endhint %}
+
 CLOSER에서는 Webhook으로 봇/사용자/상담원의 메시지와 이벤트를 전달합니다.
 
 본 문서에서는 CLOSER에서 전송하는 Webhook을 연동할 수 있도록, Webhook의 포맷과 설정 방법등을 명세합니다.
@@ -111,6 +115,4 @@ CLOSER에서는 Webhook으로 봇/사용자/상담원의 메시지와 이벤트�
 ## Webhook 설정
 
 * CLOSER Bot &gt;  봇 정보 설정 &gt;  Webhook 설정 에서 Webhook을 받을 주소를 설정할 수 있습니다.
-
-![](https://closer.atlassian.net/wiki/download/attachments/39452673/스크린샷%202018-02-05%20오후%2012.46.29.png?version=1&modificationDate=1517803922097&cacheVersion=1&api=v2)
 

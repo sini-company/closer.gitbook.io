@@ -1,5 +1,9 @@
 # CLOSER Webchat SDK 연동 가이드
 
+{% hint style="info" %}
+**Webchat SDK가 필요하시다면, support@closer.ai로 문의해주세요.**
+{% endhint %}
+
 ## 개요 {#CLOSERWebChatSDK연동가이드v0.1-WebChatSDK버전}
 
 WebChat SDK를 활용하여, CLOSER의 챗봇과 연결되는 WebChat의 UI를 개발할 수 있습니다.

@@ -1,5 +1,9 @@
 # CLOSER Bot Builder Open API 소개
 
+{% hint style="info" %}
+**Bot Builder Open API가 필요하시다면, support@closer.ai로 문의해주세요.**
+{% endhint %}
+
 * CLOSER Bot Builder의 Open API입니다.
 * CLOSER Webhook과 Bot Builder Open API를 이용하여, 고객 상담용 채팅센터를 개발할 수 있습니다.
 

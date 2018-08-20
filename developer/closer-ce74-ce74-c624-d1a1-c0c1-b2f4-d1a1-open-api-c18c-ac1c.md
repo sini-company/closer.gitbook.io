@@ -1,5 +1,9 @@
 # CLOSER 카카오톡 상담톡 Open API 소개
 
+{% hint style="info" %}
+**카카오 상담톡을 CLOSER를 통해 사용하시려면, support@closer.ai로 문의해주세요.**
+{% endhint %}
+
 * 카카오비즈메시지 Open API는 카카오톡 상담톡 공식 딜러사인 씨엔티테크와 제휴하여 제공합니다.
 * 카카오 상담톡과 알림톡을 연동할 수 있습니다.
 
