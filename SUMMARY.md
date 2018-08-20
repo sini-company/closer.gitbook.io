@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Introduction](README.md)
+* [CLOSER 가이드](README.md)
 
 ## CLOSER
 
