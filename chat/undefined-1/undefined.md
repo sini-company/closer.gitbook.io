@@ -47,11 +47,11 @@
 Custom panel은 sandboxed iframe 으로 구현되어 있으며,   
 보안상의 이유로 HTTP Cookie나 CORS가 설정된 https 리소스 등은 사용할 수 없습니다.
 
-CLOSER iframe sandbox attribute들은 다음 네 가지 옵션만 활성화되어 있습니다.
+iframe sandbox attribute에는 다음 네 가지 옵션만 활성화되어 있습니다.
 
-* **allow-scripts**: javascript 사용 활성화
-* **allow-popups**: window.open \(target=\_blank\) 활성화
-* **allow-modals**: window.alert, window.confirm, window.print, window.prompt 활성화
+* **allow-scripts**: javascript 활성화
+* **allow-popups**: window.open \(target=\_blank\) 활성화 
+* **allow-modals**: window.alert, window.confirm, window.prompt, window.print 활성화
 * **allow-forms**: form submit 활성화
 
 이에 대한 자세한 내용은 다음 문서를 참고해 주세요.
