@@ -41,8 +41,24 @@
 
 ![&#xCEE4;&#xC2A4;&#xD140; &#xC6F9; &#xD328;&#xB110; &#xC124;&#xC815; &#xD654;&#xBA74; &#xC608;&#xC2DC;](../../.gitbook/assets/undefined%20%281%29.png)
 
-상담에 필요한 웹사이트를 설정할 수 있습니다.  
-기존 고객관리 페이지를 설정하면, 상담원이 상담 화면을 벗어나지 않고도 고객정보를 확인하면서 상담을 진행하실 수 있습니다.
+상담에 필요한 도구가 추가적으로 필요한 경우, 고객님께서 작성하신 웹 앱을 커스텀 패널로 설정할 수 있습니다. 예를 들어, 기존 고객관리 페이지를 커스텀 패널로 설정하시면 상담원이 상담 화면을 벗어나지 않고도 고객정보를 확인할 수 있게 됩니다.
+
+{% hint style="info" %}
+Custom panel은 sandboxed iframe 으로 구현되어 있으며,   
+보안상의 이유로 HTTP Cookie나 CORS가 설정된 https 리소스 등은 사용할 수 없습니다.
+
+CLOSER iframe sandbox attribute들은 다음 네 가지 옵션만 활성화되어 있습니다.
+
+* **allow-scripts**: javascript 사용 활성화
+* **allow-popups**: window.open \(target=\_blank\) 활성화
+* **allow-modals**: window.alert, window.confirm, window.print, window.prompt 활성화
+* **allow-forms**: form submit 활성화
+
+이에 대한 자세한 내용은 다음 문서를 참고해 주세요.
+
+* [https://html.spec.whatwg.org/multipage/origin.html\#sandboxing-flag-set](https://html.spec.whatwg.org/multipage/origin.html#sandboxing-flag-set)
+* [https://developer.mozilla.org/ko/docs/Web/HTML/Element/iframe](https://developer.mozilla.org/ko/docs/Web/HTML/Element/iframe) 
+{% endhint %}
 
 ## 상담 운영 시간
 
