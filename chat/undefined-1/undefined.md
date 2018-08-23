@@ -10,7 +10,7 @@
 프로필 별로 각각 설정할 수 있습니다
 {% endhint %}
 
-![&#xB2F5;&#xBCC0; &#xCD94;&#xCC9C; &#xC124;&#xC815; &#xD654;&#xBA74; &#xC608;&#xC2DC;](../../.gitbook/assets/undefined%20%2816%29.png)
+![&#xB2F5;&#xBCC0; &#xCD94;&#xCC9C; &#xC124;&#xC815; &#xD654;&#xBA74; &#xC608;&#xC2DC;](../../.gitbook/assets/undefined%20%2817%29.png)
 
 상담원들의 답변의 정확도를 높이기 위해 고객이 자주 묻는 질문과 답변들을 Microsoft의 QnA Maker나 IBM의 Watson에서 설정하여 연동할 수 있습니다.  
 답변 추천을 설정하면 채팅창에서 고객이 질의한 내용을 선택하면 그에 알맞은 답변을 상담원이 확인하여 활용할 수 있습니다.
@@ -114,7 +114,7 @@ iframe sandbox attribute에는 다음 네 가지 옵션만 활성화되어 있�
 
 상담원 연결 요청 시 담당 상담원을 자동으로 배정하는 규칙을 설정합니다.
 
-![&#xC0C1;&#xB2F4; &#xC790;&#xB3D9; &#xBC30;&#xC815; &#xC124;&#xC815; \(&#xD504;&#xB85C;&#xD544;\) &#xD654;&#xBA74; &#xC608;&#xC2DC;](../../.gitbook/assets/undefined%20%2815%29.png)
+![&#xC0C1;&#xB2F4; &#xC790;&#xB3D9; &#xBC30;&#xC815; &#xC124;&#xC815; \(&#xD504;&#xB85C;&#xD544;\) &#xD654;&#xBA74; &#xC608;&#xC2DC;](../../.gitbook/assets/undefined%20%2816%29.png)
 
 ### 자동 배정 / 수동 배정
 
@@ -156,7 +156,7 @@ iframe sandbox attribute에는 다음 네 가지 옵션만 활성화되어 있�
 여러 팀에 속해있다면 각 팀별로 설정을 다르게 할 수 있습니다.
 {% endhint %}
 
-![&#xC54C;&#xB9BC; &#xC124;&#xC815; &#xD654;&#xBA74; &#xC608;&#xC2DC;](../../.gitbook/assets/undefined%20%2821%29.png)
+![&#xC54C;&#xB9BC; &#xC124;&#xC815; &#xD654;&#xBA74; &#xC608;&#xC2DC;](../../.gitbook/assets/undefined%20%2822%29.png)
 
 고객이 상담원을 호출한 경우, 상담이 나에게 배정된 경우, 고객이 메시지를 보낸 경우에 브라우저 알림\(소리\)를 전송합니다. 브라우저에서 알림 차단/허용 선택창이 뜨는경우 ‘허용'을 선택하셔야 알림을 받을 수 있습니다.  
 브라우저에서 알림을 받도록 허용한 경우에 알림을 어떤 상황에서 받을 지 설정할 수 있습니다.
