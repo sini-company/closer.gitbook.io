@@ -8,11 +8,11 @@ CLOSER로 챗봇을 만드셨다면 채팅 상담을 서비스 해보세요.
 
 {% page-ref page="step-2..md" %}
 
-{% page-ref page="step-2.-chat.md" %}
+{% page-ref page="step-3.-1.md" %}
 
-{% page-ref page="step-3..md" %}
-
-{% page-ref page="step-4..md" %}
+{% page-ref page="step-4.-1.md" %}
 
 {% page-ref page="step-5..md" %}
+
+{% page-ref page="step-6..md" %}
 

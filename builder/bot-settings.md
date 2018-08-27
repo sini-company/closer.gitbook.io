@@ -10,5 +10,5 @@
 ## Webhook 관리
 
 * CLOSER로 구성한 챗봇이 동작할 때 발생하는 이벤트를 Webhook을 통해 전달받을 수 있습니다.
-* \*\*\*\*[**Webhook 연동 가이드**](../developer/closer-webhook-c5f0-b3d9-ac00-c774-b4dc.md)를 참고해주세요.
+* \*\*\*\*[**Webhook 연동 가이드**](../developer/closer-webhook.md)를 참고해주세요.
 

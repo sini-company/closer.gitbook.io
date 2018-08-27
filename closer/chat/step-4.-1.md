@@ -4,7 +4,7 @@
 
 ## 메시지 보내기
 
-\*\*\*\*[**메시지 보내기**](../../chat/undefined-2/untitled-2.md#undefined-4)를 참고해주세요.
+\*\*\*\*[**메시지 보내기**](../../chat/conversations/fields.md#undefined-4)를 참고해주세요.
 
 ## 대화 모니터링
 
@@ -13,5 +13,5 @@
 
 ## 상담 완료하기
 
-\*\*\*\*[**상담 완료**](../../chat/undefined-2/untitled-2.md#undefined-8)를 참고해주세요.
+\*\*\*\*[**상담 완료**](../../chat/conversations/fields.md#undefined-8)를 참고해주세요.
 

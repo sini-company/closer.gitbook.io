@@ -3,7 +3,7 @@
 \*\*\*\*[**CLOSER Chat 바로가기**](https://chat.closer.ai)\*\*\*\*
 
 CLOSER Bot Builder에서 만든 챗봇에서 메신저를 연동하고 CLOSER Chat을 활성화하면 챗봇을 활용하여 상담을 진행하실 수 있습니다.  
-CLOSER Bot Builder에서 만든 챗봇의 소유자가 CLOSER Chat에서 **‘**[**팀**](chat.md#undefined)**’**을 생성하여 **‘**[**마스터**](chat.md#undefined-1)**’**가 되고, 소유한 챗봇들에서 함께 상담을 진행할 수 있는 **‘**[**상담원**](chat.md#undefined-2)**’**을 초대할 수 있습니다.
+CLOSER Bot Builder에서 만든 챗봇의 소유자가 CLOSER Chat에서 **‘**[**팀**](overview.md#undefined)**’**을 생성하여 **‘**[**마스터**](overview.md#undefined-1)**’**가 되고, 소유한 챗봇들에서 함께 상담을 진행할 수 있는 **‘**[**상담원**](overview.md#undefined-2)**’**을 초대할 수 있습니다.
 
 ![](../.gitbook/assets/openbeta_chat_-_.png)
 
@@ -27,24 +27,24 @@ CLOSER Bot Builder에서 만든 챗봇을 활성화하면 CLOSER Chat에 생성�
 
 ### 통계 / 팀 / 상담 설정
 
-* \*\*\*\*[**통계 \(Dashboard\)**](undefined.md) **:** [**개요**](undefined.md#undefined) **/** [**상담 통계**](undefined.md#undefined-1)\*\*\*\*
-* \*\*\*\*[**상담 설정**](undefined-1/undefined.md) **:** [**답변 추천**](undefined-1/undefined.md#undefined-1) **/** [**커스텀 웹 패널**](undefined-1/undefined.md#undefined-2) **/** [**상담 운영시간**](undefined-1/undefined.md#undefined-3) **/** [**상담 자동 배정**](undefined-1/undefined.md#undefined-4) **/** [**알림**](undefined-1/undefined.md#undefined-5)\*\*\*\*
-* \*\*\*\*[**팀 설정**](undefined-1/undefined-1.md) **:** [**팀 설정**](undefined-1/undefined-1.md#undefined) **/** [**팀원 관리**](undefined-1/undefined-1.md#undefined-2) ****
+* \*\*\*\*[**통계 \(Dashboard\)**](dashboard.md) **:** [**개요**](dashboard.md#undefined) **/** [**상담 통계**](dashboard.md#undefined-1)\*\*\*\*
+* \*\*\*\*[**상담 설정**](settings/conversations.md) **:** [**답변 추천**](settings/conversations.md#undefined-1) **/** [**커스텀 웹 패널**](settings/conversations.md#undefined-2) **/** [**상담 운영시간**](settings/conversations.md#undefined-3) **/** [**상담 자동 배정**](settings/conversations.md#undefined-4) **/** [**알림**](settings/conversations.md#undefined-5)\*\*\*\*
+* \*\*\*\*[**팀 설정**](settings/teams.md) **:** [**팀 설정**](settings/teams.md#undefined) **/** [**팀원 관리**](settings/teams.md#undefined-2) ****
 
 ## 마스터
 
 팀을 생성하여 소유하고 있는 사용자를 CLOSER Chat에서는 ‘마스터'라고 부릅니다.  
 마스터는 다음과 같이 상담이나 팀에 대해 설정할 수 있습니다.
 
-* \*\*\*\*[**상담 설정**](undefined-1/undefined.md) **:** [**답변 추천**](undefined-1/undefined.md#undefined-1) **/** [**커스텀 웹 패널**](undefined-1/undefined.md#undefined-2) **/** [**상담 운영시간**](undefined-1/undefined.md#undefined-3) **/** [**상담 자동 배정**](undefined-1/undefined.md#undefined-4) **/** [**알림**](undefined-1/undefined.md#undefined-5)\*\*\*\*
-* \*\*\*\*[**팀 설정**](undefined-1/undefined-1.md) **:** [**팀 설정**](undefined-1/undefined-1.md#undefined) **/** [**팀원 관리**](undefined-1/undefined-1.md#undefined-2) ****
+* \*\*\*\*[**상담 설정**](settings/conversations.md) **:** [**답변 추천**](settings/conversations.md#undefined-1) **/** [**커스텀 웹 패널**](settings/conversations.md#undefined-2) **/** [**상담 운영시간**](settings/conversations.md#undefined-3) **/** [**상담 자동 배정**](settings/conversations.md#undefined-4) **/** [**알림**](settings/conversations.md#undefined-5)\*\*\*\*
+* \*\*\*\*[**팀 설정**](settings/teams.md) **:** [**팀 설정**](settings/teams.md#undefined) **/** [**팀원 관리**](settings/teams.md#undefined-2) ****
 
 ## 팀원\(상담원\)
 
 팀에 속하여 상담을 진행할 수 있는 사용자입니다. 팀원이 속한 팀의 마스터가 될 수는 없지만 다른 팀의 마스터는 될 수 있습니다. 팀원은 설정에서 다음 항목을 확인하고 설정할  있습니다
 
-* [**통계 \(Dashboard\)**](undefined.md) **:** [**개요**](undefined.md#undefined) **/** [**상담 통계**](undefined.md#undefined-1)\*\*\*\*
-* \*\*\*\*[**상담 설정**](undefined-1/undefined.md) **:** [**알림**](undefined-1/undefined.md#undefined-5)\*\*\*\*
+* [**통계 \(Dashboard\)**](dashboard.md) **:** [**개요**](dashboard.md#undefined) **/** [**상담 통계**](dashboard.md#undefined-1)\*\*\*\*
+* \*\*\*\*[**상담 설정**](settings/conversations.md) **:** [**알림**](settings/conversations.md#undefined-5)\*\*\*\*
 
 
 

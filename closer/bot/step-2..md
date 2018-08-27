@@ -55,20 +55,20 @@
 챗봇의 선택지에서 뒤로가기를 설정할 수 있습니다.  
 이전 단계로 이동하는 기능과 처음으로 이동하는 기능은 사용자들이 챗봇을 더욱 편리하게 탐색할 수 있도록 도와줍니다.
 
-[**뒤로가기 스택노드**](../../builder/c790-c720-b86d-ac8c-bd07-c124-acc4-d558-ae3028-flow-editor/b178-b4dc.md#undefined-8)를 참고해주세요.
+[**뒤로가기 스택노드**](../../builder/flow-editor/node.md#undefined-8)를 참고해주세요.
 
 ### 자연어 처리 노드
 
 사용자로부터 자연어를 입력받아서 답변을 주는 챗봇을 고려하신다면, CLOSER에서 자연어 처리를 어떻게 제공하는지 확인해보세요.
 
-\*\*\*\*[**자연어 처리 노드**](../../builder/c790-c720-b86d-ac8c-bd07-c124-acc4-d558-ae3028-flow-editor/b178-b4dc.md#undefined-7)를 참고해주세요.
+\*\*\*\*[**자연어 처리 노드**](../../builder/flow-editor/node.md#undefined-7)를 참고해주세요.
 
 ### 파라미터 설정 노드
 
 사용자에게는 노출되지 않지만 챗봇이 동작할 때 특정 상황에 특정 값을 저장할 수 있습니다.  
 파라미터는 템플릿과 함께 사용하여 더욱 스마트한 챗봇을 구성할 수 있습니다.
 
-\*\*\*\*[**파라미터 설정 노드**](../../builder/c790-c720-b86d-ac8c-bd07-c124-acc4-d558-ae3028-flow-editor/b178-b4dc.md#undefined-4)를 참고하세요.  
-[**파라미터**](../../builder/c790-c720-b86d-ac8c-bd07-c124-acc4-d558-ae3028-flow-editor/d30c-b77c-bbf8-d13028-parameter.md)를 참고하세요.  
-[**템플릿 문법**](../../builder/c790-c720-b86d-ac8c-bd07-c124-acc4-d558-ae3028-flow-editor/d15c-d50c-b9bf-bb38-bc95-template-syntax.md)을 참고하세요.
+\*\*\*\*[**파라미터 설정 노드**](../../builder/flow-editor/node.md#undefined-4)를 참고하세요.  
+[**파라미터**](../../builder/flow-editor/parameter.md)를 참고하세요.  
+[**템플릿 문법**](../../builder/flow-editor/template-syntax.md)을 참고하세요.
 

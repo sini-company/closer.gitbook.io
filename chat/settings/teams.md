@@ -3,7 +3,7 @@
 ## **팀 설정**
 
 {% hint style="danger" %}
-\*\*\*\*[**마스터**](../chat.md#undefined-1)만 설정할 수 있습니다.
+\*\*\*\*[**마스터**](../overview.md#undefined-1)만 설정할 수 있습니다.
 {% endhint %}
 
 ![](../../.gitbook/assets/undefined%20%2813%29.png)
@@ -13,7 +13,7 @@
 ## 팀원 관리
 
 {% hint style="danger" %}
-\*\*\*\*[**마스터**](../chat.md#undefined-1)만 설정할 수 있습니다.
+\*\*\*\*[**마스터**](../overview.md#undefined-1)만 설정할 수 있습니다.
 {% endhint %}
 
 {% hint style="info" %}

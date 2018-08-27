@@ -6,17 +6,17 @@ CLOSER로 챗봇을 만들어 서비스하고, 챗봇을 활용한 효율적인 
 
 이 문서를 한번 둘러보시고 CLOSER로 챗봇과 채팅상담 서비스를 구축해보세요!
 
-{% page-ref page="closer/readme.md" %}
+{% page-ref page="closer/overview.md" %}
 
-{% page-ref page="closer/closer/" %}
+{% page-ref page="closer/bot/" %}
 
-{% page-ref page="closer/closer-1/" %}
+{% page-ref page="closer/chat/" %}
 
-{% page-ref page="builder/builder-1.md" %}
+{% page-ref page="builder/overview.md" %}
 
-{% page-ref page="chat/chat.md" %}
+{% page-ref page="chat/overview.md" %}
 
-{% page-ref page="platform/platform.md" %}
+{% page-ref page="platform/overview.md" %}
 
 
 
