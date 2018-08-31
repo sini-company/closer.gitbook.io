@@ -2,16 +2,16 @@
 
 채팅 상담을 진행할 모든 설정이 완료되었다면, 채팅 상담을 진행하세요.
 
-## 메시지 보내기
+## 메시지 보내기 {#send-message}
 
-\*\*\*\*[**메시지 보내기**](../../chat/conversations/fields.md#undefined-4)를 참고해주세요.
+\*\*\*\*[**메시지 보내기**](../../chat/conversations/fields.md#message-input)를 참고해주세요.
 
-## 대화 모니터링
+## 대화 모니터링 {#conversation-monitoring}
 
 사용자가 챗봇을 사용하는 상태를 실시간으로 모니터링할 수 있습니다.  
 여러개의 채팅창을 띄워놓고 확인할 수 있고, 중간에 사람이 직접 개입하여 대화를 이어갈 수도 있습니다.
 
-## 상담 완료하기
+## 상담 완료하기 {#complete-conversation}
 
-\*\*\*\*[**상담 완료**](../../chat/conversations/fields.md#undefined-8)를 참고해주세요.
+\*\*\*\*[**상담 완료**](../../chat/conversations/fields.md#close)를 참고해주세요.
 
