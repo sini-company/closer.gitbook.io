@@ -210,8 +210,8 @@ CLOSER에서는 Webhook으로 봇/사용자/상담원의 메시지와 이벤트�
 | :--- | :--- | :--- | :--- |
 | id | UUID | Y | Event ID |
 | event | String\([**EVENT\_TYPE**](closer-webhook.md#event_type)\) | Y | Event 구분 |
-| sourceType | String | Y | Event를 발행한 s |
-| sourceId | String | Y | Event 발행한 타입의 아이디. 'bot'이라면 Bot ID |
+| sourceType | String\('bot'\) | Y | Event를 발행한 소스 |
+| sourceId | String\([**BOT**](closer-webhook.md#bot).id\) | Y | Event 발행한 타입의 아이디. 'bot'인 경 Bot ID |
 | timestamp | UNIX Timestamp with milliseconds | Y | Event 발생 시간 |
 | data | Object\([**EVENT.DATA**](closer-webhook.md#event-data)\) | Y | Event의 데이터 |
 
@@ -243,12 +243,12 @@ CLOSER에서는 Webhook으로 봇/사용자/상담원의 메시지와 이벤트�
 | 키 | 타입 | 필수 | 설명 |
 | :--- | :--- | :--- | :--- |
 | id | UUID | Y | EndUser의 ID |
-| botId | String\(BOT.id\) | Y | Bot의 ID |
+| botId | String\([**BOT**](closer-webhook.md#bot).id\) | Y | Bot의 ID |
 | platform | String\([**PLATFORM\_TYPE**](closer-webhook.md#platform_type)\) | Y | 메신저 타입 |
 | userKey | String | Y | 사용자 고유 키값 |
 | params | Object\(Dictionary\) | N | 대화에서 사용하는 파라미터 |
-| lastMessageId | UUID\(MESSAGE.id\) | N | 마지막 메시지의 ID |
-| lastConversationId | UUID\(CONVERSATION.id\) | N | 마지막 대화의 ID |
+| lastMessageId | UUID\([**MESSAGE**](closer-webhook.md#message).id\) | N | 마지막 메시지의 ID |
+| lastConversationId | UUID\([**CONVERSATION**](closer-webhook.md#conversation).id\) | N | 마지막 대화의 ID |
 | lastConversation | Object\([**CONVERSATION**](closer-webhook.md#conversation)\) | N | 마지막 대화 Object |
 | createdAt | String\(DateTime\) | Y | 생성 날짜 |
 | updatedAt | String\(DateTime\) | Y | 업데이트 날짜 |
@@ -259,8 +259,8 @@ CLOSER에서는 Webhook으로 봇/사용자/상담원의 메시지와 이벤트�
 | 키 | 타입 | 필수 | 설명 |
 | :--- | :--- | :--- | :--- |
 | id | UUID | Y | Conversation의 ID |
-| botId | String\(BOT.id\) | Y | Bot의 ID |
-| endUserId | UUID\(ENDUSER.id\) | Y | EndUser의 ID |
+| botId | String\([**BOT**](closer-webhook.md#bot).id\) | Y | Bot의 ID |
+| endUserId | UUID\([**ENDUSER**](closer-webhook.md#enduser).id\) | Y | EndUser의 ID |
 | platform | String\([**PLATFORM\_TYPE**](closer-webhook.md#platform_type)\) | Y | 메신저 타입 |
 | userKey | String | Y | 사용자의 고유 키값 |
 | params | Object\(Dictionary\) | N | 대화에서 사용하는 파라미터 |
@@ -274,8 +274,8 @@ CLOSER에서는 Webhook으로 봇/사용자/상담원의 메시지와 이벤트�
 | 키 | 타입 | 필수 | 설명 |
 | :--- | :--- | :--- | :--- |
 | id | UUID | Y | Message의 ID |
-| endUserId | UUID\(ENDUSER.id\) | Y | EndUser의 ID |
-| conversationId | UUID\(CONVERSATION.id\) | Y | Conversation의 ID |
+| endUserId | UUID\([**ENDUSER**](closer-webhook.md#enduser).id\) | Y | EndUser의 ID |
+| conversationId | UUID\([**CONVERSATION**](closer-webhook.md#conversation).id\) | Y | Conversation의 ID |
 | isUser | Boolean | Y | true인 경우 고객, false인 경우 봇이나 상담원 |
 | meta | Object\([**MESSAGE.META**](closer-webhook.md#message-meta)\) | N | 상담원이 경우 meta에 상담원 정보가 포함됨 |
 | data | Object\([**MESSAGE.DATA**](closer-webhook.md#message-data)\) | Y | 메시지의 데이터 |
