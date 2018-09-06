@@ -1,7 +1,3 @@
----
-description: 'https://app.closer.ai'
----
-
 # Platform 개요
 
 **CLOSER Platform 바로가기**
