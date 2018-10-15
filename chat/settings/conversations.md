@@ -10,7 +10,7 @@
 프로필 별로 각각 설정할 수 있습니다
 {% endhint %}
 
-![&#xB2F5;&#xBCC0; &#xCD94;&#xCC9C; &#xC124;&#xC815; &#xD654;&#xBA74; &#xC608;&#xC2DC;](../../.gitbook/assets/undefined%20%2817%29.png)
+![&#xB2F5;&#xBCC0; &#xCD94;&#xCC9C; &#xC124;&#xC815; &#xD654;&#xBA74; &#xC608;&#xC2DC;](../../.gitbook/assets/undefined%20%2818%29.png)
 
 상담원들의 답변의 정확도를 높이기 위해 고객이 자주 묻는 질문과 답변들을 Microsoft의 QnA Maker나 IBM의 Watson에서 설정하여 연동할 수 있습니다.  
 답변 추천을 설정하면 채팅창에서 고객이 질의한 내용을 선택하면 그에 알맞은 답변을 상담원이 확인하여 활용할 수 있습니다.
@@ -60,6 +60,27 @@ iframe sandbox attribute에는 다음 네 가지 옵션만 활성화되어 있�
 * [https://developer.mozilla.org/ko/docs/Web/HTML/Element/iframe](https://developer.mozilla.org/ko/docs/Web/HTML/Element/iframe) 
 {% endhint %}
 
+## 상담 완료 설정 {#completed-call}
+
+{% hint style="danger" %}
+\*\*\*\*[**마스터**](../overview.md#undefined-1)만 설정할 수 있습니다.
+{% endhint %}
+
+{% hint style="info" %}
+프로필에만 설정할 수 있습니다.
+{% endhint %}
+
+![&#xC0C1;&#xB2F4; &#xC644;&#xB8CC; &#xC124;&#xC815; &#xD654;&#xBA74; &#xC608;&#xC2DC;](../../.gitbook/assets/undefined%20%283%29.png)
+
+상담 완료 설정 화면에서는 상담원이 상담을 완료했을 때의 동작을 설정할 수 있습니다.   
+예를 들어, 미리 **만족도 조사 플로우**를 작성해 놓은 상태라면 상담원이 상담을 완료했을 때 챗봇이 사용자의 만족도를 물어볼 수 있습니다.
+
+만일 상담 완료 시 플로우 변경 기능을 **사용하지 않음**으로 설정하신다면 상담 완료 시의 동작은 다음과 같습니다.
+
+* 상담원 호출 노드를 통해 상담이 시작된 경우: 상담원 호출 노드에서 재시작
+* 상담원의 개입을 통해 상담이 시작된 경우: 처음부터 재시작
+* 상담원이 상담 도중 챗봇으로 전환하고 상담을 완료한 경우: 해당 플로우에서 계속 진행
+
 ## 상담 운영 시간 {#operating-hour}
 
 {% hint style="danger" %}
@@ -70,7 +91,7 @@ iframe sandbox attribute에는 다음 네 가지 옵션만 활성화되어 있�
 팀 설정을 하면 모든 프로필에서 사용할 수 있고 프로필 별로 각각 설정할 수도 있습니다.
 {% endhint %}
 
-![&#xC0C1;&#xB2F4; &#xC6B4;&#xC601; &#xC2DC;&#xAC04; &#xC124;&#xC815; &#xD654;&#xBA74; &#xC608;&#xC2DC;](../../.gitbook/assets/undefined%20%285%29.png)
+![&#xC0C1;&#xB2F4; &#xC6B4;&#xC601; &#xC2DC;&#xAC04; &#xC124;&#xC815; &#xD654;&#xBA74; &#xC608;&#xC2DC;](../../.gitbook/assets/undefined%20%286%29.png)
 
 상담 운영 시간을 설정할 수 있습니다. 기본 설정은 오전 9시 ~ 오후 6시\(KST\) 입니다.  
 운영시간이 아닐 때 고객이 상담을 요청하는 경우의 메시지나 요청을 어떻게 처리할지 등을 설정할 수 있습니다.
@@ -110,11 +131,11 @@ iframe sandbox attribute에는 다음 네 가지 옵션만 활성화되어 있�
 팀 설정을 하면 모든 프로필에서 사용할 수 있고 프로필 별로 각각 설정할 수도 있습니다.
 {% endhint %}
 
-![&#xC0C1;&#xB2F4; &#xC790;&#xB3D9; &#xBC30;&#xC815; &#xC124;&#xC815; &#xD654;&#xBA74; &#xC608;&#xC2DC;](../../.gitbook/assets/undefined%20%283%29.png)
+![&#xC0C1;&#xB2F4; &#xC790;&#xB3D9; &#xBC30;&#xC815; &#xC124;&#xC815; &#xD654;&#xBA74; &#xC608;&#xC2DC;](../../.gitbook/assets/undefined%20%284%29.png)
 
 상담원 연결 요청 시 담당 상담원을 자동으로 배정하는 규칙을 설정합니다.
 
-![&#xC0C1;&#xB2F4; &#xC790;&#xB3D9; &#xBC30;&#xC815; &#xC124;&#xC815; \(&#xD504;&#xB85C;&#xD544;\) &#xD654;&#xBA74; &#xC608;&#xC2DC;](../../.gitbook/assets/undefined%20%2816%29.png)
+![&#xC0C1;&#xB2F4; &#xC790;&#xB3D9; &#xBC30;&#xC815; &#xC124;&#xC815; \(&#xD504;&#xB85C;&#xD544;\) &#xD654;&#xBA74; &#xC608;&#xC2DC;](../../.gitbook/assets/undefined%20%2817%29.png)
 
 ### 자동 배정 / 수동 배정 {#automatic-assignment-enable}
 
@@ -156,7 +177,7 @@ iframe sandbox attribute에는 다음 네 가지 옵션만 활성화되어 있�
 여러 팀에 속해있다면 각 팀별로 설정을 다르게 할 수 있습니다.
 {% endhint %}
 
-![&#xC54C;&#xB9BC; &#xC124;&#xC815; &#xD654;&#xBA74; &#xC608;&#xC2DC;](../../.gitbook/assets/undefined%20%2822%29.png)
+![&#xC54C;&#xB9BC; &#xC124;&#xC815; &#xD654;&#xBA74; &#xC608;&#xC2DC;](../../.gitbook/assets/undefined%20%2823%29.png)
 
 고객이 상담원을 호출한 경우, 상담이 나에게 배정된 경우, 고객이 메시지를 보낸 경우에 브라우저 알림\(소리\)를 전송합니다. 브라우저에서 알림 차단/허용 선택창이 뜨는경우 ‘허용'을 선택하셔야 알림을 받을 수 있습니다.  
 브라우저에서 알림을 받도록 허용한 경우에 알림을 어떤 상황에서 받을 지 설정할 수 있습니다.

@@ -2,7 +2,7 @@
 
 프로필 관리 내 나의 프로필 페이지에서는 계정 정보를 확인하고 수정할 수 있습니다.
 
-![&#xD504;&#xB85C;&#xD544; &#xAD00;&#xB9AC; &#xD654;&#xBA74; &#xC608;&#xC2DC;](../.gitbook/assets/undefined%20%2823%29.png)
+![&#xD504;&#xB85C;&#xD544; &#xAD00;&#xB9AC; &#xD654;&#xBA74; &#xC608;&#xC2DC;](../.gitbook/assets/undefined%20%2824%29.png)
 
 ## 프로필 설정 {#profile-setting}
 

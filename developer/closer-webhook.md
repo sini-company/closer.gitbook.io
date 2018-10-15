@@ -36,60 +36,60 @@ CLOSER에서는 Webhook으로 봇/사용자/상담원의 메시지와 이벤트�
 
 ```yaml
 {
- 	"id": "00000000-0000-0000-0000-000000000000",
- 	"webhookId": "00000000-0000-0000-0000-000000000000",
- 	"webhookUrl": "http://your.webhook.com",
- 	"messages": [{
- 		"sourceId": "Bxxxxx",
- 		"data": {
- 			"endUser": {
- 				"createdAt": "2018-09-04T07:06:53.047Z",
- 				"deletedAt": null,
- 				"id": "00000000-0000-0000-0000-000000000000",
- 				"botId": "Bxxxxx",
- 				"lastMessageId": "00000000-0000-0000-0000-000000000000",
- 				"params": {
- 				},
- 				"platform": "web",
- 				"userKey": "userKey",
- 				"lastConversationId": "00000000-0000-0000-0000-000000000000",
- 				"updatedAt": "2018-09-05T06:45:19.087Z"
- 			}
- 		},
- 		"sourceType": "bot",
- 		"id": "00000000-0000-0000-0000-000000000000",
- 		"event": "bot.end_user.updated",
- 		"timestamp": 1536129919092
- 	}, {
- 		"sourceId": "Bxxxxx",
- 		"data": {
- 			"conversation": {
- 				"endUserId": "00000000-0000-0000-0000-000000000000",
- 				"createdAt": "2018-09-05T06:45:19.102Z",
- 				"navigation": {},
- 				"context": {
- 					"navigation": {},
- 					"conversationId": "00000000-0000-0000-0000-000000000000",
- 					"botId": "Bxxxxx",
- 					"params": {
- 					},
- 					"platform": "web",
- 					"userKey": "userKey"
- 				},
- 				"id": "00000000-0000-0000-0000-000000000000",
- 				"botId": "Bxxxxx",
- 				"params": {
- 				},
- 				"userKey": "userKey",
- 				"platform": "web",
- 				"updatedAt": "2018-09-05T06:45:19.102Z"
- 			}
- 		},
- 		"sourceType": "bot",
- 		"id": "00000000-0000-0000-0000-000000000000",
- 		"event": "bot.conversation.created",
- 		"timestamp": 1536129919116
- 	}]
+     "id": "00000000-0000-0000-0000-000000000000",
+     "webhookId": "00000000-0000-0000-0000-000000000000",
+     "webhookUrl": "http://your.webhook.com",
+     "messages": [{
+         "sourceId": "Bxxxxx",
+         "data": {
+             "endUser": {
+                 "createdAt": "2018-09-04T07:06:53.047Z",
+                 "deletedAt": null,
+                 "id": "00000000-0000-0000-0000-000000000000",
+                 "botId": "Bxxxxx",
+                 "lastMessageId": "00000000-0000-0000-0000-000000000000",
+                 "params": {
+                 },
+                 "platform": "web",
+                 "userKey": "userKey",
+                 "lastConversationId": "00000000-0000-0000-0000-000000000000",
+                 "updatedAt": "2018-09-05T06:45:19.087Z"
+             }
+         },
+         "sourceType": "bot",
+         "id": "00000000-0000-0000-0000-000000000000",
+         "event": "bot.end_user.updated",
+         "timestamp": 1536129919092
+     }, {
+         "sourceId": "Bxxxxx",
+         "data": {
+             "conversation": {
+                 "endUserId": "00000000-0000-0000-0000-000000000000",
+                 "createdAt": "2018-09-05T06:45:19.102Z",
+                 "navigation": {},
+                 "context": {
+                     "navigation": {},
+                     "conversationId": "00000000-0000-0000-0000-000000000000",
+                     "botId": "Bxxxxx",
+                     "params": {
+                     },
+                     "platform": "web",
+                     "userKey": "userKey"
+                 },
+                 "id": "00000000-0000-0000-0000-000000000000",
+                 "botId": "Bxxxxx",
+                 "params": {
+                 },
+                 "userKey": "userKey",
+                 "platform": "web",
+                 "updatedAt": "2018-09-05T06:45:19.102Z"
+             }
+         },
+         "sourceType": "bot",
+         "id": "00000000-0000-0000-0000-000000000000",
+         "event": "bot.conversation.created",
+         "timestamp": 1536129919116
+     }]
  }
 ```
 
@@ -97,36 +97,36 @@ CLOSER에서는 Webhook으로 봇/사용자/상담원의 메시지와 이벤트�
 
 ```yaml
 {
-	"id": "00000000-0000-0000-0000-000000000000",
-	"webhookId": "00000000-0000-0000-0000-000000000000",
-	"webhookUrl": "http://your.webhook.com",
-	"messages": [{
-		"sourceId": "Bxxxxx",
-		"data": {
-			"message": {
-				"endUserId": "00000000-0000-0000-0000-000000000000",
-				"data": {
-					"text": "상담원 메시지",
-					"type": "text"
-				},
-				"requestId": "00000000-0000-0000-0000-000000000000",
-				"meta": {
-					"sender": {
-						"userKey": "Uxxxxx",
-						"platform": "closer-chat"
-					}
-				},
-				"conversationId": "00000000-0000-0000-0000-000000000000",
-				"id": "00000000-0000-0000-0000-000000000000",
-				"isUser": false,
-				"timestamp": 1536130434645
-			}
-		},
-		"sourceType": "bot",
-		"id": "00000000-0000-0000-0000-000000000000",
-		"event": "bot.message.sent",
-		"timestamp": 1536130434656
-	}]
+    "id": "00000000-0000-0000-0000-000000000000",
+    "webhookId": "00000000-0000-0000-0000-000000000000",
+    "webhookUrl": "http://your.webhook.com",
+    "messages": [{
+        "sourceId": "Bxxxxx",
+        "data": {
+            "message": {
+                "endUserId": "00000000-0000-0000-0000-000000000000",
+                "data": {
+                    "text": "상담원 메시지",
+                    "type": "text"
+                },
+                "requestId": "00000000-0000-0000-0000-000000000000",
+                "meta": {
+                    "sender": {
+                        "userKey": "Uxxxxx",
+                        "platform": "closer-chat"
+                    }
+                },
+                "conversationId": "00000000-0000-0000-0000-000000000000",
+                "id": "00000000-0000-0000-0000-000000000000",
+                "isUser": false,
+                "timestamp": 1536130434645
+            }
+        },
+        "sourceType": "bot",
+        "id": "00000000-0000-0000-0000-000000000000",
+        "event": "bot.message.sent",
+        "timestamp": 1536130434656
+    }]
 }
 ```
 
@@ -134,30 +134,30 @@ CLOSER에서는 Webhook으로 봇/사용자/상담원의 메시지와 이벤트�
 
 ```yaml
 {
- 	"id": "00000000-0000-0000-0000-000000000000",
- 	"webhookId": "00000000-0000-0000-0000-000000000000",
- 	"webhookUrl": "http://your.webhook.com",
- 	"messages": [{
- 		"sourceId": "Bxxxxx",
- 		"data": {
- 			"message": {
- 				"endUserId": "00000000-0000-0000-0000-000000000000",
- 				"data": {
- 					"text": "테스트용 봇 메시지",
- 					"type": "text"
- 				},
- 				"conversationId": "00000000-0000-0000-0000-000000000000",
- 				"meta": null,
- 				"id": "00000000-0000-0000-0000-000000000000",
- 				"isUser": false,
- 				"timestamp": 1536129919339
- 			}
- 		},
- 		"sourceType": "bot",
- 		"id": "00000000-0000-0000-0000-000000000000",
- 		"event": "bot.message.sent",
- 		"timestamp": 1536129919373
- 	}]
+     "id": "00000000-0000-0000-0000-000000000000",
+     "webhookId": "00000000-0000-0000-0000-000000000000",
+     "webhookUrl": "http://your.webhook.com",
+     "messages": [{
+         "sourceId": "Bxxxxx",
+         "data": {
+             "message": {
+                 "endUserId": "00000000-0000-0000-0000-000000000000",
+                 "data": {
+                     "text": "테스트용 봇 메시지",
+                     "type": "text"
+                 },
+                 "conversationId": "00000000-0000-0000-0000-000000000000",
+                 "meta": null,
+                 "id": "00000000-0000-0000-0000-000000000000",
+                 "isUser": false,
+                 "timestamp": 1536129919339
+             }
+         },
+         "sourceType": "bot",
+         "id": "00000000-0000-0000-0000-000000000000",
+         "event": "bot.message.sent",
+         "timestamp": 1536129919373
+     }]
  }
 ```
 
@@ -165,31 +165,31 @@ CLOSER에서는 Webhook으로 봇/사용자/상담원의 메시지와 이벤트�
 
 ```yaml
 {
- 	"id": "00000000-0000-0000-0000-000000000000",
- 	"webhookId": "00000000-0000-0000-0000-000000000000",
- 	"webhookUrl": "http://your.webhook.com",
- 	"messages": [{
- 		"sourceId": "Bxxxxx",
- 		"data": {
- 			"message": {
- 				"endUserId": "00000000-0000-0000-0000-000000000000",
- 				"data": {
- 					"text": "고객 메시지",
- 					"type": "text"
- 				},
- 				"requestId": "00000000-0000-0000-0000-000000000000",
- 				"conversationId": "00000000-0000-0000-0000-000000000000",
- 				"meta": null,
- 				"id": "00000000-0000-0000-0000-000000000000",
- 				"isUser": true,
- 				"timestamp": 1536130242636
- 			}
- 		},
- 		"sourceType": "bot",
- 		"id": "00000000-0000-0000-0000-000000000000",
- 		"event": "bot.message.received",
- 		"timestamp": 1536130243609
- 	}]
+     "id": "00000000-0000-0000-0000-000000000000",
+     "webhookId": "00000000-0000-0000-0000-000000000000",
+     "webhookUrl": "http://your.webhook.com",
+     "messages": [{
+         "sourceId": "Bxxxxx",
+         "data": {
+             "message": {
+                 "endUserId": "00000000-0000-0000-0000-000000000000",
+                 "data": {
+                     "text": "고객 메시지",
+                     "type": "text"
+                 },
+                 "requestId": "00000000-0000-0000-0000-000000000000",
+                 "conversationId": "00000000-0000-0000-0000-000000000000",
+                 "meta": null,
+                 "id": "00000000-0000-0000-0000-000000000000",
+                 "isUser": true,
+                 "timestamp": 1536130242636
+             }
+         },
+         "sourceType": "bot",
+         "id": "00000000-0000-0000-0000-000000000000",
+         "event": "bot.message.received",
+         "timestamp": 1536130243609
+     }]
  }
 ```
 
@@ -447,10 +447,8 @@ CLOSER에서 대화를 진행하는데 필요한 정보입니다. SDK의 WebChat
 
 | 타입 | 설명 |
 | :--- | :--- |
-| text |  텍스트 메시지 |
+| text | 텍스트 메시지 |
 | media | 이미지, 동영상, 오디오 등의 미디어 |
 | cards | 카드 타입 리스트 \(Carousel로 사용\) |
 | location | 위치 정보 \(latitude, longitude\) |
-
-
 
