@@ -7,7 +7,7 @@ CLOSER Bot Builder에서 만든 챗봇의 소유자가 CLOSER Chat에서 **‘**
 
 ![](../.gitbook/assets/openbeta_chat_-_.png)
 
-## 팀 {#team}
+## 팀 <a id="team"></a>
 
 CLOSER Chat에서 팀은 상담을 진행하는 조직의 단위입니다.  
 하나의 팀에는 여러개의 프로필\(챗봇\)이 있을 수 있고, 해당 팀의 상담원은 팀의 모든 프로필\(챗봇\)에 접근하여 상담할 수 있습니다.  
@@ -17,7 +17,7 @@ CLOSER Bot Builder에서 만든 챗봇을 활성화하면 CLOSER Chat에 생성�
 팀은 CLOSER의 사용자라면 누구나 생성할 수 있습니다.
 {% endhint %}
 
-### 팀 만들기 {#new-team}
+### 팀 만들기 <a id="new-team"></a>
 
 ![&#xD300; &#xB9CC;&#xB4E4;&#xAE30; &#xD654;&#xBA74; &#xC608;&#xC2DC;](../.gitbook/assets/undefined%20%2819%29.png)
 
@@ -25,13 +25,13 @@ CLOSER Bot Builder에서 만든 챗봇을 활성화하면 CLOSER Chat에 생성�
 * 소속된 팀이 없다면, CLOSER Chat에 처음 접속하여 팀을 만들 수 있습니다.
 * 이미 소속 팀이 있다면, 자동으로 팀이 선택되어 상담하기 화면으로  이동하는데, 상담하기 화면의 왼쪽 사이드 바에서 메뉴를 선택하여 팀을 만들거나 초대를 수락/거절 할 수 있습니다.
 
-### 통계 / 팀 / 상담 설정 {#settings}
+### 통계 / 팀 / 상담 설정 <a id="settings"></a>
 
 * \*\*\*\*[**통계 \(Dashboard\)**](dashboard.md) **:** [**개요**](dashboard.md#overview) **/** [**상담 통계**](dashboard.md#conversation-statistics)\*\*\*\*
 * \*\*\*\*[**상담 설정**](settings/conversations.md) **:** [**답변 추천**](settings/conversations.md#recommended-answer) **/** [**커스텀 웹 패널**](settings/conversations.md#custom-web-panel) **/** [**상담 운영시간**](settings/conversations.md#operating-hour) **/** [**상담 자동 배정**](settings/conversations.md#automatic-assignment) **/** [**알림**](settings/conversations.md#notification)\*\*\*\*
 * \*\*\*\*[**팀 설정**](settings/teams.md) **:** [**팀 설정**](settings/teams.md#team-setting) **/** [**팀원 관리**](settings/teams.md#manage-members) ****
 
-## 마스터 {#master}
+## 마스터 <a id="master"></a>
 
 팀을 생성하여 소유하고 있는 사용자를 CLOSER Chat에서는 ‘마스터'라고 부릅니다.  
 마스터는 다음과 같이 상담이나 팀에 대해 설정할 수 있습니다.
@@ -39,7 +39,7 @@ CLOSER Bot Builder에서 만든 챗봇을 활성화하면 CLOSER Chat에 생성�
 * \*\*\*\*[**상담 설정**](settings/conversations.md) **:**[ ](settings/conversations.md#recommended-answer) [**답변 추천**](settings/conversations.md#recommended-answer) **/** [**커스텀 웹 패널**](settings/conversations.md#custom-web-panel) **/** [**상담 운영시간**](settings/conversations.md#operating-hour) **/** [**상담 자동 배정**](settings/conversations.md#automatic-assignment) **/** [**알림**](settings/conversations.md#notification)\*\*\*\*
 * \*\*\*\*[**팀 설정**](settings/teams.md) **:** [**팀 설정**](settings/teams.md#team-setting) **/** [**팀원 관리**](settings/teams.md#manage-members) ****
 
-## 팀원\(상담원\) {#member}
+## 팀원\(상담원\) <a id="member"></a>
 
 팀에 속하여 상담을 진행할 수 있는 사용자입니다. 팀원이 속한 팀의 마스터가 될 수는 없지만 다른 팀의 마스터는 될 수 있습니다. 팀원은 설정에서 다음 항목을 확인하고 설정할  있습니다
 

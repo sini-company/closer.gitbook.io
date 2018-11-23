@@ -5,17 +5,17 @@
 
 ![](../../.gitbook/assets/builder_node.png)
 
-## 캔버스에 새로운 노드 추가하기 {#new-node}
+## 캔버스에 새로운 노드 추가하기 <a id="new-node"></a>
 
 팔레트에서 원하는 노드를 골라 캔버스에 끌어다 놓으면\(drag&drop\) 노드가 추가 됩니다.
 
-## 공통사항 {#common}
+## 공통사항 <a id="common"></a>
 
 캔버스 위의 노드를 더블클릭하면 내용을 수정할 수 있는 패널이 우측에 열립니다.  
 노드 삭제는 delete나 backspace, 혹은 마우스 우클릭 - 삭제를 클릭하면 할 수 있습니다.  
 노드 복사, 잘라내기 기능은 마우스 우클릭에서 사용할 수 있습니다.
 
-## 노드 팔레트 {#node-palette}
+## 노드 팔레트 <a id="node-palette"></a>
 
 아래와 같은 기능별 노드를 제공합니다.
 
@@ -58,21 +58,13 @@
 
 > 카카오 상담톡 이미지 권장사항
 >
-> • 이미지 타입 (CLOSER의 메시지 응답노드의 media > image 에 해당)
-> 최대 5mb
-> jpg, png, gif
+> • 이미지 타입 \(CLOSER의 메시지 응답노드의 media &gt; image 에 해당\) 최대 5mb jpg, png, gif
 >
-> • Link Button 타입 (CLOSER의 메시지 응답노드의 card에 삽입된 이미지에 해당)
-> 권장 720x720
-> 최소 500x500, 2:1 비율 이상, 3:4 비율 이하
-> 0.5mb 이하
-> jpg, png
+> • Link Button 타입 \(CLOSER의 메시지 응답노드의 card에 삽입된 이미지에 해당\) 권장 720x720 최소 500x500, 2:1 비율 이상, 3:4 비율 이하 0.5mb 이하 jpg, png
 >
-> 현재로서는 카카오 상담톡 규격에 벗어난 이미지 혹은 카카오 상담톡에서 지원하지 않는 타입의 미디어가 있다면
-> (지원하지 않는 미디어) 라는 메시지로 대치될 것입니다.
+> 현재로서는 카카오 상담톡 규격에 벗어난 이미지 혹은 카카오 상담톡에서 지원하지 않는 타입의 미디어가 있다면 \(지원하지 않는 미디어\) 라는 메시지로 대치될 것입니다.
 
-
-### **플로우 연결 노드** {#flow-link-node}
+### **플로우 연결 노드** <a id="flow-link-node"></a>
 
 * 원하는 플로우로 이동해 대화를 이어나가도록 설정하는 노드 입니다.
 * 플로우 연결 노드를 캔버스에 끌어다 놓은 후 현재 생성된 플로우의 목록 중 하나를 선택하면 설정됩니다.
@@ -96,7 +88,7 @@
 
 ![HTTP &#xC694;&#xCCAD; &#xB178;&#xB4DC; &#xC608;&#xC2DC;](../../.gitbook/assets/builder_http_node.png)
 
-### **파라미터 설정 노드** {#parameter-node}
+### **파라미터 설정 노드** <a id="parameter-node"></a>
 
 * 대화하는 도중에 사용자로부터 입력받거나 서버에서 받아온 값을 파라미터로 저장할 수 있는 노드 입니다.
 * 사용자가 입력한 값 저장, HTTP 요청으로 서버에서 받아온 값 설정, 현재 상황에 따른 변수 값 변경 등의 목적으로 사용합니다.
@@ -116,7 +108,7 @@
 
 ![&#xD30C;&#xB77C;&#xBBF8;&#xD130; &#xC124;&#xC815; &#xB178;&#xB4DC; &#xC608;&#xC2DC;](../../.gitbook/assets/guide_%20%2810%29.png)
 
-### **구글 스프레드시트 노드** {#google-sp-node}
+### **구글 스프레드시트 노드** <a id="google-sp-node"></a>
 
 * 사용자가 입력한 정보를 구글 스프레드 시트에 기록하고 저장하기 위해 사용하는 노드 입니다.
 * 환경설정 &gt; 연결관리 메뉴에서 구글 계정을 연동한 경우에 사용 가능합니다.
@@ -132,7 +124,7 @@
 
 ![&#xAD6C;&#xAE00; &#xC2A4;&#xD504;&#xB808;&#xB4DC;&#xC2DC;&#xD2B8; &#xB178;&#xB4DC; &#xC0AC;&#xC6A9; &#xC608;&#xC2DC;](../../.gitbook/assets/guide_google-spreadsheet.png)
 
-### **상담원 호출 노드** {#agent-call-node}
+### **상담원 호출 노드** <a id="agent-call-node"></a>
 
 * CLOSER Chat이나 다른 Live Chat 솔루션과 연동한 경우 상담원을 호출하는 노드 입니다.
 * 해당 노드에 진입하면 안내메시지를 출력한 뒤 상담원을 호출하는 webhook이 전송됩니다.
@@ -141,7 +133,7 @@
 
 ![&#xC0C1;&#xB2F4;&#xC6D0; &#xD638;&#xCD9C; &#xB178;&#xB4DC; &#xC608;&#xC2DC;](../../.gitbook/assets/guide_%20%2815%29.png)
 
-### **자연어 처리 노드** {#nlp-node}
+### **자연어 처리 노드** <a id="nlp-node"></a>
 
 ![&#xC790;&#xC5F0;&#xC5B4; &#xCC98;&#xB9AC; &#xB178;&#xB4DC; &#xC608;&#xC2DC;](../../.gitbook/assets/guide_%20%2811%29.png)
 
@@ -158,7 +150,7 @@
 | nlp.answer | string | 자동응답 답변 |
 | nlp.score | number | 자동응답 정확도 |
 
-### 뒤로가기 스택 노드 {#backstack-node}
+### 뒤로가기 스택 노드 <a id="backstack-node"></a>
 
 챗봇에서 이전 단계의 선택지로 돌아가도록 뒤로가기 스택 노드로 구성할 수 있습니다.  
 챗봇을 구성하는데 전 단계로 이동할 포인트를 찍고 이전에 찍었던 포인트로 이동하는 기능입니다.
@@ -179,7 +171,7 @@
 
 * PUSH로 설정했던 모든 포인트를 제거합니다.
 
-#### 뒤로가기 스택 노드 사용 예시 {#backstack-node-example}
+#### 뒤로가기 스택 노드 사용 예시 <a id="backstack-node-example"></a>
 
 ![&#xB4A4;&#xB85C;&#xAC00;&#xAE30; &#xC2A4;&#xD0DD; &#xB178;&#xB4DC; &#xC0AC;&#xC6A9; &#xC608;&#xC2DC;](../../.gitbook/assets/undefined%20%2820%29.png)
 

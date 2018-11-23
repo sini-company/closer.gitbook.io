@@ -40,7 +40,7 @@
 
 템플릿 엔진은 사용자 정의 파라미터 외에도 [예약 파라미터](parameter.md#reserved-parameters)를 사용할 수 있으며, 나아가 더 다양하고 복잡한 로직을 작성할 수 있는 [템플릿 함수](template-syntax.md#template-functions)를 제공합니다.
 
-## 템플릿 함수 \(Template Functions\) {#template-functions}
+## 템플릿 함수 \(Template Functions\) <a id="template-functions"></a>
 
 | 함수 | 설명 |
 | :--- | :--- |

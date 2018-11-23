@@ -4,7 +4,7 @@
 
 ![](../.gitbook/assets/builder_%20%283%29.png)
 
-## 연동 지원 메신저 리스트 {#messenger-platform-list}
+## 연동 지원 메신저 리스트 <a id="messenger-platform-list"></a>
 
 * 카카오톡 자동응답 API
 * 카카오 상담톡 

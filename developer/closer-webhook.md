@@ -32,7 +32,7 @@ CLOSER에서는 Webhook으로 봇/사용자/상담원의 메시지와 이벤트�
 
 ### Webhook POST body Example
 
-#### 일반 {#common}
+#### 일반 <a id="common"></a>
 
 ```yaml
 {
@@ -93,7 +93,7 @@ CLOSER에서는 Webhook으로 봇/사용자/상담원의 메시지와 이벤트�
  }
 ```
 
-#### 상담원 메시지 {#agent-message}
+#### 상담원 메시지 <a id="agent-message"></a>
 
 ```yaml
 {
@@ -130,7 +130,7 @@ CLOSER에서는 Webhook으로 봇/사용자/상담원의 메시지와 이벤트�
 }
 ```
 
-#### 봇 메시지 {#bot-message}
+#### 봇 메시지 <a id="bot-message"></a>
 
 ```yaml
 {
@@ -161,7 +161,7 @@ CLOSER에서는 Webhook으로 봇/사용자/상담원의 메시지와 이벤트�
  }
 ```
 
-#### 고객 메시지 {#user-message}
+#### 고객 메시지 <a id="user-message"></a>
 
 ```yaml
 {
@@ -337,13 +337,13 @@ CLOSER에서는 Webhook으로 봇/사용자/상담원의 메시지와 이벤트�
 | userKey | String | Y | SENDER 사용 시 필수. 전송자의 ID |
 | platform | String | Y | SENDER 사용 시 필수. 전송자의 플랫폼 |
 
-### KEYBOARD {#CLOSERWebChatSDK연동가이드v0.1-KEYBOARD}
+### KEYBOARD <a id="CLOSERWebChatSDK&#xC5F0;&#xB3D9;&#xAC00;&#xC774;&#xB4DC;v0.1-KEYBOARD"></a>
 
 * CLOSER의 입력 Object로, 사용자의 입력 타입을 표현합니다.
 * text인 경우 사용자는 text를 입력할 수 있고, number인 경우 제약조건을 포함합니다.
 * buttons는 사용자의 입력을 button으로 받을 수 있도록 필요한 데이터를 포함합니다.
 
-#### KEYBOARD의 사용자 입력 전송 방식 {#CLOSERWebChatSDK연동가이드v0.1-KEYBOARD의사용자입력전송방식}
+#### KEYBOARD의 사용자 입력 전송 방식 <a id="CLOSERWebChatSDK&#xC5F0;&#xB3D9;&#xAC00;&#xC774;&#xB4DC;v0.1-KEYBOARD&#xC758;&#xC0AC;&#xC6A9;&#xC790;&#xC785;&#xB825;&#xC804;&#xC1A1;&#xBC29;&#xC2DD;"></a>
 
 * text : 사용자가 입력한 텍스트를 그대로 메시지에 전송합니다.
 * buttons : 사용자가 선택한 button의 label의 텍스트를 메시지에 전송합니다.
@@ -379,14 +379,14 @@ CLOSER에서 대화를 진행하는데 필요한 정보입니다. SDK의 WebChat
 | platform | String\([**PLATFORM\_TYPE**](closer-webhook.md#platform_type)\) | Y | 플랫폼 타입 |
 | userKey | String | Y | 최종사용자 식별 키. SDK Open시 주입한 값 |
 
-### CONTEXT.NAVIGATION {#CLOSERWebChatSDK연동가이드v0.1-CONTEXT.NAVIGATION}
+### CONTEXT.NAVIGATION <a id="CLOSERWebChatSDK&#xC5F0;&#xB3D9;&#xAC00;&#xC774;&#xB4DC;v0.1-CONTEXT.NAVIGATION"></a>
 
 | 키 | 타입 | 필수 | 설명 |
 | :--- | :--- | :--- | :--- |
 | current | Object\([**CONTEXT.NAVIGATION.NODE**](closer-webhook.md#CLOSERWebChatSDK연동가이드v0.1-CONTEXT.NAVIGATION.LASTNODE)\) | Y | 현 노드의 정보 |
 | prev | Object\([**CONTEXT.NAVIGATION.NODE**](closer-webhook.md#CLOSERWebChatSDK연동가이드v0.1-CONTEXT.NAVIGATION.LASTNODE)\) | N | 이전 노드의 정보 |
 
-### CONTEXT.NAVIGATION.NODE {#CLOSERWebChatSDK연동가이드v0.1-CONTEXT.NAVIGATION.LASTNODE}
+### CONTEXT.NAVIGATION.NODE <a id="CLOSERWebChatSDK&#xC5F0;&#xB3D9;&#xAC00;&#xC774;&#xB4DC;v0.1-CONTEXT.NAVIGATION.LASTNODE"></a>
 
 | 키 | 타입 | 필수 | 설명 |
 | :--- | :--- | :--- | :--- |
@@ -401,7 +401,7 @@ CLOSER에서 대화를 진행하는데 필요한 정보입니다. SDK의 WebChat
 | id | String | Y | 상담원의 User ID |
 | profile | Object\([**AGENT.PROFILE**](closer-webhook.md#CLOSERWebChatSDK연동가이드v0.1-AGENT.PROFILE)\) | N | 상담원의 profile 정보 |
 
-### AGENT.PROFILE {#CLOSERWebChatSDK연동가이드v0.1-AGENT.PROFILE}
+### AGENT.PROFILE <a id="CLOSERWebChatSDK&#xC5F0;&#xB3D9;&#xAC00;&#xC774;&#xB4DC;v0.1-AGENT.PROFILE"></a>
 
 | 키 | 타입 | 필수 | 설명 |
 | :--- | :--- | :--- | :--- |
