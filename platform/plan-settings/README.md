@@ -2,7 +2,7 @@
 
 ## 플랜 개요 <a id="plan-overview"></a>
 
-![](../../.gitbook/assets/image%20%283%29.png)
+![](../../.gitbook/assets/image%20%286%29.png)
 
 ### 사용 중 서비스 <a id="using-service"></a>
 
@@ -15,7 +15,7 @@
 * 상담원 좌석을 설정할 수 있습니다.
 * 카드 등록을 하셔야면 상담원 좌석 및 프리미엄 서비스를 이용하실 수 있습니다.
 
-![](../../.gitbook/assets/image%20%2810%29.png)
+![](../../.gitbook/assets/image%20%2815%29.png)
 
 ### 결제 정보 <a id="payment-info"></a>
 

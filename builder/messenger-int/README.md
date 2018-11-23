@@ -2,7 +2,7 @@
 
 클릭 몇번 만으로 원하는 메신저에 손쉽게 연동할 수 있습니다.
 
-![](../.gitbook/assets/builder_%20%283%29.png)
+![](../../.gitbook/assets/builder_%20%283%29.png)
 
 ## 연동 지원 메신저 리스트 <a id="messenger-platform-list"></a>
 
