@@ -206,7 +206,7 @@ CLOSER에서 사용할 수 있는 handlebars-helpers 헬퍼 함수 카테고리�
 
   ```text
   김소월과 유치환과 김수영은 시인이고,
-  김동인은 감자를 썼다.
+  김동인은 <감자>를 썼다.
   ```
 
 ### length #{helper-length}
