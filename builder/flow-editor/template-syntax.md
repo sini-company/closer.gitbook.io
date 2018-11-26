@@ -234,7 +234,7 @@ CLOSER에서 사용할 수 있는 handlebars-helpers 헬퍼 함수 카테고리�
 
 
 ### date #{helper-date}
-  `{{date <formatted date string> <format> }}`
+  `{{date [formatted date string] [format] }}`
   formatted string
 
 * **템플릿**
@@ -254,7 +254,7 @@ CLOSER에서 사용할 수 있는 handlebars-helpers 헬퍼 함수 카테고리�
 
 * **결과**
 
-  출력되는 timezone은 Asia/Seoul(+9:00)임에 주의하세요.
+  출력되는 timezone은 현재 Asia/Seoul(+9:00)만 지원됩니다.
 
   ```text
   예약하신 날짜는 2018년 11월 21일 10시 30분입니다.
@@ -301,7 +301,7 @@ CLOSER에서 사용할 수 있는 handlebars-helpers 헬퍼 함수 카테고리�
   ```
 
 ## 템플릿 문법에 오류가 발생한 경우 #{on-error}
-작성된 Node가 제대로 동작하지 않을 수 있기 때문에,
+작성된 노드가 제대로 동작하지 않을 수 있기 때문에,
 템플릿 엔진 사용시에는 각별한 주의가 필요합니다.
 만약 오류가 발생할 경우 빈 문자열을 반환합니다.
 
