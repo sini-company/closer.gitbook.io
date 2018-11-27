@@ -124,7 +124,7 @@ module.exports = async function handler(context) {
 |title|String|봇의 이름|Y
 |description|String|봇의 설명|N
 
-#### Message <a id="type-bot"></a>
+#### Message <a id="type-message"></a>
 |Property|Type|Description|Required|
 |---|---|---|---|
 |type|String|메시지 타입 (`'text', 'media', 'cards', 'location'`)|Y
