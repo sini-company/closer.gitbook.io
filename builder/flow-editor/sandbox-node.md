@@ -142,3 +142,53 @@ module.exports = async function handler(context) {
 |message|[Message](#type-message)|노드 실행 후 챗봇이 응답할 메시지|N
 |custom|Object|이후 노드에서 `sandbox.result.custom`으로 접근할 객체|N
 |params|Object|노드 실행 후 설정할 파라미터|N
+
+
+## 예제: 간단한 곱셈 스크립트
+
+### 1. 시나리오 작성
+
+![사용자 정의 스크립트 노드 사용 예시](../../assets/builder_flow_editor_sandbox_node_tax_rate.png)
+
+위 플로우는 챗봇에서 가격과 세율를 입력 받아 곱한 값을 반환하는 시나리오입니다.
+제품의 가격을 사용자 입력 요청노드를 통해 입력받고, 파라미터 설정 노드에서 `price`에 `{{message}}`를 설정합니다.
+세율을 사용자 입력 요청노드를 통해 입력받고, 파라미터 설정 노드에서 `taxRate`에 `{{message}}`를 설정합니다.
+
+
+### 2. 사용자 정의 스크립트 작성
+
+```js
+module.exports = function handler(context, callback) {
+  // 파라미터의 타입이 String일 수 있으므로 Number 타입으로 형변환합니다.
+  const price = Number(context.params.price);
+  const taxRate = Number(context.params.taxRate);
+	const result = {
+    custom: {
+      price: price * taxRate
+    },
+    params: {
+      price: price * taxRate
+    }
+  };
+  callback(null, result);
+}
+```
+
+앞서 입력받은 파라미터는 사용자 정의 스크립트 노드에서 `context.params`에서 참조할 수 있습니다. `context.params.price`와 `context.params.taxRate`를 곱한 값을 반환합니다.
+
+`custom`에 반환되는 값은 이후 노드에서 `{{sandbox.result.custom}}`으로 참조할 수 있습니다.
+`params`에 반환되는 값은 이후 노드에서 해당 파라미터의 값을 설정합니다.
+예제 스크립트의 경우 `price`파라미터를 새 값으로 덮어 씁니다.
+
+만일 `message`로 `{ text: '가격: ' + price * taxRate }`을 반환하면 챗봇은 사용자 정의 스크립트 노드가 종료되는 시점에 `text`에 해당하는 String을 최종 사용자에게 메시지로 전달합니다. 메시지 객체의 타입은 추후 변경될 수 있으니 가급적 추가적으로 메시지 응답 노드를 생성하여 [템플릿 문법](./template-syntax.md)을 활용하는 것을 추천합니다.
+
+### 3. 오류 처리하기
+
+  사용자 정의 스크립트 노드에서 오류가 발생할 경우 챗봇은 기본적으로 메시지를 반환하지 않습니다.
+  하지만 `sandbox.error`를 통해 오류가 발생하였을 경우의 시나리오를 처리할 수 있습니다.
+  사용자 정의 스크립트 노드의 엣지로 '`sandbox.error`가 존재하는 경우'를 생성합니다.
+
+  오류를 확인하고자 한다면, `sandbox.error`_(Error)_ 객체를 통해 어떤 오류가 발생하였는지 디버깅할 수 있습니다.
+  이 오류 메시지는 스크립트에서 반환하는 오류 또는 스크립트 실행 시 발생한 오류입니다.
+  `{{sandbox.error.message}}` 혹은 `{{sandbox.error.stack}}`을 통해 디버깅 할 수 있습니다.
+  오류 메시지가 챗봇과 대화하는 최종 사용자에게 그대로 노출되지 않도록 유의하십시오.
