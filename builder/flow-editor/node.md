@@ -74,17 +74,26 @@
 
 ### **HTTP요청 노드\(HTTP Fetch Node\)**
 
-* 외부API와 연동하기 위해 사용하는 노드 입니다.
-* 원하는 url로 GET, POST, DELETE, PUT요청을 보낼 수 있습니다.
+* 외부 API와 연동하기 위해 사용하는 노드 입니다.
+* 원하는 URL로 GET, POST, DELETE, PUT요청을 보낼 수 있습니다.
 * 필요에 따라 header와 body값을 설정할 수 있습니다.
-* 목적지 url의 서버에서 반환한 값은 파라미터에 아래와 같이 저장됩니다.
+* 목적지 url의 서버에서 반환한 값은 `fetch` 파라미터에 객체 타입으로 저장됩니다.
 
-| 파라미터명 | 설명 |
-| :--- | :--- |
-| fetch.statusCode | 서버에서 반환한 statusCode \(200, 401 등\) |
-| fetch.data | 서버에서 반환한 결과 값 오브젝트 |
+#### fetch _(object)_
+HTTP요청 노드 진행 후 생성되는 객체입니다.
 
-* 아래는 네이버가 제공하는 파파고 영어번역API 연동 예시 입니다.
+| 파라미터 | 타입 | 설명 |
+| :--- | :--- | :--- |
+| data       | object | 서버에서 반환한 결과 값 오브젝트 |
+| error      | Error  | 요청의 결과로 도착한 오류 혹은 요청시 오류 |
+| status     | string | 성공시 'COMPLETED', 실패시 'FAILED' |
+| statusCode | number | 서버에서 반환한 statusCode \(200, 401 등\) |
+| uri        | strng  | 요청 URI |
+
+* 응답 받은 데이터는 `{{fetch.data}}`와 같이 참조할 수 있으며,
+  JSON타입인 경우 `{{fetch.data.path[2].your.object}}`와 같이 접근이 가능합니다.
+
+* 아래는 네이버가 제공하는 파파고 영어번역API 연동 예시입니다.
 
 ![HTTP &#xC694;&#xCCAD; &#xB178;&#xB4DC; &#xC608;&#xC2DC;](../../.gitbook/assets/builder_http_node.png)
 
