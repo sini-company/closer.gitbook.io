@@ -75,9 +75,8 @@
 ### **HTTP요청 노드\(HTTP Fetch Node\)**
 
 * JSON / XML 형식의 데이터를 반환하는 외부 API와 연동할 때 사용할 수 있는 노드 입니다.
-* GET, POST, DELETE, PUT 4 가지의 method를 지원합니다.
-* 필요에 따라 header와 body값을 설정할 수 있습니다.
-* 서버의 반환값은 `fetch` context에 보관됩니다.
+* GET, POST, DELETE, PUT 4 가지의 method를 지원하고, header와 body값을 설정할 수 있습니다.
+* 반환값은 `fetch` context를 통해 획득할 수 있습니다.
 
 #### fetch _(object)_
 HTTP요청 노드 진행 후 생성되는 객체입니다.
