@@ -74,21 +74,21 @@
 
 ### **HTTP요청 노드\(HTTP Fetch Node\)**
 
-* 외부 API와 연동하기 위해 사용하는 노드 입니다.
-* 원하는 URL로 GET, POST, DELETE, PUT요청을 보낼 수 있습니다.
+* JSON / XML 형식의 데이터를 반환하는 외부 API와 연동할 때 사용할 수 있는 노드 입니다.
+* GET, POST, DELETE, PUT 4 가지의 method를 지원합니다.
 * 필요에 따라 header와 body값을 설정할 수 있습니다.
-* 목적지 url의 서버에서 반환한 값은 `fetch` 파라미터에 객체 타입으로 저장됩니다.
+* 서버의 반환값은 `fetch` context에 보관됩니다.
 
 #### fetch _(object)_
 HTTP요청 노드 진행 후 생성되는 객체입니다.
 
 | 파라미터 | 타입 | 설명 |
 | :--- | :--- | :--- |
-| data       | object | 서버에서 반환한 결과 값 오브젝트 |
-| error      | Error  | 요청의 결과로 도착한 오류 혹은 요청시 오류 |
-| status     | string | 성공시 'COMPLETED', 실패시 'FAILED' |
-| statusCode | number | 서버에서 반환한 statusCode \(200, 401 등\) |
 | uri        | strng  | 요청 URI |
+| data       | object | 서버에서 반환된 json / xml 데이터 |
+| statusCode | number | 서버에서 반환한 statusCode \(200, 401 등\) |
+| status     | string | 성공시 'COMPLETED', 실패시 'FAILED' |
+| error      | Error  | 요청 오류 |
 
 * 응답 받은 데이터는 `{{fetch.data}}`와 같이 참조할 수 있으며,
   JSON타입인 경우 `{{fetch.data.path[2].your.object}}`와 같이 접근이 가능합니다.
