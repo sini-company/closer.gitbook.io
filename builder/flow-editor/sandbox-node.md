@@ -31,7 +31,7 @@
 | moment | 2.22.2 |
 | nodemailer | 4.7.0 |
 | request | 2.88.0 |
-| request-promise-native | 1.0.5 |
+| request-promise | 4.2.2 |
 | superagent | 4.0.0 |
 | underscore | 1.9.1 |
 | uuid | 3.3.2 |
