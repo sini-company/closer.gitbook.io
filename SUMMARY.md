@@ -31,8 +31,8 @@
   * [플로우\(Flow\)](builder/flow-editor/flow.md)
   * [파라미터\(Parameter\)](builder/flow-editor/parameter.md)
   * [템플릿 문법\(Template Syntax\)](builder/flow-editor/template-syntax.md)
-* [메신저 연동하기](builder/messenger-int/README.md)
-  * [웹챗](builder/messenger-int/web.md)
+* [메신저 연동하기](builder/messenger-integration/README.md)
+  * [웹챗](builder/messenger-integration/web.md)
 * [봇 설정](builder/bot-settings.md)
 
 ## Chat
