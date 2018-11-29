@@ -14,7 +14,7 @@
 
 생성된 엣지를 더블클릭하면 설정 창이 열립니다. 진입할 다음 노드를 결정하는 조건을 설정할 수 있습니다.
 
-![](../../.gitbook/assets/edge.PNG)
+![](../../.gitbook/assets/edge.png)
 
 ### 우선순위 <a id="priority"></a>
 
