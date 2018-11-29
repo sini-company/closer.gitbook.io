@@ -149,7 +149,7 @@ module.exports = async function handler(context) {
 
 ### 1. 시나리오 작성
 
-![사용자 정의 스크립트 노드 사용 예시](../../assets/builder_flow_editor_sandbox_node_tax_rate.png)
+![사용자 정의 스크립트 노드 사용 예시](../../../assets/builder_flow_editor_sandbox_node_tax_rate.png)
 
 위 플로우는 챗봇에서 가격과 세율를 입력 받아 곱한 값을 반환하는 시나리오입니다.
 제품의 가격을 사용자 입력 요청노드를 통해 입력받고, 파라미터 설정 노드에서 `price`에 `{{message}}`를 설정합니다.
