@@ -10,7 +10,7 @@
 
 * 우측 상단 저장 버튼을 누르면 수정한 플로우가 저장 됩니다. 
 * 대화 테스트 버튼을 누르면 현재 설계한 봇을 바로 테스트해 볼 수 있습니다.
-* 가장 우측의 드롭다운 메뉴\(![](https://github.com/sini-company/closer.gitbook.io/tree/e43e405ee3f037abe50e0ded6e17cf278ac79fde/.gitbook/assets/dropdown.png)\)에서는 플로우와 봇에 대한 여러 기능들을 제공합니다.
+* 가장 우측의 드롭다운 메뉴\(![](../../.gitbook/assets/dropdown.png)\)에서는 플로우와 봇에 대한 여러 기능들을 제공합니다.
 
 ![](../../.gitbook/assets/flow_editor_.png)
 

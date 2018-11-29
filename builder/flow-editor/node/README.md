@@ -3,7 +3,7 @@
 노드는 CLOSER에서 챗봇을 설계하기 위한 가장 기본 구성 요소입니다.  
 제공되는 다양한 기능별 노드들을 연결해 대화를 구성할 수 있습니다.
 
-![](../../.gitbook/assets/builder_node.png)
+![](../../../.gitbook/assets/builder_node.png)
 
 ## 캔버스에 새로운 노드 추가하기  <a id="new-node"></a>
 
@@ -21,14 +21,14 @@
 
 ### **시작 노드 \(Entry Node\)**
 
-![](../../.gitbook/assets/guide_%20%2817%29.png)
+![](../../../.gitbook/assets/guide_%20%2817%29.png)
 
 * 모든 플로우에 존재하는 시작 노드로, 대화의 시작지점입니다.
 * 대화를 시작하기 위한 메시지를 원하는 대로 설정할 수 있습니다.
 
 ### **사용자 입력 요청 노드\(User Input Node\)**
 
-![](../../.gitbook/assets/guide_.png)
+![](../../../.gitbook/assets/guide_.png)
 
 * 사용자로부터 입력을 받기 위한 노드 입니다
 * 입력 유형은 텍스트\(text\), 숫자\(number\), 버튼\(buttons\), 위치\(location\) 중에서 선택할 수 있습니다.
@@ -46,7 +46,7 @@
 * 메시지의 텍스트\(text\), 이미지\(media\), 메시지 하단 url링크 버튼\(button\) 등을 설정할 수 있습니다.
 * 아래는 각각의 메시지 예시 입니다.
 
-![](../../.gitbook/assets/guide_%20%287%29.png)
+![](../../../.gitbook/assets/guide_%20%287%29.png)
 
 * 적어도 한가지 형태의 메시지는 반드시 설정해야 합니다.
 * 카드\(cards\)항목을 이용하면 카드형 응답을보낼수있습니다.
@@ -54,7 +54,7 @@
 * HTTP Request를 통해 받아온 배열의 크기에 따라 동적으로 카드가 생성되도록 구현할 수도 있습니다.
 * 아래 이미지를 참고해 주세요.
 
-![](../../.gitbook/assets/guide_builder_response_card.png)
+![](../../../.gitbook/assets/guide_builder_response_card.png)
 
 > 카카오 상담톡 이미지 권장사항
 >
@@ -70,7 +70,7 @@
 * 플로우 연결 노드를 캔버스에 끌어다 놓은 후 현재 생성된 플로우의 목록 중 하나를 선택하면 설정됩니다.
 * 설계해 놓은 시나리오가 완전히 끝날 경우 플로우의 마지막은 플로우 연결 노드로 끝나고 엔트리 플로우로 연결되어 처음으로 돌아갈 때 가장 자연스럽습니다. 플로우의 마지막이 다른 노드로 끝날 경우 오류 메시지가 나타납니다. 플로우끼리 계속 연결해 놓는 것을 권장합니다.
 
-![&#xD50C;&#xB85C;&#xC6B0; &#xC5F0;&#xACB0; &#xB178;&#xB4DC; &#xC608;&#xC2DC;](../../.gitbook/assets/guide_%20%2816%29.png)
+![&#xD50C;&#xB85C;&#xC6B0; &#xC5F0;&#xACB0; &#xB178;&#xB4DC; &#xC608;&#xC2DC;](../../../.gitbook/assets/guide_%20%2816%29.png)
 
 ### **HTTP요청 노드\(HTTP Fetch Node\)**
 
@@ -93,7 +93,7 @@ HTTP요청 노드 진행 후 생성되는 객체입니다.
 * 응답 받은 데이터는 `{{fetch.data}}`와 같이 참조할 수 있으며, JSON타입인 경우 `{{fetch.data.path[2].your.object}}`와 같이 접근이 가능합니다.
 * 아래는 네이버가 제공하는 파파고 영어번역API 연동 예시입니다.
 
-![HTTP &#xC694;&#xCCAD; &#xB178;&#xB4DC; &#xC608;&#xC2DC;](../../.gitbook/assets/builder_http_node.png)
+![HTTP &#xC694;&#xCCAD; &#xB178;&#xB4DC; &#xC608;&#xC2DC;](../../../.gitbook/assets/builder_http_node.png)
 
 ### **파라미터 설정 노드**  <a id="parameter-node"></a>
 
@@ -113,7 +113,7 @@ HTTP요청 노드 진행 후 생성되는 객체입니다.
 | chat:category:1 | 중분류 |
 | chat:category:2 | 소분류 |
 
-![&#xD30C;&#xB77C;&#xBBF8;&#xD130; &#xC124;&#xC815; &#xB178;&#xB4DC; &#xC608;&#xC2DC;](../../.gitbook/assets/guide_%20%2810%29.png)
+![&#xD30C;&#xB77C;&#xBBF8;&#xD130; &#xC124;&#xC815; &#xB178;&#xB4DC; &#xC608;&#xC2DC;](../../../.gitbook/assets/guide_%20%2810%29.png)
 
 ### **구글 스프레드시트 노드**  <a id="google-sp-node"></a>
 
@@ -125,11 +125,11 @@ HTTP요청 노드 진행 후 생성되는 객체입니다.
 * 이미 존재하는 sheet에 입력할 경우에는 column 명칭에 상관 없이 빈 행부터 차례로 값을 채웁니다.
 * spreadsheetId는 스프레스 시트 URL에서 아래 표시된 부분 입니다.
 
-![](../../.gitbook/assets/guide_google-spreadsheet-id.png)
+![](../../../.gitbook/assets/guide_google-spreadsheet-id.png)
 
 * 아래는 사용자가 입력한 메시지를 파라미터로 저장하여 시트에 입력받는 예시 입니다. 아래와 같이 입력할 경우 사용자가 입력한 이름 값은  파라미터에 저장되어 이름 열에, 전화번호 값은  파라미터에 저장되어 전화번호 열에 기록됩니다.
 
-![&#xAD6C;&#xAE00; &#xC2A4;&#xD504;&#xB808;&#xB4DC;&#xC2DC;&#xD2B8; &#xB178;&#xB4DC; &#xC0AC;&#xC6A9; &#xC608;&#xC2DC;](../../.gitbook/assets/guide_google-spreadsheet.png)
+![&#xAD6C;&#xAE00; &#xC2A4;&#xD504;&#xB808;&#xB4DC;&#xC2DC;&#xD2B8; &#xB178;&#xB4DC; &#xC0AC;&#xC6A9; &#xC608;&#xC2DC;](../../../.gitbook/assets/guide_google-spreadsheet.png)
 
 ### **상담원 호출 노드**  <a id="agent-call-node"></a>
 
@@ -138,11 +138,11 @@ HTTP요청 노드 진행 후 생성되는 객체입니다.
 * 상담원이 호출될때까지 봇의 동작은 중지되고, 사용자의 입력에 반응하지 않습니다.
 * 상담원이 호출된 상태에서 상담원이 응답하기 전에 사용자가 "취소" 라고 입력하면 상담원 호출이 취소되고, 다시 봇 모드로 전환되어 연결된 다음 노드로 진행합니다.
 
-![&#xC0C1;&#xB2F4;&#xC6D0; &#xD638;&#xCD9C; &#xB178;&#xB4DC; &#xC608;&#xC2DC;](../../.gitbook/assets/guide_%20%2815%29.png)
+![&#xC0C1;&#xB2F4;&#xC6D0; &#xD638;&#xCD9C; &#xB178;&#xB4DC; &#xC608;&#xC2DC;](../../../.gitbook/assets/guide_%20%2815%29.png)
 
 ### **자연어 처리 노드**  <a id="nlp-node"></a>
 
-![&#xC790;&#xC5F0;&#xC5B4; &#xCC98;&#xB9AC; &#xB178;&#xB4DC; &#xC608;&#xC2DC;](../../.gitbook/assets/guide_%20%2811%29.png)
+![&#xC790;&#xC5F0;&#xC5B4; &#xCC98;&#xB9AC; &#xB178;&#xB4DC; &#xC608;&#xC2DC;](../../../.gitbook/assets/guide_%20%2811%29.png)
 
 * 사용자의 입력에 따라 인공지능 기반 대화를 구현하기 위해 사용하는 노드입니다.
 * CLOSER는 자체 인공지능 엔진은 제공하지 않지만 외부 자연어 서비스를 연동할 수 있습니다.
@@ -162,7 +162,7 @@ HTTP요청 노드 진행 후 생성되는 객체입니다.
 챗봇에서 이전 단계의 선택지로 돌아가도록 뒤로가기 스택 노드로 구성할 수 있습니다.  
 챗봇을 구성하는데 전 단계로 이동할 포인트를 찍고 이전에 찍었던 포인트로 이동하는 기능입니다.
 
-![&#xB4A4;&#xB85C;&#xAC00;&#xAE30; &#xC2A4;&#xD0DD; &#xB178;&#xB4DC; &#xC608;&#xC2DC;](../../.gitbook/assets/undefined%20%285%29.png)
+![&#xB4A4;&#xB85C;&#xAC00;&#xAE30; &#xC2A4;&#xD0DD; &#xB178;&#xB4DC; &#xC608;&#xC2DC;](../../../.gitbook/assets/undefined%20%285%29.png)
 
 #### PUSH
 
@@ -180,7 +180,7 @@ HTTP요청 노드 진행 후 생성되는 객체입니다.
 
 #### 뒤로가기 스택 노드 사용 예시  <a id="backstack-node-example"></a>
 
-![&#xB4A4;&#xB85C;&#xAC00;&#xAE30; &#xC2A4;&#xD0DD; &#xB178;&#xB4DC; &#xC0AC;&#xC6A9; &#xC608;&#xC2DC;](../../.gitbook/assets/undefined%20%2820%29.png)
+![&#xB4A4;&#xB85C;&#xAC00;&#xAE30; &#xC2A4;&#xD0DD; &#xB178;&#xB4DC; &#xC0AC;&#xC6A9; &#xC608;&#xC2DC;](../../../.gitbook/assets/undefined%20%2820%29.png)
 
 * 위와 같이 뒤로가기 스택 노드를 구성하면 **두번째 선택지**에서 **'이전 단계로 가기**' 버튼을 누르면 **첫번째 선택지**로 **이동**합니다.
 * **두번째 선택지**에서 **이전 단계로 가기**를 선택했을 때 뒤로가기 스택 노드로 이동하는데, 이때 **Operation**은 **pop**, **count**는 **2**로 설정되어있습니다.
