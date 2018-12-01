@@ -4,7 +4,7 @@ description: 보유하신 카카오톡 플러스친구 계정에 CLOSER 챗봇�
 
 # 카카오톡
 
-## 유의사항 <a id="announcement"></a>
+## 유의사항  <a id="announcement"></a>
 
 카카오톡 플러스친구 계정에 챗봇을 연동하는 방법은 두 가지가 있습니다.
 
@@ -25,7 +25,7 @@ API형 스마트채팅은 기존 플러스친구 사용자에게 제공되던 �
 [https://kakao.closer.ai](https://kakao.closer.ai)
 {% endhint %}
 
-## 사전 요구사항 <a id="prerequisite"></a>
+## 사전 요구사항  <a id="prerequisite"></a>
 
 활성화된 카카오톡 플러스친구 계정이 필요합니다.  
 카카오톡 플러스친구 서비스는 비지니스를 위한 카카오톡 계정 생성 서비스로서, 1:1 채팅이나 마케팅 메시지 전송 등 비즈니스에 필요한 기능들을 제공합니다. 플러스친구 계정을 생성하려면 아래 카카오 for 비즈니스 홈페이지를 이용해 주세요.
@@ -33,7 +33,7 @@ API형 스마트채팅은 기존 플러스친구 사용자에게 제공되던 �
 * 카카오 for 비즈니스 홈페이지: [https://business.kakao.com/](https://business.kakao.com/)
 * 카카오톡 플러스친구 FAQ: [https://cs.kakao.com/helps?category=29&locale=ko&service=8](https://cs.kakao.com/helps?category=29&locale=ko&service=8)
 
-## 카카오 i 오픈빌더 연동  <a id="openbuilder"></a>
+## 카카오 i 오픈빌더 연동   <a id="openbuilder"></a>
 
 **카카오 i 오픈빌더**는 카카오의 인공지능 플랫폼 **카카오 i** 의 기술을 활용해 카카오톡 플러스친구 챗봇부터 카카오미니 스피커봇까지 설계할 수 있는 개발 플랫폼입니다.  
 CLOSER에서는 카카오 i 오픈빌더의 [스킬](https://i.kakao.com/openbuilder/docs/guide/skill.html) 기능을 통해 챗봇 연동을 제공합니다.
@@ -46,7 +46,7 @@ CLOSER에서는 카카오 i 오픈빌더의 [스킬](https://i.kakao.com/openbui
 
 ![&#xCE74;&#xCE74;&#xC624; i &#xC624;&#xD508;&#xBE4C;&#xB354; &#xCD08;&#xAE30; &#xD654;&#xBA74;](../../.gitbook/assets/openbuilder_1.png)
 
-카카오 i 오픈빌더 홈페이지\([https://i.kakao.com/openbuilder](https://i.kakao.com/openbuilder/docs/index.html)\) 에 로그인하시면 위와 같은 화면을 확인할 수 있습니다.   
+카카오 i 오픈빌더 홈페이지\([https://i.kakao.com/openbuilder](https://i.kakao.com/openbuilder/docs/index.html)\) 에 로그인하시면 위와 같은 화면을 확인할 수 있습니다.  
 보유하신 봇이 없으시다면 우측 상단의 **새로운 봇 만들기** 버튼을 클릭해 주세요.
 
 ![&#xCE74;&#xCE74;&#xC624; i &#xC624;&#xD508;&#xBE4C;&#xB354; &#xBD07; &#xC0DD;&#xC131; &#xD654;&#xBA74;](../../.gitbook/assets/openbuilder_2.png)
@@ -55,24 +55,24 @@ CLOSER에서는 카카오 i 오픈빌더의 [스킬](https://i.kakao.com/openbui
 * **플러스친구 계정 연결**: 연결하려는 플러스친구 계정\(@계정명\)을 선택해주세요. 나중에 언제든지 변경할 수 있습니다.
 * **언어처리엔진**: 카카오 i 오픈빌더에서 제공하는 언어처리엔진을 선택합니다. CLOSER 챗봇과는 관계가 없습니다. 
 
-오픈빌더 봇을 생성하게 되면 봇 목록에 생성된 봇이 카드 형태로 나타납니다.   
+오픈빌더 봇을 생성하게 되면 봇 목록에 생성된 봇이 카드 형태로 나타납니다.  
 이제 생성된 봇을 클릭하여 봇 설정 화면으로 진입해 주세요.
 
-### 2. 오픈빌더 봇 설정 
+### 2. 오픈빌더 봇 설정
 
 ![&#xCE74;&#xCE74;&#xC624; i &#xC624;&#xD508;&#xBE4C;&#xB354; &#xBD07; &#xC124;&#xC815; &#xCD08;&#xAE30; &#xD654;&#xBA74; ](../../.gitbook/assets/openbuilder_3.png)
 
-CLOSER 챗봇 연동은 오픈빌더의 스킬 기능을 이용하여 이루어집니다.   
+CLOSER 챗봇 연동은 오픈빌더의 스킬 기능을 이용하여 이루어집니다.  
 화면 좌측에 있는 **스킬 메뉴**를 클릭하여 스킬 설정 화면으로 진입해 주세요.
 
 ![&#xCE74;&#xCE74;&#xC624; i &#xC624;&#xD508;&#xBE4C;&#xB354; &#xC2A4;&#xD0AC; &#xAD00;&#xB9AC; &#xD654;&#xBA74;](../../.gitbook/assets/openbuilder_4.png)
 
-스킬 설정 화면으로 진입하셨다면, 우측 상단의 **스킬 만들기** 버튼을 눌러 주세요. 
+스킬 설정 화면으로 진입하셨다면, 우측 상단의 **스킬 만들기** 버튼을 눌러 주세요.
 
 ![&#xCE74;&#xCE74;&#xC624; i &#xC624;&#xD508;&#xBE4C;&#xB354; &#xC2A4;&#xD0AC; &#xC0DD;&#xC131; &#xD654;&#xBA74;](../../.gitbook/assets/openbuilder_5.png)
 
 * **스킬명**: 관리 용이성을 위해 **CLOSER**를 입력해주세요. 다른 이름을 입력하셔도 문제는 없습니다.
-* **URL**: CLOSER에서 제공받은 스킬 연동 URL을 입력해 주세요.           \(예: `https://bot-api.closer.ai/webhook/kakao/[botId]/i/skill`\)
+* **URL**: CLOSER에서 제공받은 스킬 연동 URL을 입력해 주세요. \(예: `https://bot-api.closer.ai/webhook/kakao/[botId]/i/skill`\)
 * 설명, 기본 스킬로 설정, 스킬 파라미터 설정, 변환함수 설정 등은 입력하지 않으셔도 됩니다.
 
 {% hint style="danger" %}
@@ -101,12 +101,12 @@ CLOSER에서는 기본 블록 중 두 가지 블록을 설정합니다.
 ![&#xCE74;&#xCE74;&#xC624; i &#xC624;&#xD508;&#xBE4C;&#xB354; &#xBE14;&#xB85D; &#xC124;&#xC815; &#xD654;&#xBA74;](../../.gitbook/assets/openbuilder_7.png)
 
 폴백 블록의 초기 설정은 위 스크린샷과 같이 "무엇을 원하는지 잘 모르겠어요", "이해하기 어려워요" 등의 메시지를 반환하도록 설정되어 있습니다.  
-이제 이 메시지를 CLOSER에서 처리하도록 앞서 생성한 CLOSER 스킬을 연결합니다. 
+이제 이 메시지를 CLOSER에서 처리하도록 앞서 생성한 CLOSER 스킬을 연결합니다.
 
 * **동작** 설정 우측의 **스킬연결** 스위치를 눌러 스킬 기능을 활성화합니다.  이후 나타나는 스킬 드롭다운 메뉴에서 앞서 생성한 CLOSER 스킬을 연결합니다.
 * **출력** 설정 우측의 **출력을 스킬데이터로 사용** 스위치를 눌러 스킬을 통해 메시지를 반환하도록 설정합니다.
 
-위 설정을 성공적으로 마치셨다면 아래와 같은 화면을 확인할 수 있습니다. 
+위 설정을 성공적으로 마치셨다면 아래와 같은 화면을 확인할 수 있습니다.
 
 ![&#xCE74;&#xCE74;&#xC624; i &#xC624;&#xD508;&#xBE4C;&#xB354;&#xC5D0; CLOSER &#xC2A4;&#xD0AC;&#xC744; &#xC5F0;&#xACB0;&#xD55C; &#xD654;&#xBA74;](../../.gitbook/assets/openbuilder_8.png)
 
@@ -121,7 +121,7 @@ CLOSER에서는 기본 블록 중 두 가지 블록을 설정합니다.
 
 이제 여러분들은 오픈빌더 봇에 **CLOSER 스킬을 설정하였고, 웰컴 블록과 폴백 블록에 CLOSER 스킬을 설정**하는 과정을 마쳤으니, 생성된 오픈빌더 봇을 테스트해보도록 하겠습니다.
 
-오픈빌더 화면 우측 상단의 말풍선 아이콘 \(💬\)을 누르면 아래와 같이 **봇테스트 기능**을 사용할 수 있습니다. 
+오픈빌더 화면 우측 상단의 말풍선 아이콘 \(💬\)을 누르면 아래와 같이 **봇테스트 기능**을 사용할 수 있습니다.
 
 ![&#xCE74;&#xCE74;&#xC624; i &#xC624;&#xD508;&#xBE4C;&#xB354; &#xBD07; &#xD14C;&#xC2A4;&#xD2B8; &#xD654;&#xBA74;](../../.gitbook/assets/openbuilder_9.png)
 
@@ -135,11 +135,11 @@ CLOSER에서는 기본 블록 중 두 가지 블록을 설정합니다.
 
 {% hint style="info" %}
 현재 카카오 i 오픈빌더에서 웰컴 블록을 통한 환영 메시지 동작은 계정당 최초 1회만 동작합니다.  
-대화방을 나가거나 친구 삭제 후 다시 대화를 걸어도 한 번 환영 메시지를 수신한 사용자들에게는 다시 환영 메시지가 출력되하지 않습니다.  
-\(2019년 11월 29일 최종 확인\)  
+대화방을 나가거나 친구 삭제 후 다시 대화를 걸어도 한 번 환영 메시지를 수신한 사용자들에게는 다시 환영 메시지가 출력되지 않습니다.  
+\(2019년 11월 29일 최종 확인\)
 {% endhint %}
 
-## API형 스마트채팅 연동 <a id="smartchat"></a>
+## API형 스마트채팅 연동  <a id="smartchat"></a>
 
 플러스친구 스마트채팅은 사용자의 메시지에 대해 정해진 답변을 제공하거나, API를 통해 답변을 생성할 수 있습니다. CLOSER에서는 API형 스마트채팅을 통 챗봇 연동을 제공합니다.
 
@@ -147,15 +147,15 @@ CLOSER에서는 기본 블록 중 두 가지 블록을 설정합니다.
 * API형 스마트채팅 연동 가이드: [https://github.com/plusfriend/auto\_reply](https://github.com/plusfriend/auto_reply)
 
 {% hint style="warning" %}
-API형 스마트채팅 서비스는 2018년 12월 3일 이후 신규 가입이 중단됩니다.   
-이 방식은 기존에 등록한 사용자들에 한해 2019년 12월까지만 서비스가 제공되며, 이후에는 서비스가 종료됩니다.  
-  
+API형 스마트채팅 서비스는 2018년 12월 3일 이후 신규 가입이 중단됩니다.  
+이 방식은 기존에 등록한 사용자들에 한해 2019년 12월까지만 서비스가 제공되며, 이후에는 서비스가 종료됩니다.
+
 새롭게 카카오톡 플러스친구에 챗봇을 연결하시려는 경우 카카오 i 오픈빌더 연동 방법을 이용하세요.
 {% endhint %}
 
-### 1. 스마트채팅 연동 설정 
+### 1. 스마트채팅 연동 설정
 
-플러스친구 관리자 센터로 진입하여, 보유하신 플러스친구 프로필을 선택합니다. 
+플러스친구 관리자 센터로 진입하여, 보유하신 플러스친구 프로필을 선택합니다.
 
 ![&#xD50C;&#xB7EC;&#xC2A4;&#xCE5C;&#xAD6C; &#xAD00;&#xB9AC;&#xC790;&#xC13C;&#xD130; &#xD504;&#xB85C;&#xD544; &#xCD08;&#xAE30; &#xD654;&#xBA74;](../../.gitbook/assets/kakao_smartchat_1.png)
 
