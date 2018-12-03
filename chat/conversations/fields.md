@@ -128,3 +128,9 @@
 * 이미지 파일을 전송하면 이미지 말풍선으로 전송되며, 그 외 파일은 다운받을 수 있는 링크로 전송됩니다.
 * 다음의 파일 확장자들을 전송할 수 있습니다 **.jpg, .jpeg, .png, .gif, .pdf, .doc, .docx, .xls, .xlsx, .ppt, .pptx**
 
+### 대화내용 내보내기 <a id="export-conversation"></a>
+
+![대화내용 내보내기 버튼](../../.gitbook/assets/chat_conversation_export.png)
+
+* 진행한 상담의 대화내용은 채팅창 상단 다운로드 아이콘을 클릭하여 내보내실 수 있습니다.
+> txt 파일 형태로 제공됩니다.
