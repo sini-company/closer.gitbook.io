@@ -1,18 +1,23 @@
+---
+description: 웹 사이트나 홈페이지에 CLOSER 챗봇을 삽입하는 방법을 안내합니다.
+---
+
 # 웹사이트
 
+![CLOSER &#xCC44;&#xD305; &#xC5F0;&#xB3D9; &#xC608;&#xC2DC;](../../.gitbook/assets/image%20%289%29.png)
 
+CLOSER에서는 웹사이트에 실시간 채팅을 연동할 수 있도록 다음 두 가지 연동 방식을 제공합니다.
 
-## 연동화면 예시 <a id="undefined"></a>
+1. 웹사이트 실시간 채팅 삽입 SDK \(권장\)
+2. 실시간 채팅 웹페이지에 직접 연결되는 링크 \(전문가용\)
 
-CLOSER Builder로 작성된 챗봇은 운영중인 홈페이지에 삽입하거나, 링크 주소를 통해 고객에게 제공될 수 있습니다.
-
-![](../../.gitbook/assets/image%20%289%29.png)
+첫 번째 방식은 일반적인 방식으로 위 연동 예시 화면과 같은 결과를 확인할 수 있으며, 두 번째 방식은 iframe 등으로 채팅상담을 페이지 내부에 직접 삽입하거나 혹은 모바일 푸시 알람 등에서 링크를 직접 제공하는 방식으로 사용할 수 있습니다.
 
 ## 연동 방법 <a id="undefined-1"></a>
 
-> 1. CLOSER Builder\(https://builder.closer.ai\)로 이동하여 연동하고자 하는 봇 관리페이지로 진입합니다.
-> 2. 좌측 메뉴 Settings &gt; 메신져 연동으로 진입합니다.
-> 3. 메신저 연동 &gt; 웹챗 &gt; '설정' 버튼을 클릭합니다.
+1. CLOSER Builder\([https://builder.closer.ai](https://builder.closer.ai)\) 이동하여 연동하고자 하는 봇 관리페이지로 진입합니다.
+2. Settings &gt; 메신져 연동 메뉴로 진입합니다.
+3. 웹챗 &gt; **설정** 버튼을 클릭합니다.
 
 ![&#xBD07; &#xAD00;&#xB9AC; &#xD398;&#xC774;&#xC9C0; &amp;gt; Settings &amp;gt; &#xBA54;&#xC2E0;&#xC800; &#xC5F0;&#xB3D9;](../../.gitbook/assets/image%20%285%29.png)
 
