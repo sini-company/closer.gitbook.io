@@ -7,11 +7,11 @@ description: 기본 제공 노드만으로는 목적을 달성할 수 없을 때
 ## 실행환경
 
 런타임: Node.js v8.10  
-타임아웃: 5,000ms  
-코드길이 제한: 10,000byte<br />
-응답크기 제한: 5,000byte
+타임아웃: `5,000`ms  
+코드길이 제한: `10,000`byte  
+응답크기 제한: `5,000`byte
 
-만일 실행 과정에서 오류가 발생하거나 수행시간이 5,000ms를 넘을 경우 샌드박스는 종료되며, 이 때 챗봇은 최종 사용자에게 아무런 오류 메시지를 반환하지 않습니다.
+만일 실행 과정에서 오류가 발생하거나 수행시간이 5,000ms 를 초과할 경우 샌드박스 실행이 종료되며, 이 때 최종 사용자에게는 아무런 오류 메시지를 반환하지 않습니다. 오류 발생시 분기가 필요하다면 [3. 오류 처리하기](sandbox.md#3-error-handling) 항목을 참고해 주세요.
 
 ## 제공되는 Node.js 라이브러리
 
@@ -40,7 +40,7 @@ description: 기본 제공 노드만으로는 목적을 달성할 수 없을 때
 
 ## 핸들러 함수
 
-사용자 정의 스크립트 노드에 작성하는 script는 하나의 Node.js의 모듈과 동일합니다.   
+사용자 정의 스크립트 노드에 작성하는 script는 하나의 Node.js의 모듈과 동일합니다.  
 챗봇은 `module.exports` 로 선언된 함수를 실행합니다. callback, Promise 두 가지 형태의 반환 형식을 지원합니다.
 
 ### handler\(context, callback\): _void_
@@ -114,14 +114,14 @@ module.exports = async function handler(context) {
 
 ### 데이터 타입
 
-#### Bot  <a id="type-bot"></a>
+#### Bot   <a id="type-bot"></a>
 
 | Property | Type | Description | Required |
 | :--- | :--- | :--- | :--- |
 | title | String | 봇의 이름 | Y |
 | description | String | 봇의 설명 | N |
 
-#### HandlerResult  <a id="type-handler-result"></a>
+#### HandlerResult   <a id="type-handler-result"></a>
 
 | Property | Type | Description | Required |
 | :--- | :--- | :--- | :--- |
@@ -130,13 +130,13 @@ module.exports = async function handler(context) {
 
 ## 예제: 간단한 곱셈 스크립트
 
-### 1. 시나리오 작성
+### 1. 시나리오 작성 <a id="1-scenario"></a>
 
 ![&#xC0AC;&#xC6A9;&#xC790; &#xC815;&#xC758; &#xC2A4;&#xD06C;&#xB9BD;&#xD2B8; &#xB178;&#xB4DC; &#xC0AC;&#xC6A9; &#xC608;&#xC2DC;](../../../.gitbook/assets/builder_flow_editor_sandbox_node_tax_rate.png)
 
 위 플로우는 챗봇에서 가격과 세율를 입력 받아 곱한 값을 반환하는 시나리오입니다. 제품의 가격을 사용자 입력 요청노드를 통해 입력받고, 파라미터 설정 노드에서 `price`에 `{{message}}`를 설정합니다. 세율을 사용자 입력 요청노드를 통해 입력받고, 파라미터 설정 노드에서 `taxRate`에 `{{message}}`를 설정합니다.
 
-### 2. 사용자 정의 스크립트 작성
+### 2. 스크립트 작 <a id="2-script"></a>
 
 ```javascript
 module.exports = function handler(context, callback) {
@@ -161,14 +161,14 @@ module.exports = function handler(context, callback) {
 
 만일 `message`로 `{ text: '가격: ' + price * taxRate }`을 반환하면 챗봇은 사용자 정의 스크립트 노드가 종료되는 시점에 `text`에 해당하는 String을 최종 사용자에게 메시지로 전달합니다. 메시지 객체의 타입은 추후 변경될 수 있으니 가급적 추가적으로 메시지 응답 노드를 생성하여 [템플릿 문법](https://github.com/sini-company/closer.gitbook.io/tree/445a6109cbc140649261b19895cfab66c59c47fb/builder/flow-editor/node/template-syntax.md)을 활용하는 것을 추천합니다.
 
-### 3. 오류 처리하기
+### 3. 오류 처리하기 <a id="3-error-handling"></a>
 
-#### 오류 발생 시 분기 
+#### 오류 발생 시 분기
 
-사용자 정의 스크립트 노드에서 오류가 발생할 경우 챗봇은 아무런 메시지를 반환하지 않습니다만,  `sandbox.error`를 통해 오류가 발생하였을 경우의 시나리오를 처리할 수 있습니다. \(사용자 정의 스크립트 노드의 엣지로 **`sandbox.error`가 존재하는 경우**로 챗봇 로직을 분기할 수 있습니다.\)
+사용자 정의 스크립트 노드에서 오류가 발생할 경우 챗봇은 아무런 메시지를 반환하지 않습니다만, `sandbox.error`를 통해 오류가 발생하였을 경우의 시나리오를 처리할 수 있습니다. \(사용자 정의 스크립트 노드의 엣지로 `sandbox.error`**가 존재하는 경우**로 챗봇 로직을 분기할 수 있습니다.\)
 
-#### 오류 디버
+#### 오류 디버깅
 
-`sandbox.error`객체는 스크립트에서 반환하는 오류 또는 스크립트 실행 도중 발생한 오류로서, `{{sandbox.error.message}}` 혹은 `{{sandbox.error.stack}}` 값을 통해 디버깅 할 수 있습니다.   
+`sandbox.error`객체는 스크립트에서 반환하는 오류 또는 스크립트 실행 도중 발생한 오류로서, `{{sandbox.error.message}}` 혹은 `{{sandbox.error.stack}}` 값을 통해 디버깅 할 수 있습니다.  
 다만 디버깅 메시지를 사용할 때, 챗봇과 대화하는 최종 사용자에게 그대로 노출되지 않도록 유의하십시오.
 
