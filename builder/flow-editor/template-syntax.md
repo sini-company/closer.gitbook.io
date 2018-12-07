@@ -125,21 +125,23 @@ CLOSER에서는 사용자의 입력이나 다른 노드의 반환값들이 담�
   {% endcode-tabs-item %}
   {% endcode-tabs %}
 
-위는 `phoneNumber`는 존재하지만 `reservationDate`는 존재하지 않는 상황입니다. 이 경우, 템플릿 엔진은 다음과 같은 값을 반환합니다.
+위는 `phoneNumber`는 존재하지만 `reservationDate`는 존재하지 않는 상황입니다. 이 경우, 템플릿 엔진은 다음과 같은 결과를을 반환합니다.
 
 * ```text
   입력하신 전화번호는 010-1234-5678입니다.
   에 연락드리겠습니다.
   ```
 
-**지정한 키에 데이터가 없는 경우**에는 위의 예시와 같이 **공백이 반환**됩니다. 
+이러한 상황을 방지리하기 위해서는 두 가지 방법이 있습니다.
 
-이러한 상황을 처리하기 위해서는 값이 있는 경우와 없는 경우를 챗봇 플로우 상에서 분기하여 처리할수도 있지만, 템플릿 문법에서도 다음과 같은 조건부 처리문을 작성할 수 있습니다.
+1. 값이 있는 경우와 없는 경우를 **챗봇 플로우 상에서 분기하여 처리**
+2. 템플릿 문법의 **조건부 표현식** 활용
+
+이제 조건부 표현식을 사용한 예시를 살펴보겠습니다.
 
 * {% code-tabs %}
   {% code-tabs-item title="템플릿" %}
   ```text
-  입력하신 전화번호는 {{phoneNumber}}입니다.
   {{#if reservationDate}}
     {{reservationDate}}에 연락드리겠습니다.
   {{else}}
@@ -158,6 +160,8 @@ CLOSER에서는 사용자의 입력이나 다른 노드의 반환값들이 담�
   {% endcode-tabs %}
 
 {% hint style="info" %}
+조건부 표현식은 Handlebars의 block helper 기능을 통해 제공됩니다. 
+
 더 자세한 사항은 Handlebars의 Builtin Helpers 도움말을 참고해 주세요. [https://handlebarsjs.com/builtin\_helpers.html](https://handlebarsjs.com/builtin_helpers.html)  
 {% endhint %}
 
@@ -207,6 +211,8 @@ CLOSER에서는 사용자의 입력이나 다른 노드의 반환값들이 담�
   ```
 
 {% hint style="info" %}
+반복자 표현식은 Handlebars의 block helper 기능을 통해 제공됩니다.
+
 더 자세한 사항은 Handlebars의 Builtin Helpers 도움말을 참고해 주세요. [https://handlebarsjs.com/builtin\_helpers.html](https://handlebarsjs.com/builtin_helpers.html)  
 {% endhint %}
 
@@ -217,6 +223,7 @@ CLOSER에서는 사용자의 입력이나 다른 노드의 반환값들이 담�
 CLOSER 템플릿 엔진에서는 Handlebars에서 제공하는 문법 외에도 CLOSER가 제공하는 함수들을 이용할 수 있습니다.
 
 * **DATE\(\)** : 현재 시간을 반환합니다.
+  * e.g. `{{DATE()}}` -&gt; `2018-12-07T05:47:14.667Z` \(ISO Date\)
 * **RAND\(\[from, to\]\)**: `from`과 `to`사이의 숫자를 반환합니다. \(from, to 모두 정수로 입력된 경우\)
   * e.g. `{{RAND(1,10)}}` -&gt; `6` \(1~10 사이의 값\)
 * **RAND\(\[...items\]\)**: `items` 값 중 하나를 반환합니다.
