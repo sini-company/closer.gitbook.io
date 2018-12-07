@@ -1,53 +1,81 @@
+---
+description: 답변을 생성할 때 동적인 데이터 (파라미터 혹은 다른 노드의 반환값) 를 활용하는 방법을 알아봅니다.
+---
+
 # 템플릿 문법\(Template Syntax\)
 
-노드를 정적인 데이터들로만 작성하면 동적으로 변경되는 사용자 파라미터에 대응하는 Flow를 작성할 수 없습니다. 동적으로 변하는 상황에 대응하기 위해 CLOSER에서는 각 Node를 작성할 때 사용할 수 있는 [템플릿 엔진](https://en.wikipedia.org/wiki/Template_processor)을 제공합니다.
+## 템플릿이란?
 
-## 파라미터 사용하기 <a id="use-parameter"></a>
+템플릿\(Template\)이란 형판\(形板\)을 의미합니다.  
+미리 데이터가 들어갈 형판을 만들어 두면 챗봇 시나리오에서 생성된 데이터를 답변 생성 시점에 주입할 수 있습니다.
 
-템플릿은 정해진 위치에 파라미터를 주입할 수 있는 금형에 비유할 수 있습니다. 봇 빌더에서 동적인 파라미터가 필요한 공간에 중괄호 2개로 감싸진 파라미터 삽입해 놓으면 실제 봇이 사용자 요청을 처리할 때 다음과 같은 결과를 반환합니다. 만일 템플릿에 입력된 파라미터가 존재하지 않는 경우 템플릿 엔진은 빈 문자열을 반환합니다.
+간단한 인삿말을 예로 들어 보겠습니다. 
+
+1. 안녕하세요 고객님? 좋은 하루 되세요.
+2. 안녕하세요 김철수님? 좋은 하루 되세요.
+
+2의 시나리오를 달성하기 위해서는 사용자의 이름을 입력받아 파라미터에 저장하고 활용하여야 합니다. 이 시나리오는 메시지 응답에 다음과 같은 템플릿을 작성함으로서 달성할 수 있습니다.
+
+```text
+안녕하세요 {{name}}님? 좋은 하루 되세요.
+```
+
+템플릿 기능에 대한 자세한 사용법은 아래에서 더 자세히 알아보세요.
+
+{% hint style="info" %}
+CLOSER에서는 [템플릿 엔진](https://en.wikipedia.org/wiki/Template_processor)으로 Handlebars를 이용하고 있습니다. 원리를 더 자세히 알고 싶으시다면 Handlebars documentation을 참고해 주세요.
+
+\(영문\) [https://handlebarsjs.com/](https://handlebarsjs.com/)
+{% endhint %}
+
+## 템플릿 사용 방법 <a id="basic"></a>
+
+기본적인 템플릿 문법은 중괄호 2개\(`{{ }}`\)로 감싸진 구문으로 작성됩니다.   
+템플릿 문법에서 사용되는 데이터는 컨텍스트\(Context\)에 담겨서 제공됩니다. 자세한 내용은 아래를 참고해 주세요.
+
+### 컨텍스트 \(Context\)
+
+CLOSER에서는 사용자의 입력이나 다른 노드의 반환값들이 담겨있는 컨텍스트\(Context\)라는 객체를 제공합니다.  
+다음과 같은 들이 제공됩니다.
+
+| 키 \(key\) | 값 \(value\) |
+| :--- | :--- |
+| botId | 챗봇의 ID |
+| endUserId | 고객의 식별자 |
+| conversationId | 고객의 대화 세션 식별자 |
+| platform | 고객의 유입 채널 \(e.g. `facebook`, `kakao`, `web`, ...\) |
+| userKey | 고객의 유입 채널에서 제공 식별 |
+| params | 챗봇 시나리오에 설정된 파라미터 |
+| message | 마지막으로 수신된 고객의 메시지 \(`message.text`값과 동일\) |
+| message.type | 마지막으로 수신된 고객의 메시지 유형 \(e.g. `text`, `media`, `location`\) |
+| \[NODE\_TYPE\] | 각 노드의 실행 결과가 담겨있는 객체 |
+| \[NODE\_TYPE\].status | 각 노드의 실행 상태 \(e.g. `PENDING`, `COMPLETED`, `FAILED`\)  |
+| \[NODE\_TYPE\].error | 각 노드의 실행 오류 \(실행에 실패하였을 경우 반환됨\) |
+
+{% hint style="info" %}
+아직 Context 반환값에 대한 문서는 아직 100% 완성되지 않았습니다.   
+각 노드별 반환값에 대한 설명은 추후 추가될 예정입니다.
+{% endhint %}
+
+템플릿 문법에서는 컨텍스트에 담겨있는 값들이 이용됩니다. 예를 들어 카카오톡에서 유입된 사용자에게 `{{platform}}에서 오셨군요`라는 값을 이용하면 `kakao에서 오셨군요` 라는 결과가 나타납니다.
+
+파라미터의 경우는 조금 더 편리한 방법을 지원합니다.  `name` 이라는 파라미터를 사용하려는 경우 원래대로라면`{{params.name}}` 라는 식을 통해 접근해야 하지만, 사용자의 편의를 위해 `{{name}}` 이라고 작성하여도 동일한 효과를 나타낼 수 있습니다.
+
+{% hint style="warning" %}
+컨텍스트에 이미 존재하는 예약어와 파라미터의 키 값이 겹치는 경우에는 컨텍스트의 값이 먼저 이용됩니다.  
+따라서 `platform`이라는 파라미터를 따로 관리하실 경우엔 `{{params.platform}}` 을 이용해 주세요.  
+{% endhint %}
+
+
+
+### 경로 접근식 \(Path Expression\) <a id="path-expression"></a>
+
+이용하고자 하는 값이 객체나 배열 안에 있는 값일 경우에 JavaScript의 [속성 접근자\(Property Accessor\)](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Operators/Property_Accessors) 문법을 이용할 수 있습니다.
 
 * **템플릿**
 
   ```text
-  입력하신 전화번호는 {{phoneNumber}}입니다.
-  {{reservationDate}}에 연락드리겠습니다.
-  ```
-
-* **입력받은 파라미터**
-
-  ```javascript
-  { phoneNumber: '010-1234-5678' }
-  ```
-
-* **결과**
-
-  ```text
-  입력하신 전화번호는 010-1234-5678입니다.
-  에 연락드리겠습니다.
-  ```
-
-만약 중괄호를 그대로 사용할 때에는 `{{{{raw}}}}`을 이용합니다.
-
-* **템플릿**
-
-  ```text
-  저는 {{{{raw}}}}{{중괄호를 쓰고 싶어요}}{{{{/raw}}}}
-  ```
-
-* **결과**
-
-  ```text
-  저는 {{중괄호를 쓰고 싶어요}}
-  ```
-
-### 오브젝트 혹은 배열에 접근 <a id="access-object-and-array"></a>
-
-파라미터가 오브젝트나 배열인 경우 JavaScript와 Handlebars의 오브젝트 경로 문법을 지원합니다.
-
-* **템플릿**
-
-  ```text
-  {{poets[0]}}과 {{poets.[1]}}과 {{novel.author}}
+  {{poets[0]}}과 {{poets[1]}}과 {{novel.author}}
   ```
 
 * **입력받은 파라미터**
@@ -68,19 +96,173 @@
   김소월과 유치환과 김동인
   ```
 
-템플릿 엔진은 사용자 정의 파라미터 외에도 [예약 파라미터](parameter.md#reserved-parameters)를 사용할 수 있으며, 나아가 더 다양하고 복잡한 로직을 작성할 수 있는 [템플릿 함수](template-syntax.md#template-functions)를 제공합니다.
+{% hint style="info" %}
+배열의 경우 Javascript의 속성 접근자 외에도 Handlebars의 속성 접근자를 사용할 수도 있습니다.
 
-### 배열 다루기 <a id="array-to-cards"></a>
+* Javascript 방식법: `path.to.array[i]`
+* Handlebars 방식: `path.to.array.[i]`
+{% endhint %}
 
-배열 타입의 파라미터는 경로에 `[i]`를 활용하면 배열의 각 항목에 대해 값이 생성됩니다.
 
-예를 들어 [SWAPI](https://swapi.co/)에서 스타워즈 우주선 목록 배열을 가져오는 API를 사용해 카드형 메시지를 출력해보겠습니다. HTTP요청노드에서 [https://swapi.co/api/starships](https://swapi.co/api/starships) 에 GET요청을 보내면 응답값은 예약 파라미터인 `{{fetch.data}}`에, 우주선 목록의 배열은 `{{fetch.data.results}}`에 저장됩니다. 이때 `{{fetch.data.results[i]}}`에 대해 카드를 생성하면 각 우주선에 대해 카드가 생성됩니다.
+
+### 조건부 표현식 \(Conditional Expression\)
+
+다음과 같은 상황을 예로 들어 보겠습니다.
+
+* {% code-tabs %}
+  {% code-tabs-item title="템플릿" %}
+  ```text
+  입력하신 전화번호는 {{phoneNumber}}입니다.
+  {{reservationDate}}에 연락드리겠습니다.
+  ```
+  {% endcode-tabs-item %}
+  {% endcode-tabs %}
+* {% code-tabs %}
+  {% code-tabs-item title="파라미터" %}
+  ```javascript
+  { phoneNumber: '010-1234-5678' }
+  ```
+  {% endcode-tabs-item %}
+  {% endcode-tabs %}
+
+위는 `phoneNumber`는 존재하지만 `reservationDate`는 존재하지 않는 상황입니다. 이 경우, 템플릿 엔진은 다음과 같은 값을 반환합니다.
+
+* ```text
+  입력하신 전화번호는 010-1234-5678입니다.
+  에 연락드리겠습니다.
+  ```
+
+**지정한 키에 데이터가 없는 경우**에는 위의 예시와 같이 **공백이 반환**됩니다. 
+
+이러한 상황을 처리하기 위해서는 값이 있는 경우와 없는 경우를 챗봇 플로우 상에서 분기하여 처리할수도 있지만, 템플릿 문법에서도 다음과 같은 조건부 처리문을 작성할 수 있습니다.
+
+* {% code-tabs %}
+  {% code-tabs-item title="템플릿" %}
+  ```text
+  입력하신 전화번호는 {{phoneNumber}}입니다.
+  {{#if reservationDate}}
+    {{reservationDate}}에 연락드리겠습니다.
+  {{else}}
+    곧 연락드리겠습니다.
+  {{/if}}
+  ```
+  {% endcode-tabs-item %}
+  {% endcode-tabs %}
+* {% code-tabs %}
+  {% code-tabs-item title="결과" %}
+  ```text
+  입력하신 전화번호는 010-1234-5678입니다.
+  곧 연락드리겠습니다.
+  ```
+  {% endcode-tabs-item %}
+  {% endcode-tabs %}
+
+{% hint style="info" %}
+더 자세한 사항은 Handlebars의 Builtin Helpers 도움말을 참고해 주세요. [https://handlebarsjs.com/builtin\_helpers.html](https://handlebarsjs.com/builtin_helpers.html)  
+{% endhint %}
+
+
+
+### 반복자 표현식 \(Iterator Expression\) <a id="array-to-cards"></a>
+
+객체\(Object\)나 배열\(Array\)안에 있는 항목들에 대해 템플릿을 확장하고 싶을 때 반복자 표현식을 이용할 수 있습니다.  
+다음 예시를 참고해주세요.
+
+* **입력받은 파라미터**
+
+  ```javascript
+  {
+    carts: [
+      { name: '사과', quantity: 1 },
+      { name: '포도',  quantity: 2 },
+      { name: '복숭아', quantity: 4 },
+      { name: '망고', quantity: 4 }
+    ]
+  }
+  ```
+
+* **템플릿**
+
+  ```text
+  장바구니 목록입니다.
+
+  {{#each carts}}
+    {{name}} {{quantity}} 개
+  {{/each}}
+
+  결제를 진행하시겠습니까?
+  ```
+
+* **결과**
+
+  ```text
+  장바구니 목록입니다.
+
+  사과 1개
+  포도 2개
+  복숭아 4개
+  망고 4
+
+  결제를 진행하시겠습니까?
+  ```
+
+{% hint style="info" %}
+더 자세한 사항은 Handlebars의 Builtin Helpers 도움말을 참고해 주세요. [https://handlebarsjs.com/builtin\_helpers.html](https://handlebarsjs.com/builtin_helpers.html)  
+{% endhint %}
+
+### 
+
+### 도우미 함수 \(Helper Functions\)
+
+CLOSER 템플릿 엔진에서는 Handlebars에서 제공하는 문법 외에도 CLOSER가 제공하는 함수들을 이용할 수 있습니다.
+
+* **DATE\(\)** : 현재 시간을 반환합니다.
+* **RAND\(\[from, to\]\)**: `from`과 `to`사이의 숫자를 반환합니다. \(from, to 모두 정수로 입력된 경우\)
+  * e.g. `{{RAND(1,10)}}` -&gt; `6` \(1~10 사이의 값\)
+* **RAND\(\[...items\]\)**: `items` 값 중 하나를 반환합니다.
+  * e.g. `{{RAND("철수", "영희"}}` -&gt; `철수` \(철수, 영희 둘 중 하나\)
+
+{% hint style="info" %}
+도우미 함수는 계속해서 추가될 예정입니다. 
+{% endhint %}
+
+
+
+### 문법에 오류가 존재할 경우
+
+템플릿 문법에 오류가 발생한 경우 작성된 노드가 제대로 동작하지 않을 수 있기 때문에 템플릿 표현 사용시에는 각별한 주의가 필요합니다. 만약 오류가 발생할 경우 빈 문자열을 반환합니다.
+
+* **템플릿**
+
+  ```text
+  {{#if}}if를 닫지 않음
+  ```
+
+* **결과** 
+
+  ```text
+
+  ```
+
+{% hint style="warning" %}
+시나리오 수행 결과가 올바르지 않은 경우에는 봇에서 설정한 메시지 없음 응답 또는 오류 응답 등이 반환될 수 있습니다.
+{% endhint %}
+
+
+
+## 실사용 예제
+
+### 스타워즈 우주선 목록 
+
+여기서는 **메시지 응답 노드에 한정하여 사용할 수 있는 반복자 표현식**을 안내해 드립니다.
+
+[SWAPI](https://swapi.co/)에서 스타워즈 우주선 목록 배열을 가져오는 API를 사용해 자동으로 확장되는 카드형 메시지를 생성해보겠습니다. HTTP 요청노드를 통해 [https://swapi.co/api/starships](https://swapi.co/api/starships) 에 GET요청을 보내면 응답 값은 예약된 컨텍스트 값인 `{{fetch.data}}`에, 우주선 목록의 배열은 `{{fetch.data.results}}`에 담겨 반환됩니다. 이때 카드를 생성할 때 `{{fetch.data.results[i]}}`와 같이 값을 이용하면 각 우주선에 대해 카드가 생성됩니다.
 
 * **템플릿**
 
   ![&#xBC30;&#xC5F4;&#xC744; &#xCE90;&#xB7EC;&#xC140; &#xBA54;&#xC2DC;&#xC9C0;&#xB85C; &#xBC14;&#xAFB8;&#xAE30; &#xD15C;&#xD50C;&#xB9BF;](../../.gitbook/assets/array-to-cards-template.png)
 
-* **입력받은 파라미터**
+* **실행 컨텍스트**
 
   ```javascript
   // GET https://swapi.co/api/starships
@@ -106,15 +288,11 @@
 
 * **결과**
 
-  ![&#xBC30;&#xC5F4;&#xC744; &#xCE90;&#xB7EC;&#xC140; &#xBA54;&#xC2DC;&#xC9C0;&#xB85C; &#xBC14;&#xAFB8;&#xAE30; &#xACB0;&#xACFC;](../../.gitbook/assets/array-to-cards-result.png)
+![&#xBC30;&#xC5F4;&#xC744; &#xCE90;&#xB7EC;&#xC140; &#xBA54;&#xC2DC;&#xC9C0;&#xB85C; &#xBC14;&#xAFB8;&#xAE30; &#xACB0;&#xACFC;](../../.gitbook/assets/array-to-cards-result.png)
 
-## 템플릿 함수 \(Template Functions\) <a id="template-functions"></a>
+### Handlebars 템플릿 예제
 
-CLOSER에서는 템플릿 문법으로 [Handlebars.js](http://handlebarsjs.com/)의 기본 문법을 지원합니다.
-
-이 문서에서는 자주 사용되는 문법을 예시와 함께 소개합니다. 자세한 문법은 [Handlebars.js](http://handlebarsjs.com/) API문서를 참조해주세요.
-
-### if-else, unless 구문
+#### if-else, unless 구문
 
 * **템플릿**
 
@@ -126,7 +304,7 @@ CLOSER에서는 템플릿 문법으로 [Handlebars.js](http://handlebarsjs.com/)
   {{else}}
     맛있으면 {{banana}}
   {{/if}}
-  {{#unless mango}}{{banana}}는 길어{{/unless}}
+  {{banana}}는 길어
   ```
 
   **입력받은 파라미터**
@@ -140,17 +318,18 @@ CLOSER에서는 템플릿 문법으로 [Handlebars.js](http://handlebarsjs.com/)
   ```javascript
   원숭이 엉덩이는 빨개
 
-    사과는 맛있어
+  사과는 맛있어
   바나나는 길어
   ```
 
-### each, with
+#### each, with 구문
 
 * **템플릿**
 
   ```text
-  {{#each poets}}{{this}}{{#unless @last }}과 {{/unless}}{{/each}}은 시인이고,
-  {{#with novel}}{{author}}은 <{{title}}>를 썼다.{{/with}}
+  {{#with novel}}
+    {{author}}은 <{{title}}>를 썼다.
+  {{/with}}
   ```
 
 * **입력받은 파라미터**
@@ -168,23 +347,8 @@ CLOSER에서는 템플릿 문법으로 [Handlebars.js](http://handlebarsjs.com/)
 * **결과**
 
   ```text
-  김소월과 유치환과 김수영은 시인이고,
   김동인은 <감자>를 썼다.
   ```
 
-## 템플릿 문법에 오류가 발생한 경우 <a id="on-error"></a>
 
-작성된 노드가 제대로 동작하지 않을 수 있기 때문에 템플릿 엔진 사용시에는 각별한 주의가 필요합니다. 만약 오류가 발생할 경우 빈 문자열을 반환합니다.
-
-* **템플릿**
-
-  ```text
-  {{#if}}if를 닫지 않음
-  ```
-
-* **결과** 
-
-  ```text
-
-  ```
 
