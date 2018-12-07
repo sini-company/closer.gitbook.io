@@ -15,10 +15,10 @@ description: 답변을 생성할 때 동적인 데이터 (파라미터 혹은 �
 2. `안녕하세요 {{name}}님? 좋은 하루 되세요.`
 
 1은 정적인 텍스트로만 답변을 작성한 예시이며, 2는 템플릿 기능을 이용해 답변을 작성한 예시입니다.  
-이와 같이 답변을 작성할 때 템플릿을 이용하면 고객과의 대화 내용에 따라 더욱 풍성하고 다채로운 답변을 작성하실 수 있게 됩습니다.
+답변을 작성할 때 템플릿을 이용하면 고객과의 대화 내용에 따라 더욱 더 풍성하고 다채로운 답변을 작성하는 것이 가능해집니다.
 
-템플릿 기능에 사용되는 데이터들은 챗봇의 실행 시점에서 결정되며, 이 값은 [컨텍스트 \(Context\)](template-syntax.md#context) 라고 부릅니다.  
-템플릿 문법에 사용할 수 있는 표현식들은 [경로 접근식](template-syntax.md#path-expression), [조건부 표현식](template-syntax.md#conditional-expression), [반복자 표현식](template-syntax.md#array-to-cards) 등이 있습니다. 
+* 템플릿에 사용되는 데이터들은 챗봇의 실행 시점에서 결정되며, 이 값은 [컨텍스트 \(Context\)](template-syntax.md#context) 라고 부릅니다.
+* 템플릿에 사용할 수 있는 표현식들은 [경로 접근식](template-syntax.md#path-expression), [조건부 표현식](template-syntax.md#conditional-expression), [반복자 표현식](template-syntax.md#array-to-cards) 등이 있습니다. 
 
 템플릿 기능에 대한 자세한 사용 방법은 아래에서 더 자세히 알아보세요.
 
