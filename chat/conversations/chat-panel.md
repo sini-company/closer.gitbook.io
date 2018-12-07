@@ -1,6 +1,6 @@
 # 상담원 패널
 
-## 고객 정보 {#customer-info}
+## 고객 정보 <a id="customer-info"></a>
 
 ![](../../.gitbook/assets/openbeta_%20%281%29.png)
 
@@ -8,7 +8,7 @@
 * 이름 / 전화번호 / 이메일 / 성별은 상담원이 직접 입력하여 수정할 수 있습니다.
 * 이름 / 전화번호 / 이메일 / 성별을 제공하는 메신저의 경우 미리 입력되어있을 수 있습니다.
 
-## 자주 쓰는 문구 {#favorite-message}
+## 자주 쓰는 문구 <a id="favorite-message"></a>
 
 ![&#xC790;&#xC8FC; &#xC4F0;&#xB294; &#xBB38;&#xAD6C; &#xC608;&#xC2DC;](../../.gitbook/assets/openbeta_chat_-_%20%282%29.png)
 
@@ -18,7 +18,7 @@
 * 한 번 클릭 시 텍스트 입력에 텍스트가 복사되어 입력됩니다.
 * '더블클릭 시 바로 전송하기'가 체크되어있다면 더블 클릭 시 바로 고객에게 메시지가 전송됩니다.
 
-## 커스텀 패널 {#custom-panel}
+## 커스텀 패널 <a id="custom-panel"></a>
 
 ![&#xCEE4;&#xC2A4;&#xD140; &#xD328;&#xB110; &#xC608;&#xC2DC;](../../.gitbook/assets/openbeta_chat_-_%20%283%29.png)
 

@@ -26,12 +26,15 @@
   * [새로운 봇 만들기](builder/start/new-bot.md)
 * [통계 \(Dashboard\)](builder/dashboard.md)
 * [봇 에디터\(플로우 편집\)](builder/flow-editor/README.md)
-  * [노드\(Node\)](builder/flow-editor/node.md)
+  * [노드\(Node\)](builder/flow-editor/node/README.md)
+    * [사용자 정의 스크립트 노드](builder/flow-editor/node/sandbox.md)
   * [엣지\(Edge\)](builder/flow-editor/edge.md)
   * [플로우\(Flow\)](builder/flow-editor/flow.md)
   * [파라미터\(Parameter\)](builder/flow-editor/parameter.md)
   * [템플릿 문법\(Template Syntax\)](builder/flow-editor/template-syntax.md)
-* [메신저 연동하기](builder/messenger-int.md)
+* [메신저 연동하기](builder/messenger-integrations/README.md)
+  * [웹사이트](builder/messenger-integrations/web.md)
+  * [카카오톡](builder/messenger-integrations/kakao.md)
 * [봇 설정](builder/bot-settings.md)
 
 ## Chat

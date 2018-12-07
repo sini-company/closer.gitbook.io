@@ -1,6 +1,6 @@
 # 봇 설정
 
-## 봇 설정 {#bot-settings}
+## 봇 설정 <a id="bot-settings"></a>
 
 ![](../.gitbook/assets/builder_%20%285%29.png)
 
