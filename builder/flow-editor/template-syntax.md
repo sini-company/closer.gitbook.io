@@ -240,7 +240,7 @@ CLOSER 템플릿 엔진에서는 Handlebars에서 제공하는 문법 외에도 
 
 
 
-## 템플릿 오류
+## 템플릿 문법 오류 <a id="syntax-error"></a>
 
 템플릿 문법에 오류가 발생한 경우 노드의 기능이 제대로 동작하지 않을 수 있습니다. 때문에 템플릿 사용시에는 각별한 주의가 필요합니다. 
 
@@ -278,7 +278,7 @@ CLOSER 템플릿 엔진에서는 Handlebars에서 제공하는 문법 외에도 
    * `{ "string": "{{params.string}}", "number": {{params.number}}}` : 🙅‍♀️
    * `{ "string": "{{params.string}}", "number": {{params.number}} }` : 🙆‍♀️
 
-## 실사용 예제
+## 실제 사용 예제
 
 ### 스타워즈 우주선 목록 
 
