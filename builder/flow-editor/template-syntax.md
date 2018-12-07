@@ -266,13 +266,17 @@ CLOSER 템플릿 엔진에서는 Handlebars에서 제공하는 문법 외에도 
 
 ### 스타워즈 우주선 목록 
 
-여기서는 **메시지 응답 노드에 한정하여 사용할 수 있는 반복자 표현식**을 안내해 드립니다.
+{% hint style="info" %}
+여기서는 **메시지 응답 노드에 한정하여 사용할 수 있는 반복자 표현식**을 사용합니다.  
+\(이 반복자 표현식은 Handlebars와는 관계가 없습니다.\)
+{% endhint %}
 
-[SWAPI](https://swapi.co/)에서 스타워즈 우주선 목록 배열을 가져오는 API를 사용해 자동으로 확장되는 카드형 메시지를 생성해보겠습니다. HTTP 요청노드를 통해 [https://swapi.co/api/starships](https://swapi.co/api/starships) 에 GET요청을 보내면 응답 값은 예약된 컨텍스트 값인 `{{fetch.data}}`에, 우주선 목록의 배열은 `{{fetch.data.results}}`에 담겨 반환됩니다. 이때 카드를 생성할 때 `{{fetch.data.results[i]}}`와 같이 값을 이용하면 각 우주선에 대해 카드가 생성됩니다.
+[SWAPI](https://swapi.co/)에서 스타워즈 우주선 목록 배열을 가져오는 API를 사용해 자동으로 확장되는 카드형 메시지를 생성해보겠습니다.
 
-* **템플릿**
+1. HTTP 요청 노드를 통해 [https://swapi.co/api/starships](https://swapi.co/api/starships) 에 GET 요청을 보냅니다.  이 때, 응답 결과는 `fetch` 컨텍스트에 담겨서 반환됩니다.
+2. HTTP 요청 노드가 성공적으로 수행된 이후, 우주선 목록은 `{{fetch.data.results}}`에 반환됩니다.  이제 카드를 하나 만들어 제목에 `{{fetch.data.results[i].name}}`, 설명에 `{{fetch.data.results[i].description}}` 같이 작성하여 주시면 `fetch.data.results` 의 크기만큼 카드가 동적으로 생성됩니다.
 
-  ![&#xBC30;&#xC5F4;&#xC744; &#xCE90;&#xB7EC;&#xC140; &#xBA54;&#xC2DC;&#xC9C0;&#xB85C; &#xBC14;&#xAFB8;&#xAE30; &#xD15C;&#xD50C;&#xB9BF;](../../.gitbook/assets/array-to-cards-template.png)
+![&#xBC30;&#xC5F4;&#xC744; &#xCE74;&#xB4DC;&#xD615; &#xBA54;&#xC2DC;&#xC9C0;&#xB85C; &#xBC14;&#xAFB8;&#xB294; &#xC608;&#xC2DC;](../../.gitbook/assets/array-to-cards-template.png)
 
 * **실행 컨텍스트**
 
@@ -281,24 +285,29 @@ CLOSER 템플릿 엔진에서는 Handlebars에서 제공하는 문법 외에도 
   {
     fetch: {
       data: {
-          count: 37,
-          next: 'https://swapi.co/api/starships/?page=2',
-          previous: null,
+        count: 37,
+        next: 'https://swapi.co/api/starships/?page=2',
+        previous: null,
           results: [
-              {
-                  name: 'Executor',
-                  model: 'Executor-class star dreadnought',
-                  manufacturer: 'Kuat Drive Yards, Fondor Shipyards',
+            {
+              name: 'Executor',
+              model: 'Executor-class star dreadnought',
+              manufacturer: 'Kuat Drive Yards, Fondor Shipyards',
+              url: 'https://swapi.co/api/starships/15/',
+              // ...
+            },
+            {
+              name: 'Sentinel-class landing craft',   
+              // ...
+            },
             // ...
-                  url: 'https://swapi.co/api/starships/15/'
-              },
-          // ...
+          ]
         }
       }
     }
   ```
 
-* **결과**
+* **메시지 응답 결과**
 
 ![&#xBC30;&#xC5F4;&#xC744; &#xCE90;&#xB7EC;&#xC140; &#xBA54;&#xC2DC;&#xC9C0;&#xB85C; &#xBC14;&#xAFB8;&#xAE30; &#xACB0;&#xACFC;](../../.gitbook/assets/array-to-cards-result.png)
 
