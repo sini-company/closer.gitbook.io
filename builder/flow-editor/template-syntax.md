@@ -134,22 +134,9 @@ HTTP요청노드에서 https://swapi.co/api/starships 에 GET요청을 보내면
 ## 템플릿 함수 \(Template Functions\) {#template-functions}
 
 CLOSER에서는 템플릿 문법으로 [Handlebars.js](http://handlebarsjs.com/)의 기본 문법을 지원합니다.
-또한 [handlebars-helpers](https://github.com/helpers/handlebars-helpers) 라이브러리의
-추가적인 Handlebars.js 헬퍼 함수를 지원하고 있습니다.
-
-CLOSER에서 사용할 수 있는 handlebars-helpers 헬퍼 함수 카테고리는 다음과 같습니다.
-- [array](https://github.com/helpers/handlebars-helpers#array)
-- [collection](https://github.com/helpers/handlebars-helpers#collection)
-- [comparison](https://github.com/helpers/handlebars-helpers#comparison)
-- [date](https://github.com/helpers/handlebars-helpers#date)
-- [math](https://github.com/helpers/handlebars-helpers#math)
-- [number](https://github.com/helpers/handlebars-helpers#number)
-- [object](https://github.com/helpers/handlebars-helpers#object)
-- [string](https://github.com/helpers/handlebars-helpers#string)
 
 이 문서에서는 자주 사용되는 문법을 예시와 함께 소개합니다.
-자세한 문법은 [Handlebars.js](http://handlebarsjs.com/) API문서
-혹은 [handlebars-helpers](https://github.com/helpers/handlebars-helpers)를 참조해주세요.
+자세한 문법은 [Handlebars.js](http://handlebarsjs.com/) API문서를 참조해주세요.
 
 ### if-else, unless 구문 #{if-else-unless}
 
@@ -208,97 +195,7 @@ CLOSER에서 사용할 수 있는 handlebars-helpers 헬퍼 함수 카테고리�
   김소월과 유치환과 김수영은 시인이고,
   김동인은 <감자>를 썼다.
   ```
-
-### length #{helper-length}
-배열의 크기를 반환합니다.
-
-* **템플릿**
-
-  ```text
-  위 {{length poets}}명은 시인이다.
-  ```
-
-  **입력받은 파라미터**
-
-  ```javascript
-  {
-    poets: ['김소월', '유치환', '김수영']  
-  }
-  ```
-
-* **결과**
-
-  ```javascript
-  위 3명은 시인이다.
-  ```
-
-
-### date #{helper-date}
-  `{{date [formatted date string] [format] }}`
-  formatted string
-
-* **템플릿**
-
-  ```text
-  예약하신 날짜는 {{date reservationDate "YYYY년 MM월 DD일 HH시 mm분"}}입니다.
-  {{date "2018-11-29" "MM월 DD일"}}은 휴일입니다.
-  ```
-
-  **입력받은 파라미터**
-
-  ```javascript
-  {
-    reservationDate: '2018-11-21T01:30:000Z'
-  }
-  ```
-
-* **결과**
-
-  출력되는 timezone은 현재 Asia/Seoul(+9:00)만 지원됩니다.
-
-  ```text
-  예약하신 날짜는 2018년 11월 21일 10시 30분입니다.
-  11월 29일은 휴일입니다.
-  ```
-
-
-### sum #{helper-sum}
-배열의 값을 모두 더한 값을 반환합니다.
-
-* **템플릿**
-
-  ```text
-  {{sum nums}}
-  ```
-
-  **입력받은 파라미터**
-
-  ```javascript
-  {
-    nums: [0, 1, 2, ..., 100]
-  }
-  ```
-
-* **결과**
-
-  ```javascript
-  5050
-  ```
-
-### random #{helper-random}
-정수 i, j에 대하여 i &le; n &le; j를 만족하는 임의의 정수 n을 반환합니다.
-
-* **템플릿**
-
-  ```text
-  {{random -4 5}}
-  ```
-
-* **결과**
-
-  ```javascript
-  3
-  ```
+  
 
 ## 템플릿 문법에 오류가 발생한 경우 #{on-error}
 작성된 노드가 제대로 동작하지 않을 수 있기 때문에
