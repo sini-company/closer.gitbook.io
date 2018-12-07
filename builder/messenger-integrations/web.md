@@ -1,7 +1,3 @@
----
-description: 웹 사이트나 홈페이지에 CLOSER 챗봇을 삽입하는 방법을 안내합니다.
----
-
 # 웹사이트
 
 ![CLOSER &#xCC44;&#xD305; &#xC5F0;&#xB3D9; &#xC608;&#xC2DC;](../../.gitbook/assets/image%20%289%29.png)
