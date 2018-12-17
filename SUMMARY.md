@@ -27,6 +27,7 @@
 * [통계 \(Dashboard\)](builder/dashboard.md)
 * [봇 에디터\(플로우 편집\)](builder/flow-editor/README.md)
   * [노드\(Node\)](builder/flow-editor/node/README.md)
+    * [메시지 응답 노드](builder/flow-editor/node/response.md)
     * [사용자 정의 스크립트 노드](builder/flow-editor/node/sandbox.md)
   * [엣지\(Edge\)](builder/flow-editor/edge.md)
   * [플로우\(Flow\)](builder/flow-editor/flow.md)
