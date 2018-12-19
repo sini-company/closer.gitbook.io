@@ -1,5 +1,5 @@
 ---
-description: 보유하신 카카오톡 플러스친구 계정에 CLOSER 챗봇을 연동할 수 있습니다.
+description: 챗봇을 카카오톡 플러스친구에 연동하는 방법을 안내합니다.
 ---
 
 # 카카오톡
@@ -13,8 +13,7 @@ description: 보유하신 카카오톡 플러스친구 계정에 CLOSER 챗봇�
 
 카카오 i 오픈빌더 카카오의 인공지능 플랫폼 도입과 함께 새로 공개된 챗봇 개발 플랫폼으로, 2018년 12월 3일 이후 일반 사용자에게 공개됩니다.
 
-API형 스마트채팅은 기존 플러스친구 사용자에게 제공되던 방식으로, 2018년 12월 3일 이후 신규 가입이 중단됩니다.  
-서비스는 기존에 등록한 사용자들에 한해 19년 12월까지만 제공되며, 이후에는 서비스 또한 완전히 종료됩니다.
+API형 스마트채팅은 기존 플러스친구 사용자에게 제공되던 방식으로, 2018년 12월 3일 이후 신규 가입이 중단되었습니다. 해당 서비스는 기존 사용자들에 한해서만 19년 12월까지만 제공되며, 이후에는 완전히 종료됩니다.
 
 > API형 스마트채팅 신규 등록 중단 안내  
 > [https://center-pf.kakao.com/notices/233](https://center-pf.kakao.com/notices/233)
@@ -45,34 +44,35 @@ CLOSER에서는 카카오 i 오픈빌더의 [스킬](https://i.kakao.com/openbui
 
 ### 1. 오픈빌더 봇 생성
 
-![](../../.gitbook/assets/screen-shot-2018-12-04-at-10.48.31-am.png)
+![&#xC624;&#xD508;&#xBE4C;&#xB354; &#xD648; &#xD654;&#xBA74;](../../.gitbook/assets/screen-shot-2018-12-04-at-10.48.31-am.png)
 
 카카오 i 오픈빌더 홈페이지\([https://i.kakao.com/openbuilder](https://i.kakao.com/openbuilder/docs/index.html)\) 로그인하시면 위와 같은 화면을 확인할 수 있습니다. **플러스친구 챗봇 만들기** 버튼을 클릭해 주세요.
 
-![](../../.gitbook/assets/openbuilder-create-bot.png)
+![&#xC624;&#xD508;&#xBE4C;&#xB354; &#xBD07; &#xBAA9;&#xB85D; &#xD654;&#xBA74;](../../.gitbook/assets/openbuilder-create-bot.png)
 
 우측 상단의 +버튼을 눌러 카카오톡 챗봇을 생성할 수 있습니다.
 
 ### 2. 오픈빌더 봇 설정
 
-![](../../.gitbook/assets/openbuilder-main.png)
+![&#xC624;&#xD508;&#xBE4C;&#xB354; &#xBD07; &#xC0DD;&#xC131; &#xD6C4; &#xCD08;&#xAE30; &#xD654;&#xBA74;](../../.gitbook/assets/openbuilder-main.png)
 
 CLOSER 챗봇 연동은 오픈빌더의 스킬 기능을 이용하여 이루어집니다.  
 상단 **스킬 메뉴**를 클릭하여 스킬 설정 화면으로 진입해 주세요.
 
-![](../../.gitbook/assets/openbuilder-skill-main.png)
+![&#xC624;&#xD508;&#xBE4C;&#xB354; &#xC2A4;&#xD0AC; &#xC0DD;&#xC131; &#xD654;&#xBA74;](../../.gitbook/assets/openbuilder-skill-main.png)
 
 스킬 설정 화면으로 진입하셨다면, 우측 상단의 **생성** 버튼을 눌러 주세요.
 
-![](../../.gitbook/assets/openbuilder-skill-create.png)
+![&#xC624;&#xD508;&#xBE4C;&#xB354; &#xC2A4;&#xD0AC; &#xC0DD;&#xC131; &#xD654;&#xBA74; - API &#xC8FC;&#xC18C; &#xB4F1;&#xB85D;](../../.gitbook/assets/openbuilder-skill-create.png)
 
 * **스킬명**: 관리 용이성을 위해 **CLOSER**를 입력해주세요. 다른 이름을 입력하셔도 문제는 없습니다.
 * **URL**: CLOSER에서 제공받은 스킬 연동 URL을 입력해 주세요. \(예: `https://bot-api.closer.ai/webhook/kakao/[botId]/i/skill`\)
-* 설명, 기본 스킬로 설정, 스킬 파라미터 설정, 변환함수 설정 등은 입력하지 않으셔도 됩니다.
+* 설명, 기본 스킬로 설정, 헤더값 입력이나, 변환함수 설정 등은 입력하지 않으셔도 됩니다
+* Test URL에는 실제 연동되는 API가 아닌 테스트용 API를 등록하는 곳으로서, 다른 봇을 테스트하는게 아니라면 입력하지 않으셔도 됩니다.
 
 {% hint style="danger" %}
 변환함수 설정은 카카오 i 오픈빌더에서 CLOSER로 보내는 요청을 변환시킵니다.  
-어떤 동작이 수행되는지 모르신다면 비워두시는게 좋습니다.
+어떤 결과를 초래하되는지 모르신다면 비워두세요.
 {% endhint %}
 
 위 설정대로 값을 입력하신 후 오른쪽 상단의 **저장** 버튼을 눌러 주세요.  
@@ -80,7 +80,7 @@ CLOSER 챗봇 연동은 오픈빌더의 스킬 기능을 이용하여 이루어�
 
 이제 **시나리오** 메뉴를 클릭하여 시나리오 설정 화면으로 진입합니다.
 
-![](../../.gitbook/assets/openbuilder-main.png)
+![&#xC624;&#xD508;&#xBE4C;&#xB354; &#xC2DC;&#xB098;&#xB9AC;&#xC624; &#xC124;&#xC815; &#xCD08;&#xAE30; &#xD654;&#xBA74;](../../.gitbook/assets/openbuilder-main.png)
 
 CLOSER에서는 기본 블록 중 두 가지 블록을 설정합니다.
 
@@ -89,7 +89,7 @@ CLOSER에서는 기본 블록 중 두 가지 블록을 설정합니다.
 
 우선 폴백 블록을 클릭하여 폴백 블록 설정 화면으로 이동해 주세요.
 
-![](../../.gitbook/assets/openbuilder-scenario-fallback.png)
+![&#xC624;&#xD508;&#xBE4C;&#xB354; &#xC2DC;&#xB098;&#xB9AC;&#xC624; &#xC124;&#xC815; - &#xBE14;&#xB85D; &#xC124;&#xC815; &#xCD08;&#xAE30; &#xD654;&#xBA74;](../../.gitbook/assets/openbuilder-scenario-fallback.png)
 
 폴백 블록의 초기 설정은 위 스크린샷과 같이 "무엇을 원하는지 잘 모르겠어요", "이해하기 어려워요" 등의 메시지를 반환하도록 설정되어 있습니다.  
 이제 이 메시지를 CLOSER에서 처리하도록 앞서 생성한 CLOSER 스킬을 연결합니다.
@@ -99,7 +99,7 @@ CLOSER에서는 기본 블록 중 두 가지 블록을 설정합니다.
 
 위 설정을 성공적으로 마치셨다면 아래와 같은 화면을 확인할 수 있습니다.
 
-![](../../.gitbook/assets/kakao-i-skill-integration1.png)
+![&#xC624;&#xD508;&#xBE4C;&#xB354; &#xC2DC;&#xB098;&#xB9AC;&#xC624; &#xC124;&#xC815; - &#xBE14;&#xB85D; &#xC124;&#xC815; - &#xC2A4;&#xD0AC; &#xC124;&#xC815; &#xC644;&#xB8CC; &#xD6C4; &#xD654;&#xBA74;](../../.gitbook/assets/kakao-i-skill-integration1.png)
 
 이제 저장 버튼을 누르고, 블록 목록으로 돌아가 **웰컴 블록**에도 같은 설정을 적용해 줍니다.
 
@@ -114,15 +114,23 @@ CLOSER에서는 기본 블록 중 두 가지 블록을 설정합니다.
 
 오픈빌더 화면 우측 상단의 **봇테스트**를 누르면 아래와 같이 **봇테스트 기능**을 사용할 수 있습니다.
 
-![](../../.gitbook/assets/openbuilder-bot-test.png)
+![&#xC624;&#xD508;&#xBE4C;&#xB354; &#xBD07; &#xD14C;&#xC2A4;&#xD2B8; &#xD654;&#xBA74;](../../.gitbook/assets/openbuilder-bot-test.png)
 
 봇 테스트의 대화 입력 공간에 메시지를 입력해 실제 동작을 확인해 보세요.  
 연동이 성공적으로 이루어졌다면 아래와 같이 입력한 발화와 출력값을 확인할 수 있습니다.
 
-![](../../.gitbook/assets/openbuilder-bot-test-inspect.png)
+![&#xC624;&#xD508;&#xBE4C;&#xB354; &#xBD07; &#xD14C;&#xC2A4;&#xD2B8; &#xACB0;&#xACFC; &#xD654;&#xBA74;](../../.gitbook/assets/openbuilder-bot-test-inspect.png)
 
-이제 챗봇을 **배포**하고 연결하신 플러스친구 계정을 통해 챗봇 동작을 확인해 보세요.  
-플러스친구에 처음으로 \_\_대화를 거는 경우 **웰컴 블록**을 통해 설정된 환영 메시지 동작을 확인할 수 있습니다.
+{% hint style="info" %}
+CLOSER에서는 테스트 요청에 대해서는 대화 정보를 보관하지 않기 때문에 대화가 설정한 시나리오대로 진행되지 않을 수도 있습니다.
+{% endhint %}
+
+### 4. 오픈빌더 봇 배포
+
+![&#xC624;&#xD508;&#xBE4C;&#xB354; &#xBC30;&#xD3EC; &#xD654;&#xBA74;](../../.gitbook/assets/2018-12-19-2.56.10.png)
+
+이제 설정하신 챗봇이 플러스친구 계정을 통해 동작하도록 배포를 진행할 차례입니다.  
+상단의 **배포** 메뉴를 클릭하여 배포 화면으로 이동하신 후에, 우측에 존재하는 **배포** 버튼을 눌러주세요. 배포가 완료된 이후에는 연결된 플러스친구를 통해 챗봇 동작을 확인하실 수 있으며, **웰컴 블록**을 설정하셨다면 최초 대화방에 진입 시 환영 메시지 동작을 확인할 수 있습니다.
 
 {% hint style="info" %}
 현재 카카오 i 오픈빌더에서 웰컴 블록을 통한 환영 메시지 동작은 계정당 최초 1회만 동작합니다.  
