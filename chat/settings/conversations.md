@@ -2,12 +2,8 @@
 
 ## 답변 추천  <a id="recommended-answer"></a>
 
-{% hint style="danger" %}
-\*\*\*\*[**마스터**](../overview.md#undefined-1)만 설정할 수 있습니다.
-{% endhint %}
-
 {% hint style="info" %}
-프로필 별로 각각 설정할 수 있습니다
+[**마스터**](../overview.md#undefined-1)만 설정할 수 있습니다.
 {% endhint %}
 
 ![&#xB2F5;&#xBCC0; &#xCD94;&#xCC9C; &#xC124;&#xC815; &#xD654;&#xBA74; &#xC608;&#xC2DC;](../../.gitbook/assets/undefined%20%2818%29.png)
