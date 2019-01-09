@@ -229,8 +229,8 @@ CLOSER에서는 Webhook으로 봇/사용자/상담원의 메시지와 이벤트�
 | 키 | 타입 | 필수 | 설명 |
 | :--- | :--- | :--- | :--- |
 | id | String | Y | Bot의 ID |
-| title | String | Y | Bot의 이름 |
-| description | String | N | Bot의 설명 |
+| title | String\(30\) | Y | Bot의 이름 |
+| description | String\(100\) | N | Bot의 설명 |
 | integration | Object\(BOT.INTEGRATION\) | N | Bot의 연동 정보 |
 | preference | Object\(BOT.PREFERENCE\) | N | Bot의 설정 정보 |
 | data | Object\(BOT.DATA\) | N | Bot 동작에 필요한 데이터 |
@@ -245,7 +245,7 @@ CLOSER에서는 Webhook으로 봇/사용자/상담원의 메시지와 이벤트�
 | id | UUID | Y | EndUser의 ID |
 | botId | String\([**BOT**](closer-webhook.md#bot).id\) | Y | Bot의 ID |
 | platform | String\([**PLATFORM\_TYPE**](closer-webhook.md#platform_type)\) | Y | 메신저 타입 |
-| userKey | String | Y | 사용자 고유 키값 |
+| userKey | String\(90\) | Y | 사용자 고유 키값 |
 | params | Object\(Dictionary\) | N | 대화에서 사용하는 파라미터 |
 | lastMessageId | UUID\([**MESSAGE**](closer-webhook.md#message).id\) | N | 마지막 메시지의 ID |
 | lastConversationId | UUID\([**CONVERSATION**](closer-webhook.md#conversation).id\) | N | 마지막 대화의 ID |
@@ -262,7 +262,7 @@ CLOSER에서는 Webhook으로 봇/사용자/상담원의 메시지와 이벤트�
 | botId | String\([**BOT**](closer-webhook.md#bot).id\) | Y | Bot의 ID |
 | endUserId | UUID\([**ENDUSER**](closer-webhook.md#enduser).id\) | Y | EndUser의 ID |
 | platform | String\([**PLATFORM\_TYPE**](closer-webhook.md#platform_type)\) | Y | 메신저 타입 |
-| userKey | String | Y | 사용자의 고유 키값 |
+| userKey | String\(90\) | Y | 사용자의 고유 키값 |
 | params | Object\(Dictionary\) | N | 대화에서 사용하는 파라미터 |
 | context | Object\([**CONTEXT**](closer-webhook.md#context)\) | N | 대화의 정보 |
 | navigation | Object\([**CONTEXT.NAVIGATION**](closer-webhook.md#CLOSERWebChatSDK연동가이드v0.1-CONTEXT.NAVIGATION)\) | N | 대화의 위치 |
@@ -286,7 +286,7 @@ CLOSER에서는 Webhook으로 봇/사용자/상담원의 메시지와 이벤트�
 | 키 | 타입 | 필수 | 설명 |
 | :--- | :--- | :--- | :--- |
 | type | String\([**MESSAGE\_TYPE**](closer-webhook.md#message_type)\) | Y | MESSAGE의 타입 |
-| text | String | C | text 타입인 경우 필수 |
+| text | String\(1000\) | C | text 타입인 경우 필수 |
 | media | Object\([**MESSAGE.DATA.MEDIA**](closer-webhook.md#message-data-media)\) | C | media 타입인 경우 필수 |
 | cards | Array\(Object\([**MESSAGE.DATA.CARD**](closer-webhook.md#message-data-card)\)\) | C | cards 타입인 경우 필수 |
 | location | Object\([**MESSAGE.DATA.LOCATION**](closer-webhook.md#message-data-location)\) | C | location 타입인 경우 필수 |
@@ -309,15 +309,15 @@ CLOSER에서는 Webhook으로 봇/사용자/상담원의 메시지와 이벤트�
 
 | 키 | 타입 | 필수 | 설명 |
 | :--- | :--- | :--- | :--- |
-| label | String | Y | 버튼 인터페이스에 노출할 이름 |
+| label | String\(255\) | Y | 버튼 인터페이스에 노출할 이름 |
 | uri | String | N | 버튼이 링크로 동작 시 URL, 없으면 키보드 입력 동작 |
 
 ### MESSAGE.DATA.CARD
 
 | 키 | 타입 | 필수 | 설명 |
 | :--- | :--- | :--- | :--- |
-| title | String | Y | 카드의 제목 |
-| description | String | N | 카드의 설명 |
+| title | String\(50\) | Y | 카드의 제목 |
+| description | String\(500\) | N | 카드의 설명 |
 | media | Object\([**MESSAGE.DATA.MEDIA**](closer-webhook.md#message-data-media)\) | N | 카드에 포함될 미디어 |
 | uri | String | N | 카드 선택시 이동할 링크 URL |
 | buttons | Array\(Object\([**MESSAGE.DATA.BUTTON**](closer-webhook.md#message-data-button)\)\) | N | 카드에 포함된 버튼 리스트 |
@@ -326,7 +326,7 @@ CLOSER에서는 Webhook으로 봇/사용자/상담원의 메시지와 이벤트�
 
 | 키 | 타입 | 필수 | 설명 |
 | :--- | :--- | :--- | :--- |
-| title | String | N | 위치의 이름 |
+| title | String\(50\) | N | 위치의 이름 |
 | latitude | Number | Y | GPS Latitude |
 | longitude | Number | Y | GPS longitude |
 
@@ -334,8 +334,8 @@ CLOSER에서는 Webhook으로 봇/사용자/상담원의 메시지와 이벤트�
 
 | 키 | 타입 | 필수 | 설명 |
 | :--- | :--- | :--- | :--- |
-| userKey | String | Y | SENDER 사용 시 필수. 전송자의 ID |
-| platform | String | Y | SENDER 사용 시 필수. 전송자의 플랫폼 |
+| userKey | String\(90\) | Y | SENDER 사용 시 필수. 전송자의 ID |
+| platform | String\(100\) | Y | SENDER 사용 시 필수. 전송자의 플랫폼 |
 
 ### KEYBOARD <a id="CLOSERWebChatSDK&#xC5F0;&#xB3D9;&#xAC00;&#xC774;&#xB4DC;v0.1-KEYBOARD"></a>
 
@@ -362,7 +362,7 @@ CLOSER에서는 Webhook으로 봇/사용자/상담원의 메시지와 이벤트�
 
 | 키 | 타입 | 필수 | 설명 |
 | :--- | :--- | :--- | :--- |
-| label | String | Y | 버튼 인터페이스에 노출할 이름 |
+| label | String\(255\) | Y | 버튼 인터페이스에 노출할 이름 |
 | params | Object\(Dictionary\) | N | 버튼 선택 시 저장되는 파라미터. key - value dictionary 타입 |
 
 ### CONTEXT
@@ -377,7 +377,7 @@ CLOSER에서 대화를 진행하는데 필요한 정보입니다. SDK의 WebChat
 | navigation | Object\([**CONTEXT.NAVIGATION**](closer-webhook.md#CLOSERWebChatSDK연동가이드v0.1-CONTEXT.NAVIGATION)\) | N | 현재 대화의 위치를 표현하는 오브젝트 |
 | params | Object\(Dictionary\) | N | 현재 대화에서 사용하고 있는 파라미터 |
 | platform | String\([**PLATFORM\_TYPE**](closer-webhook.md#platform_type)\) | Y | 플랫폼 타입 |
-| userKey | String | Y | 최종사용자 식별 키. SDK Open시 주입한 값 |
+| userKey | String\(90\) | Y | 최종사용자 식별 키. SDK Open시 주입한 값 |
 
 ### CONTEXT.NAVIGATION <a id="CLOSERWebChatSDK&#xC5F0;&#xB3D9;&#xAC00;&#xC774;&#xB4DC;v0.1-CONTEXT.NAVIGATION"></a>
 
@@ -405,7 +405,7 @@ CLOSER에서 대화를 진행하는데 필요한 정보입니다. SDK의 WebChat
 
 | 키 | 타입 | 필수 | 설명 |
 | :--- | :--- | :--- | :--- |
-| displayName | String | N | 상담원의 DisplayName |
+| displayName | String\(30\) | N | 상담원의 DisplayName |
 | picture | URL | N | 상담원의 프로필 이미지 URL |
 
 ## Types
