@@ -179,5 +179,9 @@ module.exports = function handler(context, callback) {
 
 ![&#xC624;&#xB958; &#xB514;&#xBC84;&#xAE45; &#xC608;&#xC2DC; - &#xBA54;&#xC2DC;&#xC9C0; &#xC751;&#xB2F5; &#xB178;&#xB4DC; &#xCD9C;&#xB825; &#xACB0;&#xACFC;](../../../.gitbook/assets/flow-editor-node-sandbox-debugging.png)
 
+위 예시의 디버깅 결과 \(stacktrace\) 를 살펴보면, script의 8번 줄 22 번째 위치에서 오류가 발생했음을 확인하실 수 있습니다. 이를 토대로 스크립트의 오류를 수정해 보세요.
+
+  
+
 
 
