@@ -171,5 +171,13 @@ module.exports = function handler(context, callback) {
 #### 오류 디버깅 <a id="3-error-handling-debug"></a>
 
 `sandbox.error`객체는 스크립트에서 반환하는 오류 또는 스크립트 실행 도중 발생한 오류로서, `{{sandbox.error.message}}` 혹은 `{{sandbox.error.stack}}` 값을 통해 디버깅 할 수 있습니다.  
-다만 디버깅 메시지를 사용할 때, 챗봇과 대화하는 최종 사용자에게 그대로 노출되지 않도록 유의하십시오.
+다만 디버깅 메시지를 사용할 때, 챗봇과 대화하는 최종 사용자에게 해당 메시지가 그대로 노출되지 않도록 유의하세요.
+
+아래는 **대화 테스트**\(platform: `test`\)일 때에 오류가 존재하면 오류의 정보를 출력하는 디버깅 방법의 예시입니다.
+
+![&#xC624;&#xB958; &#xB514;&#xBC84;&#xAE45; &#xC608;&#xC2DC; - &#xBA54;&#xC2DC;&#xC9C0; &#xC751;&#xB2F5; &#xB178;&#xB4DC; &#xCD9C;&#xB825; &#xD15C;&#xD50C;&#xB9BF;](../../../.gitbook/assets/flow-editor-node-sandbox-debugging-2.png)
+
+![&#xC624;&#xB958; &#xB514;&#xBC84;&#xAE45; &#xC608;&#xC2DC; - &#xBA54;&#xC2DC;&#xC9C0; &#xC751;&#xB2F5; &#xB178;&#xB4DC; &#xCD9C;&#xB825; &#xACB0;&#xACFC;](../../../.gitbook/assets/flow-editor-node-sandbox-debugging.png)
+
+
 
