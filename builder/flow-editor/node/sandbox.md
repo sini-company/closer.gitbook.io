@@ -18,22 +18,23 @@ description: 기본 제공 노드만으로는 목적을 달성할 수 없을 때
 | 패키지명 | 버전 |
 | :--- | :--- |
 | apn | 2.2.0 |
-| aws-sdk | 2.359.0 |
+| aws-sdk | 2.389.0 |
 | bluebird | 3.5.3 |
 | cheerio | 1.0.0-rc.2 |
 | crypto | - |
-| csv-parse | 4.0.1 |
+| csv-parse | 4.3.0 |
 | fetch | 1.1.0 |
 | gm | 1.23.1 |
-| googleapis | 35.0.0 |
+| googleapis | 36.0.0 |
 | iconv-lite | 0.4.24 |
 | imagemagick | 0.1.3 |
 | lodash | 4.17.11 |
-| moment | 2.22.2 |
-| nodemailer | 4.7.0 |
+| moment | 2.23.0 |
+| moment-timezone | 0.5.23 |
+| nodemailer | 5.1.1 |
 | request | 2.88.0 |
 | request-promise | 4.2.2 |
-| superagent | 4.0.0 |
+| superagent | 4.1.0 |
 | underscore | 1.9.1 |
 | uuid | 3.3.2 |
 | xml2js | 0.4.19 |
@@ -163,11 +164,11 @@ module.exports = function handler(context, callback) {
 
 ### 3. 오류 처리하기 <a id="3-error-handling"></a>
 
-#### 오류 발생 시 분기
+#### 오류 발생 시 분기 <a id="3-error-handling-conditional-branching"></a>
 
 사용자 정의 스크립트 노드에서 오류가 발생할 경우 챗봇은 아무런 메시지를 반환하지 않습니다만, `sandbox.error`를 통해 오류가 발생하였을 경우의 시나리오를 처리할 수 있습니다. \(사용자 정의 스크립트 노드의 엣지로 `sandbox.error`**가 존재하는 경우**로 챗봇 로직을 분기할 수 있습니다.\)
 
-#### 오류 디버깅
+#### 오류 디버깅 <a id="3-error-handling-debug"></a>
 
 `sandbox.error`객체는 스크립트에서 반환하는 오류 또는 스크립트 실행 도중 발생한 오류로서, `{{sandbox.error.message}}` 혹은 `{{sandbox.error.stack}}` 값을 통해 디버깅 할 수 있습니다.  
 다만 디버깅 메시지를 사용할 때, 챗봇과 대화하는 최종 사용자에게 그대로 노출되지 않도록 유의하십시오.
