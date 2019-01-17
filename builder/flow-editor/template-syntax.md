@@ -37,34 +37,83 @@ CLOSER에서는 [템플릿 엔진](https://en.wikipedia.org/wiki/Template_proces
 ### 컨텍스트 \(Context\)
 
 CLOSER에서는 사용자의 입력이나 다른 노드의 반환값들이 담겨있는 컨텍스트\(Context\)라는 객체를 제공합니다.  
-다음과 같은 들이 제공됩니다.
-
-| 키 \(key\) | 값 \(value\) |
-| :--- | :--- |
-| botId | 챗봇의 ID |
-| endUserId | 고객의 식별자 |
-| conversationId | 고객의 대화 세션 식별자 |
-| platform | 고객의 유입 채널 \(e.g. `facebook`, `kakao`, `web`, ...\) |
-| userKey | 고객의 유입 채널에서 제공 식별 |
-| params | 챗봇 시나리오에 설정된 파라미터 |
-| message | 마지막으로 수신된 고객의 메시지 \(`message.text`값과 동일\) |
-| message.type | 마지막으로 수신된 고객의 메시지 유형 \(e.g. `text`, `media`, `location`\) |
-| \[NODE\_TYPE\] | 각 노드의 실행 결과가 담겨있는 객체 |
-| \[NODE\_TYPE\].status | 각 노드의 실행 상태 \(e.g. `PENDING`, `COMPLETED`, `FAILED`\)  |
-| \[NODE\_TYPE\].error | 각 노드의 실행 오류 \(실행에 실패하였을 경우 반환됨\) |
+다음과 같은 값들이 제공됩니다.
 
 {% hint style="info" %}
 아직 Context 반환값에 대한 문서는 아직 100% 완성되지 않았습니다.   
 각 노드별 반환값에 대한 설명은 추후 추가될 예정입니다.
 {% endhint %}
 
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">키 (key)</th>
+      <th style="text-align:left">값 (value)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left">botId</td>
+      <td style="text-align:left">CLOSER에서 제공하는 챗봇의 ID</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">endUserId</td>
+      <td style="text-align:left">CLOSER에서 제공하는 고객의 고유 식별자
+        <br />(주의: 대화 테스트에는 존재하지 않습니다.)</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">conversationId</td>
+      <td style="text-align:left">
+        <p>CLOSER에서 제공하는 고객의 대화 세션의 고 식별자</p>
+        <p>(주의: 세션이 변경될 때 함께 변경될 수 있습니다.)</p>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">platform</td>
+      <td style="text-align:left">고객의 유입 채널 (e.g. <code>facebook</code>, <code>kakao</code>, <code>web</code>,
+        ...)</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">userKey</td>
+      <td style="text-align:left">고객의 유입 채널에서 제공되는 고유 식별</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">message</td>
+      <td style="text-align:left">마지막으로 수신된 고객의 메시지 (<code>message.text</code>값과 동일)</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">message.type</td>
+      <td style="text-align:left">마지막으로 수신된 고객의 메시지 유형 (e.g. <code>text</code>, <code>media</code>, <code>location</code>)</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">params</td>
+      <td style="text-align:left">챗봇에 설정된 파라미터 객체</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">[NODE_TYPE]</td>
+      <td style="text-align:left">각 노드의 실행 결과가 담겨있는 객체</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">[NODE_TYPE].status</td>
+      <td style="text-align:left">각 노드의 실행 상태 (e.g. <code>PENDING</code>, <code>COMPLETED</code>, <code>FAILED</code>)</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">[NODE_TYPE].error</td>
+      <td style="text-align:left">각 노드의 실행 오류 (실행에 실패하였을 경우 반환됨)</td>
+    </tr>
+  </tbody>
+</table>{% hint style="warning" %}
+컨텍스트에 이미 존재하는 예약어와 파라미터의 키 값이 겹치는 경우에는 컨텍스트의 값이 먼저 이용됩니다. 따라서`platform`이라는 파라미터를 따로 생성하신 경우엔 `{{params.platform}}`경로를 통해 이용해 주세요.  
+{% endhint %}
+
+{% hint style="warning" %}
+endUserId와 userKey 둘 다 고객을 특정하는 고유 식별자로 사용할 수 있습니다.   
+다만, userKey의 경우는 유입 채널에서 설정되는 값이기 때문에 채널을 여러 가지 설정하신 경우에 충돌이 발생할 수 있습니다. 
+{% endhint %}
+
 템플릿 문법에서는 컨텍스트에 담겨있는 값들이 이용됩니다. 예를 들어 카카오톡에서 유입된 사용자에게 `{{platform}}에서 오셨군요`라는 값을 이용하면 `kakao에서 오셨군요` 라는 결과가 나타납니다.
 
 파라미터의 경우는 조금 더 편리한 방법을 지원합니다.  `name` 이라는 파라미터를 사용하려는 경우 원래대로라면`{{params.name}}` 라는 식을 통해 접근해야 하지만, 사용자의 편의를 위해 `{{name}}` 이라고 작성하여도 동일한 효과를 나타낼 수 있습니다.
-
-{% hint style="warning" %}
-컨텍스트에 이미 존재하는 예약어와 파라미터의 키 값이 겹치는 경우에는 컨텍스트의 값이 먼저 이용됩니다. 따라서`platform`이라는 파라미터를 따로 생성하신 경우엔 `{{params.platform}}`경로를 통해 이용해 주세요.  
-{% endhint %}
 
 
 
