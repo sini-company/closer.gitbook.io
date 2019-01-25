@@ -29,7 +29,7 @@
   * [노드\(Node\)](builder/flow-editor/node/README.md)
     * [메시지 응답 노드](builder/flow-editor/node/response.md)
     * [사용자 정의 스크립트 노드](builder/flow-editor/node/sandbox.md)
-  * [엣지\(Edge\)](builder/flow-editor/edge.md)
+  * [노드 연결하기](builder/flow-editor/edge.md)
   * [플로우\(Flow\)](builder/flow-editor/flow.md)
   * [파라미터\(Parameter\)](builder/flow-editor/parameter.md)
   * [템플릿 문법\(Template Syntax\)](builder/flow-editor/template-syntax.md)
