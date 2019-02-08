@@ -3,7 +3,7 @@
 ## **팀 설정** <a id="team-setting"></a>
 
 {% hint style="danger" %}
-\*\*\*\*[**마스터**](../overview.md#undefined-1)만 설정할 수 있습니다.
+\*\*\*\*[**마스터**](../about/#undefined-1)만 설정할 수 있습니다.
 {% endhint %}
 
 ![](../../.gitbook/assets/undefined%20%2814%29.png)
@@ -13,7 +13,7 @@
 ## 팀원 관리 <a id="manage-members"></a>
 
 {% hint style="danger" %}
-\*\*\*\*[**마스터**](../overview.md#undefined-1)만 설정할 수 있습니다.
+\*\*\*\*[**마스터**](../about/#undefined-1)만 설정할 수 있습니다.
 {% endhint %}
 
 {% hint style="info" %}

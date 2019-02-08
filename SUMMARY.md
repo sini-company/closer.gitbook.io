@@ -1,46 +1,49 @@
 # Table of contents
 
-* [CLOSER 가이드](README.md)
+* [CLOSER 사용 설명서](README.md)
 
-## CLOSER
+## CLOSER Bot Builder
 
-* [개요](closer/overview.md)
-* [CLOSER로 챗봇 서비스하기](closer/bot/README.md)
-  * [Step 1. 챗봇 시나리오 구상](closer/bot/step-1..md)
-  * [Step 2. 봇 에디터로 챗봇 만들기](closer/bot/step-2..md)
-  * [Step 3. 잘 동작하는지 확인하기](closer/bot/step-3..md)
-  * [Step 4. 메신저에 연동하여 챗봇 서비스 오픈하기](closer/bot/step-4..md)
-  * [Step 5. 오픈한 챗봇 사용량 확인하기](closer/bot/step-5..md)
-* [CLOSER로 채팅 상담 서비스 하기](closer/chat/README.md)
-  * [Step 1. 채팅 상담 유형과 인입량 확인](closer/chat/step-1..md)
-  * [Step 2. 챗봇에 상담원 호출 추가하기](closer/chat/step-2..md)
-  * [Step 3. Chat 설정 구성하기](closer/chat/step-3.-1.md)
-  * [Step 4. 상담 진행하기](closer/chat/step-4.-1.md)
-  * [Step 5. 상담을 더 효율적으로 진행하기](closer/chat/step-5..md)
-  * [Step 6. 통계 확인하기](closer/chat/step-6..md)
-
-## Builder
-
-* [Builder 개요](builder/overview.md)
-* [시작하기](builder/start/README.md)
-  * [새로운 봇 만들기](builder/start/new-bot.md)
-* [통계 \(Dashboard\)](builder/dashboard.md)
-* [봇 에디터\(플로우 편집\)](builder/flow-editor/README.md)
-  * [노드\(Node\)](builder/flow-editor/node/README.md)
-    * [메시지 응답 노드](builder/flow-editor/node/response.md)
-    * [사용자 정의 스크립트 노드](builder/flow-editor/node/sandbox.md)
-  * [노드 연결하기](builder/flow-editor/edge.md)
-  * [플로우\(Flow\)](builder/flow-editor/flow.md)
-  * [파라미터\(Parameter\)](builder/flow-editor/parameter.md)
-  * [템플릿 문법\(Template Syntax\)](builder/flow-editor/template-syntax.md)
-* [메신저 연동하기](builder/messenger-integrations/README.md)
+* [CLOSER Bot Builder 알아보기](builder/about.md)
+* [시작하기](builder/getting-started/README.md)
+  * [챗봇 생성하기](builder/getting-started/create-new-bot.md)
+  * [챗봇 시나리오 편집하기](builder/getting-started/modify-bot-scenario.md)
+  * [메시징 채널에 연동하기](builder/getting-started/connect-to-messengers.md)
+  * [고객 분석하기](builder/getting-started/bot-statistics.md)
+* [챗봇 제작](builder/chatbot/README.md)
+  * [용어 정의](builder/chatbot/terms.md)
+  * [응답과 요청](builder/chatbot/response-and-request.md)
+  * [챗봇 편집도구](builder/chatbot/bot-editor.md)
+  * [노드 \(Node\)](builder/chatbot/node/README.md)
+    * [메시지 응답 노드](builder/chatbot/node/response.md)
+    * [사용자 입력 요청 노드](builder/chatbot/node/request.md)
+    * [플로우 연결 노드](builder/chatbot/node/flow.md)
+    * [HTTP 요청 노드](builder/chatbot/node/http.md)
+    * [파라미터 설정 노드](builder/chatbot/node/parameter.md)
+    * [사용자 정의 스크립트 노드](builder/chatbot/node/sandbox.md)
+    * [상담원 호출 노드](builder/chatbot/node/manual.md)
+    * [구글 스프레드 시트 노드 👩🏻‍🔬](builder/chatbot/node/gsheet.md)
+    * [자연어 처리 노드 👩🏻‍🔬](builder/chatbot/node/nlp.md)
+    * [뒤로가기 스택 노드 👩🏻‍🔬](builder/chatbot/node/backstack.md)
+  * [플로우 \(Flow\)](builder/chatbot/flow.md)
+  * [고급 활용법](builder/chatbot/advanced/README.md)
+    * [컨텍스트 \(Context\)](builder/chatbot/advanced/context.md)
+    * [템플릿 문법\(Template Syntax\)](builder/chatbot/advanced/template-syntax.md)
+    * [포스트백 페이로드 \(Postback Payload\)](builder/chatbot/advanced/postback-payload.md)
+* [메신저 연동](builder/messenger-integrations/README.md)
   * [웹사이트](builder/messenger-integrations/web.md)
   * [카카오톡](builder/messenger-integrations/kakao.md)
-* [봇 설정](builder/bot-settings.md)
 
-## Chat
+## CLOSER Chat
 
-* [Chat 개요](chat/overview.md)
+* [CLOSER Chat 알아보기](chat/about/README.md)
+  * [CLOSER로 채팅 상담 서비스 하기](chat/about/chat/README.md)
+    * [Step 1. 채팅 상담 유형과 인입량 확인](chat/about/chat/step-1..md)
+    * [Step 2. 챗봇에 상담원 호출 추가하기](chat/about/chat/step-2..md)
+    * [Step 3. Chat 설정 구성하기](chat/about/chat/step-3.-1.md)
+    * [Step 4. 상담 진행하기](chat/about/chat/step-4.-1.md)
+    * [Step 5. 상담을 더 효율적으로 진행하기](chat/about/chat/step-5..md)
+    * [Step 6. 통계 확인하기](chat/about/chat/step-6..md)
 * [통계 \(Dashboard\)](chat/dashboard.md)
 * [설정](chat/settings/README.md)
   * [상담 설정](chat/settings/conversations.md)
@@ -63,7 +66,7 @@
 * [플랜 관리\(결제\)](platform/plan-settings/README.md)
   * [종량제 서비스 요금](platform/plan-settings/payment.md)
 
-## Developer
+## Third Party & Integration
 
 * [CLOSER Webhook 연동 가이드](developer/closer-webhook.md)
 * [CLOSER Webchat SDK 연동 가이드](developer/closer-webchat-sdk.md)

@@ -1,0 +1,77 @@
+{
+  "id": 1,
+  "title": "플로우 네비게이션 폴백 플로우",
+  "nodes": [
+    {
+      "id": 1,
+      "label": "진입 노드",
+      "type": "entry",
+      "data": {},
+      "meta": {
+        "design": {
+          "x": 24,
+          "y": 24
+        }
+      },
+      "next": [
+        {
+          "nodeId": 2
+        },
+        {
+          "nodeId": 3,
+          "where": {
+            "message.payload.flowId": {
+              "exists": true
+            }
+          },
+          "priority": 1
+        }
+      ]
+    },
+    {
+      "type": "response",
+      "label": "메시지 응답 노드",
+      "data": {
+        "message": {
+          "type": "text",
+          "text": "더 이상 진행할 노드가 없습니다.",
+          "buttons": [
+            {
+              "type": "postback",
+              "label": "1번 플로우로 이동",
+              "payload": "{ \"flowId\": 1 }"
+            },
+            {
+              "type": "postback",
+              "label": "2번 플로우로 이동",
+              "payload": "{ \"flowId\": 2 }"
+            }
+          ]
+        }
+      },
+      "id": 2,
+      "meta": {
+        "design": {
+          "x": 35,
+          "y": 161
+        }
+      },
+      "next": []
+    },
+    {
+      "type": "flow",
+      "label": "플로우 연결 노드",
+      "data": {
+        "flowId": 2
+      },
+      "id": 3,
+      "meta": {
+        "design": {
+          "x": 394,
+          "y": 21
+        }
+      },
+      "next": []
+    }
+  ]
+}

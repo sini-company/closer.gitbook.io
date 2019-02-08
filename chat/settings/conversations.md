@@ -3,7 +3,7 @@
 ## 답변 추천  <a id="recommended-answer"></a>
 
 {% hint style="info" %}
-[**마스터**](../overview.md#undefined-1)만 설정할 수 있습니다.
+[**마스터**](../about/#undefined-1)만 설정할 수 있습니다.
 {% endhint %}
 
 ![&#xB2F5;&#xBCC0; &#xCD94;&#xCC9C; &#xC124;&#xC815; &#xD654;&#xBA74; &#xC608;&#xC2DC;](../../.gitbook/assets/undefined%20%2818%29.png)
@@ -26,7 +26,7 @@
 ## 커스텀 웹 패널  <a id="custom-web-panel"></a>
 
 {% hint style="danger" %}
-\*\*\*\*[**마스터**](../overview.md#undefined-1)만 설정할 수 있습니다.
+\*\*\*\*[**마스터**](../about/#undefined-1)만 설정할 수 있습니다.
 {% endhint %}
 
 {% hint style="info" %}
@@ -57,7 +57,7 @@ iframe sandbox attribute에는 다음 네 가지 옵션만 활성화되어 있�
 ## 상담 완료 설정  <a id="completed-call"></a>
 
 {% hint style="danger" %}
-\*\*\*\*[**마스터**](../overview.md#undefined-1)만 설정할 수 있습니다.
+\*\*\*\*[**마스터**](../about/#undefined-1)만 설정할 수 있습니다.
 {% endhint %}
 
 {% hint style="info" %}
@@ -78,7 +78,7 @@ iframe sandbox attribute에는 다음 네 가지 옵션만 활성화되어 있�
 ## 상담 운영 시간  <a id="operating-hour"></a>
 
 {% hint style="danger" %}
-\*\*\*\*[**마스터**](../overview.md#undefined-1)만 설정할 수 있습니다.
+\*\*\*\*[**마스터**](../about/#undefined-1)만 설정할 수 있습니다.
 {% endhint %}
 
 {% hint style="info" %}
@@ -118,7 +118,7 @@ iframe sandbox attribute에는 다음 네 가지 옵션만 활성화되어 있�
 ## 상담 자동 배정  <a id="automatic-assignment"></a>
 
 {% hint style="danger" %}
-\*\*\*\*[**마스터**](../overview.md#undefined-1)만 설정할 수 있습니다.
+\*\*\*\*[**마스터**](../about/#undefined-1)만 설정할 수 있습니다.
 {% endhint %}
 
 {% hint style="info" %}

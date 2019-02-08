@@ -1,20 +1,22 @@
+---
+description: CLOSER에서 전송하는 webhook의 자료 형태와 설정 방법등을 안내합니다.
+---
+
 # CLOSER Webhook 연동 가이드
 
+CLOSER에서는 메시지 수신/발신, 고객 추가/삭제에 대한 이벤트들을 전달하는 webhook을 제공합니다.
+
 {% hint style="info" %}
-**Webhook 연동이 필요하시다면, support@closer.ai로 문의해주세요.**
+**Webhook 연동에 도움이 필요하시다면 support@closer.ai로 문의해주세요.**
 {% endhint %}
-
-CLOSER에서는 Webhook으로 봇/사용자/상담원의 메시지와 이벤트를 전달합니다.
-
-본 문서에서는 CLOSER에서 전송하는 Webhook을 연동할 수 있도록, Webhook의 포맷과 설정 방법등을 명세합니다.
 
 ## Webhook 설정 단계
 
-1. 본 문서에서 명세하는 Webhook의 포맷에 따라, 목적에 맞는 API를 개발하세요.
+1. 본 문서에서는 Webhook의 포맷에 따라 목적에 맞는 API를 개발하세요.
 2. CLOSER Bot에서 개발하신 API의 URL을 등록합니다.
 3. CLOSER의 Bot을 사용시 발생하는 이벤트를 개발하신 API로 전송합니다.
 
-## Builder에서 Webhook 전송 설정
+## Web Builder 에서 Webhook 전송 설정
 
 ![Webhook &#xAD00;&#xB9AC; &#xD654;&#xBA74; &#xC608;&#xC2DC;](../.gitbook/assets/webhook.png)
 
@@ -451,4 +453,16 @@ CLOSER에서 대화를 진행하는데 필요한 정보입니다. SDK의 WebChat
 | media | 이미지, 동영상, 오디오 등의 미디어 |
 | cards | 카드 타입 리스트 \(Carousel로 사용\) |
 | location | 위치 정보 \(latitude, longitude\) |
+
+## 예제 <a id="samples"></a>
+
+### CLOSER 이벤트 대시보드 <a id="samples-closer-event-dashboard"></a>
+
+![&#xD1B5;&#xACC4; &#xB300;&#xC2DC;&#xBCF4;&#xB4DC; &#xB370;&#xBAA8; &#xC2A4;&#xD06C;&#xB9B0;&#xC0F7;](../.gitbook/assets/image%20%2818%29.png)
+
+CLOSER에서는 webhook event를 수집하고 시각화하는 이벤트 통계 대시보드 예제를 오픈소스로 제공하고 있습니다. 아래 GitHub Repository를 확인해주세요.
+
+* [https://github.com/sini-company/closer-event-dashboard](https://github.com/sini-company/closer-event-dashboard)
+
+
 
