@@ -124,15 +124,13 @@ CLOSER가 제공하는 각 노드별 기능과 설정 방법에 대한 내용은
 
 {% page-ref page="parameter.md" %}
 
-{% page-ref page="gsheet.md" %}
-
 {% page-ref page="sandbox.md" %}
-
-{% page-ref page="backstack.md" %}
-
-{% page-ref page="nlp.md" %}
 
 {% page-ref page="manual.md" %}
 
-##  <a id="connection"></a>
+{% page-ref page="gsheet.md" %}
+
+{% page-ref page="nlp.md" %}
+
+{% page-ref page="backstack.md" %}
 

@@ -10,7 +10,7 @@ CLOSER에서 뒤로가기 기능을 구현하기 위해서는 뒤로가기 스�
 
 * \(국문\) [https://rimi-rimi.tistory.com/1](https://rimi-rimi.tistory.com/1) - 자료구조 STACK\(스택\) 쉽게 이해하기
 
-![&#xB4A4;&#xB85C;&#xAC00;&#xAE30; &#xC2A4;&#xD0DD; &#xB178;&#xB4DC; &#xD3B8;&#xC9D1;&#xD654;&#xBA74;](../../../.gitbook/assets/image%20%281%29.png)
+![&#xB4A4;&#xB85C;&#xAC00;&#xAE30; &#xC2A4;&#xD0DD; &#xB178;&#xB4DC;](../../../.gitbook/assets/backstack_node_example_1.png)
 
 * **`push`**: 뒤로가기 스택에 현재 위치를 저장
 * **`pop`**: 뒤로가기 스택에서 저장된 위치들을 `count`갯수만큼 꺼낸 이후 마지막 꺼낸 위치로 이동
@@ -20,15 +20,17 @@ CLOSER에서 뒤로가기 기능을 구현하기 위해서는 뒤로가기 스�
 
 ## 사용 예제
 
-![&#xB4A4;&#xB85C;&#xAC00;&#xAE30; &#xC2A4;&#xD0DD; &#xB178;&#xB4DC; &#xC0AC;&#xC6A9; &#xC608; - pop count 1](https://mail.zoho.com/zm/ImageDisplay?na=7803151000000008002&nmsgId=1548831153488100001&f=1.png&mode=inline&)
+![&#xB4A4;&#xB85C;&#xAC00;&#xAE30; &#xC2A4;&#xD0DD; &#xB178;&#xB4DC; &#xC0AC;&#xC6A9; &#xC608;&#xC2DC; - pop count 1](../../../.gitbook/assets/backstack_node_example_2.png)
 
 19번 노드에서 현재 위치를 뒤로가기 스택에 저장\(push\)하였고, 사용자가 21번 노드에서 \[뒤로가기\]를 선택하게 되면 22번 노드에서 저장된 위치로 이동\(pop, 1\)하게 됩니다. 여기서 뒤로가기를 선택하면 챗봇은 계속해서 "뒤로가기 노드 테스트"라는 응답을 반환하게 됩니다.
 
 하지만 위 동작은 의도한 동작이 아닐 가능성이 높습니다. 이제 뒤로가기 기능을 더 자연스럽게 구현하는 법을 알아보겠습니다.
 
-![&#xB4A4;&#xB85C;&#xAC00;&#xAE30; &#xC2A4;&#xD0DD; &#xB178;&#xB4DC; &#xC0AC;&#xC6A9; &#xC608; - pop count 2](https://mail.zoho.com/zm/ImageDisplay?na=7803151000000008002&nmsgId=1548831153488100001&f=2.png&mode=inline&)
+![&#xB4A4;&#xB85C;&#xAC00;&#xAE30; &#xC2A4;&#xD0DD; &#xB178;&#xB4DC; &#xC0AC;&#xC6A9; &#xC608;&#xC2DC; - pop count 2](../../../.gitbook/assets/backstack_node_example_3.png)
 
 위 시나리오에서는 뒤로가기를 선택 시 `pop`을 2번 수행하도록 작성하였습니다. 이 때, 21번 노드에서 \[1-1\]을 선택하고 25번 노드에서 \[뒤로가기\]를 선택하게 되면 26번 노드에서 24번 노드의 위치로 돌아가는 것이 아닌 19번 노드의 위치로 돌아가게 됩니다. \(pop을 2번 수행하였기 때문\) 
 
-pop을 2번 수행하는 이 동작의 원리를 잘 이해하시면 챗봇에서의 뒤로가기 네비게이션을 원하는대로 제어할 수 있게 됩니다.
+pop을 2번 수행하는 이 동작의 원리를 이해하셨다면, 챗봇에서 원하는 지점으로 뒤로가기 네비게이션을 다루는 방법을 터득하셨을 거에요. 잘 모르시겠다면 실제로 위와 같은 노드들을 작성하셔서 실제 동작을 확인하며 테스트 해 보세요!
+
+
 

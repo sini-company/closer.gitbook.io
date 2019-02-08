@@ -4,7 +4,7 @@ CLOSER는 누구나 쉽고 빠르게 챗봇을 만들수 있는 [**CLOSER Bot Bu
 
 이제 챗봇 제작과 고객 센터 운영의 두 마리 토끼를 CLOSER에서 모두 잡아보세요. **무료**로 시작할 수 있습니다!
 
-![CLOSER Bot Builder ](.gitbook/assets/openbeta_bot_builder_editor_750px.png)
+![CLOSER Bot Builder](.gitbook/assets/bot_builder_overview.png)
 
 {% page-ref page="builder/about.md" %}
 
