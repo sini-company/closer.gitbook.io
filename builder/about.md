@@ -4,7 +4,7 @@ description: CLOSER의 핵심인 챗봇 제작 도구에 대해 알아봅니다.
 
 # CLOSER Bot Builder 알아보기
 
-![CLOSER Bot Builder](../.gitbook/assets/openbeta_bot_builder_editor_750px.png)
+![](../.gitbook/assets/bot_builder_overview.png)
 
 CLOSER Bot Builder는 누구나 쉽고 빠르게 챗봇을 만들 수 있는 WYSIWYG 편집기입니다.   
 챗봇의 시나리오는 플로우차트와 유사한 형태로 작성됩니다. 시나리오를 시각적으로 관리할 수 있기 때문에 챗봇 제작 및 테스트 과정을 효율적으로 단축시킬 수 있습니다. 
