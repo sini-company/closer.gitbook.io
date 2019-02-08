@@ -26,7 +26,7 @@
     * [자연어 처리 노드 👩🏻‍🔬](builder/chatbot/node/nlp.md)
     * [뒤로가기 스택 노드 👩🏻‍🔬](builder/chatbot/node/backstack.md)
   * [플로우 \(Flow\)](builder/chatbot/flow.md)
-  * [고급 활용법](builder/chatbot/advanced/README.md)
+  * [고급 사용자용](builder/chatbot/advanced/README.md)
     * [컨텍스트 \(Context\)](builder/chatbot/advanced/context.md)
     * [템플릿 문법\(Template Syntax\)](builder/chatbot/advanced/template-syntax.md)
     * [포스트백 페이로드 \(Postback Payload\)](builder/chatbot/advanced/postback-payload.md)
