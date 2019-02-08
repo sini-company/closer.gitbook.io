@@ -24,7 +24,7 @@
     * [상담원 호출 노드](builder/chatbot/node/manual.md)
     * [구글 스프레드 시트 노드 👩🏻‍🔬](builder/chatbot/node/gsheet.md)
     * [자연어 처리 노드 👩🏻‍🔬](builder/chatbot/node/nlp.md)
-    * [뒤로가기 스택 노드 👩🏻‍🔬](builder/chatbot/node/backstack.md)
+    * [뒤로가기 스택 노드👩🏻‍🔬](builder/chatbot/node/backstack.md)
   * [플로우 \(Flow\)](builder/chatbot/flow.md)
   * [고급 사용자용](builder/chatbot/advanced/README.md)
     * [컨텍스트 \(Context\)](builder/chatbot/advanced/context.md)
