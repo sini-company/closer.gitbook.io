@@ -72,5 +72,4 @@
 * [CLOSER Webchat SDK 연동 가이드](developer/closer-webchat-sdk.md)
 * [CLOSER Bot Builder Open API 소개](developer/bot-builder-open-api.md)
 * [CLOSER Chat Open API 소개](developer/chat-open-api.md)
-* [CLOSER 카카오톡 상담톡 Open API 소개](developer/kakao-open-api.md)
 
