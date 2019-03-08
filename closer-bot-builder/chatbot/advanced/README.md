@@ -22,7 +22,7 @@ CLOSER가 제공하는 **템플릿 문법**과 **포스트백 페이로드** 기
 
 CLOSER에서 제공하는 Webhook을 이용하여 실제 보유하신 서비스에서 CLOSER에서 발생하는 이벤트를 수신하여 시너지를 발휘할 수 있습니다.
 
-{% page-ref page="../../../developer/closer-webhook.md" %}
+{% page-ref page="../../../third-party-and-integration/closer-webhook.md" %}
 
 
 

@@ -7,5 +7,5 @@
 
 ![&#xC0C1;&#xB2F4;&#xC6D0; &#xD638;&#xCD9C; &#xB178;&#xB4DC; &#xC608;&#xC2DC;](../../../.gitbook/assets/guide_%20%2815%29.png)
 
-{% page-ref page="../../../chat/about/" %}
+{% page-ref page="../../../closer-chat/about/" %}
 

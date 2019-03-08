@@ -21,14 +21,14 @@ description: 챗봇을 연결한 이후 챗봇의 사용자를 확인하는 법�
 CLOSER Builder 에서 제작한 챗봇의 대화는 CLOSER Chat 에서 실시간으로 확인할 수 있습니다.  
 화면 오른쪽 상단에 위치한  ![](../../.gitbook/assets/2019-01-31-4.55.40.png) 버튼을 클릭해보세요. 바로 CLOSER Chat 으로 이동하실 수 있습니다.
 
-{% page-ref page="../../chat/about/" %}
+{% page-ref page="../../closer-chat/about/" %}
 
 ## 더 알아보기
 
 기존 제공되는 통계 지표만으로는 고객 분석에 대한 요구사항을 충족할 수 없나요?   
-CLOSER 에서는 원하는 지표를 직접 수집하여 분석하실 수 있도록 **커스텀 통계 대시보드 솔루션**을 오픈소스로 제공합니다. [CLOSER Webhook 연동 가이드 문서 하단의 이벤트 대시보드 항목](../../developer/closer-webhook.md#samples-closer-event-dashboard)을 참고해주세요.
+CLOSER 에서는 원하는 지표를 직접 수집하여 분석하실 수 있도록 **커스텀 통계 대시보드 솔루션**을 오픈소스로 제공합니다. [CLOSER Webhook 연동 가이드 문서 하단의 이벤트 대시보드 항목](../../third-party-and-integration/closer-webhook.md#samples-closer-event-dashboard)을 참고해주세요.
 
-{% page-ref page="../../developer/closer-webhook.md" %}
+{% page-ref page="../../third-party-and-integration/closer-webhook.md" %}
 
 
 

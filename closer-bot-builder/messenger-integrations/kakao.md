@@ -4,7 +4,7 @@ description: 챗봇을 카카오톡 플러스친구에 연동하는 방법을 �
 
 # 카카오톡
 
-## 시작하기 전에   <a id="announcement"></a>
+## 시작하기 전에    <a id="announcement"></a>
 
 카카오톡 플러스친구 계정에 챗봇을 연동하는 방법은 두 가지가 있습니다.
 
@@ -21,7 +21,7 @@ API형 스마트채팅은 기존 플러스친구 사용자에게 제공되던 �
 [https://kakao.closer.ai](https://kakao.closer.ai)
 {% endhint %}
 
-## 요구사항 <a id="prerequisite"></a>
+## 요구사항  <a id="prerequisite"></a>
 
 활성화된 카카오톡 플러스친구 계정이 필요합니다.  
 카카오톡 플러스친구 서비스는 비지니스를 위한 카카오톡 계정 생성 서비스로서, 1:1 채팅이나 마케팅 메시지 전송 등 비즈니스에 필요한 기능들을 제공합니다. 플러스친구 계정을 생성하려면 아래 카카오 for 비즈니스 홈페이지를 이용해 주세요.
@@ -29,7 +29,7 @@ API형 스마트채팅은 기존 플러스친구 사용자에게 제공되던 �
 * 카카오 for 비즈니스 홈페이지: [https://business.kakao.com/](https://business.kakao.com/)
 * 카카오톡 플러스친구 FAQ: [https://cs.kakao.com/helps?category=29&locale=ko&service=8](https://cs.kakao.com/helps?category=29&locale=ko&service=8)
 
-## 카카오 i 오픈빌더 연동    <a id="openbuilder"></a>
+## 카카오 i 오픈빌더 연동     <a id="openbuilder"></a>
 
 **카카오 i 오픈빌더**는 카카오의 인공지능 플랫폼 **카카오 i** 의 기술을 활용해 카카오톡 플러스친구 챗봇부터 카카오미니 스피커봇까지 설계할 수 있는 개발 플랫폼입니다.  
 CLOSER에서는 카카오 i 오픈빌더의 [스킬](https://i.kakao.com/openbuilder/docs/guide/skill.html) 기능을 통해 챗봇 연동을 제공합니다.
@@ -134,7 +134,7 @@ CLOSER에서는 테스트 요청에 대해서는 대화 정보를 보관하지 �
 \(2018년 11월 29일 최종 확인\)
 {% endhint %}
 
-## API형 스마트채팅 연동   <a id="smartchat"></a>
+## API형 스마트채팅 연동    <a id="smartchat"></a>
 
 플러스친구 스마트채팅은 사용자의 메시지에 대해 정해진 답변을 제공하거나, API를 통해 답변을 생성할 수 있습니다. CLOSER에서는 API형 스마트채팅을 통 챗봇 연동을 제공합니다.
 

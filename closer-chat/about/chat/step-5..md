@@ -12,7 +12,7 @@
 
 채팅 상담에서 사용할 플로우를 구성하고, 채팅 상담 플로우를 즐겨찾기를 사용하여 효과적으로 사용해보세요.
 
-\*\*\*\*[**채팅 상담 플로우**](../../../builder/getting-started/modify-bot-scenario.md#chat-only-flow)를 참고해주세요.  
+\*\*\*\*[**채팅 상담 플로우**](../../../closer-bot-builder/getting-started/modify-bot-scenario.md#chat-only-flow)를 참고해주세요.  
 ****[**플로우 즐겨찾기**](../../conversations/fields.md#favorite-flow)를 참고해주세요.
 
 ## 고객 정보 입력 <a id="enduser-info"></a>
