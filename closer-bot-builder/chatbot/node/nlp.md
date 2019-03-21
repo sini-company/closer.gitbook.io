@@ -12,8 +12,8 @@
 
 | 파라미터 | 자료형 | 설명 |
 | :--- | :--- | :--- |
-| nlp.intent | string | 의도 |
-| nlp.entities | \[{entity: string, value: string, score: number}\] | 개체 |
-| nlp.answer | string | 자동응답 답변 |
-| nlp.score | number | 자동응답 정확도 |
+| nlp.intent | string | 분석된 의도 |
+| nlp.entities | \[{entity: string, value: string, score: number}\] | 분석된 개체 |
+| nlp.answer | string | 생성된 답변 \(제공 시\) |
+| nlp.score | number | 분석 정확도 \(제공 시\) |
 
