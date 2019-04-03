@@ -59,7 +59,7 @@ CLOSER에서 제공하는 사용자 입력 요청 노드는 기본적으로는 �
 ### 위치 입력 요청 \(location\) 👩🏻‍🔬
 
 * 고객의 입력 방식을 위치 입력으로 요청합니다.
-* 메신저의 위치 전송 지원 여부에 따라 CLOSER 웹페이지를 이용한 입력방식으로 변경용될 수 있습니다 \(이 때, `actions` 값에 설정된 텍스트들이 이용됩니다.\)
+* 메신저의 위치 전송 지원 여부에 따라 CLOSER 웹페이지를 이용한 입력방식이 이용될 수 있습니다. \(이 때, `actions` 값에 설정된 텍스트들이 이용됩니다.\)
 * 전달받은 위치의 위도와 경도 값은 `{{keyboard.value.latitude}}` , `{{keyboard.value.longitude}}` 두 가지 속성을 통해 획득할 수 있습니다.
 
 ![&#xD398;&#xC774;&#xC2A4;&#xBD81; Messenger&#xC5D0;&#xC11C; &#xC0AC;&#xC6A9;&#xB418;&#xB294; &#xC704;&#xCE58; &#xC804;&#xC1A1; &#xC694;&#xCCAD; \(&#xCD9C;&#xCC98;: &#xD398;&#xC774;&#xC2A4;&#xBD81; Messenger &#xBB38;&#xC11C;\)](../../../.gitbook/assets/image%20%2816%29.png)
