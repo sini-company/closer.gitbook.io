@@ -56,19 +56,24 @@ CLOSER에서 제공하는 사용자 입력 요청 노드는 기본적으로는 �
 ### 위치 입력 요청 \(location\) 👩🏻‍🔬
 
 * 고객의 입력 방식을 위치 입력 방식으로 지정하여 요청합니다.
-* 메신저에 따라 네이티브 입력 방식과 CLOSER 웹페이지를 이용한 입력방식 두 가지로 나뉘어서 요청을 전송합니다.
-* 전달받은 위치는 추후 `{{message.location.latitude}}` , `{{message.location.longitude}}` 로 접근하여 사용할 수 있습니다.
+* 메신저의 위치 전송 지원 여부에 따라 CLOSER 웹페이지를 이용한 입력방식이 이용될 수 있습니다.
+* 전달받은 위치의 위도와 경도 값은 `{{keyboard.value.latitude}}` , `{{keyboard.value.longitude}}` 두 가지 속성을 통해 획득할 수 있습니다.
 
 ![&#xD398;&#xC774;&#xC2A4;&#xBD81; Messenger&#xC5D0;&#xC11C; &#xC0AC;&#xC6A9;&#xB418;&#xB294; &#xC704;&#xCE58; &#xC804;&#xC1A1; &#xC694;&#xCCAD; \(&#xCD9C;&#xCC98;: &#xD398;&#xC774;&#xC2A4;&#xBD81; Messenger &#xBB38;&#xC11C;\)](../../../.gitbook/assets/image%20%2816%29.png)
 
 ## 고급 기능
 
-### 입력 유형 검증하기 \(strict option\)
+### 입력 유형 검증하기 \(strict option\) ⚠️ deprecated
 
 ![strict &#xC635;&#xC158;&#xACFC; &#xC624;&#xB958; &#xBA54;&#xC2DC;&#xC9C0; &#xC124;&#xC815;](../../../.gitbook/assets/userinputnode-strict-option.png)
 
 * 입력된 메시지의 유형을 검증하기 위해서는 ![](../../../.gitbook/assets/node-form-advanced-checkbox.png)에 나타난 `strict` 옵션을 이용할 수 있습니다.
-* strict설정이 활성화된 경우, 요청한 입력 방식과 다른 메시지가 도착한 경우 messages에 설정된 오류 메시지가 반환되며 다음 노드로 진행되지 않습니다. 주로 **특정 선택지 입력을 강제**하고자 할 때 사용하면 유용합니다.
+* strict설정이 활성화된 경우, 요청한 입력 방식과 다른 메시지가 도착한 경우 messages에 설정된 오류 메시지가 반환되며 다음 노드로 진행되지 않습니다. 주로 **특정 선택지 입력을 검증**하고자 할 때 사용하면 유용합니다.
+
+{% hint style="warning" %}
+strict 옵션은 아래 연결을 통한 입력 값 검증을 통해 완벽히 대체할 수 있습니다.   
+복잡도를 줄이기 위해 추후 제거될 예정입니다.
+{% endhint %}
 
 ### 입력 값 검증하기 \(value validation\)
 
