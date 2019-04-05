@@ -5,7 +5,7 @@
 * 상담원이 호출될때까지 봇의 동작은 중지되고, 사용자의 입력에 반응하지 않습니다.
 * 상담원이 호출된 상태에서 상담원이 응답하기 전에 사용자가 "취소" 라고 입력하면 상담원 호출이 취소되고, 다시 봇 모드로 전환되어 연결된 다음 노드로 진행합니다.
 
-![&#xC0C1;&#xB2F4;&#xC6D0; &#xD638;&#xCD9C; &#xB178;&#xB4DC; &#xC608;&#xC2DC;](../../../.gitbook/assets/guide_%20%2815%29.png)
+![&#xC0C1;&#xB2F4;&#xC6D0; &#xD638;&#xCD9C; &#xB178;&#xB4DC; &#xC124;&#xC815; &#xD654;&#xBA74;](../../../.gitbook/assets/agent-call-node-form.png)
 
 {% page-ref page="../../../closer-chat/about/" %}
 

@@ -8,8 +8,8 @@ description: 기본 제공 노드만으로는 목적을 달성할 수 없을 때
 
 런타임: Node.js v8.10  
 타임아웃: `5,000`ms  
-코드길이 제한: `10,000`byte  
-응답크기 제한: `5,000`byte
+코드길이 제한: `50,000`byte  
+응답크기 제한: `50,000`byte
 
 만일 실행 과정에서 오류가 발생하거나 수행시간이 5,000ms 를 초과할 경우 스크립트 실행이 종료되며, 이 시점에서 실행 중인 스크립트에 대한 결과는 보장할 수 없습니다. 때문에 제한 시간을 넘지 않도록 주의해 주시고, 오류 발생시 분기가 필요하다면 [3. 오류 처리하기](sandbox.md#3-error-handling) 항목을 참고해 주세요.
 
@@ -179,7 +179,7 @@ module.exports = function handler(context, callback) {
 
 ![&#xC624;&#xB958; &#xB514;&#xBC84;&#xAE45; &#xC608;&#xC2DC; - &#xBA54;&#xC2DC;&#xC9C0; &#xC751;&#xB2F5; &#xB178;&#xB4DC; &#xCD9C;&#xB825; &#xACB0;&#xACFC;](../../../.gitbook/assets/flow-editor-node-sandbox-debugging.png)
 
-위 예시의 디버깅 결과 \(stacktrace\) 를 살펴보면, script의 8번 줄 22 번째 위치에서 오류가 발생했음을 확인하실 수 있습니다. 이를 토대로 스크립트의 오류를 수정해 보세요.
+위 예시의 디버깅 과정에서 발생한 오류의 호출 스택 \(stacktrace\)  살펴보면, script의 8번 줄 22 번째 위치에서 오류가 발생했음을 확인하실 수 있습니다. 이를 응용하여 스크립트의 오류를 수정해 보세요.
 
   
 
