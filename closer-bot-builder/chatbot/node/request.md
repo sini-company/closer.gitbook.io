@@ -121,7 +121,7 @@ strict 옵션은 [**먼저 서술한 입력 값 검증 기능**](request.md#valu
 복잡도를 낮추기 위하여 추후 제거될 예정이니, 가능하면 **연결 조건** 기능을 이용해 주세요.
 {% endhint %}
 
-### 테이블 형식 데이터\(엑셀 등\) 이용하기
+### 테이블 형식 데이터\(엑셀 등\) 이용하기 <a id="clipboard-data"></a>
 
 ![&#xC5D1;&#xC140; &#xD615;&#xD0DC;&#xC758; &#xB370;&#xC774;&#xD130;&#xB97C; &#xBD99;&#xC5EC;&#xB123;&#xB294; &#xBAA8;&#xC2B5;](../../../.gitbook/assets/userinput-form-table-data.gif)
 
