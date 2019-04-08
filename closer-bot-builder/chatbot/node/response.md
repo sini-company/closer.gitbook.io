@@ -101,7 +101,7 @@ CLOSER에서는 이미지 파일에 한하여 파일 첨부 기능을 제공하�
 
 ![&#xB9D0;&#xD48D;&#xC120; &#xBC84;&#xD2BC;&#xC5D0; &#xD3EC;&#xC2A4;&#xD2B8;&#xBC31; &#xD398;&#xC774;&#xB85C;&#xB4DC;&#xB97C; &#xC124;&#xC815;&#xD55C; &#xBAA8;&#xC2B5;](../../../.gitbook/assets/message-form-text-button-postback.png)
 
-말풍선 버튼을 입력하는 다른 방법으로 [테이블 데이터 \(스프레드 시트 등\)를 이용하는 방법](request.md#undefined-6)을 참고하세요.
+말풍선 버튼을 입력하는 다른 방법으로 [테이블 데이터 \(엑셀 등\)를 이용하는 방법](request.md#clipboard-data)을 참고하세요.
 
 ### 포스트백 페이로드 \(Postback Payload\)
 
