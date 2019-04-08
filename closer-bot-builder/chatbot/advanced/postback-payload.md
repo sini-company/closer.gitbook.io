@@ -35,7 +35,7 @@ Postback payload를 이용하면 고객이 특정 말풍선 버튼을 클릭했�
 {% endtab %}
 
 {% tab title="postback payload 설정 예시" %}
-![ &#xBA54;&#xC2DC;&#xC9C0; &#xC751;&#xB2F5; &#xB178;&#xB4DC;&#xC5D0;&#xC11C; postback payload&#xB97C; &#xC124;&#xC815;&#xD558;&#xB294; &#xBAA8;&#xC2B5;](../../../.gitbook/assets/postback-payload-example2.png)
+![&#xBA54;&#xC2DC;&#xC9C0; &#xBC84;&#xD2BC;&#xC5D0; &#xD3EC;&#xC2A4;&#xD2B8;&#xBC31; &#xD398;&#xC774;&#xB85C;&#xB4DC;&#xB97C; &#xC124;&#xC815;&#xD558;&#xB294; &#xBAA8;&#xC2B5;](../../../.gitbook/assets/postback-payload-example-fallback.png)
 {% endtab %}
 
 {% tab title="postback payload 사용 예시" %}
