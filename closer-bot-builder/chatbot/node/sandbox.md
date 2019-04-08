@@ -179,7 +179,7 @@ module.exports = function handler(context, callback) {
 
 ![&#xC624;&#xB958; &#xB514;&#xBC84;&#xAE45; &#xC608;&#xC2DC; - &#xBA54;&#xC2DC;&#xC9C0; &#xC751;&#xB2F5; &#xB178;&#xB4DC; &#xCD9C;&#xB825; &#xACB0;&#xACFC;](../../../.gitbook/assets/flow-editor-node-sandbox-debugging.png)
 
-위 예시의 디버깅 과정에서 발생한 오류의 호출 스택 \(stacktrace\)  살펴보면, script의 8번 줄 22 번째 위치에서 오류가 발생했음을 확인하실 수 있습니다. 이를 응용하여 스크립트의 오류를 수정해 보세요.
+위 예시의 오류 호출 스택 \(stacktrace\) 을 살펴보면 작성한 스크립트의 8번째 줄 22 번째 위치에서 오류가 발생했음을 확인할 수 있습니다. 이를 응용하여 스크립트의 오류를 디버깅 해 보세요.
 
   
 
