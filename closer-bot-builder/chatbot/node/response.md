@@ -91,9 +91,9 @@ CLOSER에서는 이미지 파일에 한하여 파일 첨부 기능을 제공하�
 메시지 버튼은 다음 두 가지 유형이 지원됩니다.
 
 * 클릭 시 이동하는 **URL 링크** 
-* \*\*\*\*[**포스트백 페이로드 \(Postback payload\)**](response.md#postback-payload) 
+* \*\*\*\*[**포스트백 페이로드 \(Postback payload\)**](response.md#postback-payload) **** 
 
-메시지 버튼의 동작은 기본적으로 아무런 payload가 설정되지 않은 포스트백 방식이며, 버튼 선택 시 노출되는 팝업 메뉴를 통해 설정을 변경할 수 있습니다. 
+메시지 버튼의 동작은 기본적으로 아무런 payload가 설정되지 않은 포스트백\(주: 사용자가 **데이터를 다시 반환**한다는 뜻\) 방식이며, 버튼 선택 시 노출되는 팝업 메뉴를 통해 설정을 변경할 수 있습니다. 
 
 ![&#xB9D0;&#xD48D;&#xC120; &#xBC84;&#xD2BC; &#xC120;&#xD0DD; &#xC2DC; &#xB178;&#xCD9C;&#xB418;&#xB294; &#xD31D;&#xC5C5; &#xBA54;&#xB274;](../../../.gitbook/assets/message-form-text-buttons.gif)
 
@@ -106,8 +106,6 @@ CLOSER에서는 이미지 파일에 한하여 파일 첨부 기능을 제공하�
 ### 포스트백 페이로드 \(Postback Payload\)
 
 텍스트형 메시지나 카드형 메시지의 postback 버튼에 설정하는 payload 기능은 쉽게 이해하기는 어렵지만, **자연스러운 챗봇을 제작하는 핵심 기능**에 해당하니 한번 쯤 읽어보시는 것을 권해드립니다. 
-
-![&#xD3EC;&#xC2A4;&#xD2B8;&#xBC31; &#xD398;&#xC774;&#xB85C;&#xB4DC;&#xB97C; &#xC124;&#xC815;&#xD558;&#xB294; &#xBAA8;&#xC2B5;](../../../.gitbook/assets/message-form-text-button-postback.png)
 
 {% page-ref page="../advanced/postback-payload.md" %}
 
