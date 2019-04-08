@@ -5,7 +5,11 @@ description: CLOSER 실시간 웹 채팅의 UI를 직접 개발할 수 있는 We
 # CLOSER Webchat SDK 연동 가이드
 
 {% hint style="info" %}
-**Webchat SDK 이용이 필요하시다면 support@closer.ai로 문의주세요.**
+웹사이트 연동 방법을 알아보러 오셨나요? 그렇다면 아래 페이지를 참고해 주세요.
+
+* [**웹사이트 연동 방법 알아보기**](../closer-bot-builder/messenger-integrations/web.md)\*\*\*\*
+
+Webchat SDK 이용이 필요하시다면 support@closer.ai로 별도 문의주세요.
 {% endhint %}
 
 ## WebChat SDK 초기화 <a id="CLOSERWebChatSDK&#xC5F0;&#xB3D9;&#xAC00;&#xC774;&#xB4DC;v0.1-WebChatSDK&#xCD08;&#xAE30;&#xD654;"></a>
@@ -32,7 +36,7 @@ var wsClient = webchatSDK.open({
 });
 ```
 
-## Open / Close / Message Listener 추가 / 제거 <a id="CLOSERWebChatSDK&#xC5F0;&#xB3D9;&#xAC00;&#xC774;&#xB4DC;v0.1-Open/Close/MessageListener&#xCD94;&#xAC00;/&#xC81C;&#xAC70;"></a>
+## Event Listener 목록 <a id="CLOSERWebChatSDK&#xC5F0;&#xB3D9;&#xAC00;&#xC774;&#xB4DC;v0.1-Open/Close/MessageListener&#xCD94;&#xAC00;/&#xC81C;&#xAC70;"></a>
 
 ```javascript
 var onOpen = function() {};
@@ -53,7 +57,7 @@ wsClient.removeListener('error', onError);
 wsClient.removeListener('close', onClose);
 ```
 
-## 메시지 전송 \(high-level\) <a id="CLOSERWebChatSDK&#xC5F0;&#xB3D9;&#xAC00;&#xC774;&#xB4DC;v0.1-&#xBA54;&#xC2DC;&#xC9C0;&#xC804;&#xC1A1;(high-level)"></a>
+## 메시지 전송 <a id="CLOSERWebChatSDK&#xC5F0;&#xB3D9;&#xAC00;&#xC774;&#xB4DC;v0.1-&#xBA54;&#xC2DC;&#xC9C0;&#xC804;&#xC1A1;(high-level)"></a>
 
 ```javascript
 // Text type message
@@ -69,32 +73,7 @@ wsClient.sendMessage({
 });
 ```
 
-## 메시지 전송 \(low-level\) <a id="CLOSERWebChatSDK&#xC5F0;&#xB3D9;&#xAC00;&#xC774;&#xB4DC;v0.1-&#xBA54;&#xC2DC;&#xC9C0;&#xC804;&#xC1A1;(low-level)"></a>
-
-```javascript
-// Text type message
-wsClient.send({
-  message: {
-    data: {
-      type: 'text',
-      text: 'message'
-    },
-    timestamp: new Date()
-  }
-});
-
-// Media type message
-wsClient.send({
-  message: {
-    data: {
-      type: 'media',
-      media: { contentType: 'image', uri: 'http://...' }
-    }
-  }
-});
-```
-
-## Objects
+## 객체 스키마
 
 ### MESSAGE <a id="CLOSERWebChatSDK&#xC5F0;&#xB3D9;&#xAC00;&#xC774;&#xB4DC;v0.1-MESSAGE"></a>
 
