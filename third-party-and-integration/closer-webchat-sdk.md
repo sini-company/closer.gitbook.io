@@ -1,16 +1,12 @@
+---
+description: CLOSER 실시간 웹 채팅의 UI를 직접 개발할 수 있는 Webchat SDK에 대해 소개합니다.
+---
+
 # CLOSER Webchat SDK 연동 가이드
 
 {% hint style="info" %}
-**Webchat SDK가 필요하시다면, support@closer.ai로 문의해주세요.**
+**Webchat SDK 이용이 필요하시다면 support@closer.ai로 문의주세요.**
 {% endhint %}
-
-## 개요 <a id="CLOSERWebChatSDK&#xC5F0;&#xB3D9;&#xAC00;&#xC774;&#xB4DC;v0.1-WebChatSDK&#xBC84;&#xC804;"></a>
-
-WebChat SDK를 활용하여, CLOSER의 챗봇과 연결되는 WebChat의 UI를 개발할 수 있습니다.
-
-## WebChat SDK 버전 <a id="CLOSERWebChatSDK&#xC5F0;&#xB3D9;&#xAC00;&#xC774;&#xB4DC;v0.1-WebChatSDK&#xBC84;&#xC804;"></a>
-
-* 0.22.8
 
 ## WebChat SDK 초기화 <a id="CLOSERWebChatSDK&#xC5F0;&#xB3D9;&#xAC00;&#xC774;&#xB4DC;v0.1-WebChatSDK&#xCD08;&#xAE30;&#xD654;"></a>
 
@@ -209,10 +205,10 @@ CLOSER에서 대화를 진행하는데 필요한 정보입니다. SDK의 WebChat
 | botId | String | Y | Bot의 ID |
 | conversationId | UUID | Y | 대화의 ID. CLOSER에서 자동으로 생성됨 |
 | endUserId | UUID | Y | 최종사용자의 ID. CLOSER에서 자동으로 생성됨 |
-| navigation | Object\(CONTEXT.NAVIGATION\) | N | 현재 대화의 위치를 표현하는 오브젝트 |
-| params | Object\(Dictionary\) | N | 현재 대화에서 사용하고 있는 파라미터 |
-| platform | 'web' | Y | 현재 대화의 플랫폼, WebChatSDK에서는 'web'만 사용 |
-| userKey | String | Y | 최종사용자 식별 키. SDK Open시 주입한 값 |
+| navigation | Object\(CONTEXT.NAVIGATION\) | N | 현재 시나리오의 위치를 표현하는 오브젝트 |
+| params | Object\(Dictionary\) | N | 현재 시나리오에서 사용중인 파라미터 |
+| platform | 'web' | Y | 사용자 메시징 채널 |
+| userKey | String | Y | 사용자 식별 키 |
 
 ### CONTEXT.NAVIGATION <a id="CLOSERWebChatSDK&#xC5F0;&#xB3D9;&#xAC00;&#xC774;&#xB4DC;v0.1-CONTEXT.NAVIGATION"></a>
 
@@ -227,7 +223,6 @@ CLOSER에서 대화를 진행하는데 필요한 정보입니다. SDK의 WebChat
 | :--- | :--- | :--- | :--- |
 | flowId | Number | Y | 현재 노드의 플로우 ID |
 | nodeId | Number | Y | 현재 노드의 ID |
-| visitCount | Number | N | 최종사용자가 노드에 방문한 수 |
 
 ### AGENT
 
