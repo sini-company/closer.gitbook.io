@@ -2,7 +2,7 @@
 
 ### **자연어 처리 노드**   <a id="nlp-node"></a>
 
-![&#xC790;&#xC5F0;&#xC5B4; &#xCC98;&#xB9AC; &#xB178;&#xB4DC;](../../../.gitbook/assets/guide_%20%2811%29.png)
+![&#xC790;&#xC5F0;&#xC5B4; &#xCC98;&#xB9AC; &#xB178;&#xB4DC; &#xC124;&#xC815; &#xB370;&#xC774;&#xD130;](../../../.gitbook/assets/guide_%20%2811%29.png)
 
 자연어처리 노드는 **사용자가 입력한 메시지**\(`messsage.text`값\) 를 **외부 자연어처리 에이전트를 통해 분석**하고 그 결과를 반환해주는 노드입니다. 따라서 [텍스트 입력 요청 노드 ](request.md#text)이후에 자연어 처리 노드를 배치하여 주셔야 올바른 결과를 획득하실 수 있습니다.
 
@@ -12,7 +12,7 @@
 * [https://www.ibm.com/watson/kr-ko/developercloud/conversation.html](https://www.ibm.com/watson/kr-ko/developercloud/conversation.html)
 
 {% hint style="info" %}
-자연어 처리 에이전트 관리는 **내 프로필 &gt; 자연어 처리 API 관리** 메뉴를 통해 이용할 수 있습니다.  
+자연어 처리 에이전트는 **내 프로필 &gt; 자연어 처리 API 관리** 메뉴를 통해 관리할 수 있습니다.  
 [https://app.closer.ai/app/settings/nlp](https://app.closer.ai/app/settings/nlp) 
 {% endhint %}
 
@@ -26,5 +26,8 @@
 | nlp.score | number | 분석 정확도 \(제공 시\) |
 | nlp.error | Error | 요청 오류 / 분석 오류 \(실패 시\) |
 
+다음은 자연어 처리 노드의 반환값을 이용한 플로우 구성 예시입니다.  
+answer와 intent가 동시에 반환되는 경우에는 [연결 설정의 우선순위 설정](./#undefined-5)을 이용해 해결할 수 있습니다.
 
+![&#xC790;&#xC5F0;&#xC5B4; &#xCC98;&#xB9AC; &#xB178;&#xB4DC; &#xAD6C;&#xC131; &#xC608;&#xC2DC;](../../../.gitbook/assets/nlp_node_example.png)
 
