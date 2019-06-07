@@ -310,13 +310,18 @@ CLOSER 템플릿 엔진에서는 Handlebars에서 제공하는 문법 외에도 
 * `[format]`: 날짜 표현 방식을 설정 \(선택\)
 * `[timezone]`: 날짜를 표시할 기준 시간대를 설정 \(선택\)
 * 예시
-  * `{{DATE()}}` -&gt; `2018-12-07T05:47:14.667Z` \(ISO Date, UTC timezone\)
-  * `{{DATE("2018-12-07","YYYY.MM")}}` -&gt; `2018.12` 
-  * `{{DATE("2018-12-07T05:47:14.667Z", "YYYY년 MM월 DD일 HH시 mm분", "Asia/Seoul")}}`     -&gt; `2018년 12월 07일 14시 47분` 
+  * `{{DATE()}}` 또는 `{{DATE(null)}}` =&gt; `2018-12-07T05:47:14.667Z` \(ISO Date, UTC timezone\)
+  * `{{DATE("2018-12-07","YYYY.MM")}}`  =&gt; `2018.12` 
+  * `{{DATE("2018-12-07T05:47:14.667Z", "YYYY년 MM월 DD일 HH시 mm분", "Asia/Seoul")}}`  =&gt; `2018년 12월 07일 14시 47분` 
+
+{% hint style="info" %}
+현재 시간을 기준으로 format, timezone을 적용하려면 value에 null을 입력하세요.  
+e.g.\) `{{DATE(null, "YYYY-MM-DD")}}`
+{% endhint %}
 
 {% hint style="info" %}
 Date manipulation에는 Moment.js 라이브러리를 이용하고 있습니다.  
-이용 가능한 시간대와 포매 방식을 알아보려면 다음 링크를 참고하세요.
+이용 가능한 시간대와 포매팅 방식을 더 자세히 알아보려면 다음 링크를 참고하세요.
 
 \(영문\) [https://momentjs.com/docs/\#/displaying/format/](https://momentjs.com/docs/#/displaying/format/)  
 \(영문\) [https://momentjs.com/timezone/](https://momentjs.com/timezone/)
