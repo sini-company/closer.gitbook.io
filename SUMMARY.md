@@ -1,7 +1,7 @@
 # Table of contents
 
 * [CLOSER 사용 설명서](README.md)
-* [CLOSER 업데이트 변경점](undefined.md)
+* [CLOSER 릴리스 정보](undefined.md)
 
 ## CLOSER Bot Builder
 
