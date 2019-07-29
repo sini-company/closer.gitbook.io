@@ -23,7 +23,8 @@ HTTP 요청 수행 후 생성되는 반환값을 담고 있는 객체입니다.
 | status | string | 성공시 'COMPLETED', 실패시 'FAILED' |
 | error | Error | 요청 오류 |
 
-* 응답 받은 데이터는 `{{fetch.data}}`경로로 접근할 수 있으며, 반환값이 JSON 형태인 경우 `{{fetch.data.path[2].your.object}}`와 같이 접근이 가능합니다.
+* 반환된 데이터는 [템플릿 문법](../advanced/template-syntax.md)을 활용하여 메시지에 삽입할 수 있습니다. 
+* 전체 반환값을 확인하시려면 `{{fetch.data}}` 같이 작성하실 수 있으며, 반환값이 [JSON](https://ko.wikipedia.org/wiki/JSON) 형태인 경우 `{{fetch.data.path[2].your.object}}`와 같은 경로로 접근하여 해당 값을 사용하실 수 있습니다.
 
 다음은 네이버가 제공하는 파파고 영어번역 API 연동 설정 예시입니다.   
 실제 API와는 다를 수 있으니 참고용으로만 확인해 주세요.  
