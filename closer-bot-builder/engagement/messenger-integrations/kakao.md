@@ -54,15 +54,15 @@ API형 스마트채팅 서비스는 2018년 12월 3일 이후 신규 가입이 �
 
 플러스친구 관리자 센터로 진입하여 보유하신 플러스친구 프로필을 선택합니다.
 
-![&#xD50C;&#xB7EC;&#xC2A4;&#xCE5C;&#xAD6C; &#xAD00;&#xB9AC;&#xC790;&#xC13C;&#xD130; &#xD504;&#xB85C;&#xD544; &#xCD08;&#xAE30; &#xD654;&#xBA74;](../../.gitbook/assets/kakao_smartchat_1.png)
+![&#xD50C;&#xB7EC;&#xC2A4;&#xCE5C;&#xAD6C; &#xAD00;&#xB9AC;&#xC790;&#xC13C;&#xD130; &#xD504;&#xB85C;&#xD544; &#xCD08;&#xAE30; &#xD654;&#xBA74;](../../../.gitbook/assets/kakao_smartchat_1.png)
 
 화면 좌측 스마트채팅 메뉴를 클릭해 스마트채팅 설정 화면으로 진입합니다.
 
-![&#xD50C;&#xB7EC;&#xC2A4;&#xCE5C;&#xAD6C; &#xAD00;&#xB9AC;&#xC790;&#xC13C;&#xD130; &#xC2A4;&#xB9C8;&#xD2B8;&#xCC44;&#xD305; &#xC124;&#xC815; &#xD654;&#xBA74;](../../.gitbook/assets/kakao_smartchat_5.png)
+![&#xD50C;&#xB7EC;&#xC2A4;&#xCE5C;&#xAD6C; &#xAD00;&#xB9AC;&#xC790;&#xC13C;&#xD130; &#xC2A4;&#xB9C8;&#xD2B8;&#xCC44;&#xD305; &#xC124;&#xC815; &#xD654;&#xBA74;](../../../.gitbook/assets/kakao_smartchat_5.png)
 
 스마트채팅 설정 화면 우측의 API형 스마트채팅 하단에 있는 **설정하기** \(기존 설정이 존재하는 경우 ✏️ 아이콘\) 버튼을 클릭하여 API형 스마트채팅 설정 메뉴로 진입합니다.
 
-![&#xD50C;&#xB7EC;&#xC2A4;&#xCE5C;&#xAD6C; &#xAD00;&#xB9AC;&#xC790;&#xC13C;&#xD130; API&#xD615; &#xC2A4;&#xB9C8;&#xD2B8;&#xCC44;&#xD305; &#xC124;&#xC815; &#xD654;&#xBA74; ](../../.gitbook/assets/kakao_smartchat_3.png)
+![&#xD50C;&#xB7EC;&#xC2A4;&#xCE5C;&#xAD6C; &#xAD00;&#xB9AC;&#xC790;&#xC13C;&#xD130; API&#xD615; &#xC2A4;&#xB9C8;&#xD2B8;&#xCC44;&#xD305; &#xC124;&#xC815; &#xD654;&#xBA74; ](../../../.gitbook/assets/kakao_smartchat_3.png)
 
 API형 스마트채팅 설정 화면으로 들어오셨다면, 아래 항목을 입력해주세요.
 
@@ -72,13 +72,13 @@ API형 스마트채팅 설정 화면으로 들어오셨다면, 아래 항목을 
 
 앱 URL 입력 후 **API 테스트** 버튼을 눌러 응답을 확인해 보세요. 연동이 제대로 이루어 진 경우 아래와 같이 테스트 결과가 출력됩니다.
 
-![&#xD50C;&#xB7EC;&#xC2A4;&#xCE5C;&#xAD6C; &#xAD00;&#xB9AC;&#xC790;&#xC13C;&#xD130; API&#xD615; &#xC2A4;&#xB9C8;&#xD2B8;&#xCC44;&#xD305; &#xC124;&#xC815; &#xD654;&#xBA74; - API &#xD14C;&#xC2A4;&#xD2B8; &#xACB0;&#xACFC;](../../.gitbook/assets/kakao_smartchat_4.png)
+![&#xD50C;&#xB7EC;&#xC2A4;&#xCE5C;&#xAD6C; &#xAD00;&#xB9AC;&#xC790;&#xC13C;&#xD130; API&#xD615; &#xC2A4;&#xB9C8;&#xD2B8;&#xCC44;&#xD305; &#xC124;&#xC815; &#xD654;&#xBA74; - API &#xD14C;&#xC2A4;&#xD2B8; &#xACB0;&#xACFC;](../../../.gitbook/assets/kakao_smartchat_4.png)
 
 API 응답을 확인하였으면 아래 **저장하기** 버튼을 클릭해 설정을 저장해 주세요.
 
 ### 2. 스마트채팅 연동 테스트
 
-![&#xD50C;&#xB7EC;&#xC2A4;&#xCE5C;&#xAD6C; &#xAD00;&#xB9AC;&#xC790;&#xC13C;&#xD130; &#xC2A4;&#xB9C8;&#xD2B8;&#xCC44;&#xD305; &#xC124;&#xC815; &#xD654;&#xBA74; \(&#xC5F0;&#xB3D9; &#xC124;&#xC815; &#xD6C4;\) ](../../.gitbook/assets/kakao_smartchat_2.png)
+![&#xD50C;&#xB7EC;&#xC2A4;&#xCE5C;&#xAD6C; &#xAD00;&#xB9AC;&#xC790;&#xC13C;&#xD130; &#xC2A4;&#xB9C8;&#xD2B8;&#xCC44;&#xD305; &#xC124;&#xC815; &#xD654;&#xBA74; \(&#xC5F0;&#xB3D9; &#xC124;&#xC815; &#xD6C4;\) ](../../../.gitbook/assets/kakao_smartchat_2.png)
 
 이제 스마트채팅 설정 화면으로 돌아가 **시작하기** 버튼을 클릭해 주세요.  
 연동이 잘 이루어진 경우 플러스친구 1:1 대화창을 통해 챗봇 동작을 확인할 수 있습니다.

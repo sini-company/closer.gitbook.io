@@ -36,7 +36,7 @@ CLOSER Builder 웹 앱의 화면 좌측 메뉴에 보이는 **SETTINGS &gt; 메�
 실제로 보유하고 계신 채팅 프로필이 있으신가요?   
 채팅 프로필에 챗봇을 연동하는 방법은 다음 문서를 통해 확인해주세요.
 
-{% page-ref page="../messenger-integrations/" %}
+{% page-ref page="../engagement/messenger-integrations/" %}
 
 
 

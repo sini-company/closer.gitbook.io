@@ -31,9 +31,11 @@
     * [컨텍스트 \(Context\)](closer-bot-builder/chatbot/advanced/context.md)
     * [템플릿 문법\(Template Syntax\)](closer-bot-builder/chatbot/advanced/template-syntax.md)
     * [포스트백 페이로드 \(Postback Payload\)](closer-bot-builder/chatbot/advanced/postback-payload.md)
-* [메신저 연동](closer-bot-builder/messenger-integrations/README.md)
-  * [웹사이트](closer-bot-builder/messenger-integrations/web.md)
-  * [카카오톡](closer-bot-builder/messenger-integrations/kakao.md)
+* [고객 획득](closer-bot-builder/engagement/README.md)
+  * [메신저 연동](closer-bot-builder/engagement/messenger-integrations/README.md)
+    * [웹사이트](closer-bot-builder/engagement/messenger-integrations/web.md)
+    * [카카오톡](closer-bot-builder/engagement/messenger-integrations/kakao.md)
+  * [잠재고객 👩🏻‍🔬](closer-bot-builder/engagement/audience.md)
 
 ## CLOSER Chat
 

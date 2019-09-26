@@ -11,7 +11,7 @@ description: CLOSER의 향상된 최신 기능에 대한 릴리스 정보와 히
 
 #### CLOSER Bot
 
-* 잠재고객 페이지 추가 \(베타\)
+* [잠재고객 ](closer-bot-builder/engagement/audience.md)페이지 추가 \(베타\)
   * 챗봇과 대화한 사용자들의 목록을 확인할 수 있는 기능을 추가하였습니다.
   * 파라미터 기반 검색 등 다양한 기능이 추가될 예정입니다.
 * LINE 연동 개선
