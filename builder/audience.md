@@ -4,7 +4,7 @@ description: 챗봇과 대화한 고객을 분석하고 잠재고객을 분석�
 
 # 잠재고객 👩🏻‍🔬
 
-![&#xC7A0;&#xC7AC;&#xACE0;&#xAC1D; &#xD14C;&#xC774;&#xBE14; \(&#xBCA0;&#xD0C0;\)](../../.gitbook/assets/audience-example.jpg)
+![&#xC7A0;&#xC7AC;&#xACE0;&#xAC1D; &#xD14C;&#xC774;&#xBE14; \(&#xBCA0;&#xD0C0;\)](../.gitbook/assets/audience-example.jpg)
 
 잠재고객 페이지에서는 여러분의 챗봇을 이용한 사용자들을 분석하는 기능을 제공합니다.  
 현재는 내려받기와 테이블 편집 기능 두 가지 기능을를 제공하고 있는데, 추후 검색이나 필터링 등 더 많은 기능을 제공할 예정입니다. 
@@ -14,14 +14,14 @@ description: 챗봇과 대화한 고객을 분석하고 잠재고객을 분석�
 
 ### 편집 모드 <a id="edit"></a>
 
-![&#xC7A0;&#xC7AC;&#xACE0;&#xAC1D; &#xD14C;&#xC774;&#xBE14; &#xD3B8;&#xC9D1; &#xD654;&#xBA74; ](../../.gitbook/assets/audience-editing.png)
+![&#xC7A0;&#xC7AC;&#xACE0;&#xAC1D; &#xD14C;&#xC774;&#xBE14; &#xD3B8;&#xC9D1; &#xD654;&#xBA74; ](../.gitbook/assets/audience-editing.png)
 
 편집 모드에서는 현재 다음과 같은 기능이 제공됩니다. \(추후 더 많은 기능이 추가될 예정입니다.\) 
 
 * 테이블 이름 변경
 * 행 추가/제거 
 * 행 위치 변경 \(머릿말의 빈 부분을 클릭하고 드래그&드롭\)
-* [템플릿 문법](../chatbot/advanced/template-syntax.md) / HTML 태그를 이용한 스타일링 지원
+* [템플릿 문법](chatbot/advanced/template-syntax.md) / HTML 태그를 이용한 스타일링 지원
 
 본 설명서에서 사용된 예제는 **봇 생성 &gt; 잠재고객 확보** 챗봇 생성을 통해 확인하실 수 있습니다.
 
@@ -92,7 +92,9 @@ description: 챗봇과 대화한 고객을 분석하고 잠재고객을 분석�
   </tbody>
 </table>{% hint style="info" %}
 `id`와 `userKey`는 모두 고객 식별자에 해당하지만, `id`는 CLOSER에서 관리하는 값이며 `userKey`는 메시징 채널\(`platform`\)에서 제공하는 값입니다.
+{% endhint %}
 
+{% hint style="info" %}
 `userKey`는 `platform`에서 제공하는 값이기 때문에, 서로 다른 `platform`에는 동일한 `userKey`가 존재할 수 있습니다.
 {% endhint %}
 
