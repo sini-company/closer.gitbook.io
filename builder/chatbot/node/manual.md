@@ -7,5 +7,5 @@
 
 ![&#xC0C1;&#xB2F4;&#xC6D0; &#xD638;&#xCD9C; &#xB178;&#xB4DC; &#xC124;&#xC815; &#xD654;&#xBA74;](../../../.gitbook/assets/agent-call-node-form.png)
 
-{% page-ref page="../../../closer-chat/about/" %}
+{% page-ref page="../../../chat/about/" %}
 
