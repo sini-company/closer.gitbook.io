@@ -92,9 +92,7 @@ description: 챗봇과 대화한 고객을 분석하고 잠재고객을 분석�
   </tbody>
 </table>{% hint style="info" %}
 `id`와 `userKey`는 모두 고객 식별자에 해당하지만, `id`는 CLOSER에서 관리하는 값이며 `userKey`는 메시징 채널\(`platform`\)에서 제공하는 값입니다.
-{% endhint %}
 
-{% hint style="info" %}
-`userKey`는 `platform`에서 제공하는 값이기 때문에, 서로 다른 `platform`에는 동일한 `userKey`가 존재할 수 있습니다.
+`userKey`는 `platform`에서 제공하는 값이기 때문에, 서로 다른 `platform`에서 동일한 `userKey`가 존재할 수 있습니다. 따라서 메시징 채널이 여러개인 경우 고유 식별자로 `id`를 사용하는 것을 권장합니다.
 {% endhint %}
 
