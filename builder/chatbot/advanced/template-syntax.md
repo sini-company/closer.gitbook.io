@@ -401,7 +401,7 @@ Number formatting에는 Numeral.js 라이브러리를 이용하고 있습니다.
 
 [SWAPI](https://swapi.co/)를 통해 스타워즈 우주선 목록 배열을 가져온 이후 우주선 갯수만큼 확장되는 카드 메시지를 생성해 보겠습니다.
 
-![&#xBC30;&#xC5F4; &#xD655;&#xC7A5; &#xBC18;&#xBCF5;&#xC790; &#xD45C;&#xD604;&#xC2DD;&#xC744; &#xC774;&#xC6A9;&#xD574; &#xCE74;&#xB4DC; &#xBA54;&#xC2DC;&#xC9C0;&#xB97C; &#xC791;&#xC131;&#xD558;&#xB294; &#xC608;&#xC2DC;](../../../.gitbook/assets/array-to-cards-template.png)
+![&#xD15C;&#xD50C;&#xB9BF; &#xBB38;&#xBC95;&#xC744; &#xC774;&#xC6A9;&#xD574; &#xB3D9;&#xC801; &#xBC30;&#xC5F4;&#xC744; &#xCE74;&#xB4DC;&#xD615; &#xBA54;&#xC2DC;&#xC9C0;&#xB85C; &#xCD9C;&#xB825;&#xD558;&#xB294; &#xC608;&#xC2DC;](../../../.gitbook/assets/template-syntax-example-iterator.png)
 
 1. HTTP 요청 노드를 통해 [https://swapi.co/api/starships](https://swapi.co/api/starships) 에 GET 요청을 보냅니다.  이 때 요청 결과는 `fetch` 컨텍스트에 담겨서 반환됩니다. \(`{{fetch.data.results}}` 값을 통해 배열 형태의 우주선 목록을 획득할 수 있습니다.\) 
 2. 메시지 응답 노드에서 카드를 하나 만든 이후 제목에 `{{fetch.data.results[i].name}}`, 설명에 `{{fetch.data.results[i].description}}` 를 작성해 주세요.  추후 `fetch.data.results` 의 크기만큼 카드가 동적으로 생성됩니다.  \(이 기능은는 [반복자 표현식 &gt; 배열 확장 반복자 표현식](template-syntax.md#iterator-expression-array-expansion)을 참고하세요.\)
