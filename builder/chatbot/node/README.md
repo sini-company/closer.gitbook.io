@@ -121,7 +121,7 @@ CLOSER가 제공하는 각 노드별 기능과 설정 방법에 대한 내용은
 
 {% page-ref page="flow.md" %}
 
-{% page-ref page="http.md" %}
+{% page-ref page="fetch.md" %}
 
 {% page-ref page="parameter.md" %}
 

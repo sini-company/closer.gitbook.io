@@ -20,7 +20,7 @@
     * [메시지 응답 노드](builder/chatbot/node/response.md)
     * [사용자 입력 요청 노드](builder/chatbot/node/request.md)
     * [플로우 연결 노드](builder/chatbot/node/flow.md)
-    * [HTTP 요청 노드](builder/chatbot/node/http.md)
+    * [HTTP 요청 노드](builder/chatbot/node/fetch.md)
     * [파라미터 설정 노드](builder/chatbot/node/parameter.md)
     * [사용자 정의 스크립트 노드](builder/chatbot/node/sandbox.md)
     * [상담원 호출 노드](builder/chatbot/node/manual.md)

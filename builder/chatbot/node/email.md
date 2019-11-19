@@ -18,6 +18,6 @@ description: 지정된 메일 주소로 이메일을 전송할 수 있습니다.
 {% endhint %}
 
 {% hint style="info" %}
-보낸 사람 메일 주소는 현재 noreply@closer.ai 로 발송됩니다. 
+보낸 사람 메일 주소는 noreply@closer.ai 로 발송됩니다. 
 {% endhint %}
 
