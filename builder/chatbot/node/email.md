@@ -14,6 +14,6 @@ description: 지정된 메일 주소로 이메일을 전송할 수 있습니다.
 * `body`: 메일의 본문 
 
 {% hint style="info" %}
-모든 입력값은 [템플릿 문법](../advanced/template-syntax.md)을 이용하여 작성 가능합니다.
+모든 입력값는 [템플릿 문법](../advanced/template-syntax.md)을 이용 가능합니다.
 {% endhint %}
 
