@@ -39,15 +39,6 @@ description: 기본 제공 노드만으로는 목적을 달성할 수 없을 때
 | uuid | 3.3.2 |
 | xml2js | 0.4.19 |
 
-{% hint style="info" %}
-원하시는 라이브러리를 사용하실 수 없나요?   
-사용자 정의 스크립트 노드 대신 NodeJS 프로토타이핑 툴인 RunKit 을 이용해보세요.   
-RunKit Endpoint\(베타\)를 이용하면 원하시는 기능을 구현하고 API를 호스팅할 수 있습니다. \(현재 무료\)
-
-* [https://runkit.com/](https://runkit.com/) \(RunKit 공식 홈페이지, 영문\)
-* [https://runkit.com/docs/endpoint](https://runkit.com/docs/endpoint) \(RunKit Endpoint 문서, 영문\)
-{% endhint %}
-
 ## 핸들러 함수
 
 사용자 정의 스크립트 노드에 작성하는 script는 하나의 Node.js의 모듈과 동일합니다.  
