@@ -39,6 +39,15 @@ description: 기본 제공 노드만으로는 목적을 달성할 수 없을 때
 | uuid | 3.3.2 |
 | xml2js | 0.4.19 |
 
+{% hint style="info" %}
+원하시는 라이브러리를 사용하실 수 없나요?   
+사용자 정의 스크립트 노드 대신 NodeJS 프로토타이핑 툴인 RunKit 을 이용해보세요.   
+RunKit Endpoint\(베타\)를 이용하면 원하시는 기능을 구현하고 API를 호스팅할 수 있습니다. \(현재 무료\)
+
+* [https://runkit.com/](https://runkit.com/) \(RunKit 공식 홈페이지, 영문\)
+* [https://runkit.com/docs/endpoint](https://runkit.com/docs/endpoint) \(RunKit Endpoint 문서, 영문\)
+{% endhint %}
+
 ## 핸들러 함수
 
 사용자 정의 스크립트 노드에 작성하는 script는 하나의 Node.js의 모듈과 동일합니다.  
@@ -180,6 +189,12 @@ module.exports = function handler(context, callback) {
 ![&#xC624;&#xB958; &#xB514;&#xBC84;&#xAE45; &#xC608;&#xC2DC; - &#xBA54;&#xC2DC;&#xC9C0; &#xC751;&#xB2F5; &#xB178;&#xB4DC; &#xCD9C;&#xB825; &#xACB0;&#xACFC;](../../../.gitbook/assets/flow-editor-node-sandbox-debugging.png)
 
 위 예시의 오류 호출 스택 \(stacktrace\) 을 살펴보면 작성한 스크립트의 8번째 줄 22 번째 위치에서 오류가 발생했음을 확인할 수 있습니다. 이를 응용하여 스크립트의 오류를 디버깅 해 보세요.
+
+
+
+
+
+
 
   
 
