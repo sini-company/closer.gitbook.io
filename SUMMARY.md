@@ -35,8 +35,8 @@
     * [템플릿 문법\(Template Syntax\)](builder/chatbot/advanced/template-syntax.md)
     * [포스트백 페이로드 \(Postback Payload\)](builder/chatbot/advanced/postback-payload.md)
 * [메신저 연동](builder/messenger-integrations/README.md)
-  * [웹사이트](builder/messenger-integrations/web.md)
-  * [카카오톡](builder/messenger-integrations/kakao.md)
+  * [웹사이트 연동](builder/messenger-integrations/web.md)
+  * [카카오톡 연동](builder/messenger-integrations/kakao.md)
 * [잠재고객 👩🏻‍🔬](builder/audience.md)
 
 ## CLOSER Chat <a id="chat"></a>
