@@ -1,7 +1,3 @@
----
-description: CLOSER에서 제공하는 실시간 채팅이 가능한 고객센터 제품
----
-
 # CLOSER Chat 알아보기
 
 \*\*\*\*[**CLOSER Chat 바로가기**](https://chat.closer.ai)\*\*\*\*

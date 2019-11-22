@@ -19,7 +19,7 @@ description: 챗봇의 자동응답을 일시 중지하고 상담원을 호출�
 
 ![&#xC0C1;&#xB2F4;&#xC6D0; &#xD638;&#xCD9C; &#xB178;&#xB4DC; &#xC124;&#xC815; &amp;gt; &#xCE74;&#xCE74;&#xC624;&#xD1A1; &#xC124;&#xC815; \(data.message.kakao\)](../../../.gitbook/assets/manual_response_node_kakao.png)
 
-카카오톡의 경우에는 상담원 호출 노드에 진입 시 상담원을 즉시 호출하지 않고 **상담원 연결** 버튼이 포함된 새로운 메시지를 반환합니다. 이는 카카오톡 오픈빌더에서 [상담원 연결 기능을 메시지 버튼으로만 제공](https://i.kakao.com/docs/key-concepts-plugin#%EC%83%81%EB%8B%B4%EC%9B%90-%EC%97%B0%EA%B2%B0)하기 때문인데요, 이 때 사용되는 메시지는`data.message.kakao` 값을 통해 편집하실 수 있습니다. 
+카카오톡의 경우에는 상담원 호출 노드에 진입 시 상담원을 즉시 호출하지 않고 **상담원 연결** 버튼이 포함된 새로운 메시지를 반환합니다. 이는 카카오톡 오픈빌더에서 [상담원 연결 기능을 메시지 버튼으로만 제공](https://i.kakao.com/docs/key-concepts-plugin#%EC%83%81%EB%8B%B4%EC%9B%90-%EC%97%B0%EA%B2%B0https://i.kakao.com/docs/key-concepts-plugin#%EC%83%81%EB%8B%B4%EC%9B%90-%EC%97%B0%EA%B2%B0)하기 때문인데요, 이 때 사용되는 메시지는`data.message.kakao` 값을 통해 편집하실 수 있습니다. 
 
 ![&#xCE74;&#xCE74;&#xC624;&#xD1A1; &#xBA54;&#xC2DC;&#xC9C0; &#xC124;&#xC815; &#xACB0;&#xACFC;](../../../.gitbook/assets/manual_response_node_kakao_result.jpg)
 
