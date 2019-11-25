@@ -22,22 +22,6 @@
 
 ![&#xCEE4;&#xC2A4;&#xD140; &#xD328;&#xB110; &#xC608;&#xC2DC;](../../.gitbook/assets/openbeta_chat_-_%20%283%29.png)
 
-커스텀 패널은 상담 화면 내에서 기존 레거시 시스템과 연동하거나, 필요한 정보를 팀 별로 사용자화하여 표시할 수 있도록 도와주는 기능입니다. 다음 두 가지 방식을 제공합니다.
-
-1. iframe \(외부 페이지 url 입력\) 방식
-2. html 직접 작성 방식
-
-iframe 방식은 기존 레거시 시스템과 연동하여 고객 정보를 조회하는 식으로 활용할 때 용이하며, html 직접 작성 방식은 필요한 정보만 원하는 방식으로 간추려서 출력하고자 할 때 사용하기 좋습니다. 
-
-iframe은 URL 주소에 템플릿 문법을 사용 가능하며, html 입력 방식은 html body에 템플릿 문법 사용이 가능합니다. 이에 대한 자세한 사항은 [Bot Builder &gt; 챗봇 제작 &gt; 템플릿 문법 페이지](../../builder/chatbot/advanced/template-syntax.md)를 참고해주세요.
-
-{% hint style="info" %}
-1. iframe 입력 방식을 사용할 때 URL은  `https://` 시작하는 보안 URL을 사용할 것을 권장합니다. \(브라우저에 따라 페이지가 표시되지 않을 가능성이 있습니다.\) 
-2. html 직접 입력 방식에서는 `<script />` tag는 사용할 수 없습니다.  스크립팅이 필요한 경우 iframe 방식을 이용해 주세요.
-{% endhint %}
-
-커스텀 패널은 [상담 설정 &gt; 커스텀 패널 설정](../settings/conversations.md#custom-web-panel)에서 관리할 수 있지만, 상담 화면에서도 일부 수정이 가능합니다.   
+커스텀 패널은 [상담 설정 &gt; 커스텀 패널 설정](../settings/conversations.md#custom-web-panel)에서 설정한 패널들이 표시됩니다. 상담 화면에서도 일부 수정이 가능합니다.   
 \(마스터 한정\)
-
-![&#xCEE4;&#xC2A4;&#xD140; &#xD328;&#xB110; &#xC124;&#xC815; &#xC608;&#xC2DC;](../../.gitbook/assets/chat_custom_panel_example.png)
 

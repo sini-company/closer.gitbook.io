@@ -30,29 +30,168 @@
 {% endhint %}
 
 {% hint style="info" %}
-프로필 별로 각각 설정할 수 있습니다
+프로필 별로 다르게 설정할 수 있습니다
 {% endhint %}
 
-![&#xCEE4;&#xC2A4;&#xD140; &#xC6F9; &#xD328;&#xB110; &#xC124;&#xC815; &#xD654;&#xBA74; &#xC608;&#xC2DC;](../../.gitbook/assets/undefined%20%281%29.png)
+![&#xCEE4;&#xC2A4;&#xD140; &#xD328;&#xB110; &#xC124;&#xC815; &#xC608;&#xC2DC;](../../.gitbook/assets/chat_custom_panel_example.png)
 
 상담에 필요한 도구가 추가적으로 필요한 경우, 고객님께서 작성하신 웹 앱을 커스텀 패널로 설정할 수 있습니다. 예를 들어, 기존 고객관리 페이지를 커스텀 패널로 설정하시면 상담원이 상담 화면을 벗어나지 않고도 고객정보를 확인할 수 있게 됩니다.
+
+1. iframe \(외부 페이지 url 입력\) 방식
+2. html 직접 작성 방식
+
+iframe 방식은 기존 레거시 시스템과 연동하여 고객 정보를 조회하는 식으로 활용할 때 용이하며, html 직접 작성 방식은 필요한 정보만 원하는 방식으로 간추려서 출력하고자 할 때 사용하기 좋습니다. 
+
+iframe의 URL 주소나 html 입력 방식의 html body에는 모두 [템플릿 문법](../../builder/chatbot/advanced/template-syntax.md) 사용이 가능합니다. `platform`이나 `userKey` 등을 전달하여 이용해보세요.
+
+### iframe URL 방식
+
+![iframe&#xD615; &#xCEE4;&#xC2A4;&#xD140; &#xD328;&#xB110; &#xC608;&#xC2DC;](../../.gitbook/assets/openbeta_chat_-_%20%283%29.png)
+
+iframe은 기존 레거시 시스템과 연동하고자 할 때 사용하면 유용합니다. 고객님께서 이용하실 웹페이지를 직접 호스팅하거나 웹 서버 등을 이용하여 렌더링하신 뒤, 자바스크립트를 이용하여 상담원에게 필요한 도구들을 추가적으로 제공하실 수 있습니다.  
+
+iframe URL에는 템플릿 문법 사용이 가능하기 때문에, query parameter 또는 path parameter로 `userKey`나 `platform` 등의 값을 제공하실 수 있습니다. 
+
+이 때 URL은  `https://` 시작하는 보안 URL을 사용할 것을 권장합니다. `http://` 주소를 사용하실 경우에는 브라우저에 따라 페이지가 표시되지 않을 가능성이 있습니다.
 
 {% hint style="info" %}
 Custom panel은 sandboxed iframe 으로 구현되어 있으며,  
 보안상의 이유로 HTTP Cookie나 CORS가 설정된 https 리소스 등은 사용할 수 없습니다
-{% endhint %}
 
-iframe sandbox attribute에는 다음 네 가지 옵션이만 활성화되어 있습니다.
+iframe sandbox attribute에는 다음 네 가지 옵션만 활성화되어 제공됩니다.
 
 * **allow-scripts**: javascript 활성화
 * **allow-popups**: window.open \(target=\_blank\) 활성화 
 * **allow-modals**: window.alert, window.confirm, window.prompt, window.print 활성화
 * **allow-forms**: form submit 활성화
 
-이에 대한 자세한 내용은 다음 문서를 참고해 주세요.
+더 자세한 내용은 다음 문서를 참고해 주세요.
 
 * [https://html.spec.whatwg.org/multipage/origin.html\#sandboxing-flag-set](https://html.spec.whatwg.org/multipage/origin.html#sandboxing-flag-set)
-* [https://developer.mozilla.org/ko/docs/Web/HTML/Element/iframe](https://developer.mozilla.org/ko/docs/Web/HTML/Element/iframe) 
+* [https://developer.mozilla.org/ko/docs/Web/HTML/Element/iframe](https://developer.mozilla.org/ko/docs/Web/HTML/Element/iframe)
+{% endhint %}
+
+### HTML 직접 입력 방식
+
+![HTML &#xC9C1;&#xC811; &#xC785;&#xB825; &#xBC29;&#xC2DD; &#xC608;&#xC2DC;](../../.gitbook/assets/custom_panel_html_example.png)
+
+HTML 직접 입력 방식은 고객에게 입력받은 파라미터 값 등을 더 고유한 방식으로 표시하고자 할 때, 혹은 iframe 페이지를 만들기 전 프로토타이핑 작업을 할 때 유용합니다.
+
+보안상의 이유로 `<script />` tag는 지원되지 않기 때문에 자바스크립트 사용이 불가능합니다. 자바스크립트 사용이 필요한 경우에는 [iframe URL 방식](conversations.md#iframe-url)을 이용해 주세요.
+
+위 예시에 사용된 템플릿은 다음과 같습니다.
+
+```markup
+<!-- 
+Copyright (c) 2019 by Geoff Yuen (https://codepen.io/geoffyuen/pen/FCBEg)
+-->
+
+<style>
+@import "https://fonts.googleapis.com/css?family=Montserrat:300,400,700";
+.rwd-table {
+  margin: 0;
+}
+.rwd-table tr {
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+.rwd-table th {
+  display: none;
+}
+.rwd-table td {
+  display: block;
+}
+.rwd-table td:first-child {
+  padding-top: .5em;
+}
+.rwd-table td:last-child {
+  padding-bottom: .5em;
+}
+.rwd-table td:before {
+  content: attr(data-th) ": ";
+  font-weight: bold;
+  width: 6.5em;
+  display: inline-block;
+}
+@media (min-width: 480px) {
+  .rwd-table td:before {
+    display: none;
+  }
+}
+.rwd-table th, .rwd-table td {
+  text-align: left;
+}
+@media (min-width: 480px) {
+  .rwd-table th, .rwd-table td {
+    display: table-cell;
+    padding: .25em .5em;
+  }
+  .rwd-table th:first-child, .rwd-table td:first-child {
+    padding-left: 0;
+  }
+  .rwd-table th:last-child, .rwd-table td:last-child {
+    padding-right: 0;
+  }
+}
+
+body {
+  font-family: Montserrat, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  color: #444;
+}
+
+h1 {
+  font-weight: normal;
+  font-size:1.5em;
+  letter-spacing: -1px;
+  color: #34495E;
+}
+
+.rwd-table {
+  background: #34495E;
+  color: #fff;
+  border-radius: .4em;
+  overflow: hidden;
+}
+.rwd-table tr {
+  border-color: #46637f;
+}
+.rwd-table th, .rwd-table td {
+  margin: .5em 1em;
+}
+@media (min-width: 480px) {
+  .rwd-table th, .rwd-table td {
+    padding: 1em !important;
+  }
+}
+.rwd-table th, .rwd-table td:before {
+  color: #dd5;
+}
+</style>
+
+<body>
+<h1>Sample Table</h1>
+<table class="rwd-table">
+<tr>
+<th>Name</th>
+<th>Gender</th>
+<th>Created</th>
+<th>Updated</th>
+</tr>
+<tr>
+<td data-th="Name">{{params.displayName}}</td>
+<td data-th="Gender">{{params.gender}}</td>
+<td data-th="Created">{{createdAt}}</td>
+<td data-th="Updated">{{updatedAt}}</td>
+</tr>
+</table>
+<p>
+
+</p>
+</body>
+
+```
 
 ## 상담 완료 설정  <a id="completed-call"></a>
 
