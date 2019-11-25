@@ -33,7 +33,7 @@
 프로필 별로 다르게 설정할 수 있습니다
 {% endhint %}
 
-![&#xCEE4;&#xC2A4;&#xD140; &#xD328;&#xB110; &#xC124;&#xC815; &#xC608;&#xC2DC;](../../.gitbook/assets/chat_custom_panel_example.png)
+![&#xCEE4;&#xC2A4;&#xD140; &#xD328;&#xB110; &#xC124;&#xC815; &#xD654;&#xBA74; &#xC608;&#xC2DC;](../../.gitbook/assets/chat_custom_panel_example.png)
 
 상담에 필요한 도구가 추가적으로 필요한 경우, 고객님께서 작성하신 웹 앱을 커스텀 패널로 설정할 수 있습니다. 예를 들어, 기존 고객관리 페이지를 커스텀 패널로 설정하시면 상담원이 상담 화면을 벗어나지 않고도 고객정보를 확인할 수 있게 됩니다.
 
@@ -50,9 +50,9 @@ iframe의 URL 주소나 html 입력 방식의 html body에는 모두 [템플릿 
 
 iframe은 기존 레거시 시스템과 연동하고자 할 때 사용하면 유용합니다. 고객님께서 이용하실 웹페이지를 직접 호스팅하거나 웹 서버 등을 이용하여 렌더링하신 뒤, 자바스크립트를 이용하여 상담원에게 필요한 도구들을 추가적으로 제공하실 수 있습니다.  
 
-iframe URL에는 템플릿 문법 사용이 가능하기 때문에, query parameter 또는 path parameter로 `userKey`나 `platform` 등의 값을 제공하실 수 있습니다. 
+iframe URL에는 [템플릿 문법](../../builder/chatbot/advanced/template-syntax.md) 사용이 가능하기 때문에, query parameter 또는 path parameter로 필요한 값을 제공할 수 있습니다. 주로 `userKey`나 `platform` 등의 값을 제공합니다. 
 
-이 때 URL은  `https://` 시작하는 보안 URL을 사용할 것을 권장합니다. `http://` 주소를 사용하실 경우에는 브라우저에 따라 페이지가 표시되지 않을 가능성이 있습니다.
+URL은  `https://` 시작하는 보안 URL을 사용할 것을 권장합니다. `http://` 주소를 사용하실 경우에는 브라우저에 따라 페이지가 표시되지 않을 가능성이 있습니다.
 
 {% hint style="info" %}
 Custom panel은 sandboxed iframe 으로 구현되어 있으며,  
@@ -77,7 +77,7 @@ iframe sandbox attribute에는 다음 네 가지 옵션만 활성화되어 제�
 
 HTML 직접 입력 방식은 고객에게 입력받은 파라미터 값 등을 더 고유한 방식으로 표시하고자 할 때, 혹은 iframe 페이지를 만들기 전 프로토타이핑 작업을 할 때 유용합니다.
 
-보안상의 이유로 `<script />` tag는 지원되지 않기 때문에 자바스크립트 사용이 불가능합니다. 자바스크립트 사용이 필요한 경우에는 [iframe URL 방식](conversations.md#iframe-url)을 이용해 주세요.
+보안상의 이유로 `<script />` tag는 지원되지 않으며, 따라서 자바스크립트 사용이 불가능합니다. 자바스크립트 사용이 필요한 경우에는 [iframe URL 방식](conversations.md#iframe-url)을 이용해 주세요.
 
 위 예시에 사용된 템플릿은 다음과 같습니다.
 

@@ -22,6 +22,6 @@
 
 ![&#xCEE4;&#xC2A4;&#xD140; &#xD328;&#xB110; &#xC608;&#xC2DC;](../../.gitbook/assets/openbeta_chat_-_%20%283%29.png)
 
-커스텀 패널은 [상담 설정 &gt; 커스텀 패널 설정](../settings/conversations.md#custom-web-panel)에서 설정한 패널들이 표시됩니다. 상담 화면에서도 일부 수정이 가능합니다.   
-\(마스터 한정\)
+커스텀 패널은 [상담 설정 &gt; 커스텀 패널 설정](../settings/conversations.md#custom-web-panel)에서 설정한 패널들이 표시됩니다.   
+마스터에 한하여 상담 화면에서도 일부 수정이 가능합니다. 
 
