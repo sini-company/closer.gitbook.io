@@ -56,8 +56,8 @@ https://app.closer.ai/webchat/{botId}?param1=abc&param2=def&param3=ghi
 * Query String \(Wikipedia, 영문\) [https://en.wikipedia.org/wiki/Query\_string](https://en.wikipedia.org/wiki/Query_string)
 {% endhint %}
 
-{% hint style="warning" %}
-다음 값은 초기 파라미터로 사용할 수 없습니다.  
+{% hint style="danger" %}
+다음 값들은 시스템에서 사용하는 값이므로 초기 파라미터로 사용할 수 없습니다.  
 `userKey`, `sessionId`, `restart`
 {% endhint %}
 
