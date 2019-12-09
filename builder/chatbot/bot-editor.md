@@ -46,5 +46,9 @@ description: CLOSER 챗봇 시나리오 편집도구와 그 구성요소에 대�
 * 테스트 대화가 활성화되어있는 동안, **마지막 답변 생성에 사용된 노드들이 캔버스 위에 표시**됩니다.
 * 시나리오의 문제점이나 개선점을 쉽게 파악할 수 있도록 다양한 기능을 갖춘 [개발자 도구](advanced/inspector.md)를 제공합니다.
 
+#### 이전 위치로 돌아가기 \(대화 테스트\)
 
+![&#xC774;&#xC804; &#xC704;&#xCE58;&#xB85C; &#xB3CC;&#xC544;&#xAC00;&#xAE30; &#xD65C;&#xC6A9; &#xBAA8;&#xC2B5;](../../.gitbook/assets/bot-inspector-history-navigation.gif)
+
+봇 메시지 위에 마우스 커서를 올려놓으면 돌아가기\(![](../../.gitbook/assets/bot-inspector-back-icon.png)\) 버튼이 나타나며, 해당 버튼을 누르면 해당 위치에서부터 시나리오를 다시 테스트하실 수 있습니다.
 
