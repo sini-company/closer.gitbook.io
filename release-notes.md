@@ -12,7 +12,8 @@ description: CLOSER의 향상된 최신 기능에 대한 릴리스 정보와 히
 #### CLOSER Bot
 
 * 봇 편집기 &gt; [**개발자 도구**](builder/chatbot/advanced/inspector.md) **추가**
-* 뒤로가기 노드 추가
+* 봇 편집기 &gt; [**뒤로가기 노드**](builder/chatbot/node/back.md) **추가**
+  * 시험적으로 제공되던 [뒤로가기 스택 노드](builder/chatbot/node/backstack.md)는 지원이 중단될 예정입니다.
 
 ## v0.44.2 - 2019-11-25
 
