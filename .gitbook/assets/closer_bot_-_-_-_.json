@@ -1,0 +1,678 @@
+{
+  "title": "뒤로가기 노드 테스트 봇",
+  "flows": [
+    {
+      "id": 2,
+      "title": "폴백 플로우",
+      "data": {
+        "entry": 1
+      },
+      "nodes": [
+        {
+          "id": 1,
+          "label": "진입 노드",
+          "type": "entry",
+          "data": {},
+          "meta": {
+            "design": {
+              "x": 24,
+              "y": 24
+            }
+          },
+          "next": [
+            {
+              "where": {
+                "message.text": {
+                  "regex": "뒤|back"
+                }
+              },
+              "nodeId": 4,
+              "priority": 1
+            },
+            {
+              "where": {
+                "message.text": {
+                  "contains": "drop"
+                }
+              },
+              "nodeId": 7,
+              "priority": 1
+            },
+            {
+              "nodeId": 8
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "label": "메시지 응답 노드",
+          "type": "response",
+          "data": {
+            "message": {
+              "text": "(뒤로가기)",
+              "type": "text"
+            }
+          },
+          "meta": {
+            "design": {
+              "x": 28,
+              "y": 102.5
+            }
+          },
+          "next": [
+            {
+              "nodeId": 5
+            },
+            {
+              "where": {
+                "message.text": {
+                  "contains": "2"
+                }
+              },
+              "nodeId": 6,
+              "priority": 1
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "label": "pop 1",
+          "type": "back",
+          "data": {
+            "count": 1,
+            "operation": "pop"
+          },
+          "meta": {
+            "design": {
+              "x": 355,
+              "y": 98
+            }
+          },
+          "next": []
+        },
+        {
+          "id": 6,
+          "label": "pop 2",
+          "type": "back",
+          "data": {
+            "count": 2,
+            "operation": "pop"
+          },
+          "meta": {
+            "design": {
+              "x": 356,
+              "y": 175
+            }
+          },
+          "next": []
+        },
+        {
+          "id": 7,
+          "label": "드랍",
+          "type": "back",
+          "data": {
+            "count": 1,
+            "operation": "drop"
+          },
+          "meta": {
+            "design": {
+              "x": 354,
+              "y": 13
+            }
+          },
+          "next": []
+        },
+        {
+          "id": 8,
+          "label": "메시지 응답 노드",
+          "type": "response",
+          "data": {
+            "message": {
+              "text": "올바른 선택지를 입력해 주세요.",
+              "type": "text"
+            }
+          },
+          "meta": {
+            "design": {
+              "x": 49,
+              "y": 379
+            }
+          },
+          "next": [
+            {
+              "nodeId": 9
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "label": "플로우 연결 노드",
+          "type": "flow",
+          "data": {
+            "flowId": 1
+          },
+          "meta": {
+            "design": {
+              "x": 210,
+              "y": 386
+            }
+          },
+          "next": []
+        },
+        {
+          "id": 10,
+          "label": "뒤로가기 노드",
+          "type": "back",
+          "data": {
+            "count": 1,
+            "operation": "pop"
+          },
+          "meta": {
+            "design": {
+              "x": 586,
+              "y": 224
+            }
+          },
+          "next": []
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "title": "시작 플로우",
+      "data": {
+        "entry": 1
+      },
+      "nodes": [
+        {
+          "id": 1,
+          "label": "진입 노드",
+          "type": "entry",
+          "data": {},
+          "meta": {
+            "design": {
+              "x": 24,
+              "y": 24
+            }
+          },
+          "next": [
+            {
+              "nodeId": 2
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "label": "메시지 응답 노드",
+          "type": "response",
+          "data": {
+            "message": {
+              "text": "0",
+              "type": "text"
+            }
+          },
+          "meta": {
+            "design": {
+              "x": 190,
+              "y": 24
+            }
+          },
+          "next": [
+            {
+              "nodeId": 3
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "label": "사용자 입력 요청 노드",
+          "type": "keyboard",
+          "data": {
+            "type": "buttons",
+            "strict": false,
+            "buttons": [
+              {
+                "type": "postback",
+                "label": "진행"
+              },
+              {
+                "type": "postback",
+                "label": "뒤로"
+              }
+            ]
+          },
+          "meta": {
+            "design": {
+              "x": 370,
+              "y": 22
+            }
+          },
+          "next": [
+            {
+              "where": {
+                "message.text": {
+                  "equals": "진행"
+                }
+              },
+              "nodeId": 4,
+              "priority": 1
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "label": "메시지 응답 노드",
+          "type": "response",
+          "data": {
+            "message": {
+              "text": "1",
+              "type": "text"
+            }
+          },
+          "meta": {
+            "design": {
+              "x": 194,
+              "y": 169.5
+            }
+          },
+          "next": [
+            {
+              "nodeId": 11
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "label": "메시지 응답 노드",
+          "type": "response",
+          "data": {
+            "message": {
+              "text": "2",
+              "type": "text"
+            }
+          },
+          "meta": {
+            "design": {
+              "x": 197,
+              "y": 327.5
+            }
+          },
+          "next": [
+            {
+              "nodeId": 12
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "label": "메시지 응답 노드",
+          "type": "response",
+          "data": {
+            "message": {
+              "text": "3",
+              "type": "text"
+            }
+          },
+          "meta": {
+            "design": {
+              "x": 191,
+              "y": 487.5
+            }
+          },
+          "next": [
+            {
+              "nodeId": 13
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "label": "메시지 응답 노드",
+          "type": "response",
+          "data": {
+            "message": {
+              "text": "4",
+              "type": "text"
+            }
+          },
+          "meta": {
+            "design": {
+              "x": 196,
+              "y": 725.5
+            }
+          },
+          "next": [
+            {
+              "nodeId": 14
+            }
+          ]
+        },
+        {
+          "id": 11,
+          "label": "사용자 입력 요청 노드",
+          "type": "keyboard",
+          "data": {
+            "type": "buttons",
+            "strict": false,
+            "buttons": [
+              {
+                "type": "postback",
+                "label": "진행"
+              },
+              {
+                "type": "postback",
+                "label": "뒤로"
+              },
+              {
+                "type": "postback",
+                "label": "뒤로2"
+              },
+              {
+                "type": "postback",
+                "label": "스킵(drop)"
+              }
+            ]
+          },
+          "meta": {
+            "design": {
+              "x": 372,
+              "y": 144
+            }
+          },
+          "next": [
+            {
+              "where": {
+                "message": {
+                  "equals": "진행"
+                }
+              },
+              "nodeId": 6
+            },
+            {
+              "where": {
+                "message": {
+                  "equals": "스킵(drop)"
+                }
+              },
+              "nodeId": 15
+            }
+          ]
+        },
+        {
+          "id": 12,
+          "label": "사용자 입력 요청 노드",
+          "type": "keyboard",
+          "data": {
+            "type": "buttons",
+            "strict": false,
+            "buttons": [
+              {
+                "type": "postback",
+                "label": "진행"
+              },
+              {
+                "type": "postback",
+                "label": "뒤로"
+              },
+              {
+                "type": "postback",
+                "label": "뒤로2"
+              },
+              {
+                "type": "postback",
+                "label": "스킵(drop)"
+              },
+              {
+                "type": "postback",
+                "label": "스택 초기화(clear)"
+              }
+            ]
+          },
+          "meta": {
+            "design": {
+              "x": 364,
+              "y": 327
+            }
+          },
+          "next": [
+            {
+              "where": {
+                "message": {
+                  "equals": "진행"
+                }
+              },
+              "nodeId": 8
+            },
+            {
+              "where": {
+                "message": {
+                  "equals": "스킵(drop)"
+                }
+              },
+              "nodeId": 16
+            },
+            {
+              "where": {
+                "message": {
+                  "equals": "스택 초기화(clear)"
+                }
+              },
+              "nodeId": 19
+            }
+          ]
+        },
+        {
+          "id": 13,
+          "label": "사용자 입력 요청 노드",
+          "type": "keyboard",
+          "data": {
+            "type": "buttons",
+            "strict": false,
+            "buttons": [
+              {
+                "type": "postback",
+                "label": "진행"
+              },
+              {
+                "type": "postback",
+                "label": "뒤로"
+              },
+              {
+                "type": "postback",
+                "label": "뒤로2"
+              },
+              {
+                "type": "postback",
+                "label": "스킵(drop)"
+              },
+              {
+                "type": "postback",
+                "label": "스택 초기화(clear)"
+              }
+            ]
+          },
+          "meta": {
+            "design": {
+              "x": 361,
+              "y": 571
+            }
+          },
+          "next": [
+            {
+              "where": {
+                "message": {
+                  "equals": "진행"
+                }
+              },
+              "nodeId": 10
+            },
+            {
+              "where": {
+                "message": {
+                  "equals": "스택 초기화(clear)"
+                }
+              },
+              "nodeId": 17
+            },
+            {
+              "where": {
+                "message": {
+                  "equals": "스킵(drop)"
+                }
+              },
+              "nodeId": 18
+            }
+          ]
+        },
+        {
+          "id": 14,
+          "label": "사용자 입력 요청 노드",
+          "type": "keyboard",
+          "data": {
+            "type": "buttons",
+            "strict": false,
+            "buttons": [
+              {
+                "type": "postback",
+                "label": "진행"
+              },
+              {
+                "type": "postback",
+                "label": "뒤로"
+              }
+            ]
+          },
+          "meta": {
+            "design": {
+              "x": 364,
+              "y": 780
+            }
+          },
+          "next": [
+            {
+              "where": {
+                "message": {
+                  "equals": "진행"
+                }
+              },
+              "nodeId": 2
+            }
+          ]
+        },
+        {
+          "id": 15,
+          "label": "drop 1",
+          "type": "back",
+          "data": {
+            "count": 1,
+            "operation": "drop"
+          },
+          "meta": {
+            "design": {
+              "x": 633,
+              "y": 236
+            }
+          },
+          "next": [
+            {
+              "nodeId": 6
+            }
+          ]
+        },
+        {
+          "id": 16,
+          "label": "drop 1",
+          "type": "back",
+          "data": {
+            "count": 1,
+            "operation": "drop"
+          },
+          "meta": {
+            "design": {
+              "x": 638,
+              "y": 344
+            }
+          },
+          "next": [
+            {
+              "nodeId": 8
+            }
+          ]
+        },
+        {
+          "id": 17,
+          "label": "clear",
+          "type": "back",
+          "data": {
+            "operation": "clear"
+          },
+          "meta": {
+            "design": {
+              "x": 639,
+              "y": 584
+            }
+          },
+          "next": [
+            {
+              "nodeId": 10
+            }
+          ]
+        },
+        {
+          "id": 18,
+          "label": "drop 1",
+          "type": "back",
+          "data": {
+            "count": 1,
+            "operation": "drop"
+          },
+          "meta": {
+            "design": {
+              "x": 641,
+              "y": 513
+            }
+          },
+          "next": [
+            {
+              "nodeId": 10
+            }
+          ]
+        },
+        {
+          "id": 19,
+          "label": "clear",
+          "type": "back",
+          "data": {
+            "operation": "clear"
+          },
+          "meta": {
+            "design": {
+              "x": 636,
+              "y": 417
+            }
+          },
+          "next": [
+            {
+              "nodeId": 8
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "preference": {
+    "entryFlowId": 1,
+    "fallbackFlowId": 2,
+    "systemMessage": {
+      "empty": "(메시지 없음)",
+      "error": "[ERROR]\n요청을 처리하는 중에 오류가 발생했습니다. 잠시 후 다시 시도해 주세요.\n\n{{#if ($eq platform \"test\")}}\n  {{error}}\n{{/if}}",
+      "additionalChoice": "(추가 선택지)",
+      "unsupportedMedia": "(지원하지 않는 미디어)"
+    },
+    "sessionBehavior": {
+      "restoreNavigation": true,
+      "welcomeOnSessionStart": true,
+      "welcomeOnMessageWithoutSession": true
+    }
+  }
+}

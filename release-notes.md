@@ -11,8 +11,7 @@ description: CLOSER의 향상된 최신 기능에 대한 릴리스 정보와 히
 
 #### CLOSER Bot
 
-* 봇 편집기 &gt; 개발자 도구 추가
-  * 이제 봇 테스트 중에 노드 추적 / 컨텍스트 조회 기능을 이용할 수 있습니다.
+* 봇 편집기 &gt; [**개발자 도구**](builder/chatbot/advanced/inspector.md) **추가**
 * 뒤로가기 노드 추가
 
 ## v0.44.2 - 2019-11-25
