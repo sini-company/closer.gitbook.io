@@ -31,7 +31,7 @@
     * [잡담 노드 👩🏻‍🔬](builder/chatbot/node/chitchat.md)
     * [이메일 전송 노드 👩🏻‍🔬](builder/chatbot/node/email.md)
   * [고급 사용자용](builder/chatbot/advanced/README.md)
-    * [개발자 도구 \(Inspector\)](builder/chatbot/advanced/undefined.md)
+    * [개발자 도구 \(Inspector\)](builder/chatbot/advanced/inspector.md)
     * [컨텍스트 \(Context\)](builder/chatbot/advanced/context.md)
     * [템플릿 문법\(Template Syntax\)](builder/chatbot/advanced/template-syntax.md)
     * [포스트백 페이로드 \(Postback Payload\)](builder/chatbot/advanced/postback-payload.md)
