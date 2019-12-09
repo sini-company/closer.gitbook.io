@@ -21,7 +21,7 @@ description: CLOSER에서 제공하는 편집 도구를 이용해 시나리오�
 
 챗봇 편집기와 구성요소에 대해 더 자세히 알아보시려면 하단 문서를 참고해주세요.
 
-{% page-ref page="../chatbot/bot-editor.md" %}
+{% page-ref page="../chatbot/bot-editor/" %}
 
 ## 환영 메시지 수정하기
 
