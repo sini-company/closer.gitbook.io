@@ -23,6 +23,8 @@ description: CLOSER 챗봇 시나리오 편집도구와 그 구성요소에 대�
 
 ![&#xD50C;&#xB85C;&#xC6B0; &#xD0D0;&#xC0C9; &amp;gt; &#xAC80;&#xC0C9; &#xAE30;&#xB2A5;](../../../.gitbook/assets/flow-editor-search-example.gif)
 
+![&#xD50C;&#xB85C;&#xC6B0; &#xD0D0;&#xC0C9; &amp;gt; &#xC6B0;&#xD074;&#xB9AD; &#xCEE8;&#xD14D;&#xC2A4;&#xD2B8; &#xBA54;&#xB274;](../../../.gitbook/assets/flow-list-context-menu.png)
+
 ### **②** 노드 팔레트 <a id="palette"></a>
 
 * 플로우를 작성할 때 이용할 수 있는 노드들이 표시되는 공간입니다.
