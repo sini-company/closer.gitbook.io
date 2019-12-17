@@ -29,7 +29,7 @@
     * [뒤로가기 노드](builder/chatbot/node/back.md)
     * [구글 스프레드 시트 노드 👩🏻‍🔬](builder/chatbot/node/gsheet.md)
     * [자연어 처리 노드 👩🏻‍🔬](builder/chatbot/node/nlp.md)
-    * [잡담 노드 👩🏻‍🔬](builder/chatbot/node/chitchat.md)
+    * [일상대화 노드 👩🏻‍🔬](builder/chatbot/node/chitchat.md)
     * [이메일 전송 노드 👩🏻‍🔬](builder/chatbot/node/email.md)
     * [뒤로가기 스택 노드 \(deprecated\)](builder/chatbot/node/backstack.md)
   * [고급 사용자용](builder/chatbot/advanced/README.md)
