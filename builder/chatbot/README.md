@@ -12,11 +12,11 @@ description: CLOSER 챗봇의 구성요소들을 알아봅니다.
 
 
 
-{% page-ref page="terms.md" %}
+{% page-ref page="terms/" %}
 
-{% page-ref page="response-and-request.md" %}
+{% page-ref page="terms/response-and-request.md" %}
 
-{% page-ref page="bot-editor.md" %}
+{% page-ref page="bot-editor/" %}
 
 {% page-ref page="node/" %}
 
