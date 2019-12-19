@@ -4,14 +4,16 @@ description: CLOSER 챗봇 시나리오 편집도구와 그 구성요소에 대�
 
 # 시나리오 편집도구 \(Editor\)
 
+![&#xC2DC;&#xB098;&#xB9AC;&#xC624; &#xD3B8;&#xC9D1;&#xB3C4;&#xAD6C;](../../../.gitbook/assets/0.46_layout.gif)
+
+앞으로 CLOSER에서 가장 많이 접하게 될 챗봇 시나리오 편집도구는 위와 같은 화면으로 구성됩니다.
+
+각각의 창들은 상단 제목 바를 드래그하여 원하는 위치로 설정 가능하며, 패널의 크기 또한 자유롭게 설정 가능합니다.   
+이제 편집기가 어떤 요소들로 구성되어있는지 알아봅시다.
+
 ## 편집도구 살펴보기
 
 ![](../../../.gitbook/assets/builder-overview.png)
-
-앞으로 여러분께서 가장 많이 접하게 될 챗봇 편집도구는 위와 같은 화면으로 구성됩니다.
-
-각각의 창들은 상단 바를 드래그하여 원하는 위치로 설정 가능하며, 패널의 크기 또한 자유롭게 설정 가능합니다.   
-이제 편집기가 어떤 요소들로 구성되어있는지 알아봅시다.
 
 ### ① 플로우 탐색기 <a id="explorer"></a>
 
@@ -21,11 +23,13 @@ description: CLOSER 챗봇 시나리오 편집도구와 그 구성요소에 대�
 * 특정 플로우 위에서 **마우스 오른쪽 버튼**을 클릭하면 컨텍스트 메뉴를 확인할 수 있습니다.  컨텍스트 메뉴에서는 플로우 이름 변경이나 제거, 진입 플로우나 폴백 플로우 설정 등을 수행할 수 있습니다. 
 * 플로우 목록 상단의 검색 도구에서는 전체 시나리오 데이터에서 원하는 노드를 찾을 수 있습니다.
 
-![&#xD50C;&#xB85C;&#xC6B0; &#xD0D0;&#xC0C9; &amp;gt; &#xAC80;&#xC0C9; &#xAE30;&#xB2A5;](../../../.gitbook/assets/flow-editor-search-example.gif)
+![&#xD50C;&#xB85C;&#xC6B0; &#xD0D0;&#xC0C9; &amp;gt; &#xAC80;&#xC0C9; &#xAE30;&#xB2A5;](../../../.gitbook/assets/0.46_search.gif)
 
 ![&#xD50C;&#xB85C;&#xC6B0; &#xD0D0;&#xC0C9; &amp;gt; &#xC6B0;&#xD074;&#xB9AD; &#xCEE8;&#xD14D;&#xC2A4;&#xD2B8; &#xBA54;&#xB274;](../../../.gitbook/assets/flow-list-context-menu.png)
 
 ### **②** 노드 팔레트 <a id="palette"></a>
+
+![&#xCE94;&#xBC84;&#xC2A4;&#xC5D0; &#xB178;&#xB4DC;&#xB97C; &#xCD94;&#xAC00;&#xD558;&#xB294; &#xBAA8;&#xC2B5;](../../../.gitbook/assets/flow-editor-adding-node.gif)
 
 * 플로우를 작성할 때 이용할 수 있는 노드들이 표시되는 공간입니다.
 * 추가하려는 노드를 캔버스 위에 끌어다가 놓으면 \(Drag & Drop\) 캔버스 위에 새로운 노드가 생성됩니다. 
