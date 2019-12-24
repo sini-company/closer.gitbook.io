@@ -39,7 +39,7 @@ description: CLOSER 챗봇 시나리오 편집도구와 그 구성요소에 대�
 
 ### ③ 캔버스 <a id="canvas"></a>
 
-![](../../../.gitbook/assets/flow_editor_creating_edge.gif)
+![&#xCE94;&#xBC84;&#xC2A4; &#xC0C1;&#xC5D0;&#xC11C;&#xC758; &#xC2DC;&#xB098;&#xB9AC;&#xC624; &#xD750;&#xB984; &#xD3B8;&#xC9D1;](../../../.gitbook/assets/flow_editor_creating_edge_2.gif)
 
 * 플로우를 시각적으로 확인하고 관리할 수 있는 공간입니다.
 * 대화 미리보기가 활성화된 경우 현재 미리보기 맥락에서 답변 생성에 사용된 노드들이 표시됩니다. 
@@ -60,7 +60,7 @@ description: CLOSER 챗봇 시나리오 편집도구와 그 구성요소에 대�
 
 ### ④ 노드 편집 <a id="node-form"></a>
 
-![](../../../.gitbook/assets/message-form-improvement.gif)
+![&#xBA54;&#xC2DC;&#xC9C0; &#xC751;&#xB2F5; &#xB178;&#xB4DC; &#xD3B8;&#xC9D1;](../../../.gitbook/assets/message-form-improvement.gif)
 
 * 캔버스에서 선택한 노드의 데이터를 수정할 수 있는 공간입니다.
 * 각 노드의 데이터에 대한 설명은 [노드\(Node\) &gt; 노드별 기능 안내 ](../node/#types) 항목을 참고해주세요.
@@ -69,7 +69,7 @@ description: CLOSER 챗봇 시나리오 편집도구와 그 구성요소에 대�
 
 ### ⑤ 대화 미리보기  <a id="preview"></a>
 
-![](../../../.gitbook/assets/bot-inspector.gif)
+![&#xB300;&#xD654; &#xBBF8;&#xB9AC;&#xBCF4;&#xAE30;](../../../.gitbook/assets/bot-inspector.gif)
 
 * 작성한 시나리오가 제대로 진행되는지 즉석에서 확인해볼 수 있는 공간입니다.
 * 대화 미리보기가 활성화 되어있는 동안에는 **답변 생성에 사용된 노드들이 캔버스 위에 표시**됩니다.
