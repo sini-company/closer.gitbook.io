@@ -43,7 +43,7 @@ description: CLOSER의 향상된 최신 기능에 대한 릴리스 정보와 히
 * 플로우 편집 &gt; [이메일 노드](builder/chatbot/node/email.md) 추가 \(베타\)
   * 고객의 정보를 기반으로 알림 메일을 보낼 수 있는 노드가 추가되었습니다.
 * 봇 생성 템플릿 변경
-  * 이제 빈 봇을 생성하면 [잡담 노드](builder/chatbot/node/chitchat.md)로 구성된 [폴백 플로우](builder/chatbot/flow.md#fallback-flow)가 함께 생성됩니다.
+  * 이제 빈 봇을 생성하면 [일상대화 노드](builder/chatbot/node/chitchat.md)로 구성된 [폴백 플로우](builder/chatbot/flow.md#fallback-flow)가 함께 생성됩니다.
 * 카카오톡 오픈빌더 연동 &gt; 상담원 호출 노드 기능 변경
   * 이제 카카오톡 오픈빌더 연동 시 카카오톡이 제공하는 상담원 호출 기능을 사용 가능하도록 변경하였습니다.  
 
@@ -58,8 +58,8 @@ description: CLOSER의 향상된 최신 기능에 대한 릴리스 정보와 히
 
 #### CLOSER Bot
 
-* [잡담 노드 ](builder/chatbot/node/chitchat.md)추가 \(베타\)
-  * 자동화된 일상회화를 생성하는 잡담 노드를 추가하였습니다.
+* [일상대화 노드 ](builder/chatbot/node/chitchat.md)추가 \(베타\)
+  * 사용자의 입력에 대해 자동화된 일상대화를 생성하여 반환하는 노드를 추가하였습니다.
 * [잠재고객 검색 조건 ](builder/audience.md#undefined)기능 추가 \(베타\)
   * 파라미터 / 메시징 채널 등을 기반으로 검색 결과를 필터링할 수 있는 기능이 추가되었습니다.
 * LINE 연동 개선
