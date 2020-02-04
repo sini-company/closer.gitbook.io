@@ -32,7 +32,7 @@ description: CLOSER의 향상된 최신 기능에 대한 릴리스 정보와 히
 
 #### CLOSER Chat
 
-* 상담원 패널 &gt; 커스텀 패널 설정 &gt; [HTML 설정 방식](chat/settings/conversations.md#html) 추가 
+* 상담원 패널 &gt; 커스텀 패널 설정 &gt; [HTML 설정 방식](chat/conversations/chat-panel.md#custom-panel) 추가 
 
 ## v0.44.0 - 2019-11-18
 
