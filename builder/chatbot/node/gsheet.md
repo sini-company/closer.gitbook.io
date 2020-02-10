@@ -4,7 +4,7 @@
 
 ### 설정 방법
 
-* 먼저 [프로필 설정 &gt; 연결된 계정 관리 ](../../../platform/settings/integration.md)메뉴에서 구글 계정을 연동을 해 주신 후, token값에 해당 프로필을 선택해줍니.
+* 먼저 [프로필 설정 &gt; 연결된 계정 관리 ](../../../platform/settings/integration.md)메뉴에서 구글 계정을 연동을 진행해 주신 후, 노드 설정 화면의 token값에 해당 프로필을 선택해줍니다.
 
 ![&#xAD6C;&#xAE00; &#xACC4;&#xC815; &#xC5F0;&#xACB0; &#xC608;&#xC2DC;](../../../.gitbook/assets/integrations.png)
 
