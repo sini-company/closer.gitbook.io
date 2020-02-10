@@ -31,6 +31,8 @@ API형 스마트채팅은 과거에 제공되던 방식으로, 2020년 현재 �
 
 ## 카카오 i 오픈빌더 연동    <a id="openbuilder"></a>
 
+다음 문서를 참고하여 연동을 진행해주세요.
+
 > [https://bit.ly/2w6h69h](https://bit.ly/2w6h69h)
 
 ## 상담 연계 <a id="live-chat-integration"></a>
