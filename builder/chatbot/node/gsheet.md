@@ -8,8 +8,6 @@
 
 ![&#xAD6C;&#xAE00; &#xACC4;&#xC815; &#xC5F0;&#xACB0; &#xC608;&#xC2DC;](../../../.gitbook/assets/integrations.png)
 
-{% page-ref page="../../../platform/settings/integration.md" %}
-
 * 구글 스프레드 시트 주소 표시줄에서 spreadsheetId를 찾아 입력합니다.  아래 표시된 부분입니다.
 
 ![](../../../.gitbook/assets/guide_google-spreadsheet-id.png)
