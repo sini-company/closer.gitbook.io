@@ -293,18 +293,14 @@ h1 {
 
 ### 전문 상담원 설정  <a id="professional-agent"></a>
 
-> 대분류 chat:category:0
->
-> 중분류 chat:category:1
->
-> 소분류 chat:category:2
+![&#xC804;&#xBB38; &#xC0C1;&#xB2F4;&#xC6D0; &#xC124;&#xC815; &#xC608;&#xC2DC;](../../.gitbook/assets/chat-setting-call-category.png)
 
-* 대분류, 중분류, 소분류의 카테고리를 봇 빌더의 파라미터로 설정할 수 있습니다.  
+![&#xC804;&#xBB38; &#xC0C1;&#xB2F4;&#xC6D0; &#xC124;&#xC815; &#xC608;&#xC2DC; - &#xD30C;&#xB77C;&#xBBF8;&#xD130; &#xB178;&#xB4DC; &#xC774;&#xC6A9;](../../.gitbook/assets/chat-setting-call-category-flow.png)
 
-  \(예: 대분류 - 회원 / 비회원, 중분류 - 결제 / 회원탈퇴 / 회원가입 등\)
+전문 상담원 설정은 상담 카테고리에 따라 지정한 상담원에게 상담이 우선 배정되도록 설정하는 기능입니다.
 
-* 고객이 챗봇에서 선택한 카테고리에 따라 전문 상담원에게 상담이 배정되도록 설정할 수 있습니다.
-* 지정한 카테고리에 대해 특정 상담원이 반드시 배정되어야 한다면 다른 상담원에게 배정되지 않도록 설정할 수 있습니다.
+* 상담 카테고리는 봇 빌더의 [파라미터 설정 노드](../../builder/chatbot/node/parameter.md) 를 통해 설정할 수 있습니다.  파라미터 키 값으로는  `chat:category` 를 이용합니다.
+* 전문 상담원이 상담 불가능한 상태일 경우 일반 상담원에게 배정됩니다. 이를 원치 않으실 경우에는  "**설정된 상담원 외 다른 상담원에게 배정하지 않음**" 기능을 설정해 주세요.
 
 ## 알림  <a id="notification"></a>
 
