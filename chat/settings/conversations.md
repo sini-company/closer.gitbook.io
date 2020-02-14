@@ -77,6 +77,8 @@ iframe sandbox attribute에는 다음 네 가지 옵션만 활성화되어 제�
 
 HTML 직접 입력 방식은 고객에게 입력받은 파라미터 값 등을 더 고유한 방식으로 표시하고자 할 때, 혹은 iframe 페이지를 만들기 전 프로토타이핑 작업을 할 때 유용합니다.
 
+![](../../.gitbook/assets/logo_typo.svg)
+
 보안상의 이유로 `<script />` tag는 지원되지 않기 때문에 자바스크립트 사용이 불가능합니다. 자바스크립트 사용이 필요한 경우에는 [iframe URL 방식](conversations.md#iframe-url)을 이용해 주세요.
 
 위 예시에 사용된 템플릿은 다음과 같습니다.

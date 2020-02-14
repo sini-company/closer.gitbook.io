@@ -1,0 +1,137 @@
+{
+  "id": 6,
+  "title": "HTTP 요청 스크립트 노드",
+  "data": {},
+  "nodes": [
+    {
+      "id": 1,
+      "type": "entry",
+      "label": "진입 노드",
+      "data": {},
+      "meta": {
+        "design": {
+          "x": 24,
+          "y": 24
+        }
+      },
+      "next": [
+        {
+          "nodeId": 2
+        }
+      ]
+    },
+    {
+      "data": {
+        "runtime": "nodejs",
+        "script": "const request = require('request');\n\nmodule.exports = function(context, callback) {\n  request({\n      url: 'https://swapi.co/api/starships',\n      json: true\n  }, (err, res) => {\n    if (err || res.statusCode !== 200) {\n      callback(err || new Error('Invalid status code:' + res.statusCode));\n    } else {\n      const response = res.body;\n      callback(null, { data: response })\n    }\n  });\n};\n"
+      },
+      "type": "sandbox",
+      "id": 2,
+      "meta": {
+        "design": {
+          "x": 24,
+          "y": 116
+        }
+      },
+      "label": "SWAPI",
+      "next": [
+        {
+          "nodeId": 3,
+          "priority": 1,
+          "where": {
+            "sandbox.result.data": {
+              "exists": true
+            }
+          }
+        },
+        {
+          "nodeId": 4,
+          "where": {
+            "sandbox.error": {
+              "exists": true
+            }
+          }
+        }
+      ]
+    },
+    {
+      "data": {
+        "message": {
+          "type": "cards",
+          "cards": [
+            {
+              "title": "{{sandbox.result.data.results[i].name}}",
+              "description": "{{sandbox.result.data.results[i].model}}\n{{sandbox.result.data.results[i].manufacturer}}"
+            }
+          ]
+        }
+      },
+      "type": "response",
+      "label": "메시지 응답 노드",
+      "id": 3,
+      "meta": {
+        "design": {
+          "x": 338,
+          "y": 50
+        }
+      },
+      "next": [
+        {
+          "nodeId": 5
+        }
+      ]
+    },
+    {
+      "type": "response",
+      "id": 4,
+      "label": "메시지 응답 노드",
+      "data": {
+        "message": {
+          "type": "text",
+          "text": "오류가 발생했습니다. 잠시 후 다시 시도해 주세요.\n\n{{sandbox.error}}"
+        }
+      },
+      "next": [
+        {
+          "nodeId": 5
+        }
+      ],
+      "meta": {
+        "design": {
+          "x": 337,
+          "y": 161.890625
+        }
+      }
+    },
+    {
+      "data": {
+        "type": "buttons",
+        "buttons": [
+          {
+            "type": "postback",
+            "label": "재시도"
+          }
+        ]
+      },
+      "type": "keyboard",
+      "label": "사용자 입력 요청 노드",
+      "id": 5,
+      "meta": {
+        "design": {
+          "x": 612,
+          "y": 125
+        }
+      },
+      "next": [
+        {
+          "nodeId": 2,
+          "where": {
+            "message": {
+              "equals": "재시도"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
