@@ -183,7 +183,7 @@ module.exports = function handler(context, callback) {
 
 ### 2. HTTP Request <a id="3-error-handling"></a>
 
-HTTP 요청 노드보다 복잡한 처리\(payload 전처리 및 response 후처리 등\)가 필요한 경우에는 스크립트 노드를 통해 HTTP 요청을 수행할 수 있습니다.   
+[HTTP 요청 노드](fetch.md)보다 복잡한 처리\(payload 전처리 및 response 후처리 등\)가 필요한 경우에는 스크립트 노드를 통해 HTTP 요청을 수행할 수 있습니다.   
 CLOSER에서는 현재 사용자 정의 스크립트 노드에 `request`, `superagent` 두 가지 HTTP 요청 라이브러리를 제공하고 있습니다. 각각의 라이브러리에 대한 자세한 설명은 다음을 참고해주세요.
 
 * [https://github.com/request/request](https://github.com/request/request) \(영문\)
