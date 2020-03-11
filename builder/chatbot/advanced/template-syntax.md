@@ -214,7 +214,7 @@ CLOSER에서는 조건부 표현식에서 더 자세한 조건을 지정할 수 
 반복자 표현식은 Handlebars의 `each` block helper 기능을 통해 제공됩니다.  
 더 자세한 사항은 Handlebars의 Builtin Helpers 도움말을 참고해 주세요.
 
-\(영문\) [https://handlebarsjs.com/builtin\_helpers.html](https://handlebarsjs.com/builtin_helpers.html)  
+\(영문\)[ https://handlebarsjs.com/guide/ ](https://handlebarsjs.com/guide/)[  ](https://handlebarsjs.com/guide/)
 {% endhint %}
 
 #### 배열 확장 반복자 표현식 \(CLOSER 한정\) <a id="iterator-expression-array-expansion"></a>
