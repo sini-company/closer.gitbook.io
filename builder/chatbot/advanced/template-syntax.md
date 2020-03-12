@@ -145,7 +145,7 @@ CLOSER에서는 사용자의 입력이나 다른 노드의 반환값들이 담�
 조건부 표현식은 Handlebars의 `if`, `with`, `unless` block helper 기능을 통해 제공됩니다.   
 더 자세한 사항은 Handlebars의 Builtin Helpers 도움말을 참고해 주세요. 
 
-\(영문\) [https://handlebarsjs.com/builtin\_helpers.html](https://handlebarsjs.com/builtin_helpers.html)  
+\(영문\) [https://handlebarsjs.com/guide/](https://handlebarsjs.com/guide/)
 {% endhint %}
 
 #### 논리 연산자
