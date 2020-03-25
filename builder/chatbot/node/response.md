@@ -83,35 +83,60 @@ CLOSER에서는 이미지 파일에 한하여 파일 첨부 기능을 제공하�
 위치 응답 방식에서는 설정한 좌표\(위도, 경도\)를 표시하는 지도 형식의 말풍선을 반환합니다.   
 위치 메시지를 지원하는 메신저의 경우는 해당 좌표를 가리키는 위치 메시지를, 그 외에는 구글 지도 링크로 대체됩니다.
 
-## 고급 기능
+## 메시지 버튼
 
-### 메시지 버튼
+**텍스트형 메시지**와 **카드형 메시지** 에는 최대 9개의 메시지 버튼을 첨부할 수 있습니다.   
+메시지 버튼에는 기본 동작 외에 다음 세 가지 유형이 지원됩니다.
 
-**텍스트형 메시지**와 **카드형 메시지** 각각의 카드에는 최대 9개의 메시지 버튼을 첨부할 수 있습니다.   
-메시지 버튼은 다음 두 가지 유형이 지원됩니다.
+* [웹/앱 URL 링크 버튼](response.md#undefined-2) ****\(`link`\)
+* [포스트백 버튼](response.md#undefined-3) \(`postback`\)
+* [플로우 연결](response.md#undefined-4) \(`goto`\)
 
-* 클릭 시 이동하는 **URL 링크** 
-* \*\*\*\*[**포스트백 페이로드 \(Postback payload\)**](response.md#postback-payload) **** 
+메시지 버튼의 동작은 버튼 선택 시 노출되는 팝업 메뉴를 통해 설정을 변경할 수 있습니다.
 
-메시지 버튼의 동작은 기본적으로 아무런 payload가 설정되지 않은 포스트백\(주: 사용자가 **데이터를 다시 반환**한다는 뜻\) 방식이며, 버튼 선택 시 노출되는 팝업 메뉴를 통해 설정을 변경할 수 있습니다. 
+![&#xBA54;&#xC2DC;&#xC9C0; &#xBC84;&#xD2BC; &#xC120;&#xD0DD; &#xC2DC; &#xB178;&#xCD9C;&#xB418;&#xB294; &#xD31D;&#xC5C5; &#xBA54;&#xB274;](../../../.gitbook/assets/message-form-text-buttons.gif)
 
-![&#xB9D0;&#xD48D;&#xC120; &#xBC84;&#xD2BC; &#xC120;&#xD0DD; &#xC2DC; &#xB178;&#xCD9C;&#xB418;&#xB294; &#xD31D;&#xC5C5; &#xBA54;&#xB274;](../../../.gitbook/assets/message-form-text-buttons.gif)
+### 링크 버튼  <a id="link-button"></a>
 
-![&#xB9D0;&#xD48D;&#xC120; &#xBC84;&#xD2BC;&#xC5D0; &#xB9C1;&#xD06C;&#xB97C; &#xC124;&#xC815;&#xD55C; &#xBAA8;&#xC2B5;](../../../.gitbook/assets/message-form-text-button-link.png)
+![&#xBA54;&#xC2DC;&#xC9C0; &#xBC84;&#xD2BC;&#xC5D0; &#xB9C1;&#xD06C;&#xB97C; &#xC124;&#xC815;&#xD55C; &#xBAA8;&#xC2B5;](../../../.gitbook/assets/message-form-text-button-link.png)
+
+링크 버튼에는 웹/앱으로 연결되는 URL을 작성하실 수 있습니다.   
+다음은 사용 가능한 링크의 몇 가지 예시들입니다.
+
+* 웹 URL: `https://closer.ai`
+* 전화 연결: `tel:010xxxxxxxx`
+* 이메일 전송: `mailto:support@closer.ai` 
+
+{% hint style="info" %}
+링크의 URL scheme \(http, tel, mailto 등\) 지원 여부는 메시징 채널별로 상이합니다.  
+연동 시 충분한 테스트를 거치신 이후 이용해주세요.
+{% endhint %}
+
+### 포스트백 버튼  <a id="postback-button"></a>
 
 ![&#xB9D0;&#xD48D;&#xC120; &#xBC84;&#xD2BC;&#xC5D0; &#xD3EC;&#xC2A4;&#xD2B8;&#xBC31; &#xD398;&#xC774;&#xB85C;&#xB4DC;&#xB97C; &#xC124;&#xC815;&#xD55C; &#xBAA8;&#xC2B5;](../../../.gitbook/assets/message-form-text-button-postback.png)
 
-말풍선 버튼을 입력하는 다른 방법으로 [테이블 데이터 \(엑셀 등\)를 이용하는 방법](request.md#clipboard-data)을 참고하세요.
+**포스트백\(Postback\)**이란 시스템\(=챗봇\)이 전달한 데이터를 사용자가 다시 시스템\(=챗봇\)으로 반환한다는 의미를 가진 정보통신 용어입니다. CLOSER에서 메시지 버튼은 기본적으로 페이로드\(Payload, 전송되는 데이터\) 없는 포스트백 버튼으로 동작하며, 추가 데이터가 필요한 경우 이 기능을 활용하실 수 있습니다.
 
-### 포스트백 페이로드 \(Postback Payload\)
-
-텍스트형 메시지나 카드형 메시지의 postback 버튼에 설정하는 payload 기능은 쉽게 이해하기는 어렵지만, **자연스러운 챗봇을 제작하는 핵심 기능**에 해당하니 한번 쯤 읽어보시는 것을 권해드립니다. 
+이 기능은 쉽게 이해하기는 어렵겠지만, **자연스러운 챗봇을 제작하기 위한 핵심 기능**에 해당하니 한번 쯤 읽어보시는 것을 권해드립니다.
 
 {% page-ref page="../advanced/postback-payload.md" %}
 
+### 플로우 연결 버튼 <a id="goto-button"></a>
 
+![&#xB9D0;&#xD48D;&#xC120; &#xBC84;&#xD2BC;&#xC5D0; &#xD50C;&#xB85C;&#xC6B0; &#xC5F0;&#xACB0; &#xBC84;&#xD2BC;&#xC744; &#xC124;&#xC815;&#xD55C; &#xBAA8;&#xC2B5;](../../../.gitbook/assets/response-flow-button.png)
 
-### 템플릿을 이용한 메시지 생성
+플로우 연결 버튼은 **사용자가 어떤 위치에 있어도 해당 버튼에 설정된 플로우로 이동**하는 기능입니다.
+
+탈출 불가능한 시나리오를 고려한다면 \(예: 정보 입력 시나리오\) 플로우 연결 버튼을 이용하기 전에 다시 한 번 생각해주세요.
+
+{% hint style="info" %}
+설정한 플로우 \(또는 노드\) 를 찾을 수 없는 경우에는 [폴백 플로우](../flow.md#fallback-flow)로 이동합니다.
+{% endhint %}
+
+## 고급 사용자용 <a id="advanced"></a>
+
+### 템플릿을 이용한 메시지 생성 <a id="template"></a>
 
 앞서 중괄호 \(`{{...}}`\) 를 이용한 텍스트를 발견하고 생소함을 느끼셨나요?   
 이 표현은 **템플릿 문법**이라고 불리는 기능으로서, 현재 **대화의 맥락\(Context\)**에 존재하는 값을 이용해 다음 메시지를 생성하는 데 사용할 수 있도록 하는 강력한 기능입니다. 이에 대한 자세한 내용은 다음 문서를 참고해 주세요.
@@ -120,7 +145,9 @@ CLOSER에서는 이미지 파일에 한하여 파일 첨부 기능을 제공하�
 
 {% page-ref page="../advanced/template-syntax.md" %}
 
-### 커스텀 메타데이터 👩🏻‍🔬
+
+
+### 커스텀 메타데이터 👩🏻‍🔬 <a id="message-metadata"></a>
 
 ![&#xBA54;&#xC2DC;&#xC9C0; &#xC751;&#xB2F5; &#xB178;&#xB4DC; - &#xACE0;&#xAE09; &#xC124;&#xC815;](../../../.gitbook/assets/flow_editor_response_node_advanced.png)
 
@@ -131,4 +158,8 @@ CLOSER에서는 이미지 파일에 한하여 파일 첨부 기능을 제공하�
 * `delay`
 
   * 메시지가 한 번에 전송되는 것을 원치 않은 경우, 메시지 사이에 임의의 지연 시간을 설정할 수 있습니다. \(단위: milliseconds\) 위 스크린샷의 경우에는 1초\(1,000 밀리초\) 뒤에 메시지를 전송합니다. 
+
+### 외부 데이터 활용하기 \(xls\)
+
+말풍선 버튼을 입력하는 다른 방법으로 [테이블 데이터 \(엑셀 등\)를 이용하는 방법](request.md#clipboard-data)을 참고하세요.
 
