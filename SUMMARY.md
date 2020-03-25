@@ -2,6 +2,7 @@
 
 * [CLOSER 사용 설명서](README.md)
 * [CLOSER 릴리스 정보](release-notes.md)
+* [자주묻는 질문](faq.md)
 
 ## CLOSER Bot Builder <a id="builder"></a>
 
