@@ -4,7 +4,7 @@ description: 챗봇의 답변 생성을 멈추고 사용자의 입력을 대기�
 
 # 사용자 입력 요청 노드
 
-![&#xC0AC;&#xC6A9;&#xC790; &#xC785;&#xB825; &#xC694;&#xCCAD; &#xB178;&#xB4DC;](../../../.gitbook/assets/image%20%2843%29.png)
+![&#xC0AC;&#xC6A9;&#xC790; &#xC785;&#xB825; &#xC694;&#xCCAD; &#xB178;&#xB4DC;](../../../.gitbook/assets/image%20%2844%29.png)
 
 사용자 입력 요청 노드는 **챗봇의 답변 생성을 멈추고 사용자의 입력을 대기하는 역할**을 담당하며, 이는 CLOSER 챗봇 시나리오에서 굉장히 큰 비중을 차지합니다. 
 
@@ -40,16 +40,16 @@ CLOSER에서 제공하는 사용자 입력 요청 노드는 메시징 채널에 
 * 대부분의 메시징 채널에서 **빠른 답장\(quick reply\)**형태의 선택지로 변환되며, 빠른 답장을 지원하지 않는 경우에는 포스트백 버튼이나 키보드 버튼의 형태로 제공됩니다.
 * 각 메시징 채널 별 빠른 답장 지원 여부에 대해서는 [메신저 연동 &gt; 지원 여부 테이블](../../messenger-integrations/#availability-table) 문서를 확인해주세요.
 
-![&#xBE60;&#xB978; &#xB2F5;&#xC7A5; &#xD615;&#xD0DC;&#xC758; &#xC120;&#xD0DD;&#xC9C0; &#xCD9C;&#xB825;\(&#xCD9C;&#xCC98;: &#xCE74;&#xCE74;&#xC624;&#xD1A1; &#xC624;&#xD508;&#xBE4C;&#xB354;\)](../../../.gitbook/assets/image%20%2841%29.png)
+![&#xBE60;&#xB978; &#xB2F5;&#xC7A5; &#xD615;&#xD0DC;&#xC758; &#xC120;&#xD0DD;&#xC9C0; &#xCD9C;&#xB825;\(&#xCD9C;&#xCC98;: &#xCE74;&#xCE74;&#xC624;&#xD1A1; &#xC624;&#xD508;&#xBE4C;&#xB354;\)](../../../.gitbook/assets/image%20%2842%29.png)
 
-![&#xD3EC;&#xC2A4;&#xD2B8;&#xBC31; &#xBC84;&#xD2BC; &#xD615;&#xD0DC;&#xC758; &#xC120;&#xD0DD;&#xC9C0; &#xCD9C;&#xB825; \(&#xCD9C;&#xCC98;: &#xCE74;&#xCE74;&#xC624;&#xD1A1; &#xC0C1;&#xB2F4;&#xD1A1;\)](../../../.gitbook/assets/image%20%2813%29.png)
+![&#xD3EC;&#xC2A4;&#xD2B8;&#xBC31; &#xBC84;&#xD2BC; &#xD615;&#xD0DC;&#xC758; &#xC120;&#xD0DD;&#xC9C0; &#xCD9C;&#xB825; \(&#xCD9C;&#xCC98;: &#xCE74;&#xCE74;&#xC624;&#xD1A1; &#xC0C1;&#xB2F4;&#xD1A1;\)](../../../.gitbook/assets/image%20%2814%29.png)
 
 ### 숫자 입력 요청 \(number\) 👩🏻‍🔬
 
 * 고객의 입력 방식을 숫자 입력 방식으로 지정하여 요청합니다.
 * 메신저에서 키보드 형태를 숫자 패드\(numpad\)로 제한할 수 있는 경우에 숫자 형태의 키보드가 노출됩니다. 
 
-![&#xAD6C;&#xAE00; &#xC548;&#xB4DC;&#xB85C;&#xC774;&#xB4DC;&#xC758; &#xC22B;&#xC790; &#xD0A4;&#xD328;&#xB4DC; \(&#xC608;&#xC2DC;\)](../../../.gitbook/assets/image%20%287%29.png)
+![&#xAD6C;&#xAE00; &#xC548;&#xB4DC;&#xB85C;&#xC774;&#xB4DC;&#xC758; &#xC22B;&#xC790; &#xD0A4;&#xD328;&#xB4DC; \(&#xC608;&#xC2DC;\)](../../../.gitbook/assets/image%20%288%29.png)
 
 ### 위치 입력 요청 \(location\) 👩🏻‍🔬
 
@@ -57,7 +57,7 @@ CLOSER에서 제공하는 사용자 입력 요청 노드는 메시징 채널에 
 * 메신저의 위치 전송 지원 여부에 따라 CLOSER 웹페이지를 이용한 입력방식이 이용될 수 있습니다. \(이 때, `actions` 값에 설정된 텍스트들이 이용됩니다.\)
 * 전달받은 위치의 위도와 경도 값은 `{{keyboard.value.latitude}}` , `{{keyboard.value.longitude}}` 두 가지 속성을 통해 획득할 수 있습니다.
 
-![&#xD398;&#xC774;&#xC2A4;&#xBD81; Messenger&#xC5D0;&#xC11C; &#xC0AC;&#xC6A9;&#xB418;&#xB294; &#xC704;&#xCE58; &#xC804;&#xC1A1; &#xC694;&#xCCAD; \(&#xCD9C;&#xCC98;: &#xD398;&#xC774;&#xC2A4;&#xBD81; Messenger &#xBB38;&#xC11C;\)](../../../.gitbook/assets/image%20%2816%29.png)
+![&#xD398;&#xC774;&#xC2A4;&#xBD81; Messenger&#xC5D0;&#xC11C; &#xC0AC;&#xC6A9;&#xB418;&#xB294; &#xC704;&#xCE58; &#xC804;&#xC1A1; &#xC694;&#xCCAD; \(&#xCD9C;&#xCC98;: &#xD398;&#xC774;&#xC2A4;&#xBD81; Messenger &#xBB38;&#xC11C;\)](../../../.gitbook/assets/image%20%2817%29.png)
 
 {% hint style="warning" %}
 {{keyboard}} 속성은 추후 변경될 가능성이 있습니다.  
@@ -101,9 +101,9 @@ CLOSER에서 제공하는 사용자 입력 요청 노드는 메시징 채널에 
 
 ### 입력 값 검증하기 \(value validation\)
 
-![&#xC5F0;&#xACB0; &#xC870;&#xAC74;&#xC744; &#xD1B5;&#xD55C; &#xC785;&#xB825; &#xAC12; &#xAC80;&#xC99D;&#xD558;&#xAE30; ](../../../.gitbook/assets/image%20%2815%29.png)
+![&#xC5F0;&#xACB0; &#xC870;&#xAC74;&#xC744; &#xD1B5;&#xD55C; &#xC785;&#xB825; &#xAC12; &#xAC80;&#xC99D;&#xD558;&#xAE30; ](../../../.gitbook/assets/image%20%2816%29.png)
 
-![&#xC5F0;&#xACB0; &#xC870;&#xAC74; - &#xC804;&#xD654;&#xBC88;&#xD638; &#xC815;&#xADDC;&#xD45C;&#xD604;&#xC2DD; &#xC124;&#xC815; &#xC608;&#xC2DC;](../../../.gitbook/assets/image%20%2848%29.png)
+![&#xC5F0;&#xACB0; &#xC870;&#xAC74; - &#xC804;&#xD654;&#xBC88;&#xD638; &#xC815;&#xADDC;&#xD45C;&#xD604;&#xC2DD; &#xC124;&#xC815; &#xC608;&#xC2DC;](../../../.gitbook/assets/image%20%2849%29.png)
 
 사용자가 입력한 값이나 형태를 검증하기 위해서는 [**노드의 연결 진행 조건**](./#undefined-3)을 이용하시거나 [사용자 정의 스크립트 노드](sandbox.md)를 통해 검증하는 방법이 있습니다. 여기서는 간단하게 노드의 연결 조건을 이용하는 방법을 알아보겠습니다.
 
