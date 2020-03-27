@@ -33,6 +33,7 @@
     * [일상대화 노드 👩🏻‍🔬](builder/chatbot/node/chitchat.md)
     * [이메일 전송 노드 👩🏻‍🔬](builder/chatbot/node/email.md)
     * [뒤로가기 스택 노드 \(deprecated\)](builder/chatbot/node/backstack.md)
+  * [봇 정보 설정](builder/chatbot/bot-settings.md)
   * [고급 사용자용](builder/chatbot/advanced/README.md)
     * [컨텍스트 \(Context\)](builder/chatbot/advanced/context.md)
     * [개발자 도구 \(Inspector\)](builder/chatbot/advanced/inspector.md)
