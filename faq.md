@@ -14,7 +14,7 @@ HTTP 요청 노드에서는 적절한 도메인 또는 공인 IP 주소로만 �
 
 더 자세한 사항은 다음 페이지를 참고해주세요.
 
-* \(정보통신기술용어해설\) Private IP Address, Public IP Address: [http://ktword.co.kr/abbr\_view.php?m\_temp1=2260](http://ktword.co.kr/abbr_view.php?m_temp1=2260) 
+* \(정보통신기술용어해설\) Private IP Address, Public IP Address:  [http://ktword.co.kr/abbr\_view.php?m\_temp1=2260](http://ktword.co.kr/abbr_view.php?m_temp1=2260) 
 
 
 
