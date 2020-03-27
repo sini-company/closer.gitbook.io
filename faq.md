@@ -14,7 +14,7 @@ HTTP 요청 노드에서는 적절한 도메인 또는 공인 IP 주소로만 �
 
 더 자세한 사항은 다음 페이지를 참고해주세요.
 
-* \(정보통신기술용어해설\) Private IP Address, Public IP Address:  [http://ktword.co.kr/abbr\_view.php?m\_temp1=2260](http://ktword.co.kr/abbr_view.php?m_temp1=2260) 
+* \(정보통신기술용어해설\) Private IP Address, Public IP Address  [http://ktword.co.kr/abbr\_view.php?m\_temp1=2260](http://ktword.co.kr/abbr_view.php?m_temp1=2260) 
 
 
 
@@ -26,13 +26,17 @@ HTTP 요청 노드에서는 적절한 도메인 또는 공인 IP 주소로만 �
 
 ![&#xC798;&#xBABB; &#xAD6C;&#xC131;&#xB41C; &#xD3F4;&#xBC31; &#xD50C;&#xB85C;&#xC6B0; &#xC608;&#xC2DC;](.gitbook/assets/image%20%284%29.png)
 
-만일 폴백 플로우가 위와 유사하게 구성되어 있다면, 챗봇은 "처음" 또는 "취소" 응답을 제외하고는 진행할 노드를 찾을 수 없어 답변을 생성할 수 없게 됩니다. 진행할 노드를 찾을 수 없는 경우에는 다시 폴백 플로우로 돌아오게 되며, 따라서 사용자가 어떠한 입력을 해도 빈 메시지 응답이 되풀이될 수 있습니다.
+만일 폴백 플로우가 위와 유사하게\(진행할 노드가 없는 형태\) 구성되어 있다면, 챗봇은 "처음" 또는 "취소" 응답을 제외하고는 제대로 된 답변을 생성할 수 없게 됩니다. 챗봇은 진행할 노드를 찾을 수 없기 때문에 다시 폴백 플로우로 돌아오게 되며, 이후 사용자가 어떠한 입력을 해도 동일한 빈 메시지 응답이 반복될 수 있습니다.
+
+![&#xC798;&#xBABB; &#xAD6C;&#xC131;&#xB41C; &#xD3F4;&#xBC31; &#xD50C;&#xB85C;&#xC6B0; &#xC218;&#xC815; &#xC608;&#xC2DC;](.gitbook/assets/image%20%2855%29.png)
+
+이러한 경우, 폴백 플로우를 위와 같이 수정함으로서 문제를 해결할 수 있습니다.
 
 
 
 ### Q. 오류 메시지를 수정할 수 있나요? <a id="q-error-message"></a>
 
-오류 메시지는 시나리오가 잘못되었거나 노드에 필요한 데이터가 부족할 때 나타납니다. 이메시지는 **봇 정보 설정** 메뉴에서 수정하실 수 있습니다.
+오류 메시지는 시나리오가 잘못되었거나 노드에 필요한 데이터가 부족한 상태에서 실행될 때 발생합니다. 이 메시지는 **봇 정보 설정** 메뉴에서 수정하실 수 있습니다.
 
 
 
@@ -88,9 +92,14 @@ CLOSER를 원활히 사용하기 위해서는 오픈빌더 챗봇에서 수신�
 
 * [https://business.kakao.com/info/bizmessage/](https://business.kakao.com/info/bizmessage/)  
 
-### Q. 상담톡이 비용이 어떻게 되나요? <a id="q-kakao-bizmessage"></a>
 
-상담톡은 1일 활성 채팅방당 100원의 비용이 발생합니다. 과금 기준은 대부분의 딜러사가 동일합니다.
+
+### Q. 상담톡이 비용이 어떻게 되나요? <a id="q-kakao-bizmessage-pricing"></a>
+
+상담톡은 일일 활성 채팅방당 100원의 비용이 발생합니다. \(과금 기준은 대부분의 딜러사가 동일합니다.\)  
+일일 활성 채팅방 집계 기준은 다음과 같습니다.
+
+* 매일 오전 04시부터 다음날 오전 03시 59분 \(한국 시간 기준\) 에 대화가 발생한 채팅방\(사용자\) 수
 
 
 
@@ -125,8 +134,8 @@ CLOSER SDK는 현재 javascript 형식으로만 제공되고 있습니다. 따�
 CLOSER 채팅 연동은 기본적으로 WebSocket 으로 구현되어 있고, Javascript SDK는 간편한 사용을 위한 래퍼 라이브러리에 불과합니다. 따라서 Javascript 사용이 어려운 경우 WebSocket 주소 및 인증 토큰 발급 API를 통해 직접 통신 채널을 열고 메시지를 주고받을 수 있습니다. \(이 때 WebSocket 통신에 필요한 스키마는 별도로 제공해드립니다.\)
 
 {% hint style="info" %}
-CLOSER SDK에 대해 궁금하신 점이 있나요?  
-[support@closer.ai](mailto:support@closer.ai) 로 문의주세요.
+CLOSER SDK는 엔터프라이즈 고객 대상으로 제공됩니다.  
+문의사항이 있으실 경우 [support@closer.ai](mailto:support@closer.ai) 로 메일 보내의주세요.
 {% endhint %}
 
 ## 요금 정책 <a id="pricing"></a>
