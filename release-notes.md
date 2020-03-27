@@ -13,7 +13,7 @@ description: CLOSER의 향상된 최신 기능에 대한 릴리스 정보와 히
 
 * 메시지 응답 노드 &gt; [플로우 연결 버튼](builder/chatbot/node/response.md#goto-button) 추가
 * 봇 편집기 &gt; 끌어서 노드 복제 기능 추가 \(Ctrl + 클릭 후 드래그\)
-* 템플릿 함수 &gt; 조사\(JOSA\) 도우미 함수 추가
+* 템플릿 함수 &gt; [한글 조사\(JOSA\) 도우미 함수](builder/chatbot/advanced/template-syntax.md#josa) 추가
 
 **CLOSER Chat**
 
@@ -24,10 +24,10 @@ description: CLOSER의 향상된 최신 기능에 대한 릴리스 정보와 히
 
 **CLOSER Bot**
 
-* 잠재고객 &gt; 공유 링크 생성 기능 추가
+* [잠재고객](builder/audience.md) &gt; 공유 링크 생성 기능 추가
 * 봇 편집기 &gt; 상단 레이아웃 툴바 구성 변경
   * 개발자 도구 버튼 위치 변경
-  * 봇 미리보기에 재시작 버튼 추가 
+  * [대화 미리보기](builder/chatbot/bot-editor/preview.md)에 재시작 버튼 추가 
 
 ## v0.46.0 - 2019-12-19
 

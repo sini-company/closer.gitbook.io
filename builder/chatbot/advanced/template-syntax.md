@@ -335,13 +335,20 @@ Date manipulation에는 Moment.js 라이브러리를 이용하고 있습니다.
 #### RAND\(\[...items\]\)
 
 * `items` 값 중 하나를 반환합니다.
-* e.g. `{{RAND("철수", "영희"}}` -&gt; `철수` \(철수, 영희 둘 중 하나\)
+* e.g\) `{{RAND("철수", "영희"}}` -&gt; `철수` \(철수, 영희 둘 중 하나\)
+
+#### JOSA\(noun, "은" \| "는" \| "이" \| "가" \| "을" \| "를"\)  <a id="josa"></a>
+
+* 한글 명사 `noun` 에 적절한 조사를 변환해주는 도우미 함수입니다. 두 번째 인자에 `은/는`, `이/가`, `을/를` 조합 중 이용하고자 하는 조사를 한 글자로 작성해주세요.
+* 예시\)
+  * `{{JOSA("멍멍이","이")}}` -&gt; `멍멍이가`
+  * `{{JOSA(params.product, "을"}}` , `{ "product": "떡볶이" }`-&gt; `떡볶이를`
 
 #### FORMAT\(value \[,options\]\)
 
 * 지정된 value를 원하는 형태로 출력합니다. 주로 number값을 출력할 때 이용합니다.
 * options이 지정되지 않은 경우 [Javascript의 toLocaleString 결과값](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object/toLocaleString)을 이용합니다.
-* 예시
+* 예시\)
   * `{{FORMAT(10000)}}` -&gt; `10,000`
   * `{{FORMAT("01234.5")}}` -&gt; `1,234.5` \(number string은 number로 변환됩니다.\)
   * `{{FORMAT("안녕하세요")}}` -&gt; `안녕하세요` \(plain string은 아무런 변화가 없습니다.\)
