@@ -131,8 +131,6 @@ module.exports = async function handler(context) {
 
 ## 오류 처리하기
 
-###  1. 간단한 곱셈 스크립트
-
 #### 오류 발생 시 분기 <a id="3-error-handling-conditional-branching"></a>
 
 사용자 정의 스크립트 노드에서 오류가 발생할 경우 챗봇은 아무런 메시지를 반환하지 않습니다만, `sandbox.error`를 통해 오류가 발생하였을 경우의 시나리오를 처리할 수 있습니다. \(사용자 정의 스크립트 노드의 엣지로 `sandbox.error`**가 존재하는 경우**로 챗봇 로직을 분기할 수 있습니다.\)
@@ -181,7 +179,7 @@ module.exports = function handler(context, callback) {
 
 만일 `message`로 `{ text: '가격: ' + price * taxRate }`을 반환하면 챗봇은 사용자 정의 스크립트 노드가 종료되는 시점에 `text`에 해당하는 String을 최종 사용자에게 메시지로 전달합니다. 메시지 객체의 타입은 추후 변경될 수 있으니 가급적 추가적으로 메시지 응답 노드를 생성하여 [템플릿 문법](../advanced/template-syntax.md)을 활용하는 것을 추천합니다.
 
-### 2. HTTP Request <a id="3-error-handling"></a>
+### 2. HTTP 요청 처리하기 \(API 연동\)  <a id="3-error-handling"></a>
 
 [HTTP 요청 노드](fetch.md)보다 복잡한 처리\(payload 전처리 및 response 후처리 등\)가 필요한 경우에는 스크립트 노드를 통해 HTTP 요청을 수행할 수 있습니다.   
 CLOSER에서는 현재 사용자 정의 스크립트 노드에 `request`, `superagent` 두 가지 HTTP 요청 라이브러리를 제공하고 있습니다. 각각의 라이브러리에 대한 자세한 설명은 다음을 참고해주세요.
