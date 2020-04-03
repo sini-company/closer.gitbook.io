@@ -45,9 +45,9 @@ HTTP 요청 노드에서는 적절한 도메인 또는 공인 IP 주소로만 �
 
 ### Q. DATE\(\) 템플릿 함수를 사용할 때 현재 시간과 다른 시간이 출력돼요. <a id="q-template-function-date"></a>
 
-CLOSER의 구동 환경에서는 기본적으로 **GMT\(UTC+0\) timezone**이 사용됩니다. 따라서 Date 함수를 이용할 때 timezone을 입력하지 않을 경우 시간이 의도한대로 출력되지 않을 가능성이 존재합니다. 
+CLOSER의 구동 환경에서는 기본적으로 **GMT\(UTC+0\) timezone**이 사용됩니다. 따라서 Date 함수를 이용할 때 timezone을 입력하지 않을 경우 시간이 의도한대로 출력되지 않는 경우가 존재합니다. 
 
-[**DATE 함수 이용방법**](builder/chatbot/advanced/template-syntax.md#date-value-format-timezone)을 다시 한 번 확인해보시고, 다음과 같이 DATE 함수에 `"Asia/Seoul"` \(timezone\) 값을 입력해보세요.
+[**DATE 함수 이용방법**](builder/chatbot/advanced/template-syntax.md#date-value-format-timezone)을 다시 한 번 확인해보신 뒤, 다음과 같이 DATE 함수에 `"Asia/Seoul"` \(timezone\) 값을 입력해보세요.
 
 * `{{DATE(params.value, "YYYY년 MM월 DD일 HH시 mm분", "Asia/Seoul")}}`
 
