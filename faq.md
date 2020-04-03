@@ -12,9 +12,11 @@ HTTP 요청 노드에서는 등록된 도메인\(예: http://closer.ai\) 또는 
 
 공인 IP란 인터넷에 공개되어 접근 가능한된 IP 주소이며, 사설 IP란 고객님의 네트워크에서만 접근 가능한 주소입니다. 예를 들어, `192.168.0.1`, `172.30.255.255`등의 IP 주소는 외부에서 접근할 수 없는 사설 IP 주소에 해당합니다. 
 
-더 자세한 사항은 다음 페이지를 참고해주세요.
+{% hint style="info" %}
+공인 IP와 사설 IP의 차이가 더 궁금하신가요? 다음 페이지를 확인해보세요.
 
 * \(정보통신기술용어해설\) Private IP Address, Public IP Address  [http://ktword.co.kr/abbr\_view.php?m\_temp1=2260](http://ktword.co.kr/abbr_view.php?m_temp1=2260) 
+{% endhint %}
 
 
 
@@ -47,9 +49,11 @@ HTTP 요청 노드에서는 등록된 도메인\(예: http://closer.ai\) 또는 
 
 CLOSER의 구동 환경에서는 기본적으로 **GMT\(UTC+0\) timezone**이 사용됩니다. 따라서 Date 함수를 이용할 때 timezone을 입력하지 않을 경우 시간이 의도한대로 출력되지 않는 경우가 존재합니다. 
 
-[**DATE 함수 이용방법**](builder/chatbot/advanced/template-syntax.md#date-value-format-timezone)을 다시 한 번 확인해보신 뒤, 다음과 같이 DATE 함수에 `"Asia/Seoul"` \(timezone\) 값을 입력해보세요.
+이러한 경우 다음과 같이 DATE 함수에 `"Asia/Seoul"` \(timezone\) 값을 입력해보세요.
 
-* `{{DATE(params.value, "YYYY년 MM월 DD일 HH시 mm분", "Asia/Seoul")}}`
+> `{{DATE(params.value, "YYYY년 MM월 DD일 HH시 mm분", "Asia/Seoul")}}`
+
+[**DATE 함수 이용방법**](builder/chatbot/advanced/template-syntax.md#date-value-format-timezone)을 잘 확인해보시면 위와 같이 출력 형태도 변경하는 것이 가능합니다.
 
 ## 카카오톡 오픈빌더 <a id="kakao-openbuilder"></a>
 
@@ -80,6 +84,8 @@ CLOSER의 구동 환경에서는 기본적으로 **GMT\(UTC+0\) timezone**이 �
 
 * 다른 카카오톡 계정을 이용하여 대화 테스트
 * 다른 카카오톡 채널에 챗봇을 연동하여 대화 테스트 
+
+위와 같은 조건으로 재시도해도 웰컴 메시지가 동작하지 않는다면, **오픈빌더 웰컴 블록**에 **CLOSER 스킬응답 사용**이 설정되어있는지 확인해주세요. 
 
 
 
