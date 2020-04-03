@@ -41,6 +41,16 @@ HTTP 요청 노드에서는 적절한 도메인 또는 공인 IP 주소로만 �
 
 ![&#xBD07; &#xC815;&#xBCF4; &#xC124;&#xC815; &amp;gt; &#xC2DC;&#xC2A4;&#xD15C; &#xC751;&#xB2F5; &#xC124;&#xC815; &#xBA54;&#xB274;](.gitbook/assets/bot-settings-system-response.png)
 
+
+
+### Q. DATE\(\) 템플릿 함수를 사용할 때 현재 시간과 다른 시간이 출력돼요. <a id="q-template-function-date"></a>
+
+CLOSER의 구동 환경에서는 기본적으로 **GMT\(UTC+0\) timezone**이 사용됩니다. 따라서 Date 함수를 이용할 때 timezone을 입력하지 않을 경우 시간이 의도한대로 출력되지 않을 가능성이 존재합니다. 
+
+[**DATE 함수 이용방법**](builder/chatbot/advanced/template-syntax.md#date-value-format-timezone)을 다시 한 번 확인해보시고, 다음과 같이 DATE 함수에 `"Asia/Seoul"` \(timezone\) 값을 입력해보세요.
+
+* `{{DATE(params.value, "YYYY년 MM월 DD일 HH시 mm분", "Asia/Seoul")}}`
+
 ## 카카오톡 오픈빌더 <a id="kakao-openbuilder"></a>
 
 ### **Q. 챗봇이 제대로 동작하지 않아요!** <a id="q-openbuilder-not-working"></a>
@@ -79,9 +89,9 @@ CLOSER를 원활히 사용하기 위해서는 오픈빌더 챗봇에서 발생�
 
 그럼에도 불구하고 기존 시나리오를 병행하고 싶으신 경우에는 "특정 키워드"에 한해 동작하는 시나리오만 남겨두신 후, 상용화 전 충분한 테스트를 거친 후에 이용해보세요. 이에 대한 더 자세한 정보는 아래의 [Q. 다른 챗봇 솔루션 \(네이버 클라우드 플랫폼, Google DialogFlow 등\)에 CLOSER를 연동할 수 있나요? ](faq.md#q-google-dialogflow-closer) 에 대한 답변에서 확인하실 수 있습니다.
 
-### Q. CLOSER Chat에서 "해당 메신저는 상담을 진행할 수 없습니다" 라고 나와요! <a id="q-kakao-openbuilder-closer-chat"></a>
+### Q. CLOSER Chat에서 "해당 메신저는 상담을 진행할 수 없습니다" 라고 나와요. <a id="q-kakao-openbuilder-closer-chat"></a>
 
-카카오톡 오픈빌더를 통해 챗봇을 연동하신 경우, 상담을 진행하기 위해서는 카카오톡채널 관리자센터의 **1:1 대화 기능을 활성화**하신 뒤, 관리자센터 혹은 모바일 어플리케이션을 통해서 상담을 진행하실 수 있습니다.
+카카오톡 오픈빌더를 통해 챗봇을 연동하신 경우, 상담을 진행하기 위해서는 카카오톡채널 관리자센터의 **1:1 채팅 기능을 활성화**하신 뒤, 관리자센터 웹페이지 혹은 모바일 어플리케이션을 통해서 고객과 상담을 진행하실 수 있습니다.
 
 ![&#xCE74;&#xCE74;&#xC624;&#xD1A1;&#xCC44;&#xB110; &#xAD00;&#xB9AC;&#xC790;&#xC13C;&#xD130; 1:1&#xCC44;&#xD305; &#xBA54;&#xB274;](.gitbook/assets/kakaotalk-1on1-screenshot.png)
 
@@ -119,7 +129,7 @@ CLOSER Chat을 통해 카카오톡 1:1 상담을 진행하고자 하는 경우�
 
 ### Q. 상담톡을 연동했더니 카카오톡 관리자센터의 1:1 대화 기능이 사라졌어요. <a id="q-kakao-bizmessage-1-on-1-disabled"></a>
 
-상담톡을 사용하는 카카오톡  채널에서는 더이상 관리자센터에서 제공하는 1:1채팅 기능을 이용할 수 없게됩니다. 이를 원치 않으실 경우 상담톡 연동 해제를 요청해주세요. 
+상담톡을 사용할 경우에는 더이상 관리자센터에서 제공하는 1:1채팅 기능을 이용할 수 없게 됩니다. 이를 원치 않으실 경우 상담톡 연동 해제를 요청해주세요. 
 
 
 
