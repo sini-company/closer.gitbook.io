@@ -117,7 +117,7 @@ CLOSER를 원활히 사용하기 위해서는 오픈빌더 챗봇에서 발생�
 
 카카오톡 오픈빌더를 통해 챗봇을 연동하신 경우, 상담을 진행하기 위해서는 카카오톡채널 관리자센터의 **1:1 채팅 기능**을 이용하셔야 합니다. 기능을 활성화하신 이후에는 관리자센터 웹페이지 혹은 모바일 어플리케이션을 통해서 고객과 상담을 진행하실 수 있습니다.
 
-![&#xCE74;&#xCE74;&#xC624;&#xD1A1;&#xCC44;&#xB110; &#xAD00;&#xB9AC;&#xC790;&#xC13C;&#xD130; 1:1&#xCC44;&#xD305; &#xBA54;&#xB274;](.gitbook/assets/kakaotalk-1on1-screenshot.png)
+![&#xCE74;&#xCE74;&#xC624;&#xD1A1;&#xCC44;&#xB110; &#xAD00;&#xB9AC;&#xC790;&#xC13C;&#xD130; 1:1&#xCC44;&#xD305; &#xD654;&#xBA74;](.gitbook/assets/kakaotalk-1on1-screenshot.png)
 
 * 카카오톡채널 관리자센터: [https://center-pf.kakao.com/](https://center-pf.kakao.com/)
 * 카카오톡채널 관리자용 모바일 어플리케이션: [안드로이드](https://play.google.com/store/apps/details?id=com.kakao.yellowid&hl=ko), [아이폰](https://apps.apple.com/kr/app/%EC%B9%B4%EC%B9%B4%EC%98%A4%ED%86%A1-%EC%B1%84%EB%84%90-%EA%B4%80%EB%A6%AC%EC%9E%90/id990571676)
