@@ -79,6 +79,19 @@ CLOSER를 원활히 사용하기 위해서는 오픈빌더 챗봇에서 발생�
 
 그럼에도 불구하고 기존 시나리오를 병행하고 싶으신 경우에는 "특정 키워드"에 한해 동작하는 시나리오만 남겨두신 후, 상용화 전 충분한 테스트를 거친 후에 이용해보세요. 이에 대한 더 자세한 정보는 아래의 [Q. 다른 챗봇 솔루션 \(네이버 클라우드 플랫폼, Google DialogFlow 등\)에 CLOSER를 연동할 수 있나요? ](faq.md#q-google-dialogflow-closer) 에 대한 답변에서 확인하실 수 있습니다.
 
+### Q. CLOSER Chat에서 "해당 메신저는 상담을 진행할 수 없습니다" 라고 나와요! <a id="q-kakao-openbuilder-closer-chat"></a>
+
+카카오톡 오픈빌더를 통해 챗봇을 연동하신 경우, 상담을 진행하기 위해서는 카카오톡채널 관리자센터의 **1:1 대화 기능을 활성화**하신 뒤, 관리자센터 혹은 모바일 어플리케이션을 통해서 상담을 진행하실 수 있습니다.
+
+![&#xCE74;&#xCE74;&#xC624;&#xD1A1;&#xCC44;&#xB110; &#xAD00;&#xB9AC;&#xC790;&#xC13C;&#xD130; 1:1&#xCC44;&#xD305; &#xBA54;&#xB274;](.gitbook/assets/kakaotalk-1on1-screenshot.png)
+
+* 카카오톡채널 관리자센터: [https://center-pf.kakao.com/](https://center-pf.kakao.com/)
+* 카카오톡채널 관리자용 모바일 어플리케이션: [안드로이드](https://play.google.com/store/apps/details?id=com.kakao.yellowid&hl=ko), [아이폰](https://apps.apple.com/kr/app/%EC%B9%B4%EC%B9%B4%EC%98%A4%ED%86%A1-%EC%B1%84%EB%84%90-%EA%B4%80%EB%A6%AC%EC%9E%90/id990571676)
+
+{% hint style="info" %}
+CLOSER Chat을 통해 카카오톡 1:1 상담을 진행하고자 하는 경우에는 [카카오톡 상담톡](faq.md#kakao-bizmessage) 제품을 확인해주세요.
+{% endhint %}
+
 
 
 ## 카카오톡 상담톡 <a id="kakao-bizmessage"></a>
@@ -101,6 +114,12 @@ CLOSER를 원활히 사용하기 위해서는 오픈빌더 챗봇에서 발생�
 일일 활성 채팅방 집계 기준은 다음과 같습니다.
 
 * 매일 오전 04시부터 다음날 오전 03시 59분까지 \(한국 시간 기준\) 대화가 발생한 채팅방\(사용자\) 수
+
+
+
+### Q. 상담톡을 연동했더니 카카오톡 관리자센터의 1:1 대화 기능이 사라졌어요. <a id="q-kakao-bizmessage-1-on-1-disabled"></a>
+
+상담톡을 사용하는 카카오톡  채널에서는 더이상 관리자센터에서 제공하는 1:1채팅 기능을 이용할 수 없게됩니다. 이를 원치 않으실 경우 상담톡 연동 해제를 요청해주세요. 
 
 
 
