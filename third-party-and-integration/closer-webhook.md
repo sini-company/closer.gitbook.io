@@ -458,7 +458,7 @@ CLOSER에서 대화를 진행하는데 필요한 정보입니다. SDK의 WebChat
 
 ### CLOSER 이벤트 대시보드 <a id="samples-closer-event-dashboard"></a>
 
-![&#xD1B5;&#xACC4; &#xB300;&#xC2DC;&#xBCF4;&#xB4DC; &#xB370;&#xBAA8; &#xC2A4;&#xD06C;&#xB9B0;&#xC0F7;](../.gitbook/assets/image%20%2819%29.png)
+![&#xD1B5;&#xACC4; &#xB300;&#xC2DC;&#xBCF4;&#xB4DC; &#xB370;&#xBAA8; &#xC2A4;&#xD06C;&#xB9B0;&#xC0F7;](../.gitbook/assets/image%20%2820%29.png)
 
 CLOSER에서는 webhook event를 수집하고 시각화하는 이벤트 통계 대시보드 예제를 오픈소스로 제공하고 있습니다. 아래 GitHub Repository를 확인해주세요.
 

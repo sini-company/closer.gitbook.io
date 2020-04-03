@@ -12,7 +12,7 @@ description: 챗봇이 진행중인 플로우에서 다른 플로우로 이동�
 
 ## 고급 기능
 
-![&#xD50C;&#xB85C;&#xC6B0; &#xC5F0;&#xACB0; &#xB178;&#xB4DC; - &#xACE0;&#xAE09; &#xC124;&#xC815;](../../../.gitbook/assets/image%20%2853%29.png)
+![&#xD50C;&#xB85C;&#xC6B0; &#xC5F0;&#xACB0; &#xB178;&#xB4DC; - &#xACE0;&#xAE09; &#xC124;&#xC815;](../../../.gitbook/assets/image%20%2854%29.png)
 
 ![](../../../.gitbook/assets/node-form-advanced-checkbox.png)를 활성화한 경우 flowId 외에도 nodeId를 설정할 수 있게 되는데, 이를 이용하면 해당 플로우의 진입 노드가 아닌 특정 노드로 이동시킬 수 있습니다. \(nodeId는 캔버스 상의 노드 오른쪽 상단의 숫자를 통해 확인할 수 있습니다.\)
 

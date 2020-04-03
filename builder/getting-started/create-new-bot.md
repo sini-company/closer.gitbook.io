@@ -6,19 +6,19 @@ description: CLOSER에서 챗봇을 생성하는 과정을 알아봅니다.
 
 ## 챗봇 생성하기
 
-![&#xCC57;&#xBD07; &#xC0DD;&#xC131;&#xD558;&#xAE30; \(1\) - &#xCCAB; &#xD654;&#xBA74;](../../.gitbook/assets/image%20%2841%29.png)
+![&#xCC57;&#xBD07; &#xC0DD;&#xC131;&#xD558;&#xAE30; \(1\) - &#xCCAB; &#xD654;&#xBA74;](../../.gitbook/assets/image%20%2842%29.png)
 
 CLOSER Builder에 처음 로그인하시면 위와 같은 화면을 확인할 수 있습니다.   
 챗봇을 생성하시려면 화면 중앙의 챗봇 새로 만들기 버튼을 눌러보아야겠죠?  
 
-![&#xCC57;&#xBD07; &#xC0DD;&#xC131;&#xD558;&#xAE30; \(2\) - &#xAE30;&#xBCF8; &#xC81C;&#xACF5; &#xCC57;&#xBD07; &#xC1FC;&#xCF00;&#xC774;&#xC2A4;](../../.gitbook/assets/image%20%2820%29.png)
+![&#xCC57;&#xBD07; &#xC0DD;&#xC131;&#xD558;&#xAE30; \(2\) - &#xAE30;&#xBCF8; &#xC81C;&#xACF5; &#xCC57;&#xBD07; &#xC1FC;&#xCF00;&#xC774;&#xC2A4;](../../.gitbook/assets/image%20%2821%29.png)
 
 CLOSER에서는 처음 접하시는 이용자분들을 위해 미리 작성된 챗봇의 템플릿을 제공합니다.  
 여기서는 짧은 시나리오가 작성된 튜토리얼 챗봇을 생성하여 챗봇의 동작을 바로 확인해보도록 하겠습니다.
 
 화면 오른쪽의 **선택하기** 버튼을 클릭하시면 아래와 같이 챗봇의 기본 정보를 입력하는 화면이 나타납니다.
 
-![&#xCC57;&#xBD07; &#xC0DD;&#xC131;&#xD558;&#xAE30; \(3\) - &#xAE30;&#xBCF8; &#xC815;&#xBCF4; &#xC785;&#xB825;](../../.gitbook/assets/image%20%2828%29.png)
+![&#xCC57;&#xBD07; &#xC0DD;&#xC131;&#xD558;&#xAE30; \(3\) - &#xAE30;&#xBCF8; &#xC815;&#xBCF4; &#xC785;&#xB825;](../../.gitbook/assets/image%20%2829%29.png)
 
 챗봇 제목과 설명을 자유롭게 입력해주세요. \(나중에 언제든 수정할 수 있습니다.\)   
 여기서 입력된 제목과 설명은 CLOSER 내부에서 이용자분께서 챗봇을 식별하기 용도로만 사용되는 값으로, 실제 메시징 채널에 연동될 프로필 이름과는 관계가 없습니다.  
