@@ -61,16 +61,6 @@ HTTP 요청 노드에서는 등록된 도메인\(예: http://closer.ai\) 또는 
 
 
 
-### **Q. 데이터를 우리 서버에 쌓을 수 있나요?**  <a id="q-collecting-chatbot-data"></a>
-
-네. CLOSER는 Webhook으로 봇/사용자/상담원의 메시지와 이벤트를 전달하기 때문에, 목적에 맞는 API를 개발해 연동하시면 원하시는 데이터베이스를 구축해 분석하시거나 통계 대쉬보드를 만드실 수 있습니다.
-
-더 자세한 사항은 다음 페이지를 참고해주세요.
-
-{% page-ref page="third-party-and-integration/closer-webhook.md" %}
-
-
-
 ### Q. DATE\(\) 템플릿 함수를 사용할 때 현재 시간과 다른 시간이 출력돼요. <a id="q-template-function-date"></a>
 
 CLOSER의 구동 환경에서는 기본적으로 **GMT\(UTC+0\) timezone**이 사용됩니다. 따라서 Date 함수를 이용할 때 timezone을 입력하지 않을 경우 시간이 의도한대로 출력되지 않는 경우가 존재합니다. 
@@ -222,5 +212,15 @@ CLOSER Chat은 무료 서비스로, 상담계정을 추가하지 않아도 **본
 
 
 
-\*\*\*\*
+## 기타 <a id="etc"></a>
+
+### **Q. 데이터를 우리 서버에 쌓을 수 있나요?**  <a id="q-collecting-chatbot-data"></a>
+
+네. CLOSER는 Webhook으로 봇/사용자/상담원의 메시지와 이벤트를 전달하기 때문에, 목적에 맞는 API를 개발해 연동하시면 원하시는 데이터베이스를 구축해 분석하시거나 통계 대쉬보드를 만드실 수 있습니다.
+
+더 자세한 사항은 다음 페이지를 참고해주세요.
+
+{% page-ref page="third-party-and-integration/closer-webhook.md" %}
+
+
 
