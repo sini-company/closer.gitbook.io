@@ -4,11 +4,6 @@ description: CLOSER에서 챗봇을 생성하는 과정을 알아봅니다.
 
 # 챗봇 생성하기
 
-## 계정 생성하기
-
-CLOSER의 기능을 이용하기 위해서 반드시 선행되어야 하는 절차입니다.  
-회원 가입은 [https://app.closer.ai/signup](https://app.closer.ai/signup?referrer=https://guide.closer.ai) 페이지에서 진행하실 수 있습니다.
-
 ## 챗봇 생성하기
 
 ![&#xCC57;&#xBD07; &#xC0DD;&#xC131;&#xD558;&#xAE30; \(1\) - &#xCCAB; &#xD654;&#xBA74;](../../.gitbook/assets/image%20%2841%29.png)

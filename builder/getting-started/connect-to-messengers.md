@@ -2,7 +2,7 @@
 description: CLOSER 챗봇을 다양한 메시징 채널과 연동하는 법을 알아봅니다.
 ---
 
-# 메시징 채널에 연동하기
+# 메신저에 연동하기
 
 ## 메신저 연동하기 <a id="messenger-integration"></a>
 

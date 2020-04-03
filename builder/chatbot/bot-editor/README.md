@@ -2,7 +2,9 @@
 description: CLOSER 챗봇 시나리오 편집도구와 그 구성요소에 대하여 알아봅니다.
 ---
 
-# 시나리오 편집도구 \(Editor\)
+# 챗봇 편집도구
+
+
 
 ![&#xC2DC;&#xB098;&#xB9AC;&#xC624; &#xD3B8;&#xC9D1;&#xB3C4;&#xAD6C;](../../../.gitbook/assets/0.46_layout.gif)
 
