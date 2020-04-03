@@ -45,6 +45,30 @@ HTTP 요청 노드에서는 등록된 도메인\(예: http://closer.ai\) 또는 
 
 
 
+### **Q. 자연어를 이해하는 챗봇을 만들고 싶어요**  <a id="q-nlp-engine"></a>
+
+원하시는 자연어엔진을 [HTTP 요청 노드](builder/chatbot/node/fetch.md)를 통해 연동하실 수 있습니다. 자연어엔진이 제공하는 학습도구를 이용해 충분히 학습시키신 뒤에 연동을 시도해보세요[.](https://sini-company.slack.com/archives/C010AA83M7V/p1585912951001500)\*\*\*\*
+
+\*\*\*\*
+
+### **Q. 외국어 챗봇도 지원하나요?**  <a id="q-multilingual"></a>
+
+챗봇의 시나리오는 봇 빌더상에서 어떤 언어로도 구성할 수 있습니다. 해당 외국어를 챗봇이 얼마나 잘 이해할 수 있는지는 설계한 시나리오 및 사용하시는 자연어처리 엔진에 달려 있습니다. 
+
+챗봇과는 별개로, CLOSER Builder 와 Chat 서비스는 현재 한국어와 영어를 지원합니다. 
+
+
+
+### **Q. 데이터를 우리 서버에 쌓을 수 있나요?**  <a id="q-collecting-chatbot-data"></a>
+
+네. CLOSER는 Webhook으로 봇/사용자/상담원의 메시지와 이벤트를 전달하기 때문에, 목적에 맞는 API를 개발해 연동하시면 원하시는 데이터베이스를 구축해 분석하시거나 통계 대쉬보드를 만드실 수 있습니다.
+
+더 자세한 사항은 다음 페이지를 참고해주세요.
+
+{% page-ref page="third-party-and-integration/closer-webhook.md" %}
+
+
+
 ### Q. DATE\(\) 템플릿 함수를 사용할 때 현재 시간과 다른 시간이 출력돼요. <a id="q-template-function-date"></a>
 
 CLOSER의 구동 환경에서는 기본적으로 **GMT\(UTC+0\) timezone**이 사용됩니다. 따라서 Date 함수를 이용할 때 timezone을 입력하지 않을 경우 시간이 의도한대로 출력되지 않는 경우가 존재합니다. 
@@ -54,6 +78,8 @@ CLOSER의 구동 환경에서는 기본적으로 **GMT\(UTC+0\) timezone**이 �
 > `{{DATE(params.value, "YYYY년 MM월 DD일 HH시 mm분", "Asia/Seoul")}}`
 
 [**DATE 함수 이용방법**](builder/chatbot/advanced/template-syntax.md#date-value-format-timezone)을 잘 확인해보시면 위와 같이 출력 형태도 변경하는 것이 가능합니다.
+
+
 
 ## 카카오톡 오픈빌더 <a id="kakao-openbuilder"></a>
 
