@@ -148,7 +148,7 @@ CLOSER에서는 이미지 파일에 한하여 파일 첨부 기능을 제공하�
 
 {% page-ref page="../advanced/context.md" %}
 
-{% page-ref page="../advanced/template-syntax.md" %}
+{% page-ref page="../advanced/template-syntax/" %}
 
 
 

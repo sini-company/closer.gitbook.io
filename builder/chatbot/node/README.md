@@ -68,7 +68,7 @@ description: CLOSER 챗봇의 기능 동작 단위인 노드에 대해서 알아
 
 ![&#xB178;&#xB4DC; &#xC5F0;&#xACB0;&#xC5D0; &#xC870;&#xAC74;&#xC744; &#xC124;&#xC815;&#xD558;&#xB294; &#xBAA8;&#xC2B5;](../../../.gitbook/assets/flow-editor-creating-edge-condition.gif)
 
-조건 설정 화면은 **연결된 선\(Edge\)을 더블클릭**하여 확인할 수 있습니다. 조건에 사용되는 속성으로는 주로 **사용자 메시지**\(message.text\) _\*\*_값을 이용하며, 나아가 [파라미터\(Parameter\)](../advanced/context.md) 및 [컨텍스트\(Context\)](../advanced/template-syntax.md#context) 값도 활용할 수 있습니다.
+조건 설정 화면은 **연결된 선\(Edge\)을 더블클릭**하여 확인할 수 있습니다. 조건에 사용되는 속성으로는 주로 **사용자 메시지**\(message.text\) _\*\*_값을 이용하며, 나아가 [파라미터\(Parameter\)](../advanced/context.md) 및 [컨텍스트\(Context\)](../advanced/template-syntax/#context) 값도 활용할 수 있습니다.
 
 아래는 사용자의 나이를 age에 입력받았다고 가정하였을 때, 특정 플로우에 진입 시 19세 미만은 이용할 수 없다는 안내 메시지를 출력하는 조건을 설정한 예제입니다다.
 

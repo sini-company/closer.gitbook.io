@@ -177,7 +177,7 @@ module.exports = function handler(context, callback) {
 
 `custom`에 반환되는 값은 이후 노드에서 `{{sandbox.result.custom}}`으로 참조할 수 있습니다. `params`에 반환되는 값은 이후 노드에서 해당 파라미터의 값을 설정합니다. 예제 스크립트의 경우 `price`파라미터를 새 값으로 덮어 씁니다.
 
-만일 `message`로 `{ text: '가격: ' + price * taxRate }`을 반환하면 챗봇은 사용자 정의 스크립트 노드가 종료되는 시점에 `text`에 해당하는 String을 최종 사용자에게 메시지로 전달합니다. 메시지 객체의 타입은 추후 변경될 수 있으니 가급적 추가적으로 메시지 응답 노드를 생성하여 [템플릿 문법](../advanced/template-syntax.md)을 활용하는 것을 추천합니다.
+만일 `message`로 `{ text: '가격: ' + price * taxRate }`을 반환하면 챗봇은 사용자 정의 스크립트 노드가 종료되는 시점에 `text`에 해당하는 String을 최종 사용자에게 메시지로 전달합니다. 메시지 객체의 타입은 추후 변경될 수 있으니 가급적 추가적으로 메시지 응답 노드를 생성하여 [템플릿 문법](../advanced/template-syntax/)을 활용하는 것을 추천합니다.
 
 ### 2. HTTP 요청 처리하기 \(API 연동\)  <a id="3-error-handling"></a>
 
@@ -187,7 +187,7 @@ CLOSER에서는 현재 사용자 정의 스크립트 노드에 `request`, `super
 * [https://github.com/request/request](https://github.com/request/request) \(영문\)
 * [https://github.com/visionmedia/superagent](https://github.com/visionmedia/superagent) \(영문\)  
 
-다음은 `request` 라이브러리와 [템플릿 문법](../advanced/template-syntax.md)을 이용해 [템플릿 문법 &gt; 스타워즈 우주선 목록](../advanced/template-syntax.md#example-1)을 재구현해 본 예시입니다. 첨부된 플로우 또는 스크립트를 참고하여 고객님께 필요한 기능을 추가해보세요.  
+다음은 `request` 라이브러리와 [템플릿 문법](../advanced/template-syntax/)을 이용해 [템플릿 문법 &gt; 스타워즈 우주선 목록](../advanced/template-syntax/#example-1)을 재구현해 본 예시입니다. 첨부된 플로우 또는 스크립트를 참고하여 고객님께 필요한 기능을 추가해보세요.  
 
 ![&#xC0AC;&#xC6A9;&#xC790; &#xC815;&#xC758; &#xC2A4;&#xD06C;&#xB9BD;&#xD2B8; - HTTP &#xC694;&#xCCAD; &#xC608;&#xC2DC;](../../../.gitbook/assets/sandbox-http-example.png)
 

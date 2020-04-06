@@ -77,7 +77,7 @@ CLOSER의 구동 환경에서는 기본적으로 **GMT\(UTC+0\) timezone**이 �
 
 > `{{DATE(params.value, "YYYY년 MM월 DD일 HH시 mm분", "Asia/Seoul")}}`
 
-[**DATE 함수 이용방법**](builder/chatbot/advanced/template-syntax.md#date-value-format-timezone)을 잘 확인해보시면 위와 같이 출력 형태도 변경하는 것이 가능합니다.
+[**DATE 함수 이용방법**](builder/chatbot/advanced/template-syntax/#date-value-format-timezone)을 잘 확인해보시면 위와 같이 출력 형태도 변경하는 것이 가능합니다.
 
 
 

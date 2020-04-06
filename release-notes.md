@@ -7,18 +7,32 @@ description: CLOSER의 향상된 최신 기능에 대한 릴리스 정보와 히
 본 문서에서는 새로운 기능 / 치명적인 버그 수정 등의 변경점들을 서술합니다.  
 눈에 보이지 않는 내부 안정성 개선 등의 변경점들은 본 문서에 작성되지 않았습니다.  
 
+## v0.48.1 - 2020-04-06
+
+**CLOSER Bot**
+
+* \(신규\) [템플릿 문법](builder/chatbot/advanced/template-syntax/#helper-functions) &gt; [글자 자르기 \(TRUNCATE\) 도우미 함수](builder/chatbot/advanced/template-syntax/helper-function.md#truncate) 추가
+* \(신규\) [플로우 연결 노드](builder/chatbot/node/flow.md) 및 [플로우 연결 버튼 ](builder/chatbot/node/response.md#goto-button)설정에서 플로우 목록 드롭다운을 플로우 목록과 같도록 개선
+* \(버그 수정\) [뒤로가기 노드](builder/chatbot/node/back.md)와 [플로우 연결 버튼](builder/chatbot/node/response.md#goto-button)을 함께 이용할 경우 뒤로가기 동작이 부자연스러운 오류 수정
+* \(버그 수정\) 대시보드 &gt; 활성 사용자 통계 수치가 그래프와 일치하지 않는 오류 수정
+* \(버그 수정\) 네이버 톡톡 &gt; [빠른 답장 글자 수 제한](builder/messenger-integrations/limitations.md)이 넘어갈 경우, 메시지 기반의 조건이 동작하지 않는 오류 수정
+
+**CLOSER Chat**
+
+* \(버그 수정\) 자주쓰는 문구 &gt; 템플릿 문법을 이용할 때, 없는 값을 참조하면 아무 동작 없는 오류 수정  
+
 ## v0.48.0 - 2020-03-24
 
 **CLOSER Bot**
 
-* 메시지 응답 노드 &gt; [플로우 연결 버튼](builder/chatbot/node/response.md#goto-button) 추가
-* 봇 편집기 &gt; 끌어서 노드 복제 기능 추가 \(Ctrl + 클릭 후 드래그\)
-* 템플릿 함수 &gt; [한글 조사\(JOSA\) 도우미 함수](builder/chatbot/advanced/template-syntax.md#josa) 추가
+* \(신규\) 메시지 응답 노드 &gt; [플로우 연결 버튼](builder/chatbot/node/response.md#goto-button) 추가
+* \(신규\) 캔버스 &gt; 끌어서 노드 복제 기능 추가 \(Ctrl + 클릭 후 드래그\)
+* \(신규\) 템플릿 함수 &gt; [한글 조사\(JOSA\) 도우미 함수](builder/chatbot/advanced/template-syntax/helper-function.md#josa-noun-josa-or-or-or-or-or) 추가
 
 **CLOSER Chat**
 
-* 자주쓰는 문구 &gt; 순서 변경 기능 추가
-* 자주쓰는 문구 &gt; [템플릿](builder/chatbot/advanced/template-syntax.md) 기능 추가
+* \(신규\) 자주쓰는 문구 &gt; 순서 변경 기능 추가
+* \(신규\) 자주쓰는 문구 &gt; [템플릿 문법](builder/chatbot/advanced/template-syntax/) 기능 추가
 
 ## v0.47.0 - 2020-03-01
 

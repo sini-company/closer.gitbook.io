@@ -42,7 +42,7 @@
 
 iframe 방식은 기존 레거시 시스템과 연동하여 고객 정보를 조회하는 식으로 활용할 때 용이하며, html 직접 작성 방식은 필요한 정보만 원하는 방식으로 간추려서 출력하고자 할 때 사용하기 좋습니다. 
 
-iframe의 URL 주소나 html 입력 방식의 html body에는 모두 [템플릿 문법](../../builder/chatbot/advanced/template-syntax.md) 사용이 가능합니다. `platform`이나 `userKey` 등을 전달하여 이용해보세요.
+iframe의 URL 주소나 html 입력 방식의 html body에는 모두 [템플릿 문법](../../builder/chatbot/advanced/template-syntax/) 사용이 가능합니다. `platform`이나 `userKey` 등을 전달하여 이용해보세요.
 
 ### iframe URL 방식
 
@@ -50,7 +50,7 @@ iframe의 URL 주소나 html 입력 방식의 html body에는 모두 [템플릿 
 
 iframe은 기존 레거시 시스템과 연동하고자 할 때 사용하면 유용합니다. 고객님께서 이용하실 웹페이지를 직접 호스팅하거나 웹 서버 등을 이용하여 렌더링하신 뒤, 자바스크립트를 이용하여 상담원에게 필요한 도구들을 추가적으로 제공하실 수 있습니다.  
 
-iframe URL에는 [템플릿 문법](../../builder/chatbot/advanced/template-syntax.md) 사용이 가능하기 때문에, query parameter 또는 path parameter로 필요한 값을 제공할 수 있습니다. 주로 `userKey`나 `platform` 등의 값을 제공합니다. 
+iframe URL에는 [템플릿 문법](../../builder/chatbot/advanced/template-syntax/) 사용이 가능하기 때문에, query parameter 또는 path parameter로 필요한 값을 제공할 수 있습니다. 주로 `userKey`나 `platform` 등의 값을 제공합니다. 
 
 URL은  `https://` 시작하는 보안 URL을 사용할 것을 권장합니다. `http://` 주소를 사용하실 경우에는 브라우저에 따라 페이지가 표시되지 않을 가능성이 있습니다.
 

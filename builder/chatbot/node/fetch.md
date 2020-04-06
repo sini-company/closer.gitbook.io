@@ -23,7 +23,7 @@ HTTP 요청 수행 후 생성되는 반환값을 담고 있는 객체입니다.
 | status | string | 성공시 'COMPLETED', 실패시 'FAILED' |
 | error | Error | 오류 정보   |
 
-* 반환된 데이터는 [템플릿 문법](../advanced/template-syntax.md)을 활용하여 메시지에 삽입할 수 있습니다. 
+* 반환된 데이터는 [템플릿 문법](../advanced/template-syntax/)을 활용하여 메시지에 삽입할 수 있습니다. 
 * 전체 반환값을 확인하시려면 `{{fetch.data}}` 같이 작성하실 수 있으며, 반환값이 [JSON](https://ko.wikipedia.org/wiki/JSON) 형태인 경우 `{{fetch.data.path[2].your.object}}`와 같은 경로로 접근하여 해당 값을 사용하실 수 있습니다.
 
 {% hint style="warning" %}

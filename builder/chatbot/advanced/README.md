@@ -12,7 +12,7 @@ CLOSER가 제공하는 **템플릿 문법**과 **포스트백 페이로드** 기
 
 {% page-ref page="context.md" %}
 
-{% page-ref page="template-syntax.md" %}
+{% page-ref page="template-syntax/" %}
 
 {% page-ref page="postback-payload.md" %}
 

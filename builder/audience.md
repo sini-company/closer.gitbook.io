@@ -24,7 +24,7 @@ description: 챗봇과 대화한 고객을 확인하고 잠재고객을 분석�
 * 테이블 이름 변경
 * 행 추가/제거 
 * 행 위치 변경 \(머릿말의 빈 부분을 클릭하고 드래그&드롭\)
-* [템플릿 문법](chatbot/advanced/template-syntax.md) / HTML 태그를 이용한 스타일링
+* [템플릿 문법](chatbot/advanced/template-syntax/) / HTML 태그를 이용한 스타일링
 * [검색 조건 설정](audience.md#search)
 
 {% hint style="info" %}
