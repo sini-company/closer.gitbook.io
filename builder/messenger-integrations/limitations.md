@@ -127,7 +127,7 @@ description: '최종 업데이트 날짜: 2020. 4. 3'
       <td style="text-align:left">1000</td>
     </tr>
     <tr>
-      <td style="text-align:left">&#xC774;&#xBBF8;&#xC9C0; &#xD30C;&#xC77C; &#xD06C;&#xAE30;
+      <td style="text-align:left">&#xC774;&#xBBF8;&#xC9C0; &#xC6A9;&#xB7C9;
         <br />(MB)</td>
       <td style="text-align:left">-</td>
       <td style="text-align:left">5</td>
@@ -137,8 +137,8 @@ description: '최종 업데이트 날짜: 2020. 4. 3'
       <td style="text-align:left">-</td>
     </tr>
     <tr>
-      <td style="text-align:left">&#xC774;&#xBBF8;&#xC9C0; &#xAD8C;&#xC7A5;
-        <br />&#xC0AC;&#xC774;&#xC988;</td>
+      <td style="text-align:left">&#xCE74;&#xB4DC; &#xC774;&#xBBF8;&#xC9C0;
+        <br />&#xAD8C;&#xC7A5; &#xC0AC;&#xC774;&#xC988;</td>
       <td style="text-align:left">&#xBE44;&#xC728; 2:1</td>
       <td style="text-align:left">
         <p>&#xAC00;&#xB85C; 500px &#xC774;&#xC0C1;</p>
