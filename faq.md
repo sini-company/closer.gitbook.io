@@ -49,7 +49,15 @@ HTTP 요청 노드에서는 등록된 도메인\(예: http://closer.ai\) 또는 
 
 ### **Q. 자연어를 이해하는 챗봇을 만들고 싶어요**  <a id="q-nlp-engine"></a>
 
-원하시는 자연어엔진을 [HTTP 요청 노드](builder/chatbot/node/fetch.md)를 통해 연동하실 수 있습니다. 자연어엔진이 제공하는 학습도구를 이용해 충분히 학습시키신 뒤에 연동을 시도해보세요[.](https://sini-company.slack.com/archives/C010AA83M7V/p1585912951001500)\*\*\*\*
+원하시는 자연어 처리 도구가 REST API를 지원한다면, [HTTP 요청 노드](builder/chatbot/node/fetch.md)를 통해 CLOSER와 연동하실 수 있습니다. 자연어 처리 도구에서 제공하는 결과를 CLOSER에서 이용해 보세요[.](https://sini-company.slack.com/archives/C010AA83M7V/p1585912951001500)\*\*\*\*
+
+이용 가능한 외부 자연어 처리 도구 몇 가지를 소개해드립니다.
+
+* Google Dialogflow: [https://dialogflow.com/](https://dialogflow.com/)
+* Watson Assistant: [https://www.ibm.com/watson/kr-ko/developercloud/conversation.html](https://www.ibm.com/watson/kr-ko/developercloud/conversation.html)
+* Naver Cloud Platform Chatbot: [https://www.ncloud.com/product/aiService/chatbot](https://www.ncloud.com/product/aiService/chatbot)
+* Google Natural Language API: [https://cloud.google.com/natural-language/](https://cloud.google.com/natural-language/docs/basics?hl=ko)
+* Amazon Comprehend: [https://aws.amazon.com/ko/comprehend/](https://aws.amazon.com/ko/comprehend/)
 
 \*\*\*\*
 
