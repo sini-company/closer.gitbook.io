@@ -4,13 +4,9 @@ description: '최종 업데이트 날짜: 2020. 4. 3'
 
 # 메신저별 제약사항
 
-이 페이지에서는 메신저별 제약 사항을 표로 제공합니다.  
-만약 업데이트 된 제약사항이 CLOSER에 반영되지 않은 경우에는 언제든 [support@closer.ai](mailto:support@closer.ai) 로 문의 주세요. 
-
 <table>
   <thead>
     <tr>
-      <th style="text-align:left"></th>
       <th style="text-align:left">&#xCE74;&#xCE74;&#xC624;&#xD1A1;
         <br />(&#xC624;&#xD508;&#xBE4C;&#xB354;)</th>
       <th style="text-align:left">
@@ -25,6 +21,7 @@ description: '최종 업데이트 날짜: 2020. 4. 3'
         <p>(LINE)</p>
       </th>
       <th style="text-align:left">&#xC6F9;&#xC0AC;&#xC774;&#xD2B8;</th>
+      <th style="text-align:left"></th>
     </tr>
   </thead>
   <tbody>
@@ -168,5 +165,7 @@ description: '최종 업데이트 날짜: 2020. 4. 3'
 {% hint style="info" %}
 일부 제약사항은 메신저별 연동 문서에서 제공하는 실제 제약사항과 다를 수 있습니다.   
 이는 메신저별 제약 사항이 CLOSER보다 적은 경우 CLOSER의 제약 사항을 따르기 때문입니다.
+
+만일 실제 제약사항과 다르거나 본 문서에 반영되지 않은 제약사항이 있는 경우에는 언제든 [support@closer.ai](mailto:support@closer.ai) 로 문의 주세요. 
 {% endhint %}
 
