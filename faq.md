@@ -200,12 +200,11 @@ CLOSER SDK는 엔터프라이즈 고객 대상으로 제공됩니다.
 문의사항이 있으실 경우 [support@closer.ai](mailto:support@closer.ai) 로 메일 보내의주세요.
 {% endhint %}
 
-## CLOSER Chat
+
 
 ### Q. 상담원용 앱은 없나요? 폰으로 푸시 알림을 받을 방법은 없나요? <a id="q-chat-push-alarm"></a>
 
-현재 상담원용 앱은 없습니다.   
-스마트폰에서 푸시 알림을를 받고자 하시면 [HTTP 요청 노드](builder/chatbot/node/fetch.md)를 이용하여 외부 푸시 메시징 서비스 API \(SMS, 슬랙 알람 등\)을 연동하는 방법으로 이용하실 수 있습니다.
+현재 상담원용 모바일 앱은 없습니다. 대신, [HTTP 요청 노드](builder/chatbot/node/fetch.md)를 이용하여 외부 푸시 메시징 서비스 API \(SMS 또는, 슬랙 알람 등\)을 연동하는 방법으로 알림을 구현하실 수 있습니다.
 
 ## 요금 정책 <a id="pricing"></a>
 
