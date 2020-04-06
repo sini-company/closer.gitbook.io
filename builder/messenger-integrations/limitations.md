@@ -154,8 +154,8 @@ description: '최종 업데이트 날짜: 2020. 4. 3'
     </tr>
   </tbody>
 </table>* 웹사이트 연동 방식은 CLOSER 챗봇 편집기에 존재하는 제약 사항과 동일합니다.
-* 메신저에서 **지원하지 않는 미디어 파일**의 경우, 해당 URL으로 이동하는 [링크 버튼](../chatbot/node/response.md#link-button)으로 변환됩니다.
-* 카드 갯수 및 카드 버튼 갯수가 **메신저에서 지원하는 갯수를 넘는 경우**, **해당 항목들은 제거되어 전송**됩니다.
+* 메신저에서 **지원하지 않는 미디어 파일**의 경우 해당 URL으로 이동하는 [링크 버튼](../chatbot/node/response.md#link-button)으로 변환됩니다.
+* 카드 갯수 및 카드 버튼 갯수가 **메신저에서 지원하는 갯수를 넘는 경우 초과분은 제거되어 전송**됩니다.
   * 단, **상담톡**에서는 카드가 여러 장 존재하는 경우 **카드의 갯수만큼 단일 카드 메시지가 전송**됩니다. 상담톡에서는 캐로셀\(=가로 스크롤 형태의 메시지\)이 지원되지 않기 때문입니다.
 
 ### 참고자료
@@ -166,7 +166,7 @@ description: '최종 업데이트 날짜: 2020. 4. 3'
 * 페이스북 연동 안내 문서: [https://developers.facebook.com/docs/messenger-platform/reference](https://developers.facebook.com/docs/messenger-platform/reference)
 
 {% hint style="info" %}
-일부 제약사항은 메신저별 연동 문서에서 제공하는 제약사항과 다를 수 있습니다.   
+일부 제약사항은 메신저별 연동 문서에서 제공하는 실제 제약사항과 다를 수 있습니다.   
 이는 메신저별 제약 사항이 CLOSER보다 적은 경우 CLOSER의 제약 사항을 따르기 때문입니다.
 {% endhint %}
 
