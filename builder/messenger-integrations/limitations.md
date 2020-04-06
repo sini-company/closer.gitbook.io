@@ -7,6 +7,7 @@ description: '최종 업데이트 날짜: 2020. 4. 3'
 <table>
   <thead>
     <tr>
+      <th style="text-align:left"></th>
       <th style="text-align:left">&#xCE74;&#xCE74;&#xC624;&#xD1A1;
         <br />(&#xC624;&#xD508;&#xBE4C;&#xB354;)</th>
       <th style="text-align:left">
@@ -21,7 +22,6 @@ description: '최종 업데이트 날짜: 2020. 4. 3'
         <p>(LINE)</p>
       </th>
       <th style="text-align:left">&#xC6F9;&#xC0AC;&#xC774;&#xD2B8;</th>
-      <th style="text-align:left"></th>
     </tr>
   </thead>
   <tbody>
