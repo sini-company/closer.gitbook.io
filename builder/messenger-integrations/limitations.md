@@ -81,7 +81,7 @@ description: '최종 업데이트 날짜: 2020. 4. 3'
       <td style="text-align:left">3</td>
       <td style="text-align:left">5</td>
       <td style="text-align:left">3</td>
-      <td style="text-align:left">10</td>
+      <td style="text-align:left">9</td>
       <td style="text-align:left">3</td>
       <td style="text-align:left">9</td>
     </tr>
