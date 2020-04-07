@@ -1,0 +1,67 @@
+{
+  "id": 4,
+  "title": "폴백 플로우(핑퐁 API)",
+  "data": {},
+  "nodes": [
+    {
+      "id": 1,
+      "label": "진입 노드",
+      "type": "entry",
+      "data": {},
+      "meta": {
+        "design": {
+          "x": 45,
+          "y": 33
+        }
+      },
+      "next": [
+        {
+          "nodeId": 27
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "label": "핑퐁 API 호출",
+      "type": "fetch",
+      "data": {
+        "uri": "https://builder.pingpong.us/api/builder/[핑퐁 빌더 ID]/integration/v0.2/custom/[세션id]",
+        "body": "{\"request\":{\"query\":\"{{message}}\"}}",
+        "method": "POST",
+        "headers": {
+          "authorization": "Basic [핑퐁 빌더 인증 토큰]"
+        },
+        "contentType": "json"
+      },
+      "meta": {
+        "design": {
+          "x": 49,
+          "y": 128
+        }
+      },
+      "next": [
+        {
+          "nodeId": 28
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "label": "메시지 응답 노드",
+      "type": "response",
+      "data": {
+        "message": {
+          "text": "{{fetch.data.response.replies[0].text}}",
+          "type": "text"
+        }
+      },
+      "meta": {
+        "design": {
+          "x": 241,
+          "y": 117
+        }
+      },
+      "next": []
+    }
+  ]
+}
