@@ -6,22 +6,6 @@ description: CLOSER 이용에 대해 자주 묻는 질문과 답변을 안내드
 
 ## 챗봇 제작 <a id="builder"></a>
 
-### Q. HTTP 요청 노드에서 Cannot use private IP address for request url 오류가 발생해요. 
-
-HTTP 요청 노드에서는 등록된 도메인\(예: http://closer.ai\) 또는 공인 IP 주소로만 요청을 보낼 수 있습니다.
-
-공인 IP란 인터넷에 공개되어 접근 가능한된 IP 주소이며, 사설 IP란 고객님의 네트워크에서만 접근 가능한 주소입니다. 예를 들어, `192.168.0.1`, `172.30.255.255`등의 IP 주소는 외부에서 접근할 수 없는 사설 IP 주소에 해당합니다. 
-
-만일 고객님의 IP 주소가 사설 주소에 해당한다면, 서버 호스팅 업체를 통해 작성하신 서버 어플리케이션을 업로드하시거나 로컬에서 인터넷에 서버를 올릴 수 있는 개발 도구들을 이용해보세요.  
-
-{% hint style="info" %}
-공인 IP와 사설 IP의 차이가 더 궁금하신가요? 다음 페이지를 확인해보세요.
-
-* \(정보통신기술용어해설\) Private IP Address, Public IP Address  [http://ktword.co.kr/abbr\_view.php?m\_temp1=2260](http://ktword.co.kr/abbr_view.php?m_temp1=2260) 
-{% endhint %}
-
-
-
 ### Q. 챗봇에서 계속 \(메시지 없음\) 또는 \(Empty Message\) 응답만 나와요
 
 카카오톡과 같은 메시징 채널은 **답변**을 필수로 반환하여야 합니다. 이에 CLOSER 챗봇에서는 시나리오 상에 답변이 존재하지 않을 때 **빈 메시지** 응답을 생성하여 반환합니다. \(이 메시지는 [봇 정보 설정](builder/chatbot/bot-settings.md#undefined-1) 메뉴에서 수정하실 수 있습니다.\)
@@ -78,6 +62,22 @@ CLOSER의 구동 환경에서는 기본적으로 **GMT\(UTC+0\) timezone**이 �
 > `{{DATE(params.value, "YYYY년 MM월 DD일 HH시 mm분", "Asia/Seoul")}}`
 
 [**DATE 함수 이용방법**](builder/chatbot/advanced/template-syntax/#date-value-format-timezone)을 잘 확인해보시면 위와 같이 출력 형태도 변경하는 것이 가능합니다.
+
+
+
+### Q. HTTP 요청 노드에서 Cannot use private IP address for request url 오류가 발생해요. 
+
+HTTP 요청 노드에서는 등록된 도메인\(예: http://closer.ai\) 또는 공인 IP 주소로만 요청을 보낼 수 있습니다.
+
+공인 IP란 인터넷에 공개되어 접근 가능한된 IP 주소이며, 사설 IP란 고객님의 네트워크에서만 접근 가능한 주소입니다. 예를 들어, `192.168.0.1`, `172.30.255.255`등의 IP 주소는 외부에서 접근할 수 없는 사설 IP 주소에 해당합니다. 
+
+만일 고객님의 IP 주소가 사설 주소에 해당한다면, 서버 호스팅 업체를 통해 작성하신 서버 어플리케이션을 업로드하시거나 로컬에서 인터넷에 서버를 올릴 수 있는 개발 도구들을 이용해보세요.  
+
+{% hint style="info" %}
+공인 IP와 사설 IP의 차이가 더 궁금하신가요? 다음 페이지를 확인해보세요.
+
+* \(정보통신기술용어해설\) Private IP Address, Public IP Address  [http://ktword.co.kr/abbr\_view.php?m\_temp1=2260](http://ktword.co.kr/abbr_view.php?m_temp1=2260) 
+{% endhint %}
 
 
 
@@ -144,7 +144,7 @@ CLOSER Chat을 통해 카카오톡 1:1 상담을 진행하고자 하는 경우�
 
 카카오톡에서는 기본적으로 **카카오톡채널 관리자센터의 1:1채팅 기능**을 이용하여 상담을 진행하실 수 있지만, 이는 카카오톡 홈페이지\(또는 전용 어플리케이션\) 에서만 상담을 진행할용 수 있습니다. 이와는 별개로 별도 고객센터 솔루션 연동 또는 기존 시스템 연동이 필요한 경우에 이용하실 수 있는 상품입니다.
 
-더 자세한 정보는 [카카오톡 상담톡 페이지](builder/messenger-integrations/kakao.md#undefined) 또는 카카오톡 비즈메시지 홈페이지를 참고해주세요.
+더 자세한 정보는 [카카오톡 상담톡 페이지](builder/chatbot/advanced/messenger-integrations/kakao.md#undefined) 또는 카카오톡 비즈메시지 홈페이지를 참고해주세요.
 
 * [https://business.kakao.com/info/bizmessage/](https://business.kakao.com/info/bizmessage/)  
 

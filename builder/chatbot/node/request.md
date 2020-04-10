@@ -38,7 +38,7 @@ CLOSER에서 제공하는 사용자 입력 요청 노드는 메시징 채널에 
 
 * 텍스트 입력 방식에 더하여 고객의 입력을 도와주는 선택지를 제공합니다.
 * 대부분의 메시징 채널에서 **빠른 답장\(quick reply\)**형태의 선택지로 변환되며, 빠른 답장을 지원하지 않는 경우에는 포스트백 버튼이나 키보드 버튼의 형태로 제공됩니다.
-* 각 메시징 채널 별 빠른 답장 지원 여부에 대해서는 [메신저 연동 &gt; 지원 여부 테이블](../../messenger-integrations/#availability-table) 문서를 확인해주세요.
+* 각 메시징 채널 별 빠른 답장 지원 여부에 대해서는 [메신저 연동 &gt; 지원 여부 테이블](../advanced/messenger-integrations/#availability-table) 문서를 확인해주세요.
 
 ![&#xBE60;&#xB978; &#xB2F5;&#xC7A5; &#xD615;&#xD0DC;&#xC758; &#xC120;&#xD0DD;&#xC9C0; &#xCD9C;&#xB825;\(&#xCD9C;&#xCC98;: &#xCE74;&#xCE74;&#xC624;&#xD1A1; &#xC624;&#xD508;&#xBE4C;&#xB354;\)](../../../.gitbook/assets/image%20%2843%29.png)
 
@@ -79,7 +79,7 @@ CLOSER에서 제공하는 사용자 입력 요청 노드는 메시징 채널에 
 {% hint style="warning" %}
 메신저별로 보낼 수 있는 빠른 답장 버튼의 텍스트 길이나 갯수 제한을 초과한 경우, 초과분은 표시되지 않고 사라집니다. 메신저별 제약사항에 대해 더 자세히 알아보려면 다음 페이지를 참고해주세요.
 
-{% page-ref page="../../messenger-integrations/limitations.md" %}
+{% page-ref page="../advanced/messenger-integrations/limitations.md" %}
 {% endhint %}
 
 

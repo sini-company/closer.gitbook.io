@@ -28,7 +28,7 @@ CLOSER에서 설정한 메시지가 연동한 메신저에 제대로 표시되�
 
 각 메신저별 제약 사항에 대해서는 다음 페이지를 참고해주세요.
 
-{% page-ref page="../../messenger-integrations/limitations.md" %}
+{% page-ref page="../advanced/messenger-integrations/limitations.md" %}
 {% endhint %}
 
 ## 전송 가능한 메시지 유형

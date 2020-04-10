@@ -92,7 +92,7 @@ Postback payload를 이용하면 고객이 특정 말풍선 버튼을 클릭했�
 * 카카오톡: **지원** \(1,000자\)
 * LINE: **지원** \(300자\)
 
-{% page-ref page="../../messenger-integrations/limitations.md" %}
+{% page-ref page="messenger-integrations/limitations.md" %}
 
 
 

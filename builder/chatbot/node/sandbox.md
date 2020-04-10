@@ -6,38 +6,42 @@ description: 기본 제공 노드만으로는 목적을 달성할 수 없을 때
 
 ## 실행환경
 
-런타임: Node.js v8.10  
+런타임: Node.js v12  
 타임아웃: `5,000`ms  
 코드길이 제한: `50,000`byte  
 응답크기 제한: `50,000`byte
 
-만일 실행 과정에서 오류가 발생하거나 수행시간이 5,000ms 를 초과할 경우 스크립트 실행이 종료되며, 이 시점에서 실행 중인 스크립트에 대한 결과는 보장할 수 없습니다. 때문에 제한 시간을 넘지 않도록 주의해 주시고, 오류 발생시 분기가 필요하다면 [오류 처리하기](sandbox.md#3-error-handling) 항목을 참고해 주세요.
+실행 과정에서 오류가 발생하거나 수행시간이 5,000ms 를 초과할 경우 스크립트 실행이 종료됩니다. 
+
+만일 수행 시간이 초과된 경우 실행 중인 스크립트에 대한 결과는 보장할 수 없습니다. 따라서 제한 시간을 넘지 않도록 주의해 주시고, 오류 발생시 분기가 필요하다면 [오류 처리하기](sandbox.md#3-error-handling) 항목을 참고해 주세요.
 
 ## 제공되는 Node.js 라이브러리
 
-| 패키지명 | 버전 |
-| :--- | :--- |
-| apn | 2.2.0 |
-| aws-sdk | 2.389.0 |
-| bluebird | 3.5.3 |
-| cheerio | 1.0.0-rc.2 |
-| crypto | - |
-| csv-parse | 4.3.0 |
-| fetch | 1.1.0 |
-| gm | 1.23.1 |
-| googleapis | 36.0.0 |
-| iconv-lite | 0.4.24 |
-| imagemagick | 0.1.3 |
-| lodash | 4.17.11 |
-| moment | 2.23.0 |
-| moment-timezone | 0.5.23 |
-| nodemailer | 5.1.1 |
-| request | 2.88.0 |
-| request-promise | 4.2.2 |
-| superagent | 4.1.0 |
-| underscore | 1.9.1 |
-| uuid | 3.3.2 |
-| xml2js | 0.4.19 |
+| 패키지명 | 용도 | 버전 |
+| :--- | :--- | :--- |
+| apn | Apple Push Messaing | 2.2.0 |
+| aws-sdk | AWS SDK | 2.389.0 |
+| axios | HTTP request utility | 0.19.2 |
+| bluebird | Javascript \(Promise\) Utility | 3.7.2 |
+| cheerio | HTML DOM Utility | 1.0.0-rc.3 |
+| crypto | Crypto Utility | - |
+| csv-parse | CSV Manipulation | 4.8.8 |
+| fetch | HTTP request utility | 1.1.0 |
+| gm | Image Manipulation | 1.23.1 |
+| googleapis | Google API SDK | 48.0.0 |
+| iconv-lite | Text Encoding Converter | 0.5.1 |
+| imagemagick | Image Manipulation | 0.1.3 |
+| jsonwebtoken | JWT Token  | 8.5.1 |
+| lodash | Javascript Utility | 4.17.15 |
+| moment | DateTime Utility | 2.24.0 |
+| moment-timezone | DateTime Utility | 0.5.28 |
+| nodemailer | SMTP Mailer | 6.4.6 |
+| request | HTTP request utility | 2.88.2 |
+| request-promise | HTTP request utility | 4.2.5 |
+| superagent | HTTP request utility | 5.2.2 |
+| underscore | Javascript Utility | 1.10.2 |
+| uuid | UUID | 7.0.3 |
+| xml2js | XML Manipulation | 0.4.23 |
 
 ## 핸들러 함수
 
@@ -53,10 +57,10 @@ description: 기본 제공 노드만으로는 목적을 달성할 수 없을 때
 | Property | Type | Description |
 | :--- | :--- | :--- |
 | bot | [Bot](sandbox.md#type-bot) | 챗봇의 정보 |
-| conversationId | String | 진행 중인 대화의 UUID |
-| endUserId | String | 진행 중인 대화 고객의 UUID |
-| params | Object | 진행 중인 대화 파라미터 딕셔너리 |
-| platform | String | 진행 중인 대화의 메시징 플랫폼 타입\(`'kakao', 'kakaobiz', 'facebook', 'line', 'navertalk', 'bizchat', 'wechat', 'web'`\) |
+| conversationId | String | 진행 중인 대화 식별자 |
+| endUserId | String | 진행 중인 대화의 고객 식별 |
+| params | Object | 진행 중인 대화의 파라미터 딕셔너리 |
+| platform | String | 진행 중인 대화의 메시징 채널 식별자`'kakao', 'kakaobiz', 'facebook', 'line', 'navertalk', 'bizchat', 'wechat', 'web', 'test'` |
 | userKey | String | 메시징 플랫폼에서 제공하는 고객의 고유 Id |
 | message | [Message](sandbox.md#type-message) | 고객이 입력한 메시지 |
 
@@ -99,7 +103,7 @@ module.exports = function handler(context) {
 };
 ```
 
-**Async Function 작성 시**
+**Async Function 예시**
 
 ```javascript
 module.exports = async function handler(context) {

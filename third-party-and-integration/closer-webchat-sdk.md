@@ -7,7 +7,7 @@ description: CLOSER 실시간 웹 채팅의 UI를 직접 개발할 수 있는 We
 {% hint style="info" %}
 웹사이트 연동 방법을 알아보러 오셨나요? 그렇다면 아래 페이지를 참고해 주세요.
 
-* [**웹사이트 연동 방법 알아보기**](../builder/messenger-integrations/web.md)\*\*\*\*
+* [**웹사이트 연동 방법 알아보기**](../builder/chatbot/advanced/messenger-integrations/web.md)\*\*\*\*
 
 Webchat SDK 이용이 필요하시다면 support@closer.ai로 별도 문의주세요.
 {% endhint %}

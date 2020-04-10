@@ -15,7 +15,7 @@ description: CLOSER의 향상된 최신 기능에 대한 릴리스 정보와 히
 * \(신규\) [플로우 연결 노드](builder/chatbot/node/flow.md) 및 [플로우 연결 버튼 ](builder/chatbot/node/response.md#goto-button)설정에서 플로우 목록 드롭다운을 플로우 목록과 같도록 개선
 * \(버그 수정\) [뒤로가기 노드](builder/chatbot/node/back.md)와 [플로우 연결 버튼](builder/chatbot/node/response.md#goto-button)을 함께 이용할 경우 뒤로가기 동작이 부자연스러운 오류 수정
 * \(버그 수정\) 대시보드 &gt; 활성 사용자 통계 수치가 그래프와 일치하지 않는 오류 수정
-* \(버그 수정\) 네이버 톡톡 &gt; [빠른 답장 글자 수 제한](builder/messenger-integrations/limitations.md)이 넘어갈 경우, 메시지 기반의 조건이 동작하지 않는 오류 수정
+* \(버그 수정\) 네이버 톡톡 &gt; [빠른 답장 글자 수 제한](builder/chatbot/advanced/messenger-integrations/limitations.md)이 넘어갈 경우, 메시지 기반의 조건이 동작하지 않는 오류 수정
 
 **CLOSER Chat**
 
@@ -64,7 +64,7 @@ description: CLOSER의 향상된 최신 기능에 대한 릴리스 정보와 히
 
 * **카카오톡**에서 `tel:` 또는 `mailto:` URL 입력 시 동작하지 않는 문제 수정
 * **페이스북**에서 [지원 중지](https://developers.facebook.com/docs/messenger-platform/send-messages/quick-replies#locations)된 위치 빠른 답장 \(location quick reply\) 제거
-* **웹사이트** 연동 시 [초기 파라미터 설정 기능](builder/messenger-integrations/web.md#advanced-initial-parameter) 추가 
+* **웹사이트** 연동 시 [초기 파라미터 설정 기능](builder/chatbot/advanced/messenger-integrations/web.md#advanced-initial-parameter) 추가 
 
 #### CLOSER Chat
 
