@@ -17,13 +17,13 @@ description: 기본 제공 노드만으로는 목적을 달성할 수 없을 때
 
 ### 제공되는 Node.js 라이브러리
 
-| 패키지명 | 용도 | 버전 |
+| 패키지 | 용도 | 버전 |
 | :--- | :--- | :--- |
 | apn | Apple Push Messaing | 2.2.0 |
 | aws-sdk | AWS SDK | 2.389.0 |
 | axios | HTTP request utility | 0.19.2 |
 | bluebird | Javascript \(Promise\) Utility | 3.7.2 |
-| cheerio | HTML DOM Utility | 1.0.0-rc.3 |
+| cheerio | HTML DOM Parser | 1.0.0-rc.3 |
 | crypto | Crypto Utility | - |
 | csv-parse | CSV Manipulation | 4.8.8 |
 | fetch | HTTP request utility | 1.1.0 |
