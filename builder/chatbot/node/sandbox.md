@@ -46,23 +46,13 @@ description: 기본 제공 노드만으로는 목적을 달성할 수 없을 때
 ## 핸들러 함수
 
 사용자 정의 스크립트 노드에 작성하는 script는 하나의 Node.js의 모듈과 동일합니다.  
-챗봇은 `module.exports` 로 선언된 함수를 실행합니다. callback, Promise 두 가지 형태의 반환 형식을 지원합니다.
+CLOSER에서는  `module.exports` 에 반환된 **핸들러 함수**를 실행하며, 핸들러 함수는 callback과 async function 두 가지 형태를 지원합니다.
 
-### handler\(context, callback\): _void_
+### handler\(context, callback?\): _void_
 
 #### context _\(Object\)_
 
-챗봇에서 전달 받는 객체
-
-| Property | Type | Description |
-| :--- | :--- | :--- |
-| bot | [Bot](sandbox.md#type-bot) | 챗봇의 정보 |
-| conversationId | String | 진행 중인 대화 식별자 |
-| endUserId | String | 진행 중인 대화의 고객 식별 |
-| params | Object | 진행 중인 대화의 파라미터 딕셔너리 |
-| platform | String | 진행 중인 대화의 메시징 채널 식별자`'kakao', 'kakaobiz', 'facebook', 'line', 'navertalk', 'bizchat', 'wechat', 'web', 'test'` |
-| userKey | String | 메시징 플랫폼에서 제공하는 고객의 고유 Id |
-| message | [Message](sandbox.md#type-message) | 고객이 입력한 메시지 |
+진행중인 대화의 현재 맥락을 담고 있는 객체. [Context](sandbox.md#context) 참조
 
 #### callback\(error, result\) _\(Function\)_
 
@@ -86,6 +76,10 @@ module.exports = function handler(context, callback) {
 ```
 
 ### handler\(context\): _Promise&lt;HandlerResult&gt;_
+
+#### context _\(Object\)_
+
+진행중인 대화의 현재 맥락을 담고 있는 객체. [Context](sandbox.md#context) 참조
 
 Promise형태로 결과값을 반환할 수 있습니다.
 
@@ -125,6 +119,18 @@ module.exports = async function handler(context) {
 | :--- | :--- | :--- | :--- |
 | title | String | 봇의 이름 | Y |
 | description | String | 봇의 설명 | N |
+
+#### Context
+
+| Property | Type | Description |
+| :--- | :--- | :--- |
+| bot | [Bot](sandbox.md#type-bot) | 챗봇의 정보 |
+| conversationId | String | 진행 중인 대화 식별자 |
+| endUserId | String | 진행 중인 대화의 고객 식별자 |
+| params | Object | 진행 중인 대화의 파라미터 딕셔너리 |
+| platform | String | 진행 중인 대화의 메시징 채널 식별자`'kakao', 'kakaobiz', 'facebook', 'line', 'navertalk', 'bizchat', 'wechat', 'web', 'test'` |
+| userKey | String | 메시징 플랫폼에서 제공하는 고객의 고유 Id |
+| message | [Message](sandbox.md#type-message) | 고객이 입력한 메시지 |
 
 #### HandlerResult   <a id="type-handler-result"></a>
 
