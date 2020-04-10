@@ -141,14 +141,19 @@ module.exports = async function handler(context) {
 
 ## 오류 처리하기
 
-#### 오류 발생 시 분기 <a id="3-error-handling-conditional-branching"></a>
+사용자 정의 스크립트 노드 수행 중 오류가 반환되는 경우 `sandbox.error` 객체가 생성됩니다. 개발자 도구를 통해 오류를 확인하거나 템플릿 문법을 통해 메시지를 출력할 수 있고, 연결 조건을 이용하면 오류 발생 시 다른 시나리오가 진행되도록 분기점을 설정하는 것도 가능합니다. 
 
-사용자 정의 스크립트 노드에서 오류가 발생할 경우 챗봇은 아무런 메시지를 반환하지 않습니다만, `sandbox.error`를 통해 오류가 발생하였을 경우의 시나리오를 처리할 수 있습니다. \(사용자 정의 스크립트 노드의 엣지로 `sandbox.error`**가 존재하는 경우**로 챗봇 로직을 분기할 수 있습니다.\)
+### 오류 확인하기 \(개발자 도구\)
 
-#### 오류 디버깅 <a id="3-error-handling-debug"></a>
+![&#xAC1C;&#xBC1C;&#xC790; &#xB3C4;&#xAD6C;&#xB97C; &#xC774;&#xC6A9;&#xD55C; &#xC624;&#xB958; &#xB514;&#xBC84;&#xAE45; &#xC608;&#xC2DC;](../../../.gitbook/assets/sandbox-error-debugging-inspector.png)
 
-`sandbox.error`객체는 스크립트에서 반환하는 오류 또는 스크립트 실행 도중 발생한 오류로서, `{{sandbox.error.message}}` 혹은 `{{sandbox.error.stack}}` 값을 통해 디버깅 할 수 있습니다.  
-다만 디버깅 메시지를 사용할 때, 챗봇과 대화하는 최종 사용자에게 해당 메시지가 그대로 노출되지 않도록 유의하세요.
+[개발자 도구](../advanced/inspector.md)를 이용하면 스크립트 실행 중 어떤 오류가 발생했는지 쉽게 확인 가능합니다. 위 스크린샷에서는 `error1`이라는 이름의 존재하지 않는 변수를 사용하여 오류가 발생하였음을를 확인할 수 있습니다.
+
+### 오류 출력하기 \(템플릿 문법\)
+
+`sandbox` 객체는 [컨텍스트](../advanced/context.md)에 존재하는 값으로서, [템플릿 문법](../advanced/template-syntax/)을 활용하여 오류 메시지를 출력할 수 있습니다.   `{{sandbox.error}}` 혹은 `{{sandbox.error.message}}` 값을 이용해 보세요.
+
+이 때, 최종 사용자에게 해당 메시지가 그대로 노출되지 않도록 유의하세요.
 
 아래는 **대화 테스트**\(platform: `test`\)일 때에 오류가 존재하면 오류의 정보를 출력하는 디버깅 방법의 예시입니다.
 
@@ -156,7 +161,9 @@ module.exports = async function handler(context) {
 
 ![&#xC624;&#xB958; &#xB514;&#xBC84;&#xAE45; &#xC608;&#xC2DC; - &#xBA54;&#xC2DC;&#xC9C0; &#xC751;&#xB2F5; &#xB178;&#xB4DC; &#xCD9C;&#xB825; &#xACB0;&#xACFC;](../../../.gitbook/assets/flow-editor-node-sandbox-debugging.png)
 
-위 예시의 오류 호출 스택 \(stacktrace\) 을 살펴보면 작성한 스크립트의 8번째 줄 22 번째 위치에서 오류가 발생했음을 확인할 수 있습니다. 이를 응용하여 스크립트의 오류를 디버깅 해 보세요.
+### 오류 발생 시 분기
+
+사용자 정의 스크립트 노드에서 오류가 발생할 경우 챗봇은 아무런 메시지를 반환하지 않습니다만, `sandbox.error` 값의 존재 유무를 통해 오류가 발생하였을 경우의 시나리오를 처리할 수 있습니다. 더 자세한 사항은 [연결 조건 설정하기](./#connection-condition) 항목을 참고하세요.
 
 ## 예제
 
