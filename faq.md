@@ -10,7 +10,11 @@ description: CLOSER 이용에 대해 자주 묻는 질문과 답변을 안내드
 
 카카오톡과 같은 일부 메시징 채널에서는 사용자 입력에 대해 **답변을 필수로 반환**하여야 하고, 그렇지 않으면 오류로 처리됩니다. 때문에 CLOSER 챗봇에서는 답변이 존재하지 않을 경우 **빈 메시지\(메시지 없음\)** 응답을 생성하여 반환합니다.
 
-만약 시나리오에 답변을 작성하셨음에도 불구하고 빈 메시지만 나오는 상황이 반복된다면 작성하신 [폴백 플로우](builder/chatbot/flow.md#fallback-flow)를 한 번 확인해주세요.
+1\) 1개 이상의 메시지 응답 노드를 이용해 답변을 생성하지 않고 사용자 입력 요청노드에 진입한 경우 반환할 답변이 없어 빈 메시지가 반환 됩니다.
+
+![&#xBA54;&#xC2DC;&#xC9C0;&#xB97C; &#xC0DD;&#xC131;&#xD558;&#xC9C0; &#xC54A;&#xACE0; &#xC0AC;&#xC6A9;&#xC790; &#xC785;&#xB825; &#xC694;&#xCCAD; &#xB178;&#xB4DC;&#xC5D0; &#xC9C4;&#xC785;&#xD55C; &#xC608;&#xC2DC;](.gitbook/assets/request-node-without-response-node.png)
+
+2\) 만약 시나리오에 답변을 작성하셨음에도 불구하고 빈 메시지만 나오는 상황이 반복된다면 작성하신 [폴백 플로우](builder/chatbot/flow.md#fallback-flow)를 확인해주세요.
 
 ![&#xC798;&#xBABB; &#xAD6C;&#xC131;&#xB41C; &#xD3F4;&#xBC31; &#xD50C;&#xB85C;&#xC6B0; &#xC608;&#xC2DC;](.gitbook/assets/image%20%2812%29.png)
 
