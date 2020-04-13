@@ -1,8 +1,8 @@
 # CLOSER 사용 설명서
 
-CLOSER는 누구나 쉽고 빠르게 챗봇을 만들수 있는 [**CLOSER Bot Builder**](builder/about.md)와, 자동화된 대화에 상담원이 직접 참여해 고객 응대의 완성도를 높일 수 있는 편리하고 효율적인 채팅상담 솔루션 [**CLOSER Chat**](chat/about/)을 제공합니다. 
+브랜드를 알리고, 구매전환률을 높이고, 고객 문의에 24시간 쉬지 않고 답변하는 챗봇을 코딩없이 만들어 보세요!
 
-이제 챗봇 제작과 고객 센터 운영의 두 마리 토끼를 CLOSER에서 모두 잡아보세요. **무료**로 시작할 수 있습니다!
+CLOSER는 플로우차트 그리듯 쉽고 빠르게 챗봇을 만들수 있는 [**CLOSER Bot Builder**](builder/about.md)와, 자동화된 대화에 상담원이 직접 참여해 고객 응대의 완성도를 높일 수 있는 실시간 채팅상담 솔루션 [**CLOSER Chat**](chat/about/)을 제공합니다. 
 
 ![CLOSER Bot Builder](.gitbook/assets/bot_builder_overview.png)
 
