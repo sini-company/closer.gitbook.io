@@ -53,8 +53,8 @@ Number formatting에는 Numeral.js 라이브러리를 이용하고 있습니다.
 
 * `omission`: 문자열이 지정한 길이를 넘을 때 표시하는 말줄임표를 설정합니다. 기본값은 `''`입니다.
 * 예시
-  * `{{FORMAT("ABCDEFGHIJKLMNOP", 10}}` -&gt; `ABCEDFGHIJ`
-  * `{{FORMAT("ABCDEFGHIJKLMNOP", 10, "..."}}` -&gt; `ABCEDFG...`
+  * `{{TRUNCATE("ABCDEFGHIJKLMNOP", 10}}` -&gt; `ABCEDFGHIJ`
+  * `{{TRUNCATE("ABCDEFGHIJKLMNOP", 10, "..."}}` -&gt; `ABCEDFG...`
 
 ### \*\*\*\*
 
