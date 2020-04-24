@@ -35,7 +35,7 @@ description: 챗봇의 환영 메시지나 오류 메시지 등 시스템에 기
 #### **빈 메시지**
 
 * 챗봇 시나리오 수행 결과에서 답변을 생성하지 못한 경우 사용됩니다.
-* FAQ &gt; [챗봇에서 계속 \(메시지 없음\) 또는 \(Empty Message\) 응답만 나와요](https://guide.closer.ai/faq#q-empty-message)
+* FAQ &gt; [챗봇에서 계속 \(메시지 없음\) 또는 \(Empty Message\) 응답만 나와요](../../faq.md#q-empty-message)
 
 #### **추가 선택지**
 
