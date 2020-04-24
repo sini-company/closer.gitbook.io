@@ -18,7 +18,7 @@
 
 * [챗봇 기본 정보](bot-settings.md) \(제목 및 설명\)
 * 플로우 상태
-* [챗봇 동작](../chatbot/system-response.md#undefined) 설정 / [시스템 메시지](../chatbot/system-response.md#undefined-1) 설정
+* [환영 메시지 동작](../chatbot/system-response.md) 설정 / [시스템 메시지](../chatbot/system-response.md#undefined-1) 설정
 * [잠재고객](../audience.md) 테이블 설정
 
 포함되지 않는 설정들은 다음과 같습니다.
@@ -27,7 +27,9 @@
 * [메신저 연동](../messenger-integrations/) 설정
 * [Webhook](webhook.md) 설정
 
-
+{% hint style="info" %}
+봇 정보 설정에서 사용되는 내보내기 / 불러오기 기능은 [버전 관리](versions.md)시 이용되는 값과는 다르게 **잠재고객 테이**블 / **챗봇 기본 정보** 설정이 추가로 적용됩니다.
+{% endhint %}
 
 
 

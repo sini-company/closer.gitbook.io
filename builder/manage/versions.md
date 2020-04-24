@@ -15,7 +15,7 @@ description: 챗봇의 상태를 저장하거나 저장된 버전으로 다시 �
 버전 생성/복원 시 포함되는 설정들은 다음과 같습니다.
 
 * 플로우 상태
-* [챗봇 동작](../chatbot/system-response.md#undefined) 설정 / [시스템 메시지](../chatbot/system-response.md#undefined-1) 설정
+* [환영 메시지 동작](../chatbot/system-response.md) 설정 / [시스템 메시지](../chatbot/system-response.md#undefined-1) 설정
 
 포함되지 않는 설정들은 다음과 같습니다.
 
@@ -39,5 +39,5 @@ description: 챗봇의 상태를 저장하거나 저장된 버전으로 다시 �
 
 ![&#xBCC0;&#xACBD;&#xC0AC;&#xD56D; &#xBE44;&#xAD50; &#xD654;&#xBA74;](../../.gitbook/assets/image%20%287%29.png)
 
-비교하기 시 확인 가능한 변경사항은 위 스크린샷과 같이 출력됩니다.
+비교하기 시 변경사항은 위 스크린샷과 같이 출력됩니다.
 
