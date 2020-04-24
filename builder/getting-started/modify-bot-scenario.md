@@ -17,7 +17,7 @@ description: CLOSER에서 제공하는 편집 도구를 이용해 시나리오�
 
 잘 모르시겠다구요? 그렇다면 우측 상단의 ![](../../.gitbook/assets/image%20%286%29.png) 버튼을 눌러보세요. 챗봇이 실제로 어떻게 동작하는지 바로 확인해볼 수 있답니다.
 
-![&#xD3B8;&#xC9D1;&#xD654;&#xBA74; &#xC54C;&#xC544;&#xBCF4;&#xAE30; \(2\) - &#xB300;&#xD654; &#xD14C;&#xC2A4;&#xD2B8; &#xD654;&#xBA74;](../../.gitbook/assets/image%20%2842%29.png)
+![&#xD3B8;&#xC9D1;&#xD654;&#xBA74; &#xC54C;&#xC544;&#xBCF4;&#xAE30; \(2\) - &#xB300;&#xD654; &#xD14C;&#xC2A4;&#xD2B8; &#xD654;&#xBA74;](../../.gitbook/assets/image%20%2843%29.png)
 
 챗봇 편집기와 구성요소에 대해 더 자세히 알아보시려면 하단 문서를 참고해주세요.
 
@@ -38,7 +38,7 @@ description: CLOSER에서 제공하는 편집 도구를 이용해 시나리오�
 수정된 챗봇 동작을 확인하기 위해서는 수정사항을 저장해야 되겠죠?   
 편집기 우측 상단의![](../../.gitbook/assets/save.png)버튼을 누른 후 다시 ![](../../.gitbook/assets/image%20%286%29.png)를 수행해보도록 합시다. 
 
-![&#xC778;&#xC0BF;&#xB9D0; &#xD3B8;&#xC9D1;&#xD558;&#xAE30; \(3\) - &#xBCC0;&#xACBD;&#xB41C; &#xC778;&#xC0BF;&#xB9D0; &#xD655;&#xC778;](../../.gitbook/assets/image%20%2824%29.png)
+![&#xC778;&#xC0BF;&#xB9D0; &#xD3B8;&#xC9D1;&#xD558;&#xAE30; \(3\) - &#xBCC0;&#xACBD;&#xB41C; &#xC778;&#xC0BF;&#xB9D0; &#xD655;&#xC778;](../../.gitbook/assets/image%20%2825%29.png)
 
 위와 같이 환영 메시지가 변경되었다면 성공입니다!
 

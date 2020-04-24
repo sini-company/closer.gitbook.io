@@ -24,13 +24,13 @@ description: CLOSER 이용에 대해 자주 묻는 질문과 답변을 안내드
 
 2\) 만약 시나리오에 답변을 작성하셨음에도 불구하고 빈 메시지만 나오는 상황이 반복된다면 작성하신 [폴백 플로우](builder/chatbot/flow.md#fallback-flow)를 확인해주세요.
 
-![&#xC798;&#xBABB; &#xAD6C;&#xC131;&#xB41C; &#xD3F4;&#xBC31; &#xD50C;&#xB85C;&#xC6B0; &#xC608;&#xC2DC;](.gitbook/assets/image%20%2812%29.png)
+![&#xC798;&#xBABB; &#xAD6C;&#xC131;&#xB41C; &#xD3F4;&#xBC31; &#xD50C;&#xB85C;&#xC6B0; &#xC608;&#xC2DC;](.gitbook/assets/image%20%2813%29.png)
 
 폴백 플로우가 위와 유사하게\(진행할 노드가 없는 형태\) 구성되어 있다면, 챗봇은 "처음" 또는 "취소" 응답을 제외하고는 제대로 된 답변을 생성할 수 없게 됩니다. 챗봇은 진행할 노드를 찾을 수 없기 때문에 다시 폴백 플로우로 돌아오게 되며, 사용자가 어떠한 입력을 해도 동일한 빈 메시지 응답이 반복되게 됩니다.
 
 이러한 경우에는 폴백 플로우를 아래와 같이 수정함으로써 문제를 해결할 수 있습니다.
 
-![&#xC798;&#xBABB; &#xAD6C;&#xC131;&#xB41C; &#xD3F4;&#xBC31; &#xD50C;&#xB85C;&#xC6B0; &#xC218;&#xC815; &#xC608;&#xC2DC;](.gitbook/assets/image%20%2857%29.png)
+![&#xC798;&#xBABB; &#xAD6C;&#xC131;&#xB41C; &#xD3F4;&#xBC31; &#xD50C;&#xB85C;&#xC6B0; &#xC218;&#xC815; &#xC608;&#xC2DC;](.gitbook/assets/image%20%2858%29.png)
 
 {% hint style="info" %}
 빈 메시지는 [봇 설정 &gt; 시스템 응답 설정 메뉴](builder/manage/bot-settings.md#undefined-1)에서 변경하실 수 있습니다.

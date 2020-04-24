@@ -74,7 +74,7 @@ CLOSER에서는 이미지 파일에 한하여 파일 첨부 기능을 제공하�
 
 한 메시지에 두 개 이상의 카드를 설정할 시에는 가로로 스크롤이 가능한 **캐러셀\(Carousel\) 형태**로 표현됩니다. 캐러셀을 지원하지 않는 메신저라면 단일 카드를 여러장 전송하게 되며, 카드 형태의 메시지를 지원하지 않는 메신저에서는 이미지와 텍스트를 별도 전송하게 됩니다.
 
-![&#xCE90;&#xB7EC;&#xC140; &#xBA54;&#xC2DC;&#xC9C0; &#xC608;&#xC2DC; \(&#xCD9C;&#xCC98;: &#xCE74;&#xCE74;&#xC624;&#xD1A1; &#xC624;&#xD508;&#xBE4C;&#xB354;\)](../../../.gitbook/assets/image%20%2819%29.png)
+![&#xCE90;&#xB7EC;&#xC140; &#xBA54;&#xC2DC;&#xC9C0; &#xC608;&#xC2DC; \(&#xCD9C;&#xCC98;: &#xCE74;&#xCE74;&#xC624;&#xD1A1; &#xC624;&#xD508;&#xBE4C;&#xB354;\)](../../../.gitbook/assets/image%20%2820%29.png)
 
 ![&#xCE74;&#xB4DC;&#xD615; &#xBA54;&#xC2DC;&#xC9C0; &#xC608;&#xC2DC; \(&#xCD9C;&#xCC98;: &#xCE74;&#xCE74;&#xC624;&#xD1A1; &#xCE5C;&#xAD6C;&#xD1A1;/&#xC0C1;&#xB2F4;&#xD1A1;\)](../../../.gitbook/assets/userinput_card_message_example.png)
 
