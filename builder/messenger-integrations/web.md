@@ -80,7 +80,7 @@ CLOSER가 제공하는 웹 채팅 위젯은 현재 색상이나 버튼 등의 �
 * `버튼 아이콘 사이즈` : 버튼안에 삽입되는 아이콘 이미지의 크기를 변경할 수 있습니다. \(최대 60px까지 지원\)
 * `버튼 border-radius` : 버튼의 가장자리의 둥근 정도를 설정합니다.
 
-![&#xC6F9;&#xCC57; &#xCEE4;&#xC2A4;&#xD130; &#xB9C8;&#xC774;&#xC9D5; &amp;gt; &#xBC84;&#xD2BC;/&#xD31D;&#xC5C5;](../../.gitbook/assets/image%20%2838%29.png)
+![&#xC6F9;&#xCC57; &#xCEE4;&#xC2A4;&#xD130; &#xB9C8;&#xC774;&#xC9D5; &amp;gt; &#xBC84;&#xD2BC;/&#xD31D;&#xC5C5;](../../.gitbook/assets/image%20%2839%29.png)
 
 ### CSS Selector를 활용한 버튼 커스터마이징 👩🏻‍🔬 <a id="css-selector"></a>
 

@@ -28,7 +28,7 @@ CLOSER에서 설정한 메시지가 연동한 메신저에 제대로 표시되�
 
 각 메신저별 제약 사항에 대해서는 다음 페이지를 참고해주세요.
 
-{% page-ref page="../advanced/messenger-integrations/limitations.md" %}
+{% page-ref page="../../messenger-integrations/limitations.md" %}
 {% endhint %}
 
 ## 전송 가능한 메시지 유형
@@ -146,7 +146,7 @@ CLOSER에서는 이미지 파일에 한하여 파일 첨부 기능을 제공하�
 앞서 중괄호 \(`{{...}}`\) 를 이용한 텍스트를 발견하고 생소함을 느끼셨나요?   
 이 표현은 **템플릿 문법**이라고 불리는 기능으로서, 현재 **대화의 맥락\(Context\)**에 존재하는 값을 이용해 다음 메시지를 생성하는 데 사용할 수 있도록 하는 기능입니다. 더 자세한 내용은 다음 문서를 참고해 주세요.
 
-{% page-ref page="../advanced/context.md" %}
+{% page-ref page="../context.md" %}
 
 {% page-ref page="../advanced/template-syntax/" %}
 

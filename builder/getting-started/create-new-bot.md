@@ -6,7 +6,7 @@ description: CLOSER에서 챗봇을 생성하는 과정을 알아봅니다.
 
 ## 챗봇 생성하기
 
-![&#xCC57;&#xBD07; &#xC0DD;&#xC131;&#xD558;&#xAE30; \(1\) - &#xCCAB; &#xD654;&#xBA74;](../../.gitbook/assets/image%20%2842%29.png)
+![&#xCC57;&#xBD07; &#xC0DD;&#xC131;&#xD558;&#xAE30; \(1\) - &#xCCAB; &#xD654;&#xBA74;](../../.gitbook/assets/image%20%2843%29.png)
 
 CLOSER Builder에 처음 로그인하시면 위와 같은 화면을 확인할 수 있습니다.   
 챗봇을 생성하시려면 화면 중앙의 챗봇 새로 만들기 버튼을 눌러보아야겠죠?  

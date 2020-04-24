@@ -151,7 +151,7 @@ module.exports = async function handler(context) {
 
 ### 오류 출력하기 \(템플릿 문법\)
 
-`sandbox` 객체는 [컨텍스트](../advanced/context.md)에 존재하는 값으로서, [템플릿 문법](../advanced/template-syntax/)을 활용하여 오류 메시지를 출력할 수 있습니다.   `{{sandbox.error}}` 혹은 `{{sandbox.error.message}}` 값을 이용해 보세요.
+`sandbox` 객체는 [컨텍스트](../context.md)에 존재하는 값으로서, [템플릿 문법](../advanced/template-syntax/)을 활용하여 오류 메시지를 출력할 수 있습니다.   `{{sandbox.error}}` 혹은 `{{sandbox.error.message}}` 값을 이용해 보세요.
 
 이 때, 최종 사용자에게 해당 메시지가 그대로 노출되지 않도록 유의하세요.
 

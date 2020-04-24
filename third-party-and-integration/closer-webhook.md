@@ -18,8 +18,6 @@ CLOSER에서는 메시지 수신/발신, 고객 추가/삭제에 대한 이벤�
 
 ## Web Builder 에서 Webhook 전송 설정
 
-![Webhook &#xAD00;&#xB9AC; &#xD654;&#xBA74; &#xC608;&#xC2DC;](../.gitbook/assets/webhook.png)
-
 * Builder &gt; 봇 설정 &gt; Webhook 관리에서 Webhook URL을 등록/수정/삭제 하실 수 있습니다
 * 등록하신 Webhook URL이 동작하지 않는 경우 Builder에서 Webhook 전송이 자동으로 비활성화 됩니다
 
@@ -42,7 +40,10 @@ CLOSER에서는 메시지 수신/발신, 고객 추가/삭제에 대한 이벤�
      "webhookId": "00000000-0000-0000-0000-000000000000",
      "webhookUrl": "http://your.webhook.com",
      "messages": [{
+         "id": "00000000-0000-0000-0000-000000000000",
          "sourceId": "Bxxxxx",
+         "sourceType": "bot",
+         "event": "bot.end_user.updated",
          "data": {
              "endUser": {
                  "createdAt": "2018-09-04T07:06:53.047Z",
@@ -58,12 +59,12 @@ CLOSER에서는 메시지 수신/발신, 고객 추가/삭제에 대한 이벤�
                  "updatedAt": "2018-09-05T06:45:19.087Z"
              }
          },
-         "sourceType": "bot",
-         "id": "00000000-0000-0000-0000-000000000000",
-         "event": "bot.end_user.updated",
          "timestamp": 1536129919092
      }, {
+         "id": "00000000-0000-0000-0000-000000000001",
          "sourceId": "Bxxxxx",
+         "sourceType": "bot",
+         "event": "bot.conversation.created",
          "data": {
              "conversation": {
                  "endUserId": "00000000-0000-0000-0000-000000000000",
@@ -87,9 +88,6 @@ CLOSER에서는 메시지 수신/발신, 고객 추가/삭제에 대한 이벤�
                  "updatedAt": "2018-09-05T06:45:19.102Z"
              }
          },
-         "sourceType": "bot",
-         "id": "00000000-0000-0000-0000-000000000000",
-         "event": "bot.conversation.created",
          "timestamp": 1536129919116
      }]
  }
@@ -103,7 +101,10 @@ CLOSER에서는 메시지 수신/발신, 고객 추가/삭제에 대한 이벤�
     "webhookId": "00000000-0000-0000-0000-000000000000",
     "webhookUrl": "http://your.webhook.com",
     "messages": [{
+        "id": "00000000-0000-0000-0000-000000000000",
         "sourceId": "Bxxxxx",
+        "sourceType": "bot",
+        "event": "bot.message.sent",
         "data": {
             "message": {
                 "endUserId": "00000000-0000-0000-0000-000000000000",
@@ -124,9 +125,6 @@ CLOSER에서는 메시지 수신/발신, 고객 추가/삭제에 대한 이벤�
                 "timestamp": 1536130434645
             }
         },
-        "sourceType": "bot",
-        "id": "00000000-0000-0000-0000-000000000000",
-        "event": "bot.message.sent",
         "timestamp": 1536130434656
     }]
 }
@@ -140,7 +138,10 @@ CLOSER에서는 메시지 수신/발신, 고객 추가/삭제에 대한 이벤�
      "webhookId": "00000000-0000-0000-0000-000000000000",
      "webhookUrl": "http://your.webhook.com",
      "messages": [{
+         "id": "00000000-0000-0000-0000-000000000000",
          "sourceId": "Bxxxxx",
+         "sourceType": "bot",
+         "event": "bot.message.sent",
          "data": {
              "message": {
                  "endUserId": "00000000-0000-0000-0000-000000000000",
@@ -155,9 +156,6 @@ CLOSER에서는 메시지 수신/발신, 고객 추가/삭제에 대한 이벤�
                  "timestamp": 1536129919339
              }
          },
-         "sourceType": "bot",
-         "id": "00000000-0000-0000-0000-000000000000",
-         "event": "bot.message.sent",
          "timestamp": 1536129919373
      }]
  }
@@ -171,7 +169,10 @@ CLOSER에서는 메시지 수신/발신, 고객 추가/삭제에 대한 이벤�
      "webhookId": "00000000-0000-0000-0000-000000000000",
      "webhookUrl": "http://your.webhook.com",
      "messages": [{
+         "id": "00000000-0000-0000-0000-000000000000",
          "sourceId": "Bxxxxx",
+         "sourceType": "bot",
+         "event": "bot.message.received",
          "data": {
              "message": {
                  "endUserId": "00000000-0000-0000-0000-000000000000",
@@ -187,9 +188,6 @@ CLOSER에서는 메시지 수신/발신, 고객 추가/삭제에 대한 이벤�
                  "timestamp": 1536130242636
              }
          },
-         "sourceType": "bot",
-         "id": "00000000-0000-0000-0000-000000000000",
-         "event": "bot.message.received",
          "timestamp": 1536130243609
      }]
  }
@@ -454,15 +452,7 @@ CLOSER에서 대화를 진행하는데 필요한 정보입니다. SDK의 WebChat
 | cards | 카드 타입 리스트 \(Carousel로 사용\) |
 | location | 위치 정보 \(latitude, longitude\) |
 
-## 예제 <a id="samples"></a>
 
-### CLOSER 이벤트 대시보드 <a id="samples-closer-event-dashboard"></a>
-
-![&#xD1B5;&#xACC4; &#xB300;&#xC2DC;&#xBCF4;&#xB4DC; &#xB370;&#xBAA8; &#xC2A4;&#xD06C;&#xB9B0;&#xC0F7;](../.gitbook/assets/image%20%2820%29.png)
-
-CLOSER에서는 webhook event를 수집하고 시각화하는 이벤트 통계 대시보드 예제를 오픈소스로 제공하고 있습니다. 아래 GitHub Repository를 확인해주세요.
-
-* [https://github.com/sini-company/closer-event-dashboard](https://github.com/sini-company/closer-event-dashboard)
 
 
 

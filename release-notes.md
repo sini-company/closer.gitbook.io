@@ -7,6 +7,17 @@ description: CLOSER의 향상된 최신 기능에 대한 릴리스 정보와 히
 본 문서에서는 새로운 기능 / 치명적인 버그 수정 등의 변경점들을 서술합니다.  
 눈에 보이지 않는 내부 안정성 개선 등의 변경점들은 본 문서에 작성되지 않았습니다.  
 
+## v0.49.0 - 2020-04-23
+
+#### CLOSER Bot
+
+* \(신규\) [버전 관리 기능](builder/manage/versions.md) 추가
+* \(신규\) 사이드바 메뉴 재구성
+* \(신규\) 봇 편집기 &gt; 저장 오류 시 디자인 개선
+* \(신규\) 봇 편집기 &gt; 캔버스에 파라미터 노드, HTTP 요청 노드 등의 내용을 나타내는 메타데이터 표시
+* \(신규\) 템플릿 문법 &gt; 메시지 마스킹 도우미 함수\(MASK\) 추가
+* \(신규\) 템플릿 문법 &gt; 메시지 QUOTE/ESCAPE 도우미 함수 추가
+
 ## v0.48.1 - 2020-04-06
 
 **CLOSER Bot**
@@ -15,7 +26,7 @@ description: CLOSER의 향상된 최신 기능에 대한 릴리스 정보와 히
 * \(신규\) [플로우 연결 노드](builder/chatbot/node/flow.md) 및 [플로우 연결 버튼 ](builder/chatbot/node/response.md#goto-button)설정에서 플로우 목록 드롭다운을 플로우 목록과 같도록 개선
 * \(버그 수정\) [뒤로가기 노드](builder/chatbot/node/back.md)와 [플로우 연결 버튼](builder/chatbot/node/response.md#goto-button)을 함께 이용할 경우 뒤로가기 동작이 부자연스러운 오류 수정
 * \(버그 수정\) 대시보드 &gt; 활성 사용자 통계 수치가 그래프와 일치하지 않는 오류 수정
-* \(버그 수정\) 네이버 톡톡 &gt; [빠른 답장 글자 수 제한](builder/chatbot/advanced/messenger-integrations/limitations.md)이 넘어갈 경우, 메시지 기반의 조건이 동작하지 않는 오류 수정
+* \(버그 수정\) 네이버 톡톡 &gt; [빠른 답장 글자 수 제한](builder/messenger-integrations/limitations.md)이 넘어갈 경우, 메시지 기반의 조건이 동작하지 않는 오류 수정
 
 **CLOSER Chat**
 
@@ -64,7 +75,7 @@ description: CLOSER의 향상된 최신 기능에 대한 릴리스 정보와 히
 
 * **카카오톡**에서 `tel:` 또는 `mailto:` URL 입력 시 동작하지 않는 문제 수정
 * **페이스북**에서 [지원 중지](https://developers.facebook.com/docs/messenger-platform/send-messages/quick-replies#locations)된 위치 빠른 답장 \(location quick reply\) 제거
-* **웹사이트** 연동 시 [초기 파라미터 설정 기능](builder/chatbot/advanced/messenger-integrations/web.md#advanced-initial-parameter) 추가 
+* **웹사이트** 연동 시 [초기 파라미터 설정 기능](builder/messenger-integrations/web.md#advanced-initial-parameter) 추가 
 
 #### CLOSER Chat
 

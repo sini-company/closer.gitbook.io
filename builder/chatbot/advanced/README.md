@@ -10,7 +10,7 @@ description: 더 자연스럽고 다양한 기능을 갖춘 챗봇을 작성하�
 
 CLOSER가 제공하는 **템플릿 문법**과 **포스트백 페이로드** 기능, 그리고 **컨텍스트**의 개념과 사용법을 잘 이해하신다면 별도 외부 서비스 개발 없이도 다양한 동작을 수행하는 챗봇을 작성할 수 있게 됩니다. 
 
-{% page-ref page="context.md" %}
+{% page-ref page="../context.md" %}
 
 {% page-ref page="template-syntax/" %}
 
