@@ -30,7 +30,7 @@ description: 템플릿 문법에서 함께 사용할 수 있는 도우미 함수
 
 한글 명사 `noun` 에 적절한 조사를 변환해주는 도우미 함수입니다.
 
-* `josa`:  `은/는`, `이/가`, `을/를` 조합 중 이용하고자 하는 조사를 한 글자로 작성해주세요.
+* `josa`:  `은/는`, `이/가`, `을/를` 조합 중 이용하고자 하는 조사를 한 글자로 입력해주세요.
 
 예시
 
@@ -53,7 +53,8 @@ JSON payload 등에 string을 사용할 때, 문자열 내부에 quote \(`"` 또
 
 ### ESCAPE\(string\)
 
-* URL string에 적합하지 않은 문자열을 [encodeURIComponent](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/encodeURIComponent) 함수를 이용하여 UTF-8 문자로 안전하게 변환해줍니다. 
+URL string에 템플릿 변수를 이용할 때, 적합하지 않은 문자열을 [encodeURIComponent](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/encodeURIComponent) 함수를 통해 UTF-8 문자로 변환합니다. 
+
 * 예시\)
   * `{{ESCAPE("name=홍길동")}}` -&gt; `"name%3D%ED%99%8D%EA%B8%B8%EB%8F%99"`
 
