@@ -10,7 +10,7 @@ description: 템플릿 문법에서 함께 사용할 수 있는 도우미 함수
 
 * `from`과 `to`사이의 숫자를 반환합니다. \(from, to 모두 정수로 입력된 경우\)
 
-예
+예시
 
 * `{{RAND(1,10)}}` -&gt; `6` \(1~10 사이의 값\)
 
@@ -36,6 +36,8 @@ description: 템플릿 문법에서 함께 사용할 수 있는 도우미 함수
 
 * `{{JOSA("멍멍이","이")}}` -&gt; `멍멍이가`
 * `{{JOSA(params.product, "을"}}` , `{ "product": "떡볶이" }`-&gt; `떡볶이를`
+
+
 
 ### QUOTE\(string, \[quote\]\)
 
@@ -121,7 +123,7 @@ Date manipulation에는 Moment.js 라이브러리를 이용하고 있습니다.
 \(영문\) [https://momentjs.com/timezone/](https://momentjs.com/timezone/)
 {% endhint %}
 
-## 메시지 응답 관련 \(Message\)
+## 메시지 관련 \(Message\)
 
 ### MASK\(text, \[schedule\]\)
 
@@ -130,7 +132,7 @@ Date manipulation에는 Moment.js 라이브러리를 이용하고 있습니다.
 * `text`: 마스킹 대상을 설정합니다.
 * `schedule?`: 마스킹 시간을 설정합니다. \(e.g. `"10m"`, `"6h"`, `"7d"`\) 지정하지 않을 시 즉시 마스킹됩니다.
 
-예
+예시
 
 * `안녕하세요 {{MASK("김철수")}} 고객님?` -&gt; `"안녕하세요 *** 고객님"`
 
