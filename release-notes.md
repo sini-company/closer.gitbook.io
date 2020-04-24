@@ -16,8 +16,8 @@ description: CLOSER의 향상된 최신 기능에 대한 릴리스 정보와 히
   * [봇 시스템 메시지 설정](builder/chatbot/system-response.md) 분리
 * \(신규\) 봇 편집기 &gt; 저장 오류 시 디자인 개선
 * \(신규\) 봇 편집기 &gt; 캔버스에 파라미터 노드, HTTP 요청 노드 등의 내용을 나타내는 메타데이터 표시
-* \(신규\) 템플릿 문법 &gt; 메시지 마스킹 도우미 함수\(MASK\) 추가
-* \(신규\) 템플릿 문법 &gt; 메시지 QUOTE/ESCAPE 도우미 함수 추가
+* \(신규\) 템플릿 문법 &gt; [메시지 마스킹 도우미 함수\(MASK\)](builder/chatbot/advanced/template-syntax/helper-function.md#mask-text-schedule) 추가
+* \(신규\) 템플릿 문법 &gt; [문자열 QUOTE/ESCAPE 도우미 함수](builder/chatbot/advanced/template-syntax/helper-function.md#quote-string-or) 추가
 
 ## v0.48.1 - 2020-04-06
 
