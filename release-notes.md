@@ -137,7 +137,7 @@ description: CLOSER의 향상된 최신 기능에 대한 릴리스 정보와 히
 
 * 요금제 변경
   * CLOSER 요금 정책이 변경되었습니다.
-  * 자세한 사항은 [https://www.closer.ai/\#pricing](https://www.closer.ai/#pricing) 페이지를 참고해주세요.
+  * 자세한 사항은 [https://www.closer.ai/pricing](www.closer.ai/pricing) 페이지를 참고해주세요.
 
 ## v0.39.2 - 2019-08-01
 
