@@ -215,7 +215,7 @@ const request = require('request');
 
 module.exports = function(context, callback) {
   request({
-      url: 'https://swapi.co/api/starships',
+      url: 'https://swapi.dev/api/starships',
       json: true
   }, (err, res) => {
     if (err || res.statusCode !== 200) {
@@ -228,7 +228,7 @@ module.exports = function(context, callback) {
 };
 ```
 
-{% file src="../../../.gitbook/assets/closer\_flow\_http\_-\_-\_.json" caption="HTTP Request 예제 플로우 \(JSON\)" %}
+{% file src="../../../.gitbook/assets/closer\_flow\_7\_http\_-\_-\_.json" %}
 
   
 
