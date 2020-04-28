@@ -293,7 +293,7 @@ CLOSER에서는 조건부 표현식에서 더 자세한 조건을 지정할 수 
 이 방식은 handlebars에서 제공하는 표현식이 아닌 CLOSER에서 자체적으로 제공하는 표현식으로, Handlebar playground 등에서는 동작하지 않습니다.
 {% endhint %}
 
-배열 확장 반복자 표현식의 실제 예제를 알아보시려면 아래의 [스타워즈 우주선 목록 예제](./#undefined-3)를 참고해주세요.
+배열 확장 반복자 표현식의 실제 예제를 알아보시려면 아래의 [스타워즈 우주선 목록 예제](https://guide.closer.ai/builder/chatbot/advanced/template-syntax#example-1)를 참고해주세요.
 
 
 
@@ -349,29 +349,29 @@ CLOSER 템플릿 엔진에서는 Handlebars에서 제공하는 문법 외에도 
 
 ### 스타워즈 우주선 목록  <a id="example-1"></a>
 
-[SWAPI](https://swapi.co/)를 통해 스타워즈 우주선 목록 배열을 가져온 이후 우주선 갯수만큼 확장되는 카드 메시지를 생성해 보겠습니다.
+[SWAPI](https://swapi.dev/)를 통해 스타워즈 우주선 목록 배열을 가져온 이후 우주선 갯수만큼 확장되는 카드 메시지를 생성해 보겠습니다.
 
 ![&#xD15C;&#xD50C;&#xB9BF; &#xBB38;&#xBC95;&#xC744; &#xC774;&#xC6A9;&#xD574; &#xB3D9;&#xC801; &#xBC30;&#xC5F4;&#xC744; &#xCE74;&#xB4DC;&#xD615; &#xBA54;&#xC2DC;&#xC9C0;&#xB85C; &#xCD9C;&#xB825;&#xD558;&#xB294; &#xC608;&#xC2DC;](../../../../.gitbook/assets/template-syntax-example-iterator.png)
 
-1. HTTP 요청 노드를 통해 [https://swapi.co/api/starships](https://swapi.co/api/starships) 에 GET 요청을 보냅니다.  이 때 요청 결과는 `fetch` 컨텍스트에 담겨서 반환됩니다. \(`{{fetch.data.results}}` 값을 통해 배열 형태의 우주선 목록을 획득할 수 있습니다.\) 
+1. HTTP 요청 노드를 통해 [https://swapi.dev/api/starships](https://swapi.dev/api/starships) 에 GET 요청을 보냅니다.  이 때 요청 결과는 `fetch` 컨텍스트에 담겨서 반환됩니다. \(`{{fetch.data.results}}` 값을 통해 배열 형태의 우주선 목록을 획득할 수 있습니다.\) 
 2. 메시지 응답 노드에서 카드를 하나 만든 이후 제목에 `{{fetch.data.results[i].name}}`, 설명에 `{{fetch.data.results[i].description}}` 를 작성해 주세요.  추후 `fetch.data.results` 의 크기만큼 카드가 동적으로 생성됩니다.  \(이 기능은는 [반복자 표현식 &gt; 배열 확장 반복자 표현식](./#iterator-expression-array-expansion)을 참고하세요.\)
 
 * **실행 컨텍스트**
 
   ```javascript
-  // GET https://swapi.co/api/starships
+  // GET https://swapi.dev/api/starships
   {
     fetch: {
       data: {
         count: 37,
-        next: 'https://swapi.co/api/starships/?page=2',
+        next: 'https://swapi.dev/api/starships/?page=2',
         previous: null,
           results: [
             {
               name: 'Executor',
               model: 'Executor-class star dreadnought',
               manufacturer: 'Kuat Drive Yards, Fondor Shipyards',
-              url: 'https://swapi.co/api/starships/15/',
+              url: 'https://swapi.dev/api/starships/15/',
               // ...
             },
             {
