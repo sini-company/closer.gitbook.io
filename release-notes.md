@@ -7,12 +7,18 @@ description: CLOSER의 향상된 최신 기능에 대한 릴리스 정보와 히
 본 문서에서는 새로운 기능 / 치명적인 버그 수정 등의 변경점들을 서술합니다.  
 눈에 보이지 않는 내부 안정성 개선 등의 변경점들은 본 문서에 작성되지 않았습니다.  
 
+## v0.49.2 - 2020-04-28
+
+#### CLOSER Bot
+
+* \(변경\) [잠재고객](builder/audience.md) &gt; 액션 칼럼 \(대화 보기\) 추가 _\(※ 항상 노출됩니다\)_
+
 ## v0.49.1 - 2020-04-28
 
 #### CLOSER Bot
 
 * \(신규\) 봇 편집기 &gt; URL에 편집중인 노드 표시 \(외부 링크 공유시 선택된 링크 공유 가능\)
-* \(변\) 봇 기본 정보 설정 화면에 [위험 구역](builder/manage/bot-settings.md#danger-zone) 설정 분리
+* \(변경\) 봇 기본 정보 설정 화면에 [위험 구역](builder/manage/bot-settings.md#danger-zone) 설정 분리
 
 #### CLOSER Chat
 
