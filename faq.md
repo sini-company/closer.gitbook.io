@@ -14,6 +14,12 @@ description: CLOSER 이용에 대해 자주 묻는 질문과 답변을 안내드
 
 
 
+### Q. 메신저에 연동하니 테스트할때와 다르게 메시지가 잘려서 나와요
+
+각각의 메시징 채널은 서로 다른 정책과 제약사항이 적용되기 때문에 글자수나 카드, 버튼, 메시지 버블 수, 이미지 크기와 비율 등이 다르게 전송될 수 있습니다. [메신저별 제약사항](builder/messenger-integrations/limitations.md)을 확인해 보세요
+
+### 
+
 ### Q. 챗봇에서 계속 \(메시지 없음\) 또는 \(Empty Message\) 응답만 나와요
 
 카카오톡과 같은 일부 메시징 채널에서는 사용자 입력에 대해 **답변을 필수로 반환**하여야 하고, 그렇지 않으면 오류로 처리됩니다. 때문에 CLOSER 챗봇에서는 답변이 존재하지 않을 경우 **빈 메시지\(메시지 없음\)** 응답을 생성하여 반환합니다.
@@ -35,6 +41,8 @@ description: CLOSER 이용에 대해 자주 묻는 질문과 답변을 안내드
 {% hint style="info" %}
 빈 메시지는 [봇 설정 &gt; 시스템 응답 설정 메뉴](builder/manage/bot-settings.md#undefined-1)에서 변경하실 수 있습니다.
 {% endhint %}
+
+###  <a id="q-error-message"></a>
 
 ### Q. 오류 메시지를 수정할 수 있나요? <a id="q-error-message"></a>
 
