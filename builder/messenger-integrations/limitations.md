@@ -158,17 +158,8 @@ description: '최종 업데이트 날짜: 2020. 4. 3'
       <td style="text-align:left">&#x2714;&#xFE0E;</td>
       <td style="text-align:left">&#x2714;&#xFE0E;</td>
     </tr>
-    <tr>
-      <td style="text-align:left">CLOSER Chat</td>
-      <td style="text-align:left">&#x1F6AB;</td>
-      <td style="text-align:left">&#x2714;&#xFE0E;</td>
-      <td style="text-align:left">&#x2714;&#xFE0E;</td>
-      <td style="text-align:left">&#x2714;&#xFE0E;</td>
-      <td style="text-align:left">&#x2714;&#xFE0E;</td>
-      <td style="text-align:left">&#x2714;&#xFE0E;</td>
-    </tr>
   </tbody>
-</table>* 카카오톡 오픈빌더에서의 상담원 호출 기능은 [**카카오톡채널** **1:1상담 연결 기능**](kakao.md#1-1)이 이용됩니다. 
+</table>* ⚠️ 카카오톡 오픈빌더에서의 상담원 호출 기능은 [**카카오톡채널** **1:1상담 연결 기능**](kakao.md#1-1)이 이용됩니다.  
 * 웹사이트 연동 방식은 CLOSER 챗봇 편집기에 존재하는 제약 사항과 동일합니다.
 * 메신저에서 **지원하지 않는 미디어 파일**의 경우 해당 URL으로 이동하는 [링크 버튼](../chatbot/node/response.md#link-button)으로 변환됩니다.
 * 카드 갯수 및 카드 버튼 갯수가 **메신저에서 지원하는 갯수를 넘는 경우 초과분은 제거되어 전송**됩니다.
