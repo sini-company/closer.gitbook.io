@@ -33,7 +33,7 @@ description: CLOSER의 향상된 최신 기능에 대한 릴리스 정보와 히
 
 #### CLOSER Bot
 
-* \(신규\) 봇 편집기 &gt; URL에 편집중인 노드 표시 \(외부 링크 공유시 선택된 링크 공유 가능\)
+* \(신규\) 봇 편집기 &gt; URL에 편집중인 노드 표시 
 * \(변경\) 봇 기본 정보 설정 화면에 [위험 구역](builder/manage/bot-settings.md#danger-zone) 설정 분리
 
 #### CLOSER Chat
