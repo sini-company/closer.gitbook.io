@@ -103,7 +103,9 @@ description: 챗봇과 대화한 고객을 확인하고 잠재고객을 분석�
         / &#xB300;&#xD654;&#xBC29; &#xB098;&#xAC10; &#xB0A0;&#xC9DC;)</td>
     </tr>
   </tbody>
-</table>{% hint style="info" %}
+</table>
+
+{% hint style="info" %}
 `id`와 `userKey`는 모두 고객 식별자에 해당하지만, `id`는 CLOSER에서 관리하는 값이며 `userKey`는 메시징 채널\(`platform`\)에서 제공하는 값입니다.
 {% endhint %}
 
