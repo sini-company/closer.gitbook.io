@@ -219,7 +219,7 @@ CLOSER에서는 조건부 표현식에서 더 자세한 조건을 지정할 수 
 
 #### 배열 확장 반복자 표현식 \(CLOSER 한정\) <a id="iterator-expression-array-expansion"></a>
 
-만일 컨텍스트\(Context\)에서 사용하고자 하는 값\(Target value\)이 배열\(Array\)형태이고, CLOSER 봇 빌더에서 입력하려는 데이터 또한 배열 형태\(위 예시에서 cards는 하나 이상의 값을 입력할 수 있습니다.\) 일 때, 해당 값에 해당하는 숫자만큼 카드를 생성하기 위해서는 어떻게 해야 할까요?
+만일 컨텍스트\(Context\)에서 사용하고자 하는 값\(Target value\)이 배열\(Array\)형태이고, CLOSER 봇 빌더에서 입력하려는 데이터 또한 배열 형태\(위 예시에서 cards는 하나 이상의 값을 입력할 수 있습니다.\) 일 때, 해당 값에 해당하는 숫자만큼 카드 또는 버튼을를 생성하기 위해서는 어떻게 해야 할까요?
 
 이러한 상황을 쉽게 해결하기 위하여 **배열 확장 반복자 표현식**을 사용합니다. 아래 예시를 참고해주세요.
 
@@ -293,7 +293,7 @@ CLOSER에서는 조건부 표현식에서 더 자세한 조건을 지정할 수 
 이 방식은 handlebars에서 제공하는 표현식이 아닌 CLOSER에서 자체적으로 제공하는 표현식으로, Handlebar playground 등에서는 동작하지 않습니다.
 {% endhint %}
 
-배열 확장 반복자 표현식의 실제 예제를 알아보시려면 아래의 [스타워즈 우주선 목록 예제](https://guide.closer.ai/builder/chatbot/advanced/template-syntax#example-1)를 참고해주세요.
+배열 확장 반복자 표현식의 실제 예제를 알아보시려면 아래의 [스타워즈 우주선 목록 예제](./#example-1)를 참고해주세요.
 
 
 
@@ -354,7 +354,7 @@ CLOSER 템플릿 엔진에서는 Handlebars에서 제공하는 문법 외에도 
 ![&#xD15C;&#xD50C;&#xB9BF; &#xBB38;&#xBC95;&#xC744; &#xC774;&#xC6A9;&#xD574; &#xB3D9;&#xC801; &#xBC30;&#xC5F4;&#xC744; &#xCE74;&#xB4DC;&#xD615; &#xBA54;&#xC2DC;&#xC9C0;&#xB85C; &#xCD9C;&#xB825;&#xD558;&#xB294; &#xC608;&#xC2DC;](../../../../.gitbook/assets/template-syntax-example-iterator.png)
 
 1. HTTP 요청 노드를 통해 [https://swapi.dev/api/starships](https://swapi.dev/api/starships) 에 GET 요청을 보냅니다.  이 때 요청 결과는 `fetch` 컨텍스트에 담겨서 반환됩니다. \(`{{fetch.data.results}}` 값을 통해 배열 형태의 우주선 목록을 획득할 수 있습니다.\) 
-2. 메시지 응답 노드에서 카드를 하나 만든 이후 제목에 `{{fetch.data.results[i].name}}`, 설명에 `{{fetch.data.results[i].description}}` 를 작성해 주세요.  추후 `fetch.data.results` 의 크기만큼 카드가 동적으로 생성됩니다.  \(이 기능은는 [반복자 표현식 &gt; 배열 확장 반복자 표현식](./#iterator-expression-array-expansion)을 참고하세요.\)
+2. 메시지 응답 노드에서 카드를 하나 만든 이후 제목에 `{{fetch.data.results[i].name}}`, 설명에 `{{fetch.data.results[i].description}}` 를 작성해 주세요.  추후 `fetch.data.results` 의 크기만큼 카드가 동적으로 생성됩니다.  \(이 기능은 [반복자 표현식 &gt; 배열 확장 반복자 표현식](./#iterator-expression-array-expansion)을 참고하세요.\)
 
 * **실행 컨텍스트**
 
@@ -388,6 +388,12 @@ CLOSER 템플릿 엔진에서는 Handlebars에서 제공하는 문법 외에도 
 * **메시지 응답 결과**
 
 ![&#xBC30;&#xC5F4;&#xC744; &#xCE90;&#xB7EC;&#xC140; &#xBA54;&#xC2DC;&#xC9C0;&#xB85C; &#xBC14;&#xAFB8;&#xAE30; &#xACB0;&#xACFC;](../../../../.gitbook/assets/array-to-cards-result.png)
+
+{% hint style="info" %}
+배열 확장 반복자 표현식은 메시지 버튼이나 빠른 답장 버튼에도 적용할 수 있습니다.
+{% endhint %}
+
+
 
 ### Handlebars 템플릿 예제 <a id="example-2"></a>
 
