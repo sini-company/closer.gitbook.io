@@ -88,3 +88,7 @@
 * [CLOSER Bot Builder Open API 소개](third-party-and-integration/bot-builder-open-api.md)
 * [CLOSER Chat Open API 소개](third-party-and-integration/chat-open-api.md)
 
+## Legal
+
+* [Open Source Licenses](legal/open-source-licenses.md)
+
