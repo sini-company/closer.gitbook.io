@@ -195,6 +195,14 @@ CLOSER Chat을 통해 카카오톡 1:1 상담을 진행하고자 하는 경우�
 
 ## 커스텀 채널 연동 <a id="etc"></a>
 
+### Q. 웹페이지 연동 시 개발자 도구에서 오류\(경고 메시지\)가 표시돼요. <a id="browser-devtool-warnings"></a>
+
+![&#xD06C;&#xB86C; &#xAC1C;&#xBC1C;&#xC790; &#xB3C4;&#xAD6C; &#xACBD;&#xACE0; &#xBA54;&#xC2DC;&#xC9C0; \(&#xC608;&#xC2DC;\)](.gitbook/assets/image%20%2859%29.png)
+
+1. 브라우저 개발자 도구를 열었을때 확인할 수 있는 노란색 오류 메시지는 [웹 접근성](https://seulbinim.github.io/WSA/accessibility.html) 또는 [웹 표준](https://developers.google.com/web/tools/chrome-devtools/accessibility/reference)에 위반되는 사항이 있을 경우 경고성 메시지로 발생합니다. 사용자 상호작용이 빈번한 웹 어플리케이션에서는 이러한 메시지가 자주 발생하지만, 최신 브라우저 환경에서는 크게 문제되지 않습니다. 
+2. [Cookie](https://developer.mozilla.org/ko/docs/Web/HTTP/Cookies)는 [LocalStorage](https://developer.mozilla.org/ko/docs/Web/API/Web_Storage_API) \(웹 브라우저 기술\)을 지원하지 않는 IE10 이하 환경에서 세션 데이터 보관 등을 위해 [Polyfill](https://developer.mozilla.org/ko/docs/Glossary/Polyfill) 형태로 사용되고 있습니다. 여기에 모던 브라우저에서 추가된 최신 보안 정책\([SameSite](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Set-Cookie/SameSite) 등\)은 적용되어 있지 않아 해당 경고 메시지가 출력됩니다. 
+3. 소스맵\([Source Map](https://developer.mozilla.org/en-US/docs/Tools/Debugger/How_to/Use_a_source_map)\)은 웹앱 배포 시 최적화되어 빌드한 파일과 원본 파일을 연결해주는 파일로, 개발 시 디버깅 목적으로 사용되는 파일입니다. 이 파일은 실제 배포본에서는 접근할 수 없기 때문에어 해당 경고 메시지가 발생합니다. 실제 어플리케이션 동작에는 영향을 미치지 않습니다.
+
 ### Q. 다른 챗봇 솔루션 \(네이버 클라우드 플랫폼, Google DialogFlow 등\)에 CLOSER를 연동할 수 있나요? 
 
 다른 챗봇 솔루션과 CLOSER를 연동하는 방법은 다음 2가지 경우가 예상됩니다.
