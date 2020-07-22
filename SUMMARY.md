@@ -78,7 +78,7 @@
 * [서비스 연결 설정](platform/settings/README.md)
   * [연결된 계정 관리](platform/settings/integration.md)
   * [API KEY](platform/settings/api-key.md)
-* [플랜 관리\(결제\)](platform/plan-settings/README.md)
+* [결제](platform/plan-settings/README.md)
   * [종량제 서비스 요금](platform/plan-settings/payment.md)
 
 ## Third Party & Integration
