@@ -90,5 +90,5 @@
 
 ## Legal
 
-* [Open Source Licenses](legal/open-source-licenses.md)
+* [Licenses](legal/open-source-licenses.md)
 

@@ -1,4 +1,4 @@
-# Open Source Licenses
+# Licenses
 
 ### Libraries
 
