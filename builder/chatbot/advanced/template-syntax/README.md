@@ -154,14 +154,14 @@ CLOSER에서는 조건부 표현식에서 더 자세한 조건을 지정할 수 
 
 | 논리 연산 | 템플릿 표현식 \(Handlbars Expression\) |  실제 동작 \(Javascript 기준\) |
 | :--- | :--- | :--- |
-| `$eq` | `{{ #if ($eq a b) }}` | if \(a === b\) |
-| `$ne` | `{{ #if ($ne a b) }}` | if \(a !== b\) |
-| `$lt` | `{{ #if ($lt a b) }}` | if \(a &lt; b\) |
-| `$lte` | `{{ #if ($lte a b) }}` | if \(a &lt;= b\) |
-| `$gt` | `{{ #if ($gt a b) }}` | if \(a &gt; b\) |
-| `$gte` | `{{ #if ($gte a b) }}` | if \(a &gt;= b\) |
-| `$and` | `{{ #if ($and a b [...args]) }}` | if \(a && b \[ && ...args \]\)  |
-| `$or` | `{{ #if ($or a b [...args]) }}` | if \(a \|\| b \[ \|\| ...args \]\) |
+| `$eq` | `{{#if ($eq a b)}}` | if \(a === b\) |
+| `$ne` | `{{#if ($ne a b)}}` | if \(a !== b\) |
+| `$lt` | `{{#if ($lt a b)}}` | if \(a &lt; b\) |
+| `$lte` | `{{#if ($lte a b)}}` | if \(a &lt;= b\) |
+| `$gt` | `{{#if ($gt a b)}}` | if \(a &gt; b\) |
+| `$gte` | `{{#if ($gte a b)}}` | if \(a &gt;= b\) |
+| `$and` | `{{#if ($and a b [...args])}}` | if \(a && b \[ && ...args \]\)  |
+| `$or` | `{{#if ($or a b [...args])}}` | if \(a \|\| b \[ \|\| ...args \]\) |
 
 
 

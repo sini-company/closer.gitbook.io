@@ -76,7 +76,7 @@ URL string에 템플릿 변수를 이용할 때, 적합하지 않은 문자열�
 
 {% hint style="info" %}
 Number formatting에는 Numeral.js 라이브러리를 이용하고 있습니다.  
-이용 가능한 포매팅 옵션을 알아보려면 다음 링크를 참고하세요.
+이용 가능한 모든 옵션을 알아보려면 다음 링크를 참고하세요.
 
 \(영문\) [http://numeraljs.com/\#format](http://numeraljs.com/#format) 
 {% endhint %}
