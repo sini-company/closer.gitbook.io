@@ -122,6 +122,11 @@ https://app.closer.ai/webchat/{botId}?param1=abc&param2=def&param3=ghi
 [https://codesandbox.io/s/closer-webchat-integration-example-e0f36](https://codesandbox.io/s/closer-webchat-integration-example-e0f36)
 {% endhint %}
 
+{% hint style="danger" %}
+WebChatControl object 및 data-attribute를 통한 파라미터 주입 기능 등을 활용할 때에는   
+보안 취약점을 고려하여 개발해주세요. 
+{% endhint %}
+
 #### 스크립트 삽입 예시
 
 ```markup
@@ -145,13 +150,12 @@ https://app.closer.ai/webchat/{botId}?param1=abc&param2=def&param3=ghi
 * `botId`: 연동할 챗봇의 id를 입력합니다.
 * `callback`: 스크립트가 로드된 이후의 콜백 함수를 지정합니다. 
   * 이 함수는 [**WebChatControl** object](web.md#webchatcontrol-object)와 함께 호출됩니다.
-* `data-*`: 초기 파라미터로 지정할 attribute들을 data attributes로 입력합니다. 
+* `data-*`: 초기 파라미터로 지정할 attribute들을 data attributes로 입력합니다.
 
 {% hint style="warning" %}
-* **data attribute**에`botId`, `userKey`, `sessionId`, `restart`값은 사용할 수 없습니다.
-* kebab-case, snake\_case 등으로 입력된 key는 모두 **camelCase** key로 변환됩니다.
-
-  key의 예기치 않은 변환을 원치 않으시는다면 [**WebChatControl** object](web.md#webchatcontrol-object) 를 이용해 주세요. 
+1. data attribute로 주입한 파라미터는 처음 대화창을 열 때에만 적용됩니다.
+2. data attribute로 파라미터를 주입할 때, 스크립트에서 사용되는`botId`, `userKey`, `sessionId`, `restart`값은 사용할 수 없습니다.
+3. data attribute로 파라미터를 주입할 때, kebab-case, snake\_case 등으로 입력된 key는 모두 camelCase key로 변환됩니다.  key의 변환을 원치 않는다면 [**WebChatControl** object](web.md#webchatcontrol-object) 를 이용해 파라미터를 주입해 주세요. 
 {% endhint %}
 
 #### WebChatControl object
