@@ -122,7 +122,7 @@ https://app.closer.ai/webchat/{botId}?param1=abc&param2=def&param3=ghi
 [https://codesandbox.io/s/closer-webchat-integration-example-e0f36](https://codesandbox.io/s/closer-webchat-integration-example-e0f36)
 {% endhint %}
 
-#### 스크립트 삽입 예시ㅅ
+#### 스크립트 삽입 예시
 
 ```markup
 <script>

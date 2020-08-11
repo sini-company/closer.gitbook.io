@@ -13,7 +13,7 @@ description: CLOSER의 향상된 최신 기능에 대한 릴리스 정보와 히
 
 * \(신규\) 웹사이트 연동 &gt; 사용자 이미지 첨부, 이모지 팔레트 기능 추가
 * \(신규\) 웹사이트 연동 &gt; "상담원이 입력중입니다" 표시 추가 
-* \(신규\) 웹사이트 연동 &gt; 스크립트 연동 시 callback 및 API 추가
+* \(신규\) 웹사이트 연동 &gt; [**설치형 스크립트 API**](builder/messenger-integrations/web.md#webchat-script-api) 추가
 
 **CLOSER Chat**
 
