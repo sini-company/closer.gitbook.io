@@ -146,9 +146,13 @@ https://app.closer.ai/webchat/{botId}?param1=abc&param2=def&param3=ghi
 * `callback`: 스크립트가 로드된 이후의 콜백 함수를 지정합니다. 
   * 이 함수는 [**WebChatControl** object](web.md#webchatcontrol-object)와 함께 호출됩니다.
 * `data-*`: 초기 파라미터로 지정할 attribute들을 data attributes로 입력합니다. 
-  * `botId`, `userKey`, `sessionId`, `restart`는 사용할 수 없습니다.
-  * kebab-case, snake\_case key는 모두 camelCase key로 변환됩니다.
-  * key의 예기치 않은 변환을 원치 않는다면 [**WebChatControl** object](web.md#webchatcontrol-object) 를 이용해 주세요. 
+
+{% hint style="warning" %}
+* **data attribute**에`botId`, `userKey`, `sessionId`, `restart`값은 사용할 수 없습니다.
+* kebab-case, snake\_case 등으로 입력된 key는 모두 **camelCase** key로 변환됩니다.
+
+  key의 예기치 않은 변환을 원치 않으시는다면 [**WebChatControl** object](web.md#webchatcontrol-object) 를 이용해 주세요. 
+{% endhint %}
 
 #### WebChatControl object
 
