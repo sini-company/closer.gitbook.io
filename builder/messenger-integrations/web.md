@@ -77,7 +77,9 @@ CLOSER가 제공하는 웹 채팅 위젯은 현재 색상이나 버튼 등의 �
 
 **여러 페이지에 웹 채팅을 연동한 경우** 혹은 **기존 회원 정보와 연동**이 필요한 경우, 각 페이지별로 진입 파라미터를 다르게 설정하면 [챗봇 시나리오에서 해당 값을 구분](../chatbot/node/entry.md#undefined)할 수 있습니다. 
 
-#### 1. `<script/>` 설치 방식: `data-params` 속성에 원하는 파라미터를 다음과 같이 작성해줍니다.
+#### 1. `<script/>` 설치 방식
+
+*  `data-params` 속성에 원하는 파라미터를 다음과 같이 작성해줍니다.
 
 ```markup
 <script 
@@ -90,20 +92,22 @@ CLOSER가 제공하는 웹 채팅 위젯은 현재 색상이나 버튼 등의 �
 </script>
 ```
 
-#### 2. 웹페이지 직접 이용 방식: 제공된 URL 뒤에 원하는 파라미터를 다음과 같이 추가합니다.
+#### 2. 링크 직접 이용 방식
+
+* 제공된 URL 뒤에 원하는 파라미터를 다음과 같이 추가합니다.
 
 ```http
 https://app.closer.ai/webchat/{botId}?param1=abc&param2=def&param3=ghi
 ```
 
 {% hint style="info" %}
-`data-params`와 `URL` 방식 모두 쿼리스트링\(Query String\) 형식을 따라야 합니다.
+작성하는 파라미터는 모두 쿼리스트링\(Query String\) 형식을 따라야 합니다.
 
 * Query String \(Wikipedia, 영문\) [https://en.wikipedia.org/wiki/Query\_string](https://en.wikipedia.org/wiki/Query_string)
 {% endhint %}
 
 {% hint style="danger" %}
-다음 값들은 시스템에서 사용하는 값이므로 초기 파라미터로 사용할 수 없습니다.  
+다음 값들은 시스템에서 사용하는 값이므로 URL 방식의 초기 파라미터로 사용할 수 없습니다.  
 `userKey`, `sessionId`, `restart`
 {% endhint %}
 
@@ -140,7 +144,6 @@ WebChatControl object 및 data-attribute를 통한 파라미터 주입 기능 �
   }
 </script>
 <script
-  id="embeddedChatbot"
   botId="B2nkjr"
   callback="onInit"
   src="https://www.closer.ai/js/webchat.min.js">
@@ -149,13 +152,13 @@ WebChatControl object 및 data-attribute를 통한 파라미터 주입 기능 �
 
 * `botId`: 연동할 챗봇의 id를 입력합니다.
 * `callback`: 스크립트가 로드된 이후의 콜백 함수를 지정합니다. 
-  * 이 함수는 [**WebChatControl** object](web.md#webchatcontrol-object)와 함께 호출됩니다.
-* `data-*`: 초기 파라미터로 지정할 attribute들을 data attributes로 입력합니다.
+  * 이 함수는 [**WebChatControl** object](web.md#webchatcontrol-object)를 첫 번째 인자로 하여 실행됩니다.
+* `data-*`: 초기 파라미터로 지정할 값들을 data attributes 형태로 입력합니다.
 
 {% hint style="warning" %}
-1. data attribute로 주입한 파라미터는 처음 대화창을 열 때에만 적용됩니다.
-2. data attribute로 파라미터를 주입할 때, 스크립트에서 사용되는`botId`, `userKey`, `sessionId`, `restart`값은 사용할 수 없습니다.
-3. data attribute로 파라미터를 주입할 때, kebab-case, snake\_case 등으로 입력된 key는 모두 camelCase key로 변환됩니다.  key의 변환을 원치 않는다면 [**WebChatControl** object](web.md#webchatcontrol-object) 를 이용해 파라미터를 주입해 주세요. 
+1. data attribute로 주입한 파라미터는 보안을 위해 처음 document에 작성된 값만 이용됩니다. \(나중에 script element의 값을 편집하여도 파라미터가 적용되지 않습니다.\)
+2. data attribute로 파라미터를 주입할 때, 스크립트에서 사용되는`botId`값은 사용할 수 없습니다.
+3. data attribute로 파라미터를 주입할 때, kebab-case, snake\_case 등으로 입력된 key는 모두 camelCase key로 변환됩니다.  \(key의 변환을 원치 않는다면 [**WebChatControl** object](web.md#webchatcontrol-object) 를 이용해 파라미터를 주입해 주세요. \)
 {% endhint %}
 
 #### WebChatControl object
