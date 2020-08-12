@@ -156,9 +156,9 @@ WebChatControl object 및 data-attribute를 통한 파라미터 주입 기능 �
 * `data-*`: 초기 파라미터로 지정할 값들을 data attributes 형태로 입력합니다.
 
 {% hint style="warning" %}
-1. data attribute로 주입한 파라미터는 보안을 위해 처음 document에 작성된 값만 이용됩니다. \(나중에 script element의 값을 편집하여도 파라미터가 적용되지 않습니다.\)
+1. data attribute로 작성된 파라미터는 처음 document에 작성된 값만 이용됩니다. \(나중에 script element의 값을 편집하여도 파라미터가 적용되지 않습니다.\)
 2. data attribute로 파라미터를 주입할 때, 스크립트에서 사용되는`botId`값은 사용할 수 없습니다.
-3. data attribute로 파라미터를 주입할 때, kebab-case, snake\_case 등으로 입력된 key는 모두 camelCase key로 변환됩니다.  \(key의 변환을 원치 않는다면 [**WebChatControl** object](web.md#webchatcontrol-object) 를 이용해 파라미터를 주입해 주세요. \)
+3. data attribute로 파라미터를 주입할 때, kebab-case, snake\_case 등으로 입력된 key는 모두 camelCase 형태로 변환됩니다.  \(key의 변환을 원치 않는다면 [**WebChatControl** object](web.md#webchatcontrol-object) 를 이용해 파라미터를 주입해 주세요. \)
 {% endhint %}
 
 #### WebChatControl object
@@ -173,5 +173,5 @@ WebChatControl object 및 data-attribute를 통한 파라미터 주입 기능 �
   * 대화 버튼을 숨깁니다. \(대화 비활성화와 같은 효과\)
 * **updateParams\(params: object\)**
   * 초기 파라미터 또는 진행중인 대화의 파라미터를 변경합니다. 
-  * `params` 는 dictionary \(key-value\)형태의 object를 이용 가능합니다.
+  * `params` 는 key-value형태의 dictionary\(object\)를 이용해주세요.
 
