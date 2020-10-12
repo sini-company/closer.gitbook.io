@@ -189,8 +189,8 @@ description: '최종 업데이트 날짜: 2020. 4. 3'
 
 {% hint style="info" %}
 일부 제약사항은 메신저별 연동 문서에서 제공하는 실제 제약사항과 다를 수 있습니다.   
-이는 메신저별 제약 사항이 CLOSER보다 적은 경우 CLOSER의 제약 사항을 따르기 때문입니다.
+메신저별 제약이 CLOSER의 제약사항에서 벗어날 경우 CLOSER의 제약 사항을 따르기 때문입니다.
 
-만일 실제 제약사항과 다르거나 본 문서에 반영되지 않은 제약사항이 있는 경우에는 언제든 [support@closer.ai](mailto:support@closer.ai) 로 문의 주세요. 
+만일 실제 적용된 제약사항과 다르거나 본 문서에 반영되지 않은 내용이 있는 경우 [support@closer.ai](mailto:support@closer.ai) 로 제보해 주세요. 
 {% endhint %}
 
