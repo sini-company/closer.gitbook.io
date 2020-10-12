@@ -36,8 +36,8 @@ description: '최종 업데이트 날짜: 2020. 4. 3'
       <td style="text-align:left">1000</td>
     </tr>
     <tr>
-      <td style="text-align:left">&#xCE74;&#xB4DC; &#xBA54;&#xC2DC;&#xC9C0;
-        <br />&#xAC2F;&#xC218;</td>
+      <td style="text-align:left">&#xCE74;&#xB4DC;&#xD615; &#xBA54;&#xC2DC;&#xC9C0;
+        <br />&#xCE74;&#xB4DC; &#xC218;</td>
       <td style="text-align:left">10</td>
       <td style="text-align:left">
         <p>1</p>
@@ -125,6 +125,16 @@ description: '최종 업데이트 날짜: 2020. 4. 3'
       <td style="text-align:left">1000</td>
       <td style="text-align:left">300</td>
       <td style="text-align:left">1000</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">&#xD55C; &#xBC88;&#xC5D0; &#xC804;&#xC1A1;
+        <br />&#xAC00;&#xB2A5;&#xD55C; &#xBA54;&#xC2DC;&#xC9C0; &#xC218;</td>
+      <td style="text-align:left">3</td>
+      <td style="text-align:left">-</td>
+      <td style="text-align:left">-</td>
+      <td style="text-align:left">-</td>
+      <td style="text-align:left">-</td>
+      <td style="text-align:left">-</td>
     </tr>
     <tr>
       <td style="text-align:left">&#xC774;&#xBBF8;&#xC9C0; &#xC6A9;&#xB7C9;
