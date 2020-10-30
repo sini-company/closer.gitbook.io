@@ -42,7 +42,7 @@ description: CLOSER 이용에 대해 자주 묻는 질문과 답변을 안내드
 빈 메시지는 [봇 설정 &gt; 시스템 응답 설정 메뉴](builder/manage/bot-settings.md#undefined-1)에서 변경하실 수 있습니다.
 {% endhint %}
 
-###  <a id="q-error-message"></a>
+
 
 ### Q. 오류 메시지를 수정할 수 있나요? <a id="q-error-message"></a>
 
@@ -51,6 +51,23 @@ description: CLOSER 이용에 대해 자주 묻는 질문과 답변을 안내드
 ![&#xBD07; &#xC815;&#xBCF4; &#xC124;&#xC815; &amp;gt; &#xC2DC;&#xC2A4;&#xD15C; &#xC751;&#xB2F5; &#xC124;&#xC815; &#xBA54;&#xB274;](.gitbook/assets/bot-settings-system-response.png)
 
 
+
+### **Q. 사용자가 이미지를 보낸 경우 어떻게 확인하나요?** <a id="how-to-check-image"></a>
+
+고객이 보낸 메시지가 **이미지**인 경우, 다음 조건을 만족합니다.
+
+* `message.type === "media"`
+* `message.media.contentType === "image"`
+
+일반적으로 `message.media.contentType === "image"` 조건만 검사하면 `message.type === "media"`조건은 기본적으로 만족하기 때문에, message.media.contentType만 검사하셔도 충분합니다.
+
+다음은 실제 적용 예시와 동작 예시입니다.
+
+![&#xC0AC;&#xC6A9;&#xC790; &#xBA54;&#xC2DC;&#xC9C0;&#xAC00; &#xC774;&#xBBF8;&#xC9C0;&#xC778;&#xC9C0; &#xD655;&#xC778;&#xD558;&#xAE30; &#xC704;&#xD55C; &#xC5F0;&#xACB0; &#xC870;&#xAC74; &#xC124;&#xC815;](.gitbook/assets/image%20%2862%29.png)
+
+![&#xC0AC;&#xC6A9;&#xC790; &#xBA54;&#xC2DC;&#xC9C0;&#xAC00; &#xC774;&#xBBF8;&#xC9C0;&#xC77C; &#xB54C;&#xC758; &#xC5F0;&#xACB0; &#xBD84;&#xAE30; &#xC2DC;&#xB098;&#xB9AC;&#xC624; &#xC608;&#xC2DC;](.gitbook/assets/image%20%2861%29.png)
+
+![&#xC0AC;&#xC6A9;&#xC790; &#xBA54;&#xC2DC;&#xC9C0;&#xAC00; &#xC774;&#xBBF8;&#xC9C0;&#xC77C; &#xB54C;&#xC758; &#xC2E4;&#xC81C; &#xB3D9;&#xC791; &#xC608;&#xC2DC;](.gitbook/assets/image%20%2860%29.png)
 
 ### **Q. 자연어를 이해하는 챗봇을 만들고 싶어요**  <a id="q-nlp-engine"></a>
 
