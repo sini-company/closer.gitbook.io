@@ -17,5 +17,5 @@ description: CLOSER에서 제작한 챗봇을 다양한 메신저에 연동하�
 * [페이스북 Messenger](https://developers.facebook.com/docs/messenger-platform/introduction)
 * [네이버 톡톡 ](https://talk.naver.com/intro)
 * [LINE@ ](https://at.line.me/ko/)
-* [웹사이트](web.md) \(CLOSER 제공\)
+* [웹사이트](web/) \(CLOSER 제공\)
 

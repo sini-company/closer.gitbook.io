@@ -36,7 +36,7 @@ description: CLOSER의 향상된 최신 기능에 대한 릴리스 정보와 히
 
 * \(신규\) 웹사이트 연동 &gt; 사용자 이미지 첨부, 이모지 팔레트 기능 추가
 * \(신규\) 웹사이트 연동 &gt; "상담원이 입력중입니다" 표시 추가 
-* \(신규\) 웹사이트 연동 &gt; [**설치형 스크립트 API**](builder/messenger-integrations/web.md#webchat-script-api) 추가
+* \(신규\) 웹사이트 연동 &gt; [**설치형 스크립트 API**](builder/messenger-integrations/web/#webchat-script-api) 추가
 
 **CLOSER Chat**
 
@@ -174,7 +174,7 @@ description: CLOSER의 향상된 최신 기능에 대한 릴리스 정보와 히
 
 * **카카오톡**에서 `tel:` 또는 `mailto:` URL 입력 시 동작하지 않는 문제 수정
 * **페이스북**에서 [지원 중지](https://developers.facebook.com/docs/messenger-platform/send-messages/quick-replies#locations)된 위치 빠른 답장 \(location quick reply\) 제거
-* **웹사이트** 연동 시 [초기 파라미터 설정 기능](builder/messenger-integrations/web.md#advanced-initial-parameter) 추가 
+* **웹사이트** 연동 시 [초기 파라미터 설정 기능](builder/messenger-integrations/web/#advanced-initial-parameter) 추가 
 
 #### CLOSER Chat
 
