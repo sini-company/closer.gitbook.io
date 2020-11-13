@@ -48,14 +48,38 @@ CLOSER가 제공하는 웹 채팅 위젯은 현재 색상이나 버튼 등의 �
   var onLoadCallbackName = '$$_onload';
   window[onLoadCallbackName] = function (init) {
     delete window[onLoadCallbackName];
-    var control = init({ /* options */);
+    
+    // webchat을 설치합니다.
+    var webchat = init({
+      // 기본 theme를 변경합니다.
+      theme: { 
+        position:'right', 
+        pageMargin: [26,30], // 좌우 margin, 상하 margin
+        zIndex: 10000 // zIndex가 기존 UI와 겹칠 경우 이용하세요.
+      } 
+    });
+    
+    // userKey를 변경합니다.
+    // webchat.setUserKey('userKey');
+    
+    // 파라미터를 수정합니다.
+    // webchat.setParams({ email: "user@email.com" });
+    
+    // webchat을 활성화/비활성화합니다.
+    // webchat.setEnable(true);
+    // webchat.setEnable(false);
+
+    // webchat대화창을 열고 닫습니다.
+    // webchat.setOpen(true);
+    // webchat.setOpen(false);
   }
-  
-  /* CLOSER에서 제공된 설치 스크립트 */
+
+  /* CLOSER에서 제공된 설치 스크립트 (botId를 변경 후 사용해주세요.) */
   (function (c, l, o, s, e, r) {
-    c[e] = c[e] || {}; r = l.createElement('script'); s && (o += '?botId=' + s); e && (o += ('&bind=' + e)); r.src = o; r.async = 1; l.head.appendChild(r);
+  c[e] = c[e] || {}; r = l.createElement('script'); s && (o += '?botId=' + s); e && (o += ('&bind=' + e)); r.src = o; r.async = 1; l.head.appendChild(r);
   })(window, document, 'https://app.closer.ai/webchat.js', '[botId]', onLoadCallbackName)
 </script>
+
 
 ```
 
@@ -87,7 +111,7 @@ type WebChatThemeOption = {
   description?: string;
   icon?: string; // url
   position?: 'left' | 'right' | 'top-left' | 'top-right';
-  positionStrategy?: 'fixed' | 'absolute';
+  positionStrategy?: 'fixed' | 'absolute'; // css "position" strategy
   textColor?: string; //hex code, e.g. #000000
   primaryColor?: string; // hex code, e.g. #3b80e0
   primaryContrastTextColor?: string; // ex code, e.g. #ffffff
