@@ -74,7 +74,7 @@ CLOSER가 제공하는 웹 채팅 위젯은 현재 색상이나 버튼 등의 �
     // webchat.setEnable(true);
     // webchat.setEnable(false);
 
-    // webchat대화창을 열고 닫습니다.
+    // webchat 대화창을 열고 닫습니다.
     // webchat.setOpen(true);
     // webchat.setOpen(false);
   }
