@@ -47,7 +47,34 @@ CLOSER가 제공하는 웹 채팅 위젯은 현재 색상이나 버튼 등의 �
 
 #### API 이용 예시
 
+{% tabs %}
+{% tab title="변수 바인딩 예시" %}
 ```markup
+<script>
+  /* CLOSER에서 제공된 설치 스크립트 (botId를 변경 후 사용해주세요.) */
+  (function (c, l, o, s, e, r) {
+  c[e] = c[e] || {}; r = l.createElement('script'); s && (o += '?botId=' + s); e && (o += ('&bind=' + e)); r.src = o; r.async = 1; l.head.appendChild(r);
+  })(window, document, 'https://app.closer.ai/webchat.js', '[botId]', 'webchat')
+  
+  // userKey를 변경합니다.
+  // webchat.setUserKey('userKey');
+  
+  // 파라미터를 수정합니다.
+  // webchat.setParams({ email: "user@email.com" });
+  
+  // webchat을 활성화/비활성화합니다.
+  // webchat.setEnable(true);
+  // webchat.setEnable(false);
+
+  // webchat 대화창을 열고 닫습니다.
+  // webchat.setOpen(true);
+  // webchat.setOpen(false);
+</script>
+```
+{% endtab %}
+
+{% tab title="init 함수 예시" %}
+```typescript
 <script>
   /* CLOSER webchat 시작 파라미터 사용자화 + control 객체 획득 */
   var onLoadCallbackName = '$$_onload';
@@ -84,9 +111,9 @@ CLOSER가 제공하는 웹 채팅 위젯은 현재 색상이나 버튼 등의 �
   c[e] = c[e] || {}; r = l.createElement('script'); s && (o += '?botId=' + s); e && (o += ('&bind=' + e)); r.src = o; r.async = 1; l.head.appendChild(r);
   })(window, document, 'https://app.closer.ai/webchat.js', '[botId]', onLoadCallbackName)
 </script>
-
-
 ```
+{% endtab %}
+{% endtabs %}
 
 기본 제공 설치 스크립트의 호출 부분에는  `[botId]` 다음의 5번째 인자 부분이 비어있습니다.  여기에 CLOSER Webchat 스크립트가 로드되었을 때의 `onLoad` callback function을 등록할 수 있습니다.
 
