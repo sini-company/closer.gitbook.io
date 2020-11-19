@@ -87,17 +87,17 @@ CLOSER가 제공하는 웹 채팅 위젯은 현재 색상이나 버튼 등의 �
 </script>
 ```
 
-기본 제공 설치 스크립트의 호출 부분에는  `[botId]` 다음의 5번째 인자 부분이 비어있습니다.  여기에 CLOSER Webchat 스크립트가 로드되었을 때의 `onLoad` callback function을 등록할 수 있습니다.
+기본 제공 설치 스크립트의 호출 부분에는  **`[botId]`** 다음의 5번째 인자 부분이 비어있습니다.  여기에 CLOSER Webchat 스크립트가 로드되었을 때의 **`onLoad`** callback function을 등록할 수 있습니다.
 
-* `onLoad` callback이 지정되지 않은 경우 자동으로 채팅 버튼이 설치됩니다. \(`init` 수행\)
-* `onLoad` callback이 함수로 지정된 경우, 해당 함수의 첫 번째 파라미터 `init` 함수를 전달합니다.
-* `onLoad` callback이 단순 string \(변수 이름\)으로 지정된 경우, `init`을 수행한 결과값이 해당 변수로 할당됩니다.
+* **`onLoad`** callback이 지정되지 않은 경우 자동으로 채팅 버튼이 설치됩니다. \(**`init`** 수행\)
+* **`onLoad`** callback이 함수로 지정된 경우, 해당 함수의 첫 번째 파라미터 **`init`** 함수를 전달합니다.
+* **`onLoad`** callback이 단순 string \(변수 이름\)으로 지정된 경우, **`init`**을 수행한 결과값이 해당 변수로 할당됩니다.
 
-`onLoad` callback 함수는 아래 스키마의 `OnLoadCallback` 형식의 시그니처를 갖습니다.  
-이 때, 첫 번째로 제공되는 파라미터가 CLOSER WebChat을 실행하는 `init` 함수입니다. 
+**`onLoad`** callback 함수는 아래 스키마의 **`OnLoadCallback`** 형식의 시그니처를 갖습니다.  
+이 때, 첫 번째로 제공되는 파라미터가 CLOSER WebChat을 실행하는 **`init`** 함수입니다. 
 
-* `init` 함수를 호출할 때 초기 환경설정 `WebChatInitOptions` 을 변경할 수 있습니다.
-* `init` 함수의 반환값은 `WebChatControl`객체로, CLOSER WebChat의 동작 및 설정을 제어할 수 있습니다. 
+* **`init`** 함수를 호출할 때 초기 환경설정 **`WebChatInitOptions`** 을 변경할 수 있습니다.
+* **`init`** 함수의 반환값은 **`WebChatControl`**객체로, CLOSER WebChat의 동작 및 설정을 제어할 수 있습니다. 
 
 #### API 타입 스키마
 
