@@ -47,40 +47,10 @@ CLOSER가 제공하는 웹 채팅 위젯은 현재 색상이나 버튼 등의 �
 
 #### API 이용 예시
 
-{% tabs %}
-{% tab title="변수 바인딩 예시" %}
 ```markup
 <script>
-  /* CLOSER에서 제공된 설치 스크립트 (botId를 변경 후 사용해주세요.) */
-  (function (c, l, o, s, e, r) {
-  c[e] = c[e] || {}; r = l.createElement('script'); s && (o += '?botId=' + s); e && (o += ('&bind=' + e)); r.src = o; r.async = 1; l.head.appendChild(r);
-  })(window, document, 'https://app.closer.ai/webchat.js', '[botId]', 'webchat')
-  
-  // userKey를 변경합니다.
-  // webchat.setUserKey('userKey');
-  
-  // 파라미터를 수정합니다.
-  // webchat.setParams({ email: "user@email.com" });
-  
-  // webchat을 활성화/비활성화합니다.
-  // webchat.setEnable(true);
-  // webchat.setEnable(false);
-
-  // webchat 대화창을 열고 닫습니다.
-  // webchat.setOpen(true);
-  // webchat.setOpen(false);
-</script>
-```
-{% endtab %}
-
-{% tab title="init 함수 예시" %}
-```typescript
-<script>
   /* CLOSER webchat 시작 파라미터 사용자화 + control 객체 획득 */
-  var onLoadCallbackName = '$$_onload';
-  window[onLoadCallbackName] = function (init) {
-    delete window[onLoadCallbackName];
-    
+  function onLoad(init) {
     // webchat을 설치합니다.
     var webchat = init({
       // 기본 theme를 변경합니다.
@@ -104,16 +74,18 @@ CLOSER가 제공하는 웹 채팅 위젯은 현재 색상이나 버튼 등의 �
     // webchat 대화창을 열고 닫습니다.
     // webchat.setOpen(true);
     // webchat.setOpen(false);
+    
+    // 대화를 시작합니다.
+    // webchat.startConversation()
+    // webchat.changeView('chat')
   }
 
   /* CLOSER에서 제공된 설치 스크립트 (botId를 변경 후 사용해주세요.) */
   (function (c, l, o, s, e, r) {
   c[e] = c[e] || {}; r = l.createElement('script'); s && (o += '?botId=' + s); e && (o += ('&bind=' + e)); r.src = o; r.async = 1; l.head.appendChild(r);
-  })(window, document, 'https://app.closer.ai/webchat.js', '[botId]', onLoadCallbackName)
+  })(window, document, 'https://app.closer.ai/webchat.js', '[botId]', onLoad)
 </script>
 ```
-{% endtab %}
-{% endtabs %}
 
 기본 제공 설치 스크립트의 호출 부분에는  `[botId]` 다음의 5번째 인자 부분이 비어있습니다.  여기에 CLOSER Webchat 스크립트가 로드되었을 때의 `onLoad` callback function을 등록할 수 있습니다.
 
@@ -165,19 +137,43 @@ type WebChatControl = {
   params: Record<string, string | number | null | boolean>;
   userKey: string;
   theme: WebChatThemeOption;
-  navigation: { 
+  view: { 
     current: 'chat' | 'welcome' | 'setting' 
     stack: ('chat' | 'welcome' | 'setting')[] 
   };
-  
+  changeView: (view: 'chat' | 'welcome' | 'setting' | 'back', action?: 'push' | 'pop') => void;
+
   setOpen: (open: boolean) => void;
   setEnabled: (enable: boolean) => void;
   setParams: (params: Record<string, string | number | null | boolean>) => void;
   setUserKey: (userKey: string) => void;
   setTheme: (theme: WebChatThemeOption) => void;
   
-  changeNavigation: (view: 'chat' | 'welcome' | 'setting' | 'back', action?: 'push' | 'pop') => void;
-  startChat: (options?: { flowId?: number; params?: Params; override?: boolean }) => void;
+  startConversation: (options?: { 
+    navigation?: { flowId: number; nodeId?: number; };
+    params?: Params; 
+    restart?: boolean;
+  }) => Promise<void>;
+  
+  /* 대화 시작 이후 이용 가능한 메소드 일람 */
+  changeNavigation: (navigation: { 
+    flowId: number; 
+    nodeId?: number; 
+    force?: boolean; 
+  }) => Promise<void>; 
+  sendMessage: (message: {
+    data: {
+      type: 'text';
+      text: string;
+    } | {
+      type: 'media';
+      media: {
+        type: 'image' | 'video';
+        uri: string;
+      }
+    }
+  }) => Promise<void>;
+  sendTypingEvent: () => Promise<void>;
 }
 
 type OnLoadCallback = (
