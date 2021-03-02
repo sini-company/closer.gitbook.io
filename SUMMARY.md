@@ -65,7 +65,6 @@
 * [통계 \(Dashboard\)](chat/dashboard.md)
 * [설정](chat/settings/README.md)
   * [상담 설정](chat/settings/conversations.md)
-  * [팀 설정](chat/settings/teams.md)
 * [상담하기](chat/conversations/README.md)
   * [사이드 바](chat/conversations/side-bar.md)
   * [대화 목록](chat/conversations/list.md)
@@ -76,6 +75,8 @@
 
 * [Platform 개요](platform/overview.md)
 * [프로필 관리](platform/profile.md)
+* [작업 공간 관리](platform/workspace/README.md)
+  * [구성원 관리](platform/workspace/teams.md)
 * [서비스 연결 설정](platform/settings/README.md)
   * [연결된 계정 관리](platform/settings/integration.md)
   * [API KEY](platform/settings/api-key.md)
