@@ -26,8 +26,6 @@ API형 스마트채팅은 2019년까지 제공되던 방식으로, 현재는 서
 * 카카오 for 비즈니스 홈페이지: [https://business.kakao.com/](https://business.kakao.com/)
 * 카카오톡 플러스친구 FAQ: [https://cs.kakao.com/helps?category=29&locale=ko&service=8](https://cs.kakao.com/helps?category=29&locale=ko&service=8)
 
-## 카카오 i 오픈빌더 연동    <a id="openbuilder"></a>
-
 
 ## 카카오 i 오픈빌더 연동     <a id="openbuilder"></a>
 
